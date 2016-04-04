@@ -1,0 +1,15 @@
+@import "resources/assets/sass/font-awesome/scss/font-awesome.scss";
+@import "resources/assets/sass/settings/settings";
+
+//$grid-column-count: 16;
+//$primary-color: #0071BC;
+//$secondary-color: #29ABE2;
+//$secondary-color-2: #A9DDF3;
+
+//$background-primary-color: #E6E6E6;
+//$background-secondary-color: #F3F3F3;
+
+@import 'foundation';
+ 
+@include foundation-everything;
+
