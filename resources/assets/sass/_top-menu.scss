@@ -1,4 +1,26 @@
-.top-menu-container{
+#responsive-menu{
+    max-width:1248px;
+    margin:0 auto;
+}
+.top-bar, .top-bar ul{
+    background-color:white;
+}
+.top-bar{
+    ul{
+        max-width:1248px;
+    }
+}
+.top-bar-second{
+    height:200px;
+    padding-top:20px;
+}
+.top-bar-first{
+    padding-top:20px;
+    .medium-4{
+        border: solid;
+        border-width: 1px;
+        border-color: dimgray;
+    }
 }
 .bkk-logo{
     height:100px;
@@ -10,4 +32,30 @@
 .menu > li {
     padding: 0 3px;
     letter-spacing: 0.5px;
+}
+.footer{
+    border-top:solid;
+}
+.footer-container{
+    max-width:1248px;
+    text-align:left;
+    span {
+        font-size:15px;
+    }
+    .third-footer{
+        line-height:15px;
+    }
+    .second-footer{
+        max-width:none;
+        margin:0;
+    }
+    .column{
+        text-align:center;
+    }
+    .main-banner{
+        width:50%;
+    }
+    .address{
+        font-size:14px;
+    }
 }

@@ -1,6 +1,6 @@
-<class="top-bar">
+<div class="top-bar">
   <div id="responsive-menu">
-    <div class="top-menu-container" align="center">
+    <div class="top-menu-container" align="left">
       <ul class="dropdown menu" data-dropdown-menu>
         <li>
             {!! HTML::image("images/logo/bkk-logo.png","bkk-logo",array("class"=>"bkk-logo")) !!}

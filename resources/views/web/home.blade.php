@@ -17,6 +17,7 @@
 
 <h1> BKK </h1>
 
+@include("web.footer")
 @stop
 
 
