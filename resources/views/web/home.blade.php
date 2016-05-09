@@ -2,7 +2,6 @@
 
 
 @section("specific_css")
-{!! Html::style("css/main.css")!!}
 
 @stop
 
@@ -11,8 +10,13 @@
 {!! Html::script("js/verge.min.js") !!}
 @stop
 
+
 @section("body")
+
+@include("web.top-menu")
+
 <h1> BKK </h1>
+
 @stop
 
 
