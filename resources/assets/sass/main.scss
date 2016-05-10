@@ -1,15 +1,19 @@
 @import "resources/assets/sass/font-awesome/scss/font-awesome.scss";
 @import "resources/assets/sass/settings/settings";
-
-//$grid-column-count: 16;
-//$primary-color: #0071BC;
-//$secondary-color: #29ABE2;
-//$secondary-color-2: #A9DDF3;
-
-//$background-primary-color: #E6E6E6;
-//$background-secondary-color: #F3F3F3;
+@import "resources/assets/sass/fonts";
 
 @import 'foundation';
  
 @include foundation-everything;
 
+@include top-bar-container;
+
+@import "resources/assets/sass/top-menu";
+
+$main-color:#7FCAA8;
+a {
+    font-size:20px;
+}
+.empty{
+    height:1px;
+}
