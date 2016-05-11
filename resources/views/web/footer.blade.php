@@ -47,7 +47,7 @@
   </div>
 </div>
 
-<div class="top-bar footer" align="center">
+<div class="top-bar footer copyright-footer" align="center">
   <div class="footer-container">
     <div class="third-footer">
         <span>© 2016 by Chapter2</span>

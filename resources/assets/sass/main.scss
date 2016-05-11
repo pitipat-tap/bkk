@@ -9,6 +9,7 @@
 @include top-bar-container;
 
 @import "resources/assets/sass/top-menu";
+@import "resources/assets/sass/banner-page-title";
 
 $main-color:#7FCAA8;
 a {
@@ -16,4 +17,13 @@ a {
 }
 .empty{
     height:1px;
+}
+.align-center{
+	text-align: center;
+}
+.mg-t-1{
+	margin-top:1em;
+}
+.mg-b-1{
+	margin-bottom:1em;
 }

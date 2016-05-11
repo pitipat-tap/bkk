@@ -13,13 +13,14 @@
 .top-bar-second{
     height:200px;
     padding-top:20px;
+    background-color: $secondary-color;
 }
 .top-bar-first{
     padding-top:20px;
     .medium-4{
         border: solid;
         border-width: 1px;
-        border-color: dimgray;
+        border-color: $tertiary-color;
     }
 }
 .bkk-logo{
@@ -27,14 +28,22 @@
 }
 .active{
     border-bottom:solid;
-    border-color:#7FCAA8;
+    border-color: $primary-color;
 }
 .menu > li {
     padding: 0 3px;
     letter-spacing: 0.5px;
+    .logo{
+        padding: 0;
+    }
 }
 .footer{
-    border-top:solid;
+    border-top:solid 1px;
+    border-color: $tertiary-color;
+}
+.copyright-footer{
+    background-color: $primary-color;
+    color: white;
 }
 .footer-container{
     max-width:1248px;
@@ -57,5 +66,6 @@
     }
     .address{
         font-size:14px;
+        text-align:left;
     }
 }
