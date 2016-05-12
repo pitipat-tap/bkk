@@ -19,11 +19,17 @@ a {
     height:1px;
 }
 .align-center{
-	text-align: center;
+	text-align: center !important;
+}
+.align-left{
+	text-align: left !important;
+}
+.align-right{
+	text-align: right !important;
 }
 .mg-t-1{
-	margin-top:1em;
+	margin-top:1em !important;
 }
 .mg-b-1{
-	margin-bottom:1em;
+	margin-bottom:1em !important;
 }

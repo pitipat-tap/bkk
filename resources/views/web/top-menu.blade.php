@@ -7,7 +7,6 @@
             {!! HTML::image("images/logo/bkk-logo.png","bkk-logo",array("class"=>"bkk-logo")) !!}
           </a>
         </li>
-        <li><a class="" href="aboutus">About Us</a></li>
         <li><a class="active" href="#">Campaign</a></li>
         <li><a class="" href="#">Attraction</a></li>
         <li><a class="" href="#">Accommodation</a></li>

@@ -21,6 +21,13 @@
         border: solid;
         border-width: 1px;
         border-color: $tertiary-color;
+        padding: 0; 
+        a{
+            display: block;
+        }
+        a:hover{
+            box-shadow: 5px 5px 5px $tertiary-color;
+        }
     }
 }
 .bkk-logo{
@@ -44,12 +51,18 @@
 .copyright-footer{
     background-color: $primary-color;
     color: white;
+    font-size: 15px;
+    text-align: left;
+    a{
+        color: white;
+        font-size: 18px;
+    }
 }
 .footer-container{
     max-width:1248px;
     text-align:left;
     span {
-        font-size:15px;
+        font-size: 15px;
     }
     .third-footer{
         line-height:15px;
@@ -62,7 +75,7 @@
         text-align:center;
     }
     .main-banner{
-        width:50%;
+        width:45%;
     }
     .address{
         font-size:14px;

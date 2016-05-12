@@ -4,12 +4,16 @@
             <div class="medium-1 column empty">
             </div>
             <div class="medium-4 column">
-                {!! HTML::image("images/logo/agoda-logo.png","",array("class"=>"main-banner")) !!}
+                <a href="http://www.agoda.com/" target="_blank">
+                    {!! HTML::image("images/logo/agoda-logo.png","",array("class"=>"main-banner")) !!}
+                </a>
             </div>
             <div class="medium-2 column empty">
             </div>
-            <div class="medium-4 column">
-                {!! HTML::image("images/logo/trip-logo.png","",array("class"=>"main-banner")) !!}
+            <div class="medium-4 column main-banner-container">
+                <a href="https://www.tripadvisor.com/" target="_blank">
+                    {!! HTML::image("images/logo/trip-logo.png","",array("class"=>"main-banner")) !!}
+                </a>
             </div>
             <div class="medium-1 column empty">
             </div>
@@ -48,12 +52,25 @@
 </div>
 
 <div class="top-bar footer copyright-footer" align="center">
-  <div class="footer-container">
-    <div class="third-footer">
-        <span>© 2016 by Chapter2</span>
+  <div class="footer-container row">
+    <div class="small-12 medium-4 columns align-left">
+        <div class="third-footer">
+            <span>© 2016 by Chapter2</span>
+        </div>
+        <div class="third-footer">
+            <span>Proudly Created With KiwilauncherTeam</span>
+        </div>
     </div>
-    <div class="third-footer">
-        <span>Proudly Created With KiwilauncherTeam</span>
+    <div class="small-12 medium-8 columns">
+        <div class="small-12 medium-2 medium-push-6 columns">
+            <a href="aboutus">About Us</a>
+        </div>
+        <div class="small-12 medium-2 medium-push-6 columns">
+            <a href="#">FAQ</a>
+        </div>
+        <div class="small-12 medium-2 columns">
+            <a href="#">Sitemap</a>
+        </div>
     </div>
   </div>
 </div>
