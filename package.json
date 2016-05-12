@@ -45,7 +45,6 @@
     "inquirer": "^0.11.2",
     "jshint": "^2.9.1",
     "mocha": "^2.3.3",
-    "motion-ui": "^1.1.0",
     "octophant": "^1.0.0",
     "opener": "^1.4.1",
     "panini": "^1.1.1",
