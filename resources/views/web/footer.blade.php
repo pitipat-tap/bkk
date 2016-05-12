@@ -66,7 +66,7 @@
             <a href="aboutus">About Us</a>
         </div>
         <div class="small-12 medium-2 medium-push-6 columns">
-            <a href="#">FAQ</a>
+            <a href="faq">FAQ</a>
         </div>
         <div class="small-12 medium-2 columns">
             <a href="#">Sitemap</a>
