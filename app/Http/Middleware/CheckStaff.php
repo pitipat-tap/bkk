@@ -1,11 +1,11 @@
-<?php
-
-namespace App\Http\Middleware;
+<?php namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
 
-class Authenticate {
+use Redirect;
+
+class CheckStaff {
 
 	/**
 	 * The Guard implementation.
@@ -34,18 +34,9 @@ class Authenticate {
 	 */
 	public function handle($request, Closure $next)
 	{
-		if ($this->auth->guest())
-		{
-			if ($request->ajax())
-			{
-				return response('Unauthorized.', 401);
-			}
-			else
-			{
-				return redirect()->guest('auth/login');
-			}
-		}
-
+		if ($this->auth->guest()) return Redirect::route('admin-login');
+    	else if ($request->user()->role != "admin" && $request->user()->role != "author") return App::abort(404);
+		
 		return $next($request);
 	}
 

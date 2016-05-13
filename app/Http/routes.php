@@ -26,3 +26,10 @@ Route::get('/aboutus', function () {
 Route::get('/faq', function () {
     return view('web/faq');
 });
+
+Route::group(array('middleware' => 'auth.staff.already', 'prefix' => 'admin'), function(){
+	Route::get("login", array("as" => "admin-login", "uses" => "AdminAuthController@login"));
+    Route::post("login", array("as" => "admin-auth", "uses" => "AdminAuthController@authenticate"));
+    Route::get("register", array("as" => "admin-register", "uses" => "AdminAuthController@register"));
+    Route::post("register", array("as" => "admin-create", "uses" => "AdminAuthController@create"));
+});
