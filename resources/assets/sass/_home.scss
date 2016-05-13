@@ -1,0 +1,50 @@
+.orbit-bullets-container{
+	position: absolute;
+	top: 90%;
+	right: 1%;
+}
+#home-body{
+    .row{
+        margin: 0;
+        max-width:none;
+    }
+
+
+    .destination-highlight{
+        padding: 20px 30px;
+        background-color: $secondary-color;
+        margin: 20px 0;
+
+        a {
+            width: 50%;
+            display: block;
+            float: right;
+                div {
+                    background-color: green;
+                    color:white;
+                    padding: 5px 10px;
+                    text-align:center;
+                }
+        }
+
+    }
+
+    #campaign-attractions{
+        .column{
+            padding:0;
+        }
+        .tag-highlight{
+            background-color: $primary-color;
+            color:white;
+            height:300px;
+            text-align:center;
+
+            h2 {
+                margin-top:20%;
+            }
+            h1 {
+                color:yellow;
+            }
+        }
+    }
+}
