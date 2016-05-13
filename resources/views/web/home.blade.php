@@ -20,19 +20,19 @@
         <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
         <li class="is-active orbit-slide">
             <a>
-                <img class="orbit-image" src="images/orbit/1.jpg" alt="Space">
+                <img class="orbit-image" src="http://placehold.it/1500x500" alt="Space">
                 <figcaption class="orbit-caption">1</figcaption>
             </a>
         </li>
         <li class="orbit-slide">
             <a>
-                <img class="orbit-image" src="images/orbit/2.jpg" alt="Space">
+                <img class="orbit-image" src="http://placehold.it/1500x500" alt="Space">
                 <figcaption class="orbit-caption">2</figcaption>
             </a>
         </li>
         <li class="orbit-slide">
             <a>
-                <img class="orbit-image" src="images/orbit/3.jpg" alt="Space">
+                <img class="orbit-image" src="http://placehold.it/1500x500" alt="Space">
                 <figcaption class="orbit-caption">3</figcaption>
             </a>
         </li>
