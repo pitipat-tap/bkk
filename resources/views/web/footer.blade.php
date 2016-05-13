@@ -28,32 +28,32 @@
                 <li class="is-active orbit-slide">
                     <ul class="thumbnail-banner">
                         <li>
-                            <a href=""><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
                         </li>
                         <li>
-                            <a href=""><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
                         </li>
                         <li>
-                            <a href=""><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
                         </li>
                         <li>
-                            <a href=""><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
                         </li>
                     </ul>
                 </li>
                 <li class="orbit-slide">
                     <ul class="thumbnail-banner">
                         <li>
-                            <a href=""><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
                         </li>
                         <li>
-                            <a href=""><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
                         </li>
                         <li>
-                            <a href=""><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
                         </li>
                         <li>
-                            <a href=""><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
                         </li>
                     </ul>
                 </li>
