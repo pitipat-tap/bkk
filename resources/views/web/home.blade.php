@@ -7,6 +7,8 @@
 
 @section("specific_js_head")
 {!! Html::script("js/verge.min.js") !!}
+{!! Html::script("js/sly.min.js") !!}
+{!! Html::script("js/home.js") !!}
 @stop
 
 
@@ -15,7 +17,7 @@
 @include("web.top-menu")
 
 <section>
-    <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
         <ul class="orbit-container">
             <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
             <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
@@ -47,6 +49,7 @@
         </div>
     </div>
 </section>
+
 <section id="home-body">
     <div class="body-section">
         <div class="banner-page-title">Destination</div>
@@ -98,6 +101,61 @@
                     <div class="tag-highlight">
                         <h2> Attractions</h2>
                         <h1> ___ </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="accommodation-events">
+            <div class="row">
+                <div class=" medium-4 columns">
+                    <div class="tag-highlight">
+                        <h2> Accommodation </h2>
+                        <h1> ___ </h1>
+                    </div>
+                </div>
+                <div class=" medium-8 columns">
+                    {!! HTML::image("http://placehold.it/832x300","",array("class"=>"")) !!}
+                </div>
+            </div>
+            <div class="row">
+                <div class="events">
+                    <h2> Events </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div id="events-slider" class="eventsSlide">
+                    <button class="backward"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                    <button class="forward"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+
+                    <div class="frame" style="overflow: hidden;">
+                        <ul >
+                            <li class="active">January</li>
+                            <li>February</li>
+                            <li>March</li>
+                            <li>April</li>
+                            <li>May</li>
+                            <li>June</li>
+                            <li>July</li>
+                            <li>August</li>
+                            <li>September</li>
+                            <li>October</li>
+                            <li>November</li>
+                            <li>December</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="events-container">
+                    <div class="row">
+                        <div class=" medium-6 columns">
+                            <div>
+                                {!! HTML::image("http://placehold.it/500x450","",array("class"=>"")) !!}
+                            </div>
+                        </div>
+                        <div class=" medium-6 columns">
+                        </div>
                     </div>
                 </div>
             </div>

@@ -29,22 +29,113 @@
 
     }
 
-    #campaign-attractions{
+    #campaign-attractions,#accommodation-events{
+        margin-top:5%;
+        margin-bottom:5%;
         .column{
             padding:0;
         }
-        .tag-highlight{
-            background-color: $primary-color;
-            color:white;
-            height:300px;
-            text-align:center;
+    }
 
-            h2 {
-                margin-top:20%;
-            }
-            h1 {
-                color:yellow;
+    #accommodation-events{
+        .row{
+            background-color: $secondary-color;
+        }
+        .events-container{
+            width: 96%;
+            height: 500px;
+            margin: 2% 2% 4% 2%;
+            background-color: white;
+            border: solid;
+            border-width: 2px;
+            border-color: lightgray;
+
+            .row{
+                background-color:white;
             }
         }
+    }
+    .events{
+        text-align:center;
+        h2 {
+            color:black;
+            margin-top:4%;
+            margin-bottom:2%;
+        }
+    }
+    .tag-highlight{
+        background-color: $primary-color;
+        color:white;
+        height:300px;
+        text-align:center;
+
+        h2 {
+            margin-top:20%;
+        }
+        h1 {
+            color:yellow;
+        }
+    }
+// ============================== sly =========================
+
+    .eventsSlide{
+        background: $secondary-color;
+    }
+    .eventsSlide button, .eventsSlide button { 
+        background: $secondary-color; 
+        border: 0; 
+        color: black; 
+        opacity: 1; 
+    }
+    .eventsSlide button:hover, .eventsSlide button:hover { 
+        opacity: 1; 
+    }
+    .eventsSlide button:disabled, .eventsSlide button:disabled { 
+        opacity: 1; 
+        color:gray;
+    }
+    .eventsSlide .forward, .eventsSlide .backward { 
+        float: left; 
+        width: 3%; 
+        height: 35px; 
+        font-size: 30px; 
+    }
+    .eventsSlide .forward { 
+        float: right; 
+    }
+    .eventsSlide .frame { 
+        margin: 0; 
+        width: 94%; 
+        height: 43px; 
+        line-height: 43px; 
+        overflow: hidden; 
+        text-shadow: none; 
+        border-bottom: solid;
+        border-width: 2px;
+        color:black;
+    }
+    .eventsSlide .frame ul { 
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-size: 50px;
+    }
+    .eventsSlide .frame ul li { 
+        float: left;
+        width: 150px;
+        height: 43px;
+        padding: 0;
+        background: $secondary-color;
+        color: #3a3c47;
+        text-align: center;
+        cursor: pointer;
+        font-size:20px;
+    }
+    .eventsSlide .frame ul li.active { 
+        color: black;
+        border-bottom:solid;
+        border-width:5px;
+        border-color:black;
     }
 }
