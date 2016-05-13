@@ -2,7 +2,6 @@
 
 
 @section("specific_css")
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
 {!! Html::style("css/home.css") !!}
 @stop
 

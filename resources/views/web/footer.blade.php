@@ -19,6 +19,50 @@
             </div>
         </div>
         <hr>
+
+
+        <div class="orbit" data-orbit>
+            <ul class="orbit-container">
+                <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                <li class="is-active orbit-slide">
+                    <ul class="thumbnail-banner">
+                        <li>
+                            <a href=""><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                        </li>
+                        <li>
+                            <a href=""><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                        </li>
+                        <li>
+                            <a href=""><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                        </li>
+                        <li>
+                            <a href=""><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="orbit-slide">
+                    <ul class="thumbnail-banner">
+                        <li>
+                            <a href=""><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                        </li>
+                        <li>
+                            <a href=""><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                        </li>
+                        <li>
+                            <a href=""><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                        </li>
+                        <li>
+                            <a href=""><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+
+
   </div>
 </div>
 
@@ -45,7 +89,7 @@
             </p>
         </div>
         <div class="column">
-            <div class="fb-like-box fb_iframe_widget" data-href="https://www.facebook.com/tourismdivision" data-width="290" data-height="235" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;color_scheme=light&amp;container_width=290&amp;header=false&amp;height=235&amp;href=https%3A%2F%2Fwww.facebook.com%2Ftourismdivision&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false&amp;width=290"><span style="vertical-align: bottom; width: 290px; height: 214px;"><iframe name="f3333b5608" width="290px" height="235px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/v2.0/plugins/like_box.php?app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D42%23cb%3Df226a851d8%26domain%3Dwww.bangkoktourist.com%26origin%3Dhttp%253A%252F%252Fwww.bangkoktourist.com%252Ff3bbd6761c%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=290&amp;header=false&amp;height=235&amp;href=https%3A%2F%2Fwww.facebook.com%2Ftourismdivision&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false&amp;width=290" style="border: none; visibility: visible; width: 300px; height: 200px; transform: scale(0.7);margin-top: -30px;" class=""></iframe></span></div>
+            <div class="fb-like-box fb_iframe_widget" data-href="https://www.facebook.com/tourismdivision" style="height: 160px" data-width="290" data-height="235" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;color_scheme=light&amp;container_width=290&amp;header=false&amp;height=235&amp;href=https%3A%2F%2Fwww.facebook.com%2Ftourismdivision&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false&amp;width=290"><span style="vertical-align: bottom; width: 290px; height: 214px;"><iframe name="f3333b5608" width="290px" height="235px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/v2.0/plugins/like_box.php?app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D42%23cb%3Df226a851d8%26domain%3Dwww.bangkoktourist.com%26origin%3Dhttp%253A%252F%252Fwww.bangkoktourist.com%252Ff3bbd6761c%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=290&amp;header=false&amp;height=235&amp;href=https%3A%2F%2Fwww.facebook.com%2Ftourismdivision&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false&amp;width=290" style="border: none; visibility: visible; width: 300px; height: 200px; transform: scale(0.7);margin-top: -30px;" class=""></iframe></span></div>
         </div>
     </div>
   </div>

@@ -31,6 +31,7 @@
         <meta name="theme-color" content="#ffffff">
 
         {!! HTML::style("css/main.css") !!}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
 
         
         @yield("specific_css")

@@ -11,8 +11,7 @@
     }
 }
 .top-bar-second{
-    height:200px;
-    padding-top:20px;
+    padding:20px 0 0 0;
     background-color: $secondary-color;
 }
 .top-bar-first{
@@ -80,5 +79,17 @@
     .address{
         font-size:14px;
         text-align:left;
+    }
+    .thumbnail-banner{
+        float: left;
+        list-style-type: none;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+
+        li{
+            float: left;
+            width: 25%;
+        }
     }
 }
