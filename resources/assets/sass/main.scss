@@ -28,11 +28,23 @@ a {
 .align-right{
 	text-align: right !important;
 }
+.mg-0{
+	margin: 0 !important;
+}
+.mg-05{
+	margin: 0.5em 0.5em !important;
+}
 .mg-1{
-	margin: 1em 1em;
+	margin: 1em 1em !important;
+}
+.mg-t-05{
+	margin-top: 0.5em !important;
 }
 .mg-t-1{
 	margin-top: 1em !important;
+}
+.mg-t-2{
+	margin-top: 2em !important;
 }
 .mg-b-0{
 	margin-bottom: 0 !important;
@@ -55,6 +67,9 @@ a {
 .pd-1{
 	padding: 1em 1em;
 }
+.pd-t-05{
+	padding-top: 0.5em !important;
+}
 .pd-t-1{
 	padding-top: 1em !important;
 }
@@ -63,4 +78,7 @@ a {
 }
 .pd-r-0{
 	padding-right: 0 !important;
+}
+.pd-l-1{
+	padding-left: 1em !important;
 }

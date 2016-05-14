@@ -22,75 +22,90 @@
 	<div class="transportation-container">
 		{!! HTML::image("http://placehold.it/1248x416","bkk-logo",array("class"=>"mg-b-1")) !!}
 
-		<div>
+		<div class="row">
 			<div class="transportation-label small-3 medium-1 columns">
 				{!! HTML::image("http://placehold.it/120x120","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="transportation-content small-9 medium-11 columns pd-r-0">
-				<div class="row">
-					test
+				<div class="row pd-t-05 pd-l-1">
+					BTS
 				</div>
-				<hr>
-				<div class="row">
+				<hr class="mg-1">
+				<div class="row pd-l-1">
 					<div class="small-8 medium-10 columns">
-						test2
+						BTS
 					</div>
-					<div class="small-4 medium-2 columns">
-						<button class="button mg-b-0">test</button>
+					<div class="medium-2 show-for-medium columns">
+						<a class="button mg-b-0" href="http://www.bts.co.th/customer/th/main.aspx" target="_blank">More Info</a>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="row show-for-small-only columns mg-t-1">
+			<div class="small-12 small-centered columns">
+				<a class="button small-12 columns mg-0" href="http://www.bts.co.th/customer/th/main.aspx" target="_blank">More Info</a>
+			</div>
+		</div>
 	</div>
-	<hr class="mg-b-5">
+	<hr class="mg-b-3 mg-t-1">
 	<div class="transportation-container">
 		{!! HTML::image("http://placehold.it/1248x416","bkk-logo",array("class"=>"mg-b-1")) !!}
 
-		<div>
+		<div class="row">
 			<div class="transportation-label small-3 medium-1 columns">
 				{!! HTML::image("http://placehold.it/120x120","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="transportation-content small-9 medium-11 columns pd-r-0">
-				<div class="row">
-					test
+				<div class="row pd-t-05 pd-l-1">
+					MRT
 				</div>
-				<hr>
-				<div class="row">
+				<hr class="mg-1">
+				<div class="row pd-l-1">
 					<div class="small-8 medium-10 columns">
-						test2
+						MRT
 					</div>
-					<div class="small-4 medium-2 columns">
-						<button class="button mg-b-0">test</button>
+					<div class="medium-2 show-for-medium columns">
+						<a class="button mg-b-0" href="http://www.bangkokmetro.co.th/index.aspx?Lang=En" target="_blank">More Info</a>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="row show-for-small-only columns mg-t-1">
+			<div class="small-12 small-centered columns">
+				<a class="button small-12 columns mg-0" href="http://www.bangkokmetro.co.th/index.aspx?Lang=En" target="_blank">More Info</a>
+			</div>
+		</div>
 	</div>
-	<hr class="mg-b-5">
+	<hr class="mg-b-3 mg-t-1">
 	<div class="transportation-container">
 		{!! HTML::image("http://placehold.it/1248x416","bkk-logo",array("class"=>"mg-b-1")) !!}
 
-		<div>
+		<div class="row">
 			<div class="transportation-label small-3 medium-1 columns">
 				{!! HTML::image("http://placehold.it/120x120","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="transportation-content small-9 medium-11 columns pd-r-0">
-				<div class="row">
-					test
+				<div class="row pd-t-05 pd-l-1">
+					BMTA
 				</div>
-				<hr>
-				<div class="row">
+				<hr class="mg-1">
+				<div class="row pd-l-1">
 					<div class="small-8 medium-10 columns">
-						test2
+						BMTA
 					</div>
-					<div class="small-4 medium-2 columns">
-						<button class="button mg-b-0">test</button>
+					<div class="medium-2 show-for-medium columns">
+						<a class="button mg-b-0" href="http://www.bmta.co.th/?q=th/home" target="_blank">More Info</a>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="row show-for-small-only columns mg-t-1">
+			<div class="small-12 small-centered columns">
+				<a class="button small-12 columns mg-0" href="http://www.bmta.co.th/?q=th/home" target="_blank">More Info</a>
+			</div>
+		</div>
 	</div>
-	<hr class="mg-b-5">
+	<hr class="mg-b-3 mg-t-1">
 </div>
 @include("web.footer")
 @stop
