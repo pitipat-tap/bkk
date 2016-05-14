@@ -7,13 +7,13 @@ Add User |
 
 
 @section("specific_css")
-{!! HTML::style("/js/fancybox/source/jquery.fancybox.css", array("media" => "screen")) !!}
+{!! Html::style("/js/fancybox/source/jquery.fancybox.css", array("media" => "screen")) !!}
 @stop
 
 
 @section("specific_js_head")
-{!! HTML::script("/js/fancybox/source/jquery.fancybox.pack.js") !!}
-{!! HTML::script("/js/admin-user-form.js") !!}
+{!! Html::script("/js/fancybox/source/jquery.fancybox.pack.js") !!}
+{!! Html::script("/js/admin-user-form.js") !!}
 @stop
 
 
@@ -39,7 +39,7 @@ Add User |
 
 <div id="admin-users" class="container">
 	{!! Form::open(array("route" => "admin-user-create", "method" => "post", "class" => "user-form")) !!}
-		<h3 class="title">{!! HTML::linkRoute("admin-users", "Users") !!} <span class="fa fa-angle-right"></span> Add</h3>
+		<h3 class="title">{!! Html::linkRoute("admin-users", "Users") !!} <span class="fa fa-angle-right"></span> Add</h3>
 		<br />
 		
 		@include("admin.alert-box")
@@ -61,13 +61,13 @@ Add User |
         			<h4>User account</h4>
         			<br />
         			
-            		{!! HTML::decode(Form::label("username", "Username")) !!}
+            		{!! Html::decode(Form::label("username", "Username")) !!}
 		            {!! Form::text("username") !!}
-		            {!! HTML::decode(Form::label("email", "Email")) !!}
+		            {!! Html::decode(Form::label("email", "Email")) !!}
 		            {!! Form::email("email") !!}
-		            {!! HTML::decode(Form::label("password", "Password")) !!}
+		            {!! Html::decode(Form::label("password", "Password")) !!}
 		            {!! Form::password("password") !!}
-		            {!! HTML::decode(Form::label("password_confirmation", "Confirm password")) !!}
+		            {!! Html::decode(Form::label("password_confirmation", "Confirm password")) !!}
 		            {!! Form::password("password_confirmation") !!}
 		            {!! Form::label("role", "Role") !!}
 		            {!! Form::select("role", array("author" => "Author", "admin" => "Admin"), "author") !!}
@@ -87,7 +87,7 @@ Add User |
 		            
 		            <?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=profile-image-url"; ?>
 		            <a class="fm-open" href="<?php echo $p_link; ?>">
-	                    {!! HTML::image("/images/admin/default-profile-image.jpg", 
+	                    {!! Html::image("/images/admin/default-profile-image.jpg", 
 	                        "Profile image", 
 	                        array(
 	                            "id" => "profile-image",

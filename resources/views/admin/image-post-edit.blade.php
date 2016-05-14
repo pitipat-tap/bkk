@@ -11,7 +11,7 @@ Edit image post |
 
 
 @section("specific_js_head")
-{!! HTML::script("/js/admin-image-post-form.js") !!}
+{!! Html::script("/js/admin-image-post-form.js") !!}
 @stop
 
 
@@ -29,7 +29,7 @@ Edit image post |
 
 <div id="admin-imageposts" class="container">
 	{!! Form::model($post, array("route" => array("admin-image-post-update", $post->id), "method" => "patch", "class" => "imagepost-form")) !!}
-		<h3 class="title">{!! HTML::linkRoute("admin-image-posts", "Image Posts") !!} <span class="fa fa-angle-right"></span> Edit</h3>
+		<h3 class="title">{!! Html::linkRoute("admin-image-posts", "Image Posts") !!} <span class="fa fa-angle-right"></span> Edit</h3>
 		<br />
 		
 		@include("admin.alert-box")
@@ -50,7 +50,7 @@ Edit image post |
         		<div class="ui-block mg-b medium-half-mg-r">
             		<p class="f-label">Image (cannot edit image)</p>
 
-                    {!! HTML::image($post->image_url, "Image", array("class" => "post-image-edit")) !!}
+                    {!! Html::image($post->image_url, "Image", array("class" => "post-image-edit")) !!}
             	</div>
             </div>
             

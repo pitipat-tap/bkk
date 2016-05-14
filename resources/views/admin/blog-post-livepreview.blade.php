@@ -20,7 +20,7 @@
 
 <div id="admin-blogposts" class="container">
 	<div class="post-preview">
-	    <h3 class="title">{!! HTML::linkRoute("admin-blog-posts", "Blog Posts") !!} <span class="fa fa-angle-right"></span> Live Preview</h3>
+	    <h3 class="title">{!! Html::linkRoute("admin-blog-posts", "Blog Posts") !!} <span class="fa fa-angle-right"></span> Live Preview</h3>
 	    <br />
 	    
 		<div class="post-block ui-block">

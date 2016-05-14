@@ -7,7 +7,7 @@ Blog Posts |
 
 
 @section("specific_js_head")
-{!! HTML::script("/js/admin-blog-posts.js") !!}
+{!! Html::script("/js/admin-blog-posts.js") !!}
 @stop
 
 
@@ -93,13 +93,13 @@ use Chromabits\Pagination\FoundationPresenter;
 				<p>Tag : {!! Input::get("tag") !!}</p>
 			@endif
 			
-			<p>({!! HTML::linkRoute("admin-blog-posts", "View all data") !!})</p>
+			<p>({!! Html::linkRoute("admin-blog-posts", "View all data") !!})</p>
 			<br />
 		</div>
 	@endif
 	
 	<div class="show-for-large-up">
-		{!! HTML::linkRoute("admin-blog-post-new", "Add Post", [], array("class" => "button")) !!}
+		{!! Html::linkRoute("admin-blog-post-new", "Add Post", [], array("class" => "button")) !!}
 		<br /><br />
 	</div>
 	
@@ -119,7 +119,7 @@ use Chromabits\Pagination\FoundationPresenter;
 					<p>Tag : {!! Input::get("tag") !!}</p>
 				@endif
 				
-				<p>({!! HTML::linkRoute("admin-blog-posts", "View all data") !!})</p>
+				<p>({!! Html::linkRoute("admin-blog-posts", "View all data") !!})</p>
 				<br />
 				
 			@endif
@@ -164,7 +164,7 @@ use Chromabits\Pagination\FoundationPresenter;
 		@foreach ($posts as $post)
 			<li>
 				<div class="post-item ui-block ui-card no-pd">
-					<p class="post-feature-image">{!! HTML::image($post->feature_image_url) !!}</p>
+					<p class="post-feature-image">{!! Html::image($post->feature_image_url) !!}</p>
 					<div class="post-details">
 						<h5>
 							{!! $post->title !!}
@@ -191,7 +191,7 @@ use Chromabits\Pagination\FoundationPresenter;
 						
 						<p class="show-for-large-up">
 							By 
-							{!! HTML::linkRoute("admin-blog-posts", $post->author->username, 
+							{!! Html::linkRoute("admin-blog-posts", $post->author->username, 
 							array("author" => $post->author->username)) !!}
 						</p>
 						
@@ -199,7 +199,7 @@ use Chromabits\Pagination\FoundationPresenter;
 							<p class="show-for-large-up">
 								Tags : 
 								@foreach ($post->tags as $tag)
-									{!! HTML::linkRoute("admin-blog-posts", $tag->name, array("tag" => $tag->name)) !!} 
+									{!! Html::linkRoute("admin-blog-posts", $tag->name, array("tag" => $tag->name)) !!} 
 								@endforeach
 							</p>
 						@endif
@@ -213,14 +213,14 @@ use Chromabits\Pagination\FoundationPresenter;
 						
 						<div class="row">
 							<div class="small-4 columns">
-								{!! HTML::linkRoute("admin-blog-post-preview", "Preview", 
+								{!! Html::linkRoute("admin-blog-post-preview", "Preview", 
 									array($post->id),
 									array("class" => "card-button"))
 								!!}
 							</div>
 							<div class="small-4 columns">
 								@if (Auth::user()->role == "admin" || Auth::user()->id == $post->author->id)
-									{!! HTML::linkRoute("admin-blog-post-edit", "Edit", 
+									{!! Html::linkRoute("admin-blog-post-edit", "Edit", 
 										array($post->id), 
 										array("class" => "card-button"))
 									!!}

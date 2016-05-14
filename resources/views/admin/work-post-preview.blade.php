@@ -20,11 +20,11 @@
 
 <div id="admin-blogposts" class="container">
 	<div class="post-preview">
-		<h3 class="title">{!! HTML::linkRoute("admin-work-posts", "Work Posts") !!} <span class="fa fa-angle-right"></span> Preview</h3>
+		<h3 class="title">{!! Html::linkRoute("admin-work-posts", "Work Posts") !!} <span class="fa fa-angle-right"></span> Preview</h3>
 		<br />
 		
 		<div class="medium-button-group show-for-medium-up">
-			{!! HTML::linkRoute("admin-work-post-edit", "Edit", 
+			{!! Html::linkRoute("admin-work-post-edit", "Edit", 
 				array($post->id), 
 				array("class" => "button mg-r"))
 			!!}
@@ -33,7 +33,7 @@
 		</div>
 		
 		<div class="post-block ui-block mg-b">
-			{!! HTML::image($post->feature_image_url) !!}
+			{!! Html::image($post->feature_image_url) !!}
 
 	        <h2 class="post-title">{!! $post->title !!}</h2>
 					
@@ -55,7 +55,7 @@
 	    </div>
 	    
 	    <div class="small-button-group show-for-small-only">
-        	{!! HTML::linkRoute("admin-work-post-edit", "Edit", 
+        	{!! Html::linkRoute("admin-work-post-edit", "Edit", 
 				array($post->id), 
 				array("class" => "button"))
 			!!}

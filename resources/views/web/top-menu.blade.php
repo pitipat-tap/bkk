@@ -4,7 +4,7 @@
       <ul class="dropdown menu" data-dropdown-menu>
         <li>
           <a class="logo" href="home">
-            {!! HTML::image("images/logo/bkk-logo.png","bkk-logo",array("class"=>"bkk-logo")) !!}
+            {!! Html::image("images/logo/bkk-logo.png","bkk-logo",array("class"=>"bkk-logo")) !!}
           </a>
         </li>
         <li><a class="active" href="#">Campaign</a></li>

@@ -7,14 +7,14 @@ Edit Blog Post |
 
 
 @section("specific_css")
-{!! HTML::style("/js/fancybox/source/jquery.fancybox.css", array("media" => "screen")) !!}
+{!! Html::style("/js/fancybox/source/jquery.fancybox.css", array("media" => "screen")) !!}
 @stop
 
 
 @section("specific_js_head")
-{!! HTML::script("/js/tinymce/tinymce.min.js") !!}
-{!! HTML::script("/js/fancybox/source/jquery.fancybox.pack.js") !!}
-{!! HTML::script("/js/admin-work-post-form.js") !!}
+{!! Html::script("/js/tinymce/tinymce.min.js") !!}
+{!! Html::script("/js/fancybox/source/jquery.fancybox.pack.js") !!}
+{!! Html::script("/js/admin-work-post-form.js") !!}
 @stop
 
 
@@ -45,7 +45,7 @@ Edit Blog Post |
 		"method" => "patch", 
 		"autocomplete" => "off"))
 	!!}
-		<h3 class="title">{!! HTML::linkRoute("admin-work-posts", "Work Posts") !!} <span class="fa fa-angle-right"></span> Edit</h3>
+		<h3 class="title">{!! Html::linkRoute("admin-work-posts", "Work Posts") !!} <span class="fa fa-angle-right"></span> Edit</h3>
 		<br />
 		
 		@include("admin.alert-box")
@@ -116,7 +116,7 @@ Edit Blog Post |
 									<?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=screenshots-URL".$i; ?>
 									<a class="sc-open" href="<?php echo $p_link; ?>">
 										@if($i < sizeof($oldScreenShots))
-						                    {!! HTML::image($oldScreenShots[$i]->image_url, 
+						                    {!! Html::image($oldScreenShots[$i]->image_url, 
 						                        "Screenshots-".($i+1), 
 						                        array(
 						                            "id" => "screenshots".$i ,
@@ -135,7 +135,7 @@ Edit Blog Post |
 						                        ) 
 						                    !!}
 					                    @else
-											{!! HTML::image("/images/admin/icon-placeholder.svg", 
+											{!! Html::image("/images/admin/icon-placeholder.svg", 
 						                        "Screenshots-".($i+1), 
 						                        array(
 						                            "id" => "screenshots".$i ,
@@ -178,7 +178,7 @@ Edit Blog Post |
                     
                     <?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=feature-image-url"; ?>
                     <a class="fm-open" href="<?php echo $p_link; ?>">
-	                    {!! HTML::image($post->feature_image_url, 
+	                    {!! Html::image($post->feature_image_url, 
 	                        "featured image", 
 	                        array(
 	                            "id" => "feature-image",

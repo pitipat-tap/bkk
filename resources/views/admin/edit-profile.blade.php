@@ -7,13 +7,13 @@ Edit profile |
 
 
 @section("specific_css")
-{!! HTML::style("/js/fancybox/source/jquery.fancybox.css", array("media" => "screen")) !!}
+{!! Html::style("/js/fancybox/source/jquery.fancybox.css", array("media" => "screen")) !!}
 @stop
 
 
 @section("specific_js_head")
-{!! HTML::script("/js/fancybox/source/jquery.fancybox.pack.js") !!}
-{!! HTML::script("/js/admin-user-form.js") !!}
+{!! Html::script("/js/fancybox/source/jquery.fancybox.pack.js") !!}
+{!! Html::script("/js/admin-user-form.js") !!}
 @stop
 
 
@@ -66,9 +66,9 @@ Edit profile |
             		<h4>Change user account data</h4>
             		<p>
             			@if ($user->profile_image == null || trim($user->profile_image == ""))
-                    		{!! HTML::image("/images/admin/default-profile-image.jpg", "", array("class" => "profile-image")) !!}
+                    		{!! Html::image("/images/admin/default-profile-image.jpg", "", array("class" => "profile-image")) !!}
                     	@else
-                    		{!! HTML::image($user->profile_image, "", array("class" => "profile-image")) !!}
+                    		{!! Html::image($user->profile_image, "", array("class" => "profile-image")) !!}
                     	@endif
             			<span>{!! $user->username !!}</span>
         			</p>
@@ -104,7 +104,7 @@ Edit profile |
                 	
                 	<?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=profile-image-url"; ?>
                 	<a class="fm-open" href="<?php echo $p_link; ?>">
-	                    {!! HTML::image($profile_image, 
+	                    {!! Html::image($profile_image, 
 	                        "Profile image", 
 	                        array(
 	                            "id" => "profile-image",

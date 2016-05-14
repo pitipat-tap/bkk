@@ -59,7 +59,7 @@ use Chromabits\Pagination\FoundationPresenter;
 			@if (Input::get("q") != null)
 				<p>Search : "{!! Input::get("q") !!}"</p>
 			@endif
-			<p>({!! HTML::linkRoute("admin-blog-tags", "View all data") !!})</p>
+			<p>({!! Html::linkRoute("admin-blog-tags", "View all data") !!})</p>
 			<br />
 		</div>
 	@endif
@@ -69,7 +69,7 @@ use Chromabits\Pagination\FoundationPresenter;
 			<h4>Filter</h4>
 			
 			@if (Input::get("status") != null || Input::get("q") != null)
-				<p>({!! HTML::linkRoute("admin-blog-tags", "View all data") !!})</p>
+				<p>({!! Html::linkRoute("admin-blog-tags", "View all data") !!})</p>
 				<br />
 			@endif
 		</div>
@@ -136,7 +136,7 @@ use Chromabits\Pagination\FoundationPresenter;
 	                        <br /><br />
 	                        <span>
 	                        	<b>Blog posts</b> : 
-	                        	{!! HTML::linkRoute("admin-blog-posts", $tag->posts()->count()." posts", array("tag" => $tag->name)) !!}
+	                        	{!! Html::linkRoute("admin-blog-posts", $tag->posts()->count()." posts", array("tag" => $tag->name)) !!}
                         	</span>
 	                        <br /><br />
 	                        @if (Auth::user()->role == "admin")
@@ -175,7 +175,7 @@ use Chromabits\Pagination\FoundationPresenter;
 							@endif
 	                	</td>
 	                    <td class="show-for-medium-up">
-	                    	{!! HTML::linkRoute("admin-blog-posts", $tag->posts()->count()." posts", array("tag" => $tag->name)) !!}
+	                    	{!! Html::linkRoute("admin-blog-posts", $tag->posts()->count()." posts", array("tag" => $tag->name)) !!}
                     	</td>
                     	@if (Auth::user()->role == "admin")
 		                    <td class="show-for-medium-up">

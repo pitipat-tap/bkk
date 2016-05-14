@@ -62,13 +62,13 @@ use Chromabits\Pagination\FoundationPresenter;
 			@if (Input::get("q") != null)
 				<p>Search : "{!! Input::get("q") !!}"</p>
 			@endif
-			<p>({!! HTML::linkRoute("admin-users", "View all data") !!})</p>
+			<p>({!! Html::linkRoute("admin-users", "View all data") !!})</p>
 			<br />
 		</div>
 	@endif
 	
 	<div class="show-for-large-up">
-		{!! HTML::linkRoute("admin-user-new", "Add user", [], array("class" => "button")) !!}
+		{!! Html::linkRoute("admin-user-new", "Add user", [], array("class" => "button")) !!}
 		<br /><br />
 	</div>
     
@@ -77,7 +77,7 @@ use Chromabits\Pagination\FoundationPresenter;
 			<h4>Filter</h4>
 			
 			@if (Input::get("role") != null || Input::get("q") != null)
-				<p>({!! HTML::linkRoute("admin-users", "View all data") !!})</p>
+				<p>({!! Html::linkRoute("admin-users", "View all data") !!})</p>
 				<br />
 			@endif
 		</div>
@@ -123,9 +123,9 @@ use Chromabits\Pagination\FoundationPresenter;
 	                    	<br />
 	                        <span>
 	                        	@if ($user->profile_image == null || trim($user->profile_image == ""))
-		                    		{!! HTML::image("/images/admin/default-profile-image.jpg", "", array("class" => "profile-image")) !!}
+		                    		{!! Html::image("/images/admin/default-profile-image.jpg", "", array("class" => "profile-image")) !!}
 		                    	@else
-		                    		{!! HTML::image($user->profile_image, "", array("class" => "profile-image")) !!}
+		                    		{!! Html::image($user->profile_image, "", array("class" => "profile-image")) !!}
 		                    	@endif
 	                        	{!! $user->username !!}
                         	</span>
@@ -136,15 +136,15 @@ use Chromabits\Pagination\FoundationPresenter;
 	                        <br /><br />
 	                        <span>
 	                        	<b>Blog posts</b> : 
-	                        	{!! HTML::linkRoute("admin-blog-posts", $user->blogPosts()->count()." blog posts", 
+	                        	{!! Html::linkRoute("admin-blog-posts", $user->blogPosts()->count()." blog posts", 
 	                        	array("user_id" => $user->id)) !!}
 	                        	
-	                        	{!! HTML::linkRoute("admin-image-posts", $user->imagePosts()->count()." image posts", 
+	                        	{!! Html::linkRoute("admin-image-posts", $user->imagePosts()->count()." image posts", 
 	                        	array("user_id" => $user->id)) !!}
                         	</span>
 	                        <br /><br />
 	                        <span>
-	                        	{!! HTML::linkRoute("admin-user-edit", "Edit", array($user->id), array("class" => "small-link mg-r")) !!}
+	                        	{!! Html::linkRoute("admin-user-edit", "Edit", array($user->id), array("class" => "small-link mg-r")) !!}
 		                        <a data-reveal-id="delete-small-modal-id-{!! $user->id !!}">Delete</a>
 		                        <div id="delete-small-modal-id-{!! $user->id !!}" class="reveal-modal tiny" data-reveal>
 									<h4>Confirm delete</h4>
@@ -168,9 +168,9 @@ use Chromabits\Pagination\FoundationPresenter;
 	                    </td>
 	                    <td class="show-for-medium-up">
 	                    	@if ($user->profile_image == null || trim($user->profile_image == ""))
-	                    		{!! HTML::image("/images/admin/default-profile-image.jpg", "", array("class" => "profile-image")) !!}
+	                    		{!! Html::image("/images/admin/default-profile-image.jpg", "", array("class" => "profile-image")) !!}
 	                    	@else
-	                    		{!! HTML::image($user->profile_image, "", array("class" => "profile-image")) !!}
+	                    		{!! Html::image($user->profile_image, "", array("class" => "profile-image")) !!}
 	                    	@endif
 	                    	{!! $user->username !!}
                     	</td>
@@ -178,19 +178,19 @@ use Chromabits\Pagination\FoundationPresenter;
 	                    <td class="show-for-large-up">{!! $user->email !!}</td>
 	                    <td class="show-for-medium-up">{!! $user->role !!}</td>
 	                    <td class="show-for-medium-up">
-	                    	{!! HTML::linkRoute("admin-blog-posts", $user->blogPosts()->count()." blog posts", 
+	                    	{!! Html::linkRoute("admin-blog-posts", $user->blogPosts()->count()." blog posts", 
 	                    		array("user_id" => $user->id)
 	                    	) !!}
 	                    	<br>
-	                    	{!! HTML::linkRoute("admin-image-posts", $user->imagePosts()->count()." image posts", 
+	                    	{!! Html::linkRoute("admin-image-posts", $user->imagePosts()->count()." image posts", 
 	                    		array("user_id" => $user->id)
 	                    	) !!}
 	                    </td>
 	                    <td class="show-for-medium-up">
 	                    	@if (Auth::user()->id == $user->id)
-	                    		{!! HTML::linkRoute("admin-profile-edit", "Edit") !!}
+	                    		{!! Html::linkRoute("admin-profile-edit", "Edit") !!}
 	                    	@else
-	                    		{!! HTML::linkRoute("admin-user-edit", "Edit", array($user->id)) !!}
+	                    		{!! Html::linkRoute("admin-user-edit", "Edit", array($user->id)) !!}
 	                    		<br /><br />
 		                    	<a data-reveal-id="delete-modal-id-{!! $user->id !!}">Delete</a>
 		                    	<br /><br />

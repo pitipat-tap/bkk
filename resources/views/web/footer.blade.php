@@ -5,14 +5,14 @@
             </div>
             <div class="medium-4 column">
                 <a href="http://www.agoda.com/" target="_blank">
-                    {!! HTML::image("images/logo/agoda-logo.png","",array("class"=>"main-banner")) !!}
+                    {!! Html::image("images/logo/agoda-logo.png","",array("class"=>"main-banner")) !!}
                 </a>
             </div>
             <div class="medium-2 column empty">
             </div>
             <div class="medium-4 column main-banner-container">
                 <a href="https://www.tripadvisor.com/" target="_blank">
-                    {!! HTML::image("images/logo/trip-logo.png","",array("class"=>"main-banner")) !!}
+                    {!! Html::image("images/logo/trip-logo.png","",array("class"=>"main-banner")) !!}
                 </a>
             </div>
             <div class="medium-1 column empty">

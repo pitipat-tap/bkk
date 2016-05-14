@@ -19,7 +19,7 @@
 <h3 class="align-center mg-t-1"> กองการท่องเที่ยวกรุงเทพมหานคร </h3>
 <div class="align-center">
 	<a>
-		{!! HTML::image("images/logo/bkk-logo.png","bkk-logo",array("class"=>"")) !!}
+		{!! Html::image("images/logo/bkk-logo.png","bkk-logo",array("class"=>"")) !!}
 	</a>
 </div>
 

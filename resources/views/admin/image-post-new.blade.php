@@ -7,14 +7,14 @@ Add New Image Post |
 
 
 @section("specific_css")
-{!! HTML::style("/js/fancybox/source/jquery.fancybox.css", array("media" => "screen")) !!}
+{!! Html::style("/js/fancybox/source/jquery.fancybox.css", array("media" => "screen")) !!}
 @stop
 
 
 @section("specific_js_head")
-{!! HTML::script("/js/tinymce/tinymce.min.js") !!}
-{!! HTML::script("/js/fancybox/source/jquery.fancybox.pack.js") !!}
-{!! HTML::script("/js/admin-image-post-form.js") !!}
+{!! Html::script("/js/tinymce/tinymce.min.js") !!}
+{!! Html::script("/js/fancybox/source/jquery.fancybox.pack.js") !!}
+{!! Html::script("/js/admin-image-post-form.js") !!}
 @stop
 
 
@@ -23,7 +23,9 @@ Add New Image Post |
 @include("admin-layouts.menu-admin", array("link" => "imageposts", "has_sublink" => 1, "sublink" => "imageposts"))
 
 <?php
-	session_start();
+    if(!isset($_SESSION)) 
+        session_start(); 
+
 	$_SESSION["USER_ROLE"] = Auth::user()->role;
 	
 	$lpath = getLinkPath();
@@ -40,7 +42,7 @@ Add New Image Post |
 
 <div id="admin-imageposts" class="container">
 	{!! Form::open(array("route" => "admin-image-post-create", "method" => "post", "class" => "imagepost-form")) !!}
-		<h3 class="title">{!! HTML::linkRoute("admin-image-posts", "Image Posts") !!} <span class="fa fa-angle-right"></span> Add</h3>
+		<h3 class="title">{!! Html::linkRoute("admin-image-posts", "Image Posts") !!} <span class="fa fa-angle-right"></span> Add</h3>
 		<br />
 		
 		@include("admin.alert-box")
@@ -61,7 +63,7 @@ Add New Image Post |
         		<div class="ui-block mg-b medium-half-mg-r">
             		<p class="f-label">Image</p>
 
-                    {!! HTML::image("images/admin/icon-placeholder.svg", 
+                    {!! Html::image("images/admin/icon-placeholder.svg", 
                         "Image", 
                         array(
                             "id" => "post-image",

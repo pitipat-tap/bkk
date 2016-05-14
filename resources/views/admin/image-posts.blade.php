@@ -7,12 +7,13 @@ Image posts |
 
 
 @section("specific_js_head")
-{!! HTML::script("/js/admin-image-posts.js") !!}
+{!! Html::script("/js/admin-image-posts.js") !!}
 @stop
 
 
 <?php
 use Chromabits\Pagination\FoundationPresenter;
+use Illuminate\Support\Facades\Input;
 ?>
 
 
@@ -40,7 +41,7 @@ use Chromabits\Pagination\FoundationPresenter;
 	@include("admin.alert-box")
 	
 	<div class="show-for-large-up">
-		{!! HTML::linkRoute("admin-image-post-new", "Add Post", [], array("class" => "button")) !!}
+		{!! Html::linkRoute("admin-image-post-new", "Add Post", [], array("class" => "button")) !!}
 		<br /><br />
 	</div>
 	
@@ -54,7 +55,7 @@ use Chromabits\Pagination\FoundationPresenter;
 				<p>Tag : {!! Input::get("tag") !!}</p>
 			@endif
 			
-			<p>({!! HTML::linkRoute("admin-image-posts", "View all data") !!})</p>
+			<p>({!! Html::linkRoute("admin-image-posts", "View all data") !!})</p>
 			<br />
 		</div>
 	@endif
@@ -63,7 +64,7 @@ use Chromabits\Pagination\FoundationPresenter;
 		@foreach ($posts as $post)
 			<li>
 				<div class="imagepost-item ui-block ui-card no-pd">
-					<p class="post-image">{!! HTML::image($post->image_url) !!}</p>
+					<p class="post-image">{!! Html::image($post->image_url) !!}</p>
 					<div class="post-details">
 						<p>
 							@if (!$post->is_featured)
@@ -85,7 +86,7 @@ use Chromabits\Pagination\FoundationPresenter;
 						
 						<p class="show-for-large-up">
 							By 
-							{!! HTML::linkRoute("admin-image-posts", $post->author->username, 
+							{!! Html::linkRoute("admin-image-posts", $post->author->username, 
 							array("author" => $post->author->username)) !!}
 						</p>
 						
@@ -93,7 +94,7 @@ use Chromabits\Pagination\FoundationPresenter;
 							<p class="show-for-large-up">
 								Tags : 
 								@foreach ($post->tags as $tag)
-									{!! HTML::linkRoute("admin-image-posts", $tag->name, array("tag" => $tag->name)) !!} 
+									{!! Html::linkRoute("admin-image-posts", $tag->name, array("tag" => $tag->name)) !!} 
 								@endforeach
 							</p>
 						@endif
@@ -108,7 +109,7 @@ use Chromabits\Pagination\FoundationPresenter;
 						<div class="row">
 							<div class="small-6 columns">
 								@if (Auth::user()->role == "admin" || Auth::user()->id == $post->author->id)
-									{!! HTML::linkRoute("admin-image-post-edit", "Edit", 
+									{!! Html::linkRoute("admin-image-post-edit", "Edit", 
 										array($post->id), 
 										array("class" => "card-button"))
 									!!}

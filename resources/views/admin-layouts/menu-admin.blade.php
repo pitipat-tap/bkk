@@ -1,3 +1,82 @@
+<?php
+
+function defaultTitle()
+{
+    return " Kiwi Launcher | Creative Launcher ";
+}
+
+function defaultDescription()
+{
+    return "Kiwilauncher .......";
+}
+
+function isMenuItemActive ($viewLink, $menuLink)
+{
+    $output = "";
+    if ($viewLink == $menuLink) {
+        $output = "active";
+    }
+    return $output;
+}
+
+function defaultThumbnailUrl()
+{
+    return URL::asset("/image/default-web-thumbnail-image.jpg");
+}
+
+function isAdminNavLinkActive($link, $menulink) {
+    $isActive = "";
+    if ($link == $menulink) {
+        $isActive = "active";
+    }
+    
+    return $isActive;
+}
+
+function isAdminIconSubLinkActive($link, $menulink) {
+    $isActive = "fa-chevron-down";
+    if ($link == $menulink) {
+        $isActive = "fa-chevron-up toggled";
+    }
+    
+    return $isActive;
+}
+
+function isAdminGroupSubLinkToggled($has_sublink, $link, $menulink)
+{
+    $isToggled = "";
+    if ($has_sublink == 1) {
+        if ($link == $menulink) {
+            $isToggled = "toggled";
+        }
+    } 
+    
+    return $isToggled;
+}
+
+function isAdminNavSubLinkActive($has_sublink, $sublink, $menulink)
+{
+    $isActive = "";
+    if ($has_sublink == 1) {
+        if ($sublink == $menulink) {
+            $isActive = "active";
+        }
+    } 
+    
+    return $isActive;
+}
+
+
+function getLinkPath() {
+    $lpath = "/bkk/public";
+    // Real server
+    //$lpath = "";
+    
+    return $lpath;
+}
+
+?>
+
 <nav id="left-side-menu" class="side-menu full-height">
 	<div class="brand">
 		
@@ -10,7 +89,7 @@
     	@else
     		<?php $profile_image = Auth::user()->profile_image; ?>
     	@endif
-    	{!! HTML::image($profile_image, "Profile image") !!}
+    	{!! Html::image($profile_image, "Profile image") !!}
         <h6>{!! Auth::user()->username !!}</h6>
     </div>
     

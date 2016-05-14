@@ -7,14 +7,14 @@ Add New Blog Post |
 
 
 @section("specific_css")
-{!! HTML::style("/js/fancybox/source/jquery.fancybox.css", array("media" => "screen")) !!}
+{!! Html::style("/js/fancybox/source/jquery.fancybox.css", array("media" => "screen")) !!}
 @stop
 
 
 @section("specific_js_head")
-{!! HTML::script("/js/tinymce/tinymce.min.js") !!}
-{!! HTML::script("/js/fancybox/source/jquery.fancybox.pack.js") !!}
-{!! HTML::script("/js/admin-blog-post-form.js") !!}
+{!! Html::script("/js/tinymce/tinymce.min.js") !!}
+{!! Html::script("/js/fancybox/source/jquery.fancybox.pack.js") !!}
+{!! Html::script("/js/admin-blog-post-form.js") !!}
 <script>
 	window.onload = function() {
 	  $(':text[name="title"]').focus();
@@ -45,7 +45,7 @@ Add New Blog Post |
 
 <div id="admin-blogposts" class="container">
 	{!! Form::open(array("route" => "admin-blog-post-create", "method" => "post", "class" => "post-form")) !!}
-		<h3 class="title">{!! HTML::linkRoute("admin-blog-posts", "Blog Posts") !!} <span class="fa fa-angle-right"></span> Add</h3>
+		<h3 class="title">{!! Html::linkRoute("admin-blog-posts", "Blog Posts") !!} <span class="fa fa-angle-right"></span> Add</h3>
 		<br />
 		
 		@include("admin.alert-box")
@@ -107,7 +107,7 @@ Add New Blog Post |
 
 					<?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=feature-image-url"; ?>
 					<a class="fm-open" href="<?php echo $p_link; ?>">
-	                    {!! HTML::image("/images/admin/icon-placeholder.svg", 
+	                    {!! Html::image("/images/admin/icon-placeholder.svg", 
 	                        "Featured Image", 
 	                        array(
 	                            "id" => "feature-image",

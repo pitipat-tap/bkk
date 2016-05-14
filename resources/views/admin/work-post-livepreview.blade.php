@@ -5,7 +5,7 @@
 {!! $post["title"] !!} (Live Preview) | 
 @stop
 
-{!! HTML::style("/css/web-style.css") !!}
+{!! Html::style("/css/web-style.css") !!}
 
 @section("body")
 
@@ -21,7 +21,7 @@
 
 <div id="admin-blogposts" class="container">
     <div class="post-preview">
-        <h3 class="title">{!! HTML::linkRoute("admin-work-posts", "Blog Posts") !!} <span class="fa fa-angle-right"></span> Live Preview</h3>
+        <h3 class="title">{!! Html::linkRoute("admin-work-posts", "Blog Posts") !!} <span class="fa fa-angle-right"></span> Live Preview</h3>
         <br />
         
         <div class="post-block ui-block">

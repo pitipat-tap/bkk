@@ -1,5 +1,5 @@
-<!DOCTYPE HTML>
-<HTML>
+<!DOCTYPE Html>
+<Html>
     <head>
         <meta charset="utf-8"></meta>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +8,27 @@
         
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Varela+Round" />
 
-        {!! HTML::style("css/main.css") !!}
-        {!! HTML::style("css/app.css") !!}
-        {!! HTML::style("static_css/animate.css") !!}
-        {!! HTML::style("static_css/foundation-icons.css") !!}
+        {!! Html::style("css/main.css") !!}
+        {!! Html::style("css/app.css") !!}
+        {!! Html::style("static_css/animate.css") !!}
+        {!! Html::style("static_css/foundation-icons.css") !!}
         
         @yield("specific_css")
         
-        {!! HTML::script("js/jquery/dist/jquery.min.js") !!}
-        {!! HTML::script("js/modernizr/modernizr.js") !!}
-        {!! HTML::script("js/fastclick/lib/fastclick.js") !!}
-        {!! HTML::script("js/foundation/js/foundation.min.js") !!}
-        {!! HTML::script("js/angular.min.js") !!}
-        {!! HTML::script("js/controller/headerController.js") !!}
-        {!! HTML::script("js/jquery.slides.min.js") !!}
-        {!! HTML::script("js/jquery.lettering.js") !!}
-        {!! HTML::script("js/jquery.fittext.js") !!}
-        {!! HTML::script("js/jquery.textillate.js") !!}
-        {!! HTML::script("js/noframework.waypoints.js") !!}
-        {!! HTML::script("js/isMobile.min.js") !!}
+        {!! Html::script("js/jquery/dist/jquery.min.js") !!}
+        {!! Html::script("js/modernizr/modernizr.js") !!}
+        {!! Html::script("js/fastclick/lib/fastclick.js") !!}
+        {!! Html::script("js/foundation/js/foundation.min.js") !!}
+        {!! Html::script("js/angular.min.js") !!}
+        {!! Html::script("js/controller/headerController.js") !!}
+        {!! Html::script("js/jquery.slides.min.js") !!}
+        {!! Html::script("js/jquery.lettering.js") !!}
+        {!! Html::script("js/jquery.fittext.js") !!}
+        {!! Html::script("js/jquery.textillate.js") !!}
+        {!! Html::script("js/noframework.waypoints.js") !!}
+        {!! Html::script("js/isMobile.min.js") !!}
 	
-        {!! HTML::script("js/main.js") !!}
+        {!! Html::script("js/main.js") !!}
 
 
         @yield("specific_js_head")
@@ -41,5 +41,5 @@
         </script>
         @yield("specific_js_body")
     </body>
-</HTML>
+</Html>
 
