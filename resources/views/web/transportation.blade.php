@@ -14,10 +14,13 @@
 @section("body")
 
 @include("web.top-menu")
-<div class="banner-container">
+<div class="banner-container show-for-medium columns">
 	{!! HTML::image("http://placehold.it/1500x500","bkk-logo",array("class"=>"banner-picture")) !!}
 </div>
-<div class="banner-page-title mg-b-1">Transportaion</div>
+<div class="banner-container show-for-small-only columns mg-b-1">
+	{!! HTML::image("http://placehold.it/300x400","bkk-logo",array("class"=>"banner-picture")) !!}
+</div>
+<div class="banner-page-title show-for-medium columns mg-b-1">Transportaion</div>
 <div class="body-section">
 
 	<!-- Desktop -->
@@ -45,7 +48,7 @@
 				</div>
 			</div>
 		</div>
-		<hr class="mg-b-3 mg-t-2">
+		<hr class="mg-b-3 mg-t-1">
 		<div class="transportation-container">
 			{!! HTML::image("http://placehold.it/1248x416","bkk-logo",array("class"=>"mg-b-1")) !!}
 
@@ -69,7 +72,7 @@
 				</div>
 			</div>
 		</div>
-		<hr class="mg-b-3 mg-t-2">
+		<hr class="mg-b-3 mg-t-1">
 		<div class="transportation-container">
 			{!! HTML::image("http://placehold.it/1248x416","bkk-logo",array("class"=>"mg-b-1")) !!}
 
@@ -97,7 +100,7 @@
 	</div>
 
 	<!-- Mobile -->
-	<div class="show-for-small-only">
+	<div class="show-for-small-only columns">
 		<div class="content-box">
 			<div class="transportation-container">
 				{!! HTML::image("http://placehold.it/1248x416","bkk-logo",array("class"=>"transportation-picture-mobile")) !!}

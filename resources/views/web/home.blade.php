@@ -52,7 +52,7 @@
 
 <section id="home-body">
     <div class="body-section">
-        <div class="banner-page-title">Destination</div>
+        <div class="banner-page-title show-for-medium columns">Destination</div>
 
         <section class="mg-b-1">
             <div class="row">
