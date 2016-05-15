@@ -14,14 +14,16 @@
 @section("body")
 
 @include("web.top-menu")
-<div class="banner-container show-for-medium columns">
-	{!! HTML::image("http://placehold.it/1500x500","bkk-logo",array("class"=>"banner-picture")) !!}
-</div>
-<div class="banner-container show-for-small-only columns mg-b-1">
-	{!! HTML::image("http://placehold.it/300x400","bkk-logo",array("class"=>"banner-picture")) !!}
-</div>
-<div class="banner-page-title show-for-medium columns mg-b-1">Transportaion</div>
+<section>
+	<div class="banner-container show-for-medium columns">
+		{!! HTML::image("http://placehold.it/1500x500","bkk-logo",array("class"=>"banner-picture")) !!}
+	</div>
+	<div class="banner-container show-for-small-only columns mg-b-1">
+		{!! HTML::image("http://placehold.it/300x400","bkk-logo",array("class"=>"banner-picture")) !!}
+	</div>
+</section>
 <div class="body-section">
+	<div class="banner-page-title show-for-medium medium-centered columns mg-b-1">Transportaion</div>
 
 	<!-- Desktop -->
 	<div class="show-for-medium columns">
