@@ -150,11 +150,32 @@
                 <div class="events-container">
                     <div class="row">
                         <div class=" medium-6 columns">
-                            <div>
-                                {!! HTML::image("http://placehold.it/500x450","",array("class"=>"")) !!}
+                            <div class="event-item">
+                                {!! HTML::image("http://placehold.it/550x450","",array("class"=>"")) !!}
                             </div>
                         </div>
                         <div class=" medium-6 columns">
+                            <div class="event-content">
+                                <h3> Songkarn </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nam dapibus lectus eget mi aliquam, ac bibendum orci dictum.
+                                    Ut malesuada molestie enim, et mattis libero vestibulum id.
+                                    Aenean eu pulvinar justo, quis mollis ligula. Nullam commodo odio a luctus blandit.
+                                </p>
+                                <p>
+                                      <div class="medium-4 columns">
+                                          <i class="fa fa-map-marker" aria-hidden="true"></i> Bangkok 
+                                      </div>
+                                      <div class="medium-4 columns end">
+                                          <i class="fa fa-calendar" aria-hidden="true"></i> 13th 15th April 
+                                      </div>
+                                </p>
+                                <hr>
+                                <a>
+                                    <div class="see-more"> see more ... </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
