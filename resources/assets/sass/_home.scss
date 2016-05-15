@@ -1,8 +1,33 @@
+.orbit{
+    figcaption{
+        @include breakpoint(small) {
+            text-align: center;
+        }
+    }
+}
 .orbit-bullets-container{
 	position: absolute;
 	top: 90%;
-	right: 1%;
+
+    @include breakpoint(small) {
+        right: 5%;
+
+        button{
+            width: 0.7em;
+            height: 0.7em;
+        }
+    }
+    @include breakpoint(medium) {
+        right: 1%;
+
+        button{
+            width: 1em;
+            height: 1em;
+        }
+    }
+	
 }
+
 #home-body{
     .row{
         margin: 0;
