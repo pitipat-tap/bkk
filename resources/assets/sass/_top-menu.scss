@@ -56,6 +56,15 @@
         color: white;
         font-size: 18px;
     }
+    ul{
+        text-align: center;
+        background-color: $primary-color;
+        float: left;
+
+        li{
+            float: left;
+        }
+    }
 }
 .footer-container{
     max-width:1248px;

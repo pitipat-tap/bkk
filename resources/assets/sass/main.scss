@@ -9,7 +9,7 @@
 @include top-bar-container;
 
 @import "resources/assets/sass/top-menu";
-@import "resources/assets/sass/banner-page-title";
+@import "resources/assets/sass/banner-page";
 @import "resources/assets/sass/body-section";
 
 $main-color:#7FCAA8;
@@ -28,9 +28,57 @@ a {
 .align-right{
 	text-align: right !important;
 }
+.mg-0{
+	margin: 0 !important;
+}
+.mg-05{
+	margin: 0.5em 0.5em !important;
+}
+.mg-1{
+	margin: 1em 1em !important;
+}
+.mg-t-05{
+	margin-top: 0.5em !important;
+}
 .mg-t-1{
-	margin-top:1em !important;
+	margin-top: 1em !important;
+}
+.mg-t-2{
+	margin-top: 2em !important;
+}
+.mg-b-0{
+	margin-bottom: 0 !important;
 }
 .mg-b-1{
-	margin-bottom:1em !important;
+	margin-bottom: 1em !important;
+}
+.mg-b-2{
+	margin-bottom: 2em !important;
+}
+.mg-b-3{
+	margin-bottom: 3em !important;
+}
+.mg-b-5{
+	margin-bottom: 5em !important;
+}
+.mg-r-0{
+	margin-right: 0 !important;
+}
+.pd-1{
+	padding: 1em 1em;
+}
+.pd-t-05{
+	padding-top: 0.5em !important;
+}
+.pd-t-1{
+	padding-top: 1em !important;
+}
+.pd-b-1{
+	padding-bottom: 1em !important;
+}
+.pd-r-0{
+	padding-right: 0 !important;
+}
+.pd-l-1{
+	padding-left: 1em !important;
 }
