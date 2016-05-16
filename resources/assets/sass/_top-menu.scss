@@ -50,11 +50,18 @@
 .copyright-footer{
     background-color: $primary-color;
     color: white;
-    font-size: 15px;
     text-align: left;
+
     a{
         color: white;
         font-size: 18px;
+
+        @include breakpoint(small) {
+            font-size: 16px;
+        }
+        @include breakpoint(medium) {
+            font-size: 17px;
+        }
     }
     ul{
         text-align: center;
@@ -70,7 +77,12 @@
     max-width:1248px;
     text-align:left;
     span {
-        font-size: 15px;
+        @include breakpoint(small) {
+            font-size: 13px;
+        }
+        @include breakpoint(medium) {
+            font-size: 15px;
+        }
     }
     .third-footer{
         line-height:15px;
