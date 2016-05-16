@@ -3,6 +3,9 @@
         @include breakpoint(small) {
             text-align: center;
         }
+        @include breakpoint(medium) {
+            text-align: left;
+        }
     }
 }
 .orbit-bullets-container{
@@ -18,7 +21,7 @@
         }
     }
     @include breakpoint(medium) {
-        right: 1%;
+        right: 2%;
 
         button{
             width: 1em;
