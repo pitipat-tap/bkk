@@ -56,5 +56,6 @@
         </script>
         @yield("specific_js_body")
     </body>
+   
 </HTML>
 

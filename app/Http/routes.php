@@ -30,3 +30,7 @@ Route::get('/aboutus', function () {
 Route::get('/faq', function () {
     return view('web/faq');
 });
+
+Route::get('/accommodation', function () {
+    return view('web/accommodation');
+});
