@@ -58,7 +58,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	
 	public function blogPosts()
 	{
-	    return $this->hasMany('App\Models\BlogPost', 'author_id');
+	    return $this->hasMany('App\Models\EventPost', 'author_id');
 	}
 
 	public function imagePosts()
@@ -66,9 +66,9 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	    return $this->hasMany('App\Models\ImagePost', 'author_id');
 	}
 
-	public function workPosts()
+	public function banerOrbit()
 	{
-	    return $this->hasMany('App\Models\work\Post', 'author_id');
+	    return $this->hasMany('App\Models\BannerOrbit', 'author_id');
 	}
 
 }

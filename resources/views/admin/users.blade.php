@@ -8,6 +8,7 @@ Users |
 
 <?php
 use Chromabits\Pagination\FoundationPresenter;
+use Illuminate\Support\Facades\Input;
 ?>
 
 

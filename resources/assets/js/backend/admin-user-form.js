@@ -1,4 +1,4 @@
-$(document).ready(function() {
+Event$(document).ready(function() {
 	$('.fm-open').fancybox({
 		width: 1024,
 		height: 600,

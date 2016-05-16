@@ -17,18 +17,17 @@ Edit Blog Post |
 {!! Html::script("/js/admin-blog-post-form.js") !!}
 @stop
 
+@section("body")
 
+@include("admin-layouts.menu-admin", array("link" => "blogposts", "has_sublink" => 1, "sublink" => "blogposts"))
 <?php
-	session_start();
+	if(!isset($_SESSION))
+		session_start();
 	$_SESSION["USER_ROLE"] = Auth::user()->role;
 	
 	$lpath = getLinkPath();
 ?>
 
-
-@section("body")
-
-@include("admin-layouts.menu-admin", array("link" => "blogposts", "has_sublink" => 1, "sublink" => "blogposts"))
 
 <div class="row full-width container ui-block mg-b small-medium-header hide-for-large-up">
     <div class="small-6 columns">
