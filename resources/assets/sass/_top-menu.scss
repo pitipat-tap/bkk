@@ -43,6 +43,18 @@
         padding: 0;
     }
 }
+.mobile-menu-button{
+    margin: 1em 1em auto auto;
+    position: fixed;
+    float: right;
+    z-index: 99;
+
+    a{
+        float: right;
+    }
+}
+
+
 .footer{
     border-top:solid 1px;
     border-color: $tertiary-color;

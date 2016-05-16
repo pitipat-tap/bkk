@@ -1,4 +1,6 @@
 .orbit{
+    padding: 0;
+    
     figcaption{
         @include breakpoint(small) {
             text-align: center;

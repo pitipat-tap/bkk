@@ -1,4 +1,5 @@
-<div class="top-bar">
+<!-- desitop -->
+<div class="top-bar show-for-medium columns">
   <div id="responsive-menu">
     <div class="top-menu-container" align="left">
       <ul class="dropdown menu" data-dropdown-menu>
@@ -16,4 +17,11 @@
       </ul>
     </div>
   </div>
+</div>
+
+<!-- mobile -->
+<div class="mobile-menu-button show-for-small-only columns">
+    <a>
+        {!! Html::image("http://placehold.it/80x80","bkk-logo",array("class"=>"")) !!}
+    </a>
 </div>
