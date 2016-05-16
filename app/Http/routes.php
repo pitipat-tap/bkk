@@ -47,18 +47,18 @@ Route::group(array('middleware' => 'auth.staff', 'prefix' => 'admin'), function(
 	
 	
 	// Blog Post
-	Route::get("blogposts", array("as" => "admin-blog-posts", "uses" => "AdminBlogController@blogPosts"));
-	Route::get("blogposts/new", array("as" => "admin-blog-post-new", "uses" => "AdminBlogController@newBlogPost"));
-	Route::post("blogposts/new", array("as" => "admin-blog-post-create", "uses" => "AdminBlogController@createBlogPost"));
-	Route::get("blogposts/{id}", array("as" => "admin-blog-post-preview", "uses" => "AdminBlogController@previewBlogPost"));
-    Route::post("blogposts/livepreview", array("as" => "admin-blog-post-livepreview", "uses" => "AdminBlogController@livePreviewBlogPost"));
-	Route::get("blogposts/{id}/edit", array("as" => "admin-blog-post-edit", "uses" => "AdminBlogController@editBlogPost"));
-	Route::patch("blogposts/{id}", array("as" => "admin-blog-post-update", "uses" => "AdminBlogController@updateBlogPost"));
-	Route::delete("blogposts/{id}", array("as" => "admin-blog-post-delete", "uses" => "AdminBlogController@deleteBlogPost"));
+	Route::get("blogposts", array("as" => "admin-blog-posts", "uses" => "AdminEventController@blogPosts"));
+	Route::get("blogposts/new", array("as" => "admin-blog-post-new", "uses" => "AdminEventController@newEventPost"));
+	Route::post("blogposts/new", array("as" => "admin-blog-post-create", "uses" => "AdminEventController@createEventPost"));
+	Route::get("blogposts/{id}", array("as" => "admin-blog-post-preview", "uses" => "AdminEventController@previewEventPost"));
+    Route::post("blogposts/livepreview", array("as" => "admin-blog-post-livepreview", "uses" => "AdminEventController@livePreviewEventPost"));
+	Route::get("blogposts/{id}/edit", array("as" => "admin-blog-post-edit", "uses" => "AdminEventController@editEventPost"));
+	Route::patch("blogposts/{id}", array("as" => "admin-blog-post-update", "uses" => "AdminEventController@updateEventPost"));
+	Route::delete("blogposts/{id}", array("as" => "admin-blog-post-delete", "uses" => "AdminEventController@deleteEventPost"));
 	
 	
 	// Blog Tag
-	Route::get("blogtags", array("as" => "admin-blog-tags", "uses" => "AdminBlogController@blogTags"));
+	Route::get("blogtags", array("as" => "admin-blog-tags", "uses" => "AdminEventController@blogTags"));
 	
 	
 	// Image Post
@@ -89,13 +89,13 @@ Route::group(array('middleware' => 'auth.staff', 'prefix' => 'admin'), function(
 Route::group(array('middleware' => 'auth.admin', 'prefix' => 'admin'), function(){
 	// Blog post
 	Route::get("blogposts/{id}/togglefeatured", array("as" => "admin-blog-post-togglefeatured", 
-		"uses" => "AdminBlogController@toggleFeaturedBlogPost"));
+		"uses" => "AdminEventController@toggleFeaturedEventPost"));
 		
 	
 	// Blog tag
-	Route::delete("blogtags/{id}", array("as" => "admin-blog-tag-delete", "uses" => "AdminBlogController@deleteBlogTag"));
+	Route::delete("blogtags/{id}", array("as" => "admin-blog-tag-delete", "uses" => "AdminEventController@deleteEventTag"));
 	Route::get("blogtags/{id}/togglefeatured", array("as" => "admin-blog-tag-togglefeatured", 
-		"uses" => "AdminBlogController@toggleFeaturedBlogTag"));
+		"uses" => "AdminEventController@toggleFeaturedEventTag"));
 		
 		
 	// Image post
