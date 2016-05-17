@@ -22,6 +22,16 @@
 <!-- mobile -->
 <div class="mobile-menu-button show-for-small-only columns">
     <a>
-        {!! Html::image("http://placehold.it/80x80","bkk-logo",array("class"=>"")) !!}
+        <div id="menu-toggle">
+            <div id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="cross">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </a>
 </div>
