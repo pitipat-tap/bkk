@@ -112,17 +112,55 @@
         li{
             float: left;
             width: 25%;
+            @include breakpoint(small) {
+                padding: 10px;
+
+                .thumbnail{
+                    margin-bottom: 0;
+                }
+            }
+            @include breakpoint(medium) {
+                padding: 0;
+            }
         }
     }
 }
 
 /* Mobile */
+#menu-mobile{
+    margin-top: 1em;
+
+    a{
+        line-height: 1.5em;
+        color: white;
+    }
+}
+#menu-logo-mobile{
+    padding: 0.5em 0 0 1em;
+
+    .bkk-logo{
+        outline: 0;
+        height: 80px;
+    }
+    a:focus, a:hover{
+        outline: 0;
+    }
+    a:active{
+        border-left: solid 3px $primary-color;
+        background-color: $secondary-color;
+    }
+}
+
 .off-canvas-wrapper{
     background-color: $primary-color;
 
     .off-canvas{
         padding-top: 10px;
-        background-color: $secondary-color;
+        background-color: $primary-color;
+
+        li{
+            padding: 0;
+        }
     }
 }
 
@@ -159,6 +197,7 @@
       position:relative;
       cursor:pointer;
       background:rgba(255,255,255,.4);
+      border: solid 1px $tertiary-color;
       border-radius:5px;
       &:hover {
         background:rgba(255,255,255,.8);

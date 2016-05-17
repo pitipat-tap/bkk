@@ -1,1 +1,1 @@
-$(document).ready(function(){$("#menu-toggle").click(function(){$(this).toggleClass("open")})});
+$(document).ready(function(){$("#menu-toggle").click(function(){$(this).toggleClass("open")}),$("#offCanvasInner").click(function(){$("#menu-toggle").hasClass("open")&&$("#menu-toggle").removeClass("open")})});

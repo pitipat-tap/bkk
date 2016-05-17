@@ -38,24 +38,21 @@
 
 <section>
     <div class="off-canvas-wrapper">
-        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div id="offCanvasInner" class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
             <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-position="right">
 
-                <div class="vertical menu">
+                <div id="menu-logo-mobile" class="vertical menu">
                     <a class="logo" href="home">
                         {!! Html::image("images/logo/bkk-logo.png","bkk-logo",array("class"=>"bkk-logo")) !!}
                     </a>
                 </div>
 
             <!-- Menu -->
-                <ul class="vertical menu">
+                <ul id="menu-mobile" class="vertical menu mg-t-1">
                     <li><a href="#">Attraction</a></li>
                     <li><a href="#">Accommodation</a></li>
                     <li><a href="transportation">Transportation</a></li>
                     <li><a href="#">Gallery</a></li>
-                </ul>
-
-                <ul class="vertical menu">
                     <li><a>Language</a></li>
                 </ul>
 
