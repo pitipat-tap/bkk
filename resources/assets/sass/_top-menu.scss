@@ -43,10 +43,93 @@
         padding: 0;
     }
 }
+
+.footer{
+    border-top:solid 1px;
+    border-color: $tertiary-color;
+}
+.copyright-footer{
+    background-color: $primary-color;
+    color: white;
+    text-align: left;
+
+    a{
+        color: white;
+        font-size: 18px;
+
+        @include breakpoint(small) {
+            font-size: 16px;
+        }
+        @include breakpoint(medium) {
+            font-size: 17px;
+        }
+    }
+    ul{
+        text-align: center;
+        background-color: $primary-color;
+        float: left;
+
+        li{
+            float: left;
+        }
+    }
+}
+.footer-container{
+    max-width:1248px;
+    text-align:left;
+    span {
+        @include breakpoint(small) {
+            font-size: 13px;
+        }
+        @include breakpoint(medium) {
+            font-size: 15px;
+        }
+    }
+    .third-footer{
+        line-height:15px;
+    }
+    .second-footer{
+        max-width:none;
+        margin:0;
+    }
+    .column{
+        text-align:center;
+    }
+    .main-banner{
+        width:45%;
+    }
+    .address{
+        font-size:14px;
+        text-align:left;
+    }
+    .thumbnail-banner{
+        float: left;
+        list-style-type: none;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+
+        li{
+            float: left;
+            width: 25%;
+        }
+    }
+}
+
+/* Mobile */
+.off-canvas-wrapper{
+    background-color: $primary-color;
+
+    .off-canvas{
+        padding-top: 10px;
+        background-color: $secondary-color;
+    }
+}
+
 .mobile-menu-button{
     margin: 1em 1em auto auto;
     position: fixed;
-    float: right;
+    right: 0%;
     z-index: 99;
 
     a{
@@ -157,78 +240,5 @@
           }
         }    
       }
-    }
-}
-
-
-.footer{
-    border-top:solid 1px;
-    border-color: $tertiary-color;
-}
-.copyright-footer{
-    background-color: $primary-color;
-    color: white;
-    text-align: left;
-
-    a{
-        color: white;
-        font-size: 18px;
-
-        @include breakpoint(small) {
-            font-size: 16px;
-        }
-        @include breakpoint(medium) {
-            font-size: 17px;
-        }
-    }
-    ul{
-        text-align: center;
-        background-color: $primary-color;
-        float: left;
-
-        li{
-            float: left;
-        }
-    }
-}
-.footer-container{
-    max-width:1248px;
-    text-align:left;
-    span {
-        @include breakpoint(small) {
-            font-size: 13px;
-        }
-        @include breakpoint(medium) {
-            font-size: 15px;
-        }
-    }
-    .third-footer{
-        line-height:15px;
-    }
-    .second-footer{
-        max-width:none;
-        margin:0;
-    }
-    .column{
-        text-align:center;
-    }
-    .main-banner{
-        width:45%;
-    }
-    .address{
-        font-size:14px;
-        text-align:left;
-    }
-    .thumbnail-banner{
-        float: left;
-        list-style-type: none;
-        text-align: center;
-        width: 100%;
-        margin: 0;
-
-        li{
-            float: left;
-            width: 25%;
-        }
     }
 }
