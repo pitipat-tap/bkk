@@ -1,4 +1,5 @@
-<div class="top-bar footer top-bar-first" align="center">
+<!-- show only in desktop -->
+<div class="top-bar footer top-bar-first hide-for-small-only" align="center">
     <div class="footer-container">
         <div class="row">
             <div class="small-1 medium-1 column empty">
@@ -60,6 +61,7 @@
     </div>
 </div>
 
+<!-- desktop -->
 <div class="top-bar footer top-bar-second show-for-medium" align="center">
     <div class="footer-container">
         <div class="row medium-up-4 second-footer">
@@ -88,7 +90,7 @@
         </div>
     </div>
 </div>
-
+<!-- mobile -->
 <div class="top-bar footer top-bar-second show-for-small-only pd-t-1 pd-b-1" align="center">
     <div class="footer-container">
         <div class="small-4 column">
@@ -119,9 +121,10 @@
                 <span>Proudly Created With KiwilauncherTeam</span>
             </div>
         </div>
-        <div style="float: right">
+        <div id="footer-link">
             <ul class="vertical medium-horizontal menu">
                 <li><a href="aboutus">About Us</a></li>
+                <li class="show-for-small-only"><a href="#">Our partners</a></li>
                 <li><a href="faq">FAQ</a></li>
                 <li><a href="#">Sitemap</a></li>
             </ul>
@@ -129,6 +132,7 @@
     </div>
 </div>
 
+<!-- div header -->
             </div>
         </div>
     </div>

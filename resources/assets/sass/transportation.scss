@@ -1,3 +1,6 @@
+@import "resources/assets/sass/settings/settings";
+@import 'foundation';
+
 .transportation-container{
 	margin: 0;
 	padding: 0 0 1em 0;
@@ -21,7 +24,13 @@
 	}
 	.transportation-content{
 		float: right;
-		padding: 0 0 0 10px;
+
+		@include breakpoint(small) {
+            padding: 1em;
+        }
+        @include breakpoint(medium) {
+            padding: 0 0 0 10px;
+        }
 	}
 	.transportation-picture-mobile{
 		margin: 0 0 0.5em 0;
