@@ -27,32 +27,38 @@
                 <li class="is-active orbit-slide">
                     <ul class="thumbnail-banner">
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt=""></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/120x120" alt=""></a>
                         </li>
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt=""></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/120x120" alt=""></a>
                         </li>
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt=""></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/120x120" alt=""></a>
                         </li>
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt=""></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/120x120" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/120x120" alt=""></a>
                         </li>
                     </ul>
                 </li>
                 <li class="orbit-slide">
                     <ul class="thumbnail-banner">
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt=""></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/120x120" alt=""></a>
                         </li>
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt=""></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/120x120" alt=""></a>
                         </li>
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt=""></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/120x120" alt=""></a>
                         </li>
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt=""></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/120x120" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/120x120" alt=""></a>
                         </li>
                     </ul>
                 </li>
