@@ -31,6 +31,10 @@ Route::get('/faq', function () {
     return view('web/faq');
 });
 
+Route::get('/partners', function () {
+    return view('web/partners');
+});
+
 Route::group(array('middleware' => 'auth.staff.already', 'prefix' => 'admin'), function(){
 	Route::get("login", array("as" => "admin-login", "uses" => "AdminAuthController@login"));
     Route::post("login", array("as" => "admin-auth", "uses" => "AdminAuthController@authenticate"));

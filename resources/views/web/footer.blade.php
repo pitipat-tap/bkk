@@ -27,32 +27,32 @@
                 <li class="is-active orbit-slide">
                     <ul class="thumbnail-banner">
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt=""></a>
                         </li>
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt=""></a>
                         </li>
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt=""></a>
                         </li>
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt=""></a>
                         </li>
                     </ul>
                 </li>
                 <li class="orbit-slide">
                     <ul class="thumbnail-banner">
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt=""></a>
                         </li>
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt=""></a>
                         </li>
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt=""></a>
                         </li>
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt="Photo of Uranus."></a>
+                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/150x150" alt=""></a>
                         </li>
                     </ul>
                 </li>
@@ -124,7 +124,7 @@
         <div id="footer-link">
             <ul class="vertical medium-horizontal menu">
                 <li><a href="aboutus">About Us</a></li>
-                <li class="show-for-small-only"><a href="#">Our partners</a></li>
+                <li><a href="partners">Our partners</a></li>
                 <li><a href="faq">FAQ</a></li>
                 <li><a href="#">Sitemap</a></li>
             </ul>

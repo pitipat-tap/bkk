@@ -17,20 +17,20 @@ gulp.task('default',['clean'], function() {
         .pipe(autoprefixer('last 2 version'))
         //.pipe(cssnano())
         .pipe(gulp.dest('./public/css/'))
-        .pipe(notify({ message: 'TDM bkk task complete' }));
+        .pipe(notify({ message: 'TDM bkk task complete: <%= file.relative %>'}));
 
 });
 
 
 gulp.task('clean', function() {
-  return del(['css','./public/js/frontend/']);
+  return del(['css']);
 });
 
 gulp.task('minify-js', function () {
-    gulp.src('resources/assets/js/**/*.js') // path to your files
+    gulp.src('resources/assets/js/**/*.js')
         .pipe(uglify())
         .pipe(gulp.dest('./public/js/'))
-        .pipe(notify({ message: 'minify-js complete'}));
+        .pipe(notify({ message: 'minify-js complete: <%= file.relative %>'}));
 });
 
 //Watch task

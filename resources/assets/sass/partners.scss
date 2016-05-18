@@ -1,0 +1,17 @@
+@import "resources/assets/sass/settings/settings";
+@import 'foundation';
+
+.thumbnail-partners{
+	text-align: center;
+	margin: 1em 0;
+	li{
+		display: inline-block;
+
+		@include breakpoint(small) {
+            margin: 1em 1em;
+        }
+        @include breakpoint(medium) {
+            margin: 1em 2em;
+        }
+	}
+}
