@@ -1,5 +1,5 @@
 <!-- show only in desktop -->
-<div class="top-bar footer top-bar-first hide-for-small-only" align="center">
+<div id="partners-thumbnail" class="top-bar footer top-bar-first hide-for-small-only" align="center">
     <div class="footer-container">
         <div class="row">
             <div class="small-1 medium-1 column empty">

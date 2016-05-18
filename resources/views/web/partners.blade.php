@@ -15,7 +15,7 @@
 
 @include("web.top-menu")
 
-<div class="banner-page-title">Our Partners</div>
+<div class="banner-page-title mg-b-1">Our Partners</div>
 <div class="body-section">
 	<div class="small-12 small-centered">
 	    <ul class="thumbnail-partners">
