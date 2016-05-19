@@ -50,7 +50,7 @@
             <!-- Menu -->
                 <ul id="menu-mobile" class="vertical menu mg-t-1">
                     <li><a href="#">Attraction</a></li>
-                    <li><a href="#">Accommodation</a></li>
+                    <li><a href="accommodation">Accommodation</a></li>
                     <li><a href="transportation">Transportation</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a>Language</a></li>
