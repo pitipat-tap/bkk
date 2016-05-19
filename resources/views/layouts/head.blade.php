@@ -1,5 +1,5 @@
-<!DOCTYPE Html>
-<Html>
+<!DOCTYPE HTML>
+<HTML>
     <head>
         <meta charset="utf-8"></meta>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,20 +30,20 @@
         <meta name="msapplication-TileImage" content="{{ asset('images/favicon/mstile-144x144.png') }}">
         <meta name="theme-color" content="#ffffff">
 
-        {!! Html::style("css/main.css") !!}
+        {!! HTML::style("css/main.css") !!}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
 
         
         @yield("specific_css")
         
-        {!! Html::script("js/jquery.min.js") !!}
-        {!! Html::script("js/modernizr/modernizr.js") !!}
-        {!! Html::script("js/foundation.min.js") !!}
-        {!! Html::script("js/angular.min.js") !!}
-        {!! Html::script("js/isMobile.min.js") !!}
-        {!! Html::script("js/verge.min.js") !!}
+        {!! HTML::script("js/jquery.min.js") !!}
+        {!! HTML::script("js/modernizr/modernizr.js") !!}
+        {!! HTML::script("js/foundation.min.js") !!}
+        {!! HTML::script("js/angular.min.js") !!}
+        {!! HTML::script("js/isMobile.min.js") !!}
+        {!! HTML::script("js/verge.min.js") !!}
 	
-        {!! Html::script("js/main.js") !!}
+        {!! HTML::script("js/main.js") !!}
 
 
         @yield("specific_js_head")
@@ -56,5 +56,6 @@
         </script>
         @yield("specific_js_body")
     </body>
-</Html>
+   
+</HTML>
 

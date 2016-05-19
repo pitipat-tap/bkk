@@ -8,9 +8,9 @@
             {!! Html::image("images/logo/bkk-logo.png","bkk-logo",array("class"=>"bkk-logo")) !!}
           </a>
         </li>
-        <li><a class="active" href="#">Campaign</a></li>
+        <li><a class="" href="#">Campaign</a></li>
         <li><a class="" href="#">Attraction</a></li>
-        <li><a class="" href="#">Accommodation</a></li>
+        <li><a id="accommodation" class="" href="accommodation">Accommodation</a></li>
         <li><a class="" href="transportation">Transportation</a></li>
         <li><a class="" href="#">Gallery</a></li>
         <li><a class="" href="#">language</a></li>

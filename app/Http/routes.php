@@ -31,8 +31,13 @@ Route::get('/faq', function () {
     return view('web/faq');
 });
 
+
 Route::get('/partners', function () {
     return view('web/partners');
+});
+
+Route::get('/accommodation', function () {
+    return view('web/accommodation');
 });
 
 Route::group(array('middleware' => 'auth.staff.already', 'prefix' => 'admin'), function(){
