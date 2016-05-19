@@ -25,14 +25,6 @@
         });
     });
 </script>
-<div id="menu">
-<ul>
-<li><a id="about-link" class="current" href="#">ABOUT</a></li>
-<li><a id="events-link" href="#">EVENTS</a></li>
-<li><a id="reviews-link" href="#">REVIEWS</a></li>
-<li><a id="contact-link" href="#">CONTACT</a></li>
-</ul>
-</div>
 <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
     <a>
         <img class="orbit-image" src="http://placehold.it/1500x500" alt="Space">
