@@ -19,12 +19,20 @@
     $(document).ready(function(){
         sessionStorage.setItem("flag", 0);
         $('#accommodation').addClass("active");
+        $('#menu li a').on('click', function(){
+          $('li a.border-bottom').removeClass('border-bottom');
+          $(this).addClass('border-bottom');
+        });
     });
-    $("#header .btn-group[role='group'] button").on('click', function(){
-    $(this).siblings().removeClass('border-bottom')
-    $(this).addClass('border-bottom');
-})
 </script>
+<div id="menu">
+<ul>
+<li><a id="about-link" class="current" href="#">ABOUT</a></li>
+<li><a id="events-link" href="#">EVENTS</a></li>
+<li><a id="reviews-link" href="#">REVIEWS</a></li>
+<li><a id="contact-link" href="#">CONTACT</a></li>
+</ul>
+</div>
 <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
     <a>
         <img class="orbit-image" src="http://placehold.it/1500x500" alt="Space">
@@ -33,12 +41,20 @@
 <div class="banner-page-title">Accommodation</div>
 <div class="body-section">
     <div class="row collapse">
-    <div class="medium-12 columns">
-      <ul class="tabs modify" id="example-vert-tabs" style="text-align:center"data-tabs>
-        <li class="medium-3 tabs-title is-active border-right border-bottom" role="group"><a class="background-none" href="#panel1v" aria-selected="true" >Hotels</a></li>
-        <li class="medium-3 tabs-title border-right" role="group"><a class="background-none" href="#panel2v">Hostels</a></li>
-        <li class="medium-3 tabs-title border-right" role="group"><a class="background-none" href="#panel3v">Apartments</a></li>
-        <li class="medium-3 tabs-title" role="group"><a class="background-none" href="#panel4v">Guesthouse</a></li>
+    <div class="medium-12 columns" align="center">
+      <ul id="menu" class="tabs modify" id="example-vert-tabs" data-tabs>
+        <li class="medium-3 tabs-title is-active border-right" >
+          <a class="background-none half-width border-bottom" href="#panel1v" aria-selected="true">Hotels</a>
+        </li>
+        <li class="medium-3 tabs-title border-right" >
+          <a class="background-none half-width" href="#panel2v">Hostels</a>
+        </li>
+        <li class="medium-3 tabs-title border-right" >
+          <a class="background-none half-width" href="#panel3v">Apartments</a>
+        </li>
+        <li class="medium-3 tabs-title" >
+          <a class="background-none half-width" href="#panel4v">Guesthouse</a>
+        </li>
       </ul>
       </div>
       <div class="medium-12 columns">
