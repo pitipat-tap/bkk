@@ -39,7 +39,7 @@
 <section>
     <div class="off-canvas-wrapper">
         <div id="offCanvasInner" class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-            <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-position="right">
+            <div class="off-canvas position-right show-for-small-only" id="offCanvas" data-off-canvas data-position="right">
 
                 <div id="menu-logo-mobile" class="vertical menu">
                     <a class="logo" href="home">
