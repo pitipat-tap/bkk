@@ -163,6 +163,14 @@
         outline: 0;
     }
 }
+#copyright-mobile{
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    padding: 1em;
+    font-size: 15px;
+    color: white;
+}
 
 .off-canvas-wrapper{
     background-color: $primary-color;
@@ -170,6 +178,7 @@
     .off-canvas{
         padding-top: 10px;
         background-color: $primary-color;
+        min-height: 100vh;
 
         li{
             padding: 0;
@@ -202,7 +211,7 @@
       border-radius:2px;
     }
 
-    #menu-toggle {
+    #button-menu-mobile {
       width:80px;
       height:80px;
       margin:auto auto;
@@ -262,7 +271,7 @@
       }
     }
 
-    #menu-toggle.open {
+    #button-menu-mobile.open {
       #hamburger {
         span {
           width:0%;

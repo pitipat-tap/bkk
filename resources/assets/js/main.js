@@ -8,12 +8,12 @@ $(document).ready(function() {
 	}
 
 	// mobile menu
-	$('#menu-toggle').click(function(){
+	$('#button-menu-mobile').click(function(){
 		$(this).toggleClass('open');
 	});
-	$('#offCanvasInner').click(function(){
-		if($('#menu-toggle').hasClass('open')){
-			$('#menu-toggle').removeClass('open');
+	$('#offCanvasContent').click(function(){
+		if($('#button-menu-mobile').hasClass('open')){
+			$('#button-menu-mobile').removeClass('open');
 		}
 	});
 });

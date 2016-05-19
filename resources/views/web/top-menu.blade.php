@@ -22,7 +22,7 @@
 <!-- mobile -->
 <div class="mobile-menu-button show-for-small-only" data-toggle="offCanvas">
     <a>
-        <div id="menu-toggle">
+        <div id="button-menu-mobile">
             <div id="hamburger">
                 <span></span>
                 <span></span>
@@ -56,7 +56,15 @@
                     <li><a>Language</a></li>
                 </ul>
 
+                <div id="copyright-mobile">
+                    <div class="third-footer">
+                        <span>© 2016 by Chapter2</span>
+                    </div>
+                    <div class="third-footer">
+                        <span>Proudly Created With KiwilauncherTeam</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="off-canvas-content" data-off-canvas-content>
+            <div id="offCanvasContent" class="off-canvas-content" data-off-canvas-content>
             <!-- Page content -->
