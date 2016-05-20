@@ -9,7 +9,7 @@
           </a>
         </li>
         <li><a class="" href="#">Campaign</a></li>
-        <li><a class="" href="#">Attraction</a></li>
+        <li><a class="" href="attraction-category">Attraction</a></li>
         <li><a id="accommodation" class="" href="accommodation">Accommodation</a></li>
         <li><a class="" href="transportation">Transportation</a></li>
         <li><a class="" href="#">Gallery</a></li>
@@ -49,7 +49,7 @@
 
             <!-- Menu -->
                 <ul id="menu-mobile" class="vertical menu mg-t-1">
-                    <li><a href="#">Attraction</a></li>
+                    <li><a href="attraction-category">Attraction</a></li>
                     <li><a href="accommodation">Accommodation</a></li>
                     <li><a href="transportation">Transportation</a></li>
                     <li><a href="#">Gallery</a></li>

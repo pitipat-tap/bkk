@@ -1,0 +1,92 @@
+@import "resources/assets/sass/settings/settings";
+@import 'foundation';
+
+#category-container-1{
+	width: 100%;
+
+		@include breakpoint(small) {
+            
+        }
+        @include breakpoint(medium) {
+            
+        }
+	.category-description{
+		position: absolute;
+		top: 0%;
+		left: 75%;
+		width: 25%;
+		height: 100%;
+	}
+}
+#category-container-2{
+	display: inline-block;
+	width: 49%;
+	float: left;
+
+	.category-description{
+		position: absolute;
+		bottom: 3%;
+		left: 49%;
+		padding: 0.5em;
+		margin: 0;
+		h3{
+			margin: 0;
+		}
+	}
+}
+#category-container-3{
+	display: inline-block;
+	width: 49%;
+	float: right;
+
+	.category-description{
+		position: absolute;
+		top: 5%;
+		left: 35%;
+		padding: 0.5em;
+		margin: 0;
+		h3{
+			margin: 0;
+		}
+	}
+}
+#category-container-4{
+	width: 100%;
+
+	.category-description{
+		position: absolute;
+		top: 0%;
+		left: 75%;
+		width: 25%;
+		height: 100%;
+	}
+}
+#category-container-5{
+	width: 100%;
+	margin-bottom: 2em;
+
+	.category-description{
+		position: absolute;
+		bottom: 0%;
+		width: 100%;
+		padding: 0.5em;
+	}
+}
+
+
+.category-container{
+	position: relative;
+	margin-top: 2em;
+	margin-bottom: 1em;
+
+	.category-picture{
+		position: relative;
+		top: 0;
+	}
+	.category-description{
+		position: absolute;
+		padding: 1em;
+		background-color: rgba(255,255,255,0.3);
+		color: gray;
+	}
+}
