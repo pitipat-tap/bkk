@@ -1,22 +1,22 @@
 <!-- show only in desktop -->
-<div id="partners" class="top-bar footer top-bar-first hide-for-small-only" align="center">
+<div id="partners" class="top-bar footer top-bar-first show-for-large" align="center">
     <div class="footer-container">
         <div class="row">
-            <div class="small-1 medium-1 column empty">
+            <div class="small-1 large-1 column empty">
             </div>
-            <div class="small-5 medium-4 column">
+            <div class="small-5 large-4 column">
                 <a href="http://www.agoda.com/" target="_blank">
                     {!! Html::image("images/logo/agoda-logo.png","",array("class"=>"main-banner")) !!}
                 </a>
             </div>
-            <div class="hide-for-small-only medium-2 column empty">
+            <div class="show-for-large large-2 column empty">
             </div>
-            <div class="small-5 medium-4 column main-banner-container">
+            <div class="small-5 large-4 column main-banner-container">
                 <a href="https://www.tripadvisor.com/" target="_blank">
                     {!! Html::image("images/logo/trip-logo.png","",array("class"=>"main-banner")) !!}
                 </a>
             </div>
-            <div class="small-1 medium-1 column empty">
+            <div class="small-1 large-1 column empty">
             </div>
         </div>
         <hr>
@@ -68,9 +68,9 @@
 </div>
 
 <!-- desktop -->
-<div class="top-bar footer top-bar-second show-for-medium" align="center">
+<div class="top-bar footer top-bar-second show-for-large" align="center">
     <div class="footer-container">
-        <div class="row medium-up-4 second-footer">
+        <div class="row large-up-4 second-footer">
             <div class="column">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.327923570138!2d100.49096021639426!3d13.759087656345015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xd55c5a3036726e66!2sTourism+Division%3B+Culture%2C+Sports+and+Tourism+Department%3B+BMA!5e0!3m2!1sen!2sth!4v1462784638517" width="100%" height="130" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
@@ -97,7 +97,7 @@
     </div>
 </div>
 <!-- mobile -->
-<div class="top-bar footer top-bar-second show-for-small-only pd-t-1 pd-b-1" align="center">
+<div class="top-bar footer top-bar-second hide-for-large pd-t-1 pd-b-1" align="center">
     <div class="footer-container">
         <div class="small-4 column">
             <a href="https://www.google.com/maps?ll=13.760744,100.49152&z=14&t=m&hl=en&gl=TH&mapclient=embed&cid=15374262391054429798" target="_blank">
@@ -120,7 +120,7 @@
 <div class="top-bar footer copyright-footer" align="center">
     <div class="footer-container row">
         <div id="footer-link">
-            <ul class="vertical medium-horizontal menu">
+            <ul class="vertical large-horizontal menu">
                 <li><a href="aboutus">About Us</a></li>
                 <li><a href="partners">Our partners</a></li>
                 <li><a href="faq">FAQ</a></li>

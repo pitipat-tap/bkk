@@ -58,7 +58,7 @@
         @include breakpoint(small) {
             overflow: auto;
         }
-        @include breakpoint(medium) {
+        @include breakpoint(large) {
             overflow: auto;
         }
     }
@@ -70,7 +70,7 @@
         @include breakpoint(small) {
             font-size: 16px;
         }
-        @include breakpoint(medium) {
+        @include breakpoint(large) {
             font-size: 17px;
         }
     }
@@ -91,7 +91,7 @@
         @include breakpoint(small) {
             font-size: 13px;
         }
-        @include breakpoint(medium) {
+        @include breakpoint(large) {
             font-size: 15px;
         }
     }
@@ -129,7 +129,7 @@
                     margin-bottom: 0;
                 }
             }
-            @include breakpoint(medium) {
+            @include breakpoint(large) {
                 padding: 0;
             }
         }

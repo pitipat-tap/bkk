@@ -1,5 +1,5 @@
-<!-- desitop -->
-<div class="top-bar show-for-medium columns">
+<!-- desktop -->
+<div class="top-bar show-for-large columns">
   <div id="responsive-menu">
     <div class="top-menu-container" align="left">
       <ul class="dropdown menu" data-dropdown-menu>
@@ -20,7 +20,7 @@
 </div>
 
 <!-- mobile -->
-<div class="mobile-menu-button show-for-small-only" data-toggle="offCanvas">
+<div class="mobile-menu-button hide-for-large" data-toggle="offCanvas">
     <a>
         <div id="button-menu-mobile">
             <div id="hamburger">
@@ -39,7 +39,7 @@
 <section>
     <div class="off-canvas-wrapper">
         <div id="offCanvasInner" class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-            <div class="off-canvas position-right show-for-small-only" id="offCanvas" data-off-canvas data-position="right">
+            <div class="off-canvas position-right hide-for-large" id="offCanvas" data-off-canvas data-position="right">
 
                 <div id="menu-logo-mobile" class="vertical menu">
                     <a class="logo" href="home">

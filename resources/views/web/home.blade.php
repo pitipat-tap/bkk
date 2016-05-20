@@ -18,7 +18,7 @@
 
 <section>
     <!-- desktop -->
-    <div class="orbit show-for-medium columns" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+    <div class="orbit show-for-large columns" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
         <ul class="orbit-container">
             <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
             <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
@@ -51,7 +51,7 @@
     </div>
 
     <!-- mobile -->
-    <div class="orbit show-for-small-only columns mg-b-1" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+    <div class="orbit hide-for-large columns mg-b-1" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
         <ul class="orbit-container">
             <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
             <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
@@ -79,14 +79,14 @@
 
 <section id="home-body">
     <div class="body-section">
-        <div class="banner-page-title show-for-medium columns">Destination</div>
+        <div class="banner-page-title show-for-large columns">Destination</div>
 
         <section class="mg-b-1">
             <div class="row">
-                <div class="medium-8 columns">
+                <div class="large-8 columns">
                       {!! HTML::image("http://placehold.it/800x600","",array("class"=>"")) !!}
                 </div>
-                <div class="medium-4 columns">
+                <div class="large-4 columns">
                     <div class="destination-highlight">
                         <h4> Wat Phra Kaew </h4>
                         <p>
@@ -110,21 +110,21 @@
 
         <section id="campaign-attractions" >
             <div class="row">
-                <div class=" medium-4 columns">
+                <div class=" large-4 columns">
                     <div class="tag-highlight">
                         <h2> Campaign </h2>
                         <h1> ___ </h1>
                     </div>
                 </div>
-                <div class=" medium-8 columns">
+                <div class=" large-8 columns">
                     {!! HTML::image("http://placehold.it/832x300","",array("class"=>"")) !!}
                 </div>
             </div>
             <div class="row">
-                <div class=" medium-8 columns">
+                <div class=" large-8 columns">
                     {!! HTML::image("http://placehold.it/832x300","",array("class"=>"")) !!}
                 </div>
-                <div class=" medium-4 columns">
+                <div class=" large-4 columns">
                     <div class="tag-highlight">
                         <h2> Attractions</h2>
                         <h1> ___ </h1>
@@ -135,13 +135,13 @@
 
         <section id="accommodation-events">
             <div class="row">
-                <div class=" medium-4 columns">
+                <div class=" large-4 columns">
                     <div class="tag-highlight">
                         <h2> Accommodation </h2>
                         <h1> ___ </h1>
                     </div>
                 </div>
-                <div class=" medium-8 columns">
+                <div class=" large-8 columns">
                     {!! HTML::image("http://placehold.it/832x300","",array("class"=>"")) !!}
                 </div>
             </div>
@@ -176,12 +176,12 @@
             <div class="row">
                 <div class="events-container">
                     <div class="row">
-                        <div class=" medium-6 columns">
+                        <div class=" large-6 columns">
                             <div class="event-item">
                                 {!! HTML::image("http://placehold.it/550x450","",array("class"=>"")) !!}
                             </div>
                         </div>
-                        <div class=" medium-6 columns">
+                        <div class=" large-6 columns">
                             <div class="event-content">
                                 <h3> Songkarn </h3>
                                 <p>
@@ -191,10 +191,10 @@
                                     Aenean eu pulvinar justo, quis mollis ligula. Nullam commodo odio a luctus blandit.
                                 </p>
                                 <p>
-                                      <div class="medium-4 columns">
+                                      <div class="large-4 columns">
                                           <i class="fa fa-map-marker" aria-hidden="true"></i> Bangkok 
                                       </div>
-                                      <div class="medium-4 columns end">
+                                      <div class="large-4 columns end">
                                           <i class="fa fa-calendar" aria-hidden="true"></i> 13th 15th April 
                                       </div>
                                 </p>
