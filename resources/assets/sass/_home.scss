@@ -34,11 +34,14 @@
 }
 
 #home-body{
+    img{
+        width: 100%;
+    }
+
     .row{
         margin: 0;
         max-width:none;
     }
-
 
     .destination-highlight{
         padding: 20px 30px;
@@ -56,7 +59,24 @@
                     text-align:center;
                 }
         }
-
+    }
+    #destination-mobile{
+        padding: 1em;
+        text-align: center;
+        color: $primary-color;
+        
+        form{
+            margin-top: 1em;
+            input{
+                height: 3em;
+                font-size: 1em;
+            }
+            a{
+                width: 100%;
+                height: 3em;
+                font-size: 1em;
+            }
+        }
     }
 
     #campaign-attractions,#accommodation-events{
@@ -64,6 +84,17 @@
         margin-bottom:5%;
         .column{
             padding:0;
+        }
+    }
+
+    #campaign-attractions{
+        .row{
+            @include breakpoint(small) {
+                border-bottom: 1px solid white;
+            }
+            @include breakpoint(large) {
+                border-bottom: 0;
+            }
         }
     }
 
@@ -87,8 +118,14 @@
                 margin:30px;
             }
             .event-content{
-                margin:30px;
                 padding:30px 0;
+
+                @include breakpoint(small) {
+                    margin: 0 1.5em;
+                }
+                @include breakpoint(large) {
+                    margin:30px;
+                }
 
                 i {
                     margin-right:10px;
@@ -102,8 +139,17 @@
                 text-align:center;
             }
             a {
-                width: 30%;
                 display: block;
+
+                @include breakpoint(small) {
+                    width: 100%;
+                    line-height: 2em;
+                    font-size: 1.5em;
+                }
+                @include breakpoint(large) {
+                    width: 30%;
+                    font-size: inherit;
+                }
             }
         }
     }
@@ -132,6 +178,13 @@
 
     .eventsSlide{
         background: $secondary-color;
+
+        @include breakpoint(small) {
+            margin: 1em 0;
+        }
+        @include breakpoint(large) {
+            margin: 0;
+        }
     }
     .eventsSlide button, .eventsSlide button { 
         background: $secondary-color; 

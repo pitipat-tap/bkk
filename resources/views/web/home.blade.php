@@ -57,19 +57,19 @@
             <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
             <li class="is-active orbit-slide">
                 <a>
-                    {!! HTML::image("http://placehold.it/405x720","",array("class"=>"orbit-image")) !!}
+                    {!! HTML::image("http://placehold.it/300x400","",array("class"=>"orbit-image")) !!}
                     <figcaption class="orbit-caption">1</figcaption>
                 </a>
             </li>
             <li class="orbit-slide">
                 <a>
-                    {!! HTML::image("http://placehold.it/405x720","",array("class"=>"orbit-image")) !!}
+                    {!! HTML::image("http://placehold.it/300x400","",array("class"=>"orbit-image")) !!}
                     <figcaption class="orbit-caption">2</figcaption>
                 </a>
             </li>
             <li class="orbit-slide">
                 <a>
-                    {!! HTML::image("http://placehold.it/405x720","",array("class"=>"orbit-image")) !!}
+                    {!! HTML::image("http://placehold.it/300x400","",array("class"=>"orbit-image")) !!}
                     <figcaption class="orbit-caption">3</figcaption>
                 </a>
             </li>
@@ -82,7 +82,8 @@
         <div class="banner-page-title show-for-large columns">Destination</div>
 
         <section class="mg-b-1">
-            <div class="row">
+            <!-- desktop -->
+            <div class="row show-for-large">
                 <div class="large-8 columns">
                       {!! HTML::image("http://placehold.it/800x600","",array("class"=>"")) !!}
                 </div>
@@ -106,6 +107,21 @@
                     </div>
                 </div>
             </div>
+            <!-- mobile -->
+            <div id="destination-mobile" class="row hide-for-large">
+                <h2>Destination</h2>
+                <form>
+                    <div class="row collapse">
+                        <div class="small-9 columns">
+                            <input type="text" placeholder="Find your destination">
+                        </div>
+                        <div class="small-3 columns">
+                            <a href="#" class="button postfix">Go</a>
+                        </div>
+                    </div>
+                </form>
+                <hr>
+            </div>
         </section>
 
         <section id="campaign-attractions" >
@@ -116,13 +132,19 @@
                         <h1> ___ </h1>
                     </div>
                 </div>
-                <div class=" large-8 columns">
+                <div class="large-8 columns show-for-large">
                     {!! HTML::image("http://placehold.it/832x300","",array("class"=>"")) !!}
+                </div>
+                <div class="small-12 columns hide-for-large">
+                    {!! HTML::image("http://placehold.it/400x300","",array("class"=>"")) !!}
                 </div>
             </div>
             <div class="row">
-                <div class=" large-8 columns">
+                <div class="large-8 columns show-for-large">
                     {!! HTML::image("http://placehold.it/832x300","",array("class"=>"")) !!}
+                </div>
+                <div class="small-12 columns hide-for-large">
+                    {!! HTML::image("http://placehold.it/400x300","",array("class"=>"")) !!}
                 </div>
                 <div class=" large-4 columns">
                     <div class="tag-highlight">
@@ -141,8 +163,11 @@
                         <h1> ___ </h1>
                     </div>
                 </div>
-                <div class=" large-8 columns">
+                <div class="large-8 columns show-for-large">
                     {!! HTML::image("http://placehold.it/832x300","",array("class"=>"")) !!}
+                </div>
+                <div class="small-12 columns hide-for-large">
+                    {!! HTML::image("http://placehold.it/400x300","",array("class"=>"")) !!}
                 </div>
             </div>
             <div class="row">
@@ -199,9 +224,11 @@
                                       </div>
                                 </p>
                                 <hr>
-                                <a>
-                                    <div class="see-more"> see more ... </div>
-                                </a>
+                                <div class="">
+                                    <a>
+                                        <div class="see-more"> see more ... </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
