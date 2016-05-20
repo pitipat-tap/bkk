@@ -17,10 +17,13 @@ gulp.task('default',['clean'], function() {
         .pipe(autoprefixer('last 2 version'))
         //.pipe(cssnano())
         .pipe(gulp.dest('./public/css/'))
-        .pipe(notify({ message: 'TDM bkk task complete: <%= file.relative %>'}));
+        .pipe(notify({ message: 'Bkk task complete', onLast: true}));
 
 });
 
+gulp.task('all',['clean', 'minify-js', 'compile'], function () {
+
+});
 
 gulp.task('clean', function() {
   return del(['css']);
@@ -30,7 +33,16 @@ gulp.task('minify-js', function () {
     gulp.src('resources/assets/js/**/*.js')
         .pipe(uglify())
         .pipe(gulp.dest('./public/js/'))
-        .pipe(notify({ message: 'minify-js complete: <%= file.relative %>'}));
+        .pipe(notify({ message: 'Minify-js complete: <%= file.relative %>'}));
+});
+
+gulp.task('compile', function () {
+    gulp.src('resources/assets/sass/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer('last 2 version'))
+        //.pipe(cssnano())
+        .pipe(gulp.dest('./public/css/'))
+        .pipe(notify({ message: 'Compile scss task complete: <%= file.relative %>'}));
 });
 
 //Watch task
