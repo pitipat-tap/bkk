@@ -23,16 +23,21 @@
 	</div>
 </section>
 
-<div class="body-section show-for-large">
+<!-- desktop -->
+<div class="body-section">
 	<div class="banner-page-title">Attraction</div>
 	<div id="category-container-1" class="category-container">
 		<a href="#">
-			<div class="category-picture">
-				{!! HTML::image("http://placehold.it/1248x412","bkk-logo",array("class"=>"banner-picture")) !!}
+			<div class="category-picture show-for-large">
+				{!! HTML::image("http://placehold.it/1248x412","bkk-logo",array("class"=>"")) !!}
+			</div>
+			<div class="category-picture hide-for-large">
+				{!! HTML::image("http://placehold.it/400x300","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="category-description">
 				<h3>ARTS AND CULTURE</h3>
-				<h5>
+				<br>
+				<h5 class="show-for-large">
 					Vestibulum at sagittis risus. Donec iaculis enim ac faucibus pretium. Suspendisse molestie tellus ac ipsum 
 					eleifend fermentum. Curabitur consequat venenatis dui, et auctor metus semper nec.
 				</h5>
@@ -42,8 +47,11 @@
 	<div>
 		<div id="category-container-2" class="category-container">
 			<a href="#">
-				<div class="category-picture">
-					{!! HTML::image("http://placehold.it/620x412","bkk-logo",array("class"=>"banner-picture")) !!}
+				<div class="category-picture show-for-large">
+					{!! HTML::image("http://placehold.it/620x412","bkk-logo",array("class"=>"")) !!}
+				</div>
+				<div class="category-picture hide-for-large">
+					{!! HTML::image("http://placehold.it/300x400","bkk-logo",array("class"=>"")) !!}
 				</div>
 				<div class="category-description">
 					<h3>FOOD AND DRINK</h3>
@@ -52,8 +60,11 @@
 		</div>
 		<div id="category-container-3" class="category-container">
 			<a href="">
-				<div class="category-picture">
-					{!! HTML::image("http://placehold.it/620x412","bkk-logo",array("class"=>"banner-picture")) !!}
+				<div class="category-picture show-for-large">
+					{!! HTML::image("http://placehold.it/620x412","bkk-logo",array("class"=>"")) !!}
+				</div>
+				<div class="category-picture hide-for-large">
+					{!! HTML::image("http://placehold.it/300x400","bkk-logo",array("class"=>"")) !!}
 				</div>
 				<div class="category-description">
 					<h3>PARKS AND GARDENS</h3>
@@ -63,12 +74,16 @@
 	</div>
 	<div id="category-container-4" class="category-container">
 		<a href="#">
-			<div class="category-picture">
-				{!! HTML::image("http://placehold.it/1248x412","bkk-logo",array("class"=>"banner-picture")) !!}
+			<div class="category-picture show-for-large">
+				{!! HTML::image("http://placehold.it/1248x412","bkk-logo",array("class"=>"")) !!}
+			</div>
+			<div class="category-picture hide-for-large">
+				{!! HTML::image("http://placehold.it/400x300","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="category-description">
 				<h3>Events</h3>
-				<h5>
+				<br>
+				<h5 class="show-for-large">
 					Vestibulum at sagittis risus. Donec iaculis enim ac faucibus pretium. Suspendisse molestie tellus ac ipsum 
 					eleifend fermentum. Curabitur consequat venenatis dui, et auctor metus semper nec.
 				</h5>
@@ -77,12 +92,15 @@
 	</div>
 	<div id="category-container-5" class="category-container">
 		<a href="#">
-			<div class="category-picture">
-				{!! HTML::image("http://placehold.it/1248x412","bkk-logo",array("class"=>"banner-picture")) !!}
+			<div class="category-picture show-for-large">
+				{!! HTML::image("http://placehold.it/1248x412","bkk-logo",array("class"=>"")) !!}
+			</div>
+			<div class="category-picture hide-for-large">
+				{!! HTML::image("http://placehold.it/400x300","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="category-description">
 				<h3>Shopping</h3>
-				<h5>
+				<h5 class="show-for-large">
 					Vestibulum at sagittis risus. Donec iaculis enim ac faucibus pretium. Suspendisse molestie tellus ac ipsum 
 					eleifend fermentum. Curabitur consequat venenatis dui, et auctor metus semper nec.
 				</h5>
@@ -90,5 +108,11 @@
 		</a>
 	</div>
 </div>
+
+<!-- mobile -->
+<div class="body-section hide-for-large">
+	
+</div>
+
 @include("web.footer")
 @stop
