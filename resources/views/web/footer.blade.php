@@ -119,6 +119,14 @@
 
 <div class="top-bar footer copyright-footer" align="center">
     <div class="footer-container row">
+        <div class="large-4 columns show-for-large align-left">
+            <div class="third-footer">
+                <span>© 2016 by Chapter2</span>
+            </div>
+            <div class="third-footer">
+                <span>Proudly Created With KiwilauncherTeam</span>
+            </div>
+        </div>
         <div id="footer-link">
             <ul class="vertical large-horizontal menu">
                 <li><a href="aboutus">About Us</a></li>
