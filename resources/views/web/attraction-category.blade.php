@@ -23,7 +23,6 @@
 	</div>
 </section>
 
-<!-- desktop -->
 <div class="body-section">
 	<div class="banner-page-title">Attraction</div>
 	<div id="category-container-1" class="category-container">
@@ -36,7 +35,7 @@
 			</div>
 			<div class="category-description">
 				<h3>ARTS AND CULTURE</h3>
-				<br>
+				<br class="show-for-large">
 				<h5 class="show-for-large">
 					Vestibulum at sagittis risus. Donec iaculis enim ac faucibus pretium. Suspendisse molestie tellus ac ipsum 
 					eleifend fermentum. Curabitur consequat venenatis dui, et auctor metus semper nec.
@@ -82,7 +81,7 @@
 			</div>
 			<div class="category-description">
 				<h3>Events</h3>
-				<br>
+				<br class="show-for-large">
 				<h5 class="show-for-large">
 					Vestibulum at sagittis risus. Donec iaculis enim ac faucibus pretium. Suspendisse molestie tellus ac ipsum 
 					eleifend fermentum. Curabitur consequat venenatis dui, et auctor metus semper nec.
@@ -107,11 +106,6 @@
 			</div>
 		</a>
 	</div>
-</div>
-
-<!-- mobile -->
-<div class="body-section hide-for-large">
-	
 </div>
 
 @include("web.footer")
