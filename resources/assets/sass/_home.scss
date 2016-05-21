@@ -164,11 +164,25 @@
     .tag-highlight{
         background-color: $primary-color;
         color:white;
-        height:300px;
         text-align:center;
 
+        @include breakpoint(small) {
+            height:10em;
+        }
+        @include breakpoint(medium) {
+            height:20em;
+        }
+        @include breakpoint(large) {
+            height:300px;
+        }
+
         h2 {
-            margin-top:20%;
+            @include breakpoint(small) {
+                margin-top:2em;
+            }
+            @include breakpoint(large) {
+                margin-top:20%;
+            }
         }
         h1 {
             color:yellow;
