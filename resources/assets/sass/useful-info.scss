@@ -5,6 +5,10 @@
 	text-align: center;
 	margin: 2em;
 
+	a.active{
+		border: 0;
+	}
+
 	ul{
 		li{
 			padding: 0 2em;
@@ -21,4 +25,30 @@
 	td:last-child{
 		width: 60%;
 	}
+}
+
+.go-top {
+    position: fixed;
+    right: 3%;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+    font-size: 1em;
+    padding: 10px;
+    display: none;
+    margin: 0;
+
+    @include breakpoint(small) {
+    	bottom: 3%;
+    }
+    @include breakpoint(large) {
+    	bottom: inherit;
+    	top: 3%;
+    }
+}
+
+.go-top:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-decoration: none;
 }

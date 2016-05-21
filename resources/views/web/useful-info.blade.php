@@ -7,15 +7,16 @@
 
 
 @section("specific_js_head")
-
+{!! Html::script("js/useful-info.js") !!}
 @stop
 
 
 @section("body")
 
 @include("web.top-menu")
+<a href="#" class="go-top" style="display: none;">Back to top</a>
 
-<div class="banner-page-title">FAQ</div>
+<div class="banner-page-title">Useful Info</div>
 <div class="body-section">
 	<div id="magellan-menu" class="row">
 		<ul class="vertical menu" data-magellan>
@@ -773,7 +774,278 @@
 			</table>
 		</section>
 		<section id="consulates" data-magellan-target="consulates">
-			Third Section
+			<table>
+				<tbody>
+					<caption>Consulates in Bangkok</caption>
+					<tr>
+						<td><b>Country</b></td>
+						<td><b>Address (Bangkok)</b></td>
+						<td><b>Tel.</b></td>
+					</tr>
+					<tr>
+						<td>Benin</td>
+						<td>14th Fl., Manorom Bldg.,<br>3354/46-47 Rama IV Rd.</td>
+						<td>0 2249 8633 to 42</td>
+					</tr>
+					<tr>
+						<td>Bhutan</td>
+						<td>6th Fl., 919/7-9 Jewelry Trade Centre, North Office Tower, Siam Rd., Bangrak</td>
+						<td>0 2267 1687 to 8</td>
+					</tr>
+					<tr>
+						<td>Botswana</td>
+						<td>Pin Siam Co., Ltd. 32/9 Moo 5, Phaholyothin Rd., Khlong Luang, Pathum Thani</td>
+						<td>0 2901 8778,<br>0 2901 8338</td>
+					</tr>
+					<tr>
+						<td>Bulgaria</td>
+						<td>60 Soi Barbos 2, Sukhumwit 42,<br>Phra Khanong, Khlong Toei</td>
+						<td>0 2661 5669</td>
+					</tr>
+					<tr>
+						<td>Burkina Faso</td>
+						<td>32nd Fl., 191/1 CTT Tower, Ratchadaphisek Rd., Khlong Toei</td>
+						<td>0 2261 1000</td>
+					</tr>
+					<tr>
+						<td>Chile</td>
+						<td>18th Fl., 175 Sathon City Tower, South Sathon Rd., Khlong Toei</td>
+						<td>0 2679 6005,<br>0 2679 6015</td>
+					</tr>
+					<tr>
+						<td>Chad</td>
+						<td>36/9, 16-18 Viphavadee Rangsit Rd., Don Mueang</td>
+						<td>0 2522 6655</td>
+					</tr>
+					<tr>
+						<td>Congo, Republic</td>
+						<td>3/2 Naradhiwas Rajanakarindra Rd., Thungwatdon, South Sathon</td>
+						<td>0 2476 3211</td>
+					</tr>
+					<tr>
+						<td>Croatia</td>
+						<td>23rd Fl., 138/51 Jewelry Center, Room No. C-7, Nares Road</td>
+						<td>0 2266 6911,<br>0 2848 2209#2</td>
+					</tr>
+					<tr>
+						<td>Cyprus</td>
+						<td>17th Fl., Richmond Bldg., 75/59 Sukhumwit 26, Khlong Toei</td>
+						<td>0 2261 8408 to 9</td>
+					</tr>
+					<tr>
+						<td>Denmark</td>
+						<td>The East Asiatic (Thailand) PCL., 35th Fl., Lumpini Tower,<br>1168/98-100 Rama IV Rd.,<br>Thung Mahamek, South Sathon</td>
+						<td>0 2689 5958</td>
+					</tr>
+					<tr>
+						<td>Dominican</td>
+						<td>431 Praditmanudham Rd., Wangtonglang</td>
+						<td>0 2933 5686</td>
+					</tr>
+					<tr>
+						<td>Ecuador</td>
+						<td>9th Fl., Pakpanang Co., Ltd.,<br>103 Soi Ruammit, Nonsee Rd., Yannawa</td>
+						<td>0 2295 1991 Ext. 343</td>
+					</tr>
+					<tr>
+						<td>Estonia</td>
+						<td>62 Soi Yodsuwan, Pracha Uthit Rd.,<br>Huai Kwang</td>
+						<td>0 2690 3779</td>
+					</tr>
+					<tr>
+						<td>Ethiopia</td>
+						<td>10th Fl., CTI Bldg., 191/86 Ratchadaphisek Rd., Khlong Toei</td>
+						<td>0 2583 3993,<br>0 2583 5995</td>
+					</tr>
+					<tr>
+						<td>Gabon</td>
+						<td>No.13 Pradipat 10, Pradipat Rd.,<br>Samsennai, Phyathai</td>
+						<td>0 2279 2800 to 1</td>
+					</tr>
+					<tr>
+						<td>Gambia</td>
+						<td>610/5-6 Songwad Rd., Samphanthawong</td>
+						<td>0 2224 0091</td>
+					</tr>
+					<tr>
+						<td>Georgia</td>
+						<td>D.S. Tower II # 93/40 93 Sukhumwit Soi 39 (Soi Pobmit), Klongton</td>
+						<td>0 2260 0908</td>
+					</tr>
+					<tr>
+						<td>Guinea</td>
+						<td>194/1 Surawong Rd., Bangrak</td>
+						<td>0 2631 4331</td>
+					</tr>
+					<tr>
+						<td>Honduras</td>
+						<td>28th Fl., CP Tower Bldg., 313 Silom Rd.</td>
+						<td>0 2642 1059,<br>0 2641 1567</td>
+					</tr>
+					<tr>
+						<td>Iceland</td>
+						<td>Viravan Bldg., 2207 New Road, Watprayakrai, Bangkkorlaem</td>
+						<td>0 2289 1121 to 5<br>Ext. 124</td>
+					</tr>
+					<tr>
+						<td>Ireland</td>
+						<td>28th Fl., Q. House Lumphini Bldg. 1, South Sathon Rd., Thungmahamek</td>
+						<td>0 2677 7500</td>
+					</tr>
+					<tr>
+						<td>Jamaica</td>
+						<td>16th Fl., 102 Loxley Bldg., Na Ranong Rd., Khlong Toei</td>
+						<td>0 2240 3285</td>
+					</tr>
+					<tr>
+						<td>Jordan</td>
+						<td>47 Soi Ekkamai, Sukhumwit 63 Rd.</td>
+						<td>0 2391 7142</td>
+					</tr>
+					<tr>
+						<td>Latvia</td>
+						<td>113/13 Surawong Rd.</td>
+						<td>0 2266 5931,<br>0 2634 0140 to 2</td>
+					</tr>
+					<tr>
+						<td>Lesotho</td>
+						<td>Floraville Bldg. A, F/1, 991/2 Pattanakan 51, Suanluang</td>
+						<td>0 2720 7955</td>
+					</tr>
+					<tr>
+						<td>Lithuania</td>
+						<td>67 Sukhumwit 26 Rd.</td>
+						<td>0 2661 5599</td>
+					</tr>
+					<tr>
+						<td>Luxembourg</td>
+						<td>57/1 Sukhumwit 26, Soi Aree,<br>Sukhumwit Rd.</td>
+						<td>0 2260 4838 to 40</td>
+					</tr>
+					<tr>
+						<td>Madagascar</td>
+						<td>30th Fl., ITF 1 Bldg., 160 Silom Rd.</td>
+						<td>0 2634 5838</td>
+					</tr>
+					<tr>
+						<td>Maldives</td>
+						<td>15 Suksawat Rd., Soi 36, Bangpakok, Ratburana</td>
+						<td>0 2428 9292</td>
+					</tr>
+					<tr>
+						<td>Mali</td>
+						<td>12th Fl., Orakarn Bldg.,<br>26/42 Soi Chidlom, Ploenchit Rd.</td>
+						<td>0 2254 1490</td>
+					</tr>
+					<tr>
+						<td>Malta</td>
+						<td>56 Naradhiwas Rajanakarindra Rd., Silom</td>
+						<td>0 2234 9729,<br>0 2233 6872</td>
+					</tr>
+					<tr>
+						<td>Mexico</td>
+						<td>18th Fl., 719 KPN Tower, Rama IX Rd., Bangkapi, Huai Kwang</td>
+						<td>0 2717 0111</td>
+					</tr>
+					<tr>
+						<td>Monaco</td>
+						<td>245/9 Soi 31, Sukhumwit Rd.,<br>(Soi Sawasdee)</td>
+						<td>0 2662 3023 to 6</td>
+					</tr>
+					<tr>
+						<td>Morocco</td>
+						<td>The Siam Chemicals Public Co., Ltd. 11th Fl., 26/36-37 Orakarn Bldg.,<br>Chidlom, Pathumwan</td>
+						<td>0 2254 3899</td>
+					</tr>
+					<tr>
+						<td>Mozambique</td>
+						<td>142/36 Sathon 12 (Soi Suksa Vidhaya), Bangrak</td>
+						<td>0 2268 1681 to 2</td>
+					</tr>
+					<tr>
+						<td>Namibia</td>
+						<td>33 Soonwijai 4, Rama IX Soi 26, Huai Khwang</td>
+						<td>0 2762 9000</td>
+					</tr>
+					<tr>
+						<td>Nauru</td>
+						<td>765/1 Pracha-Uthit Rd., Huai Khwang</td>
+						<td>0 2274 3989 to 90</td>
+					</tr>
+					<tr>
+						<td>Oman</td>
+						<td>33rd Fl., 82 Saeng Thong Thani Bldg., Sathon Nua Rd., Silom, Bangrak</td>
+						<td>0 2639 9933 to 40</td>
+					</tr>
+					<tr>
+						<td>Panama</td>
+						<td>132/16 Peninsular Tower,<br>
+						Soi 35, Rama VI Rd.</td>
+						<td>0 2279 6350,<br>
+						0 2279 6355</td>
+					</tr>
+					<tr>
+						<td>Papua New Guinea</td>
+						<td>R Fl., Sino-Thai Tower, Asok Rd., Sukhumwit 21</td>
+						<td>0 2260 2801 to 3</td>
+					</tr>
+					<tr>
+						<td>Seychelles</td>
+						<td>6/3 Ladphrao Soi 1, Ladphrao Rd., Chatuchak</td>
+						<td>0 2939 2923 to 5</td>
+					</tr>
+					<tr>
+						<td>Slovenia</td>
+						<td>294/4-5 Silom Rd.</td>
+						<td>0 2234 2481,<br>0 2234 7637,<br>0 2237 8485 to 6</td>
+					</tr>
+					<tr>
+						<td>Sudan</td>
+						<td>Room # 4/5-6, 4th Fl., TPS Bldg., 1023 Phatthanakan Rd., Suanluang</td>
+						<td>0 2717 8175 to 6</td>
+					</tr>
+					<tr>
+						<td>Syria</td>
+						<td>2nd Fl., Trendy Office Plaza, 10/52 Sukhumwit 13 Rd.</td>
+						<td>0 2168 7777 to 8</td>
+					</tr>
+					<tr>
+						<td>Tunisia</td>
+						<td>212 Ratchadaphisek Rd.,<br>Huai Kwang</td>
+						<td>0 2692 5071</td>
+					</tr>
+					<tr>
+						<td>Uganda</td>
+						<td>c/o Thai Sri Insurance Co., Ltd., Thai Sri Tower, 19th Fl., Krung Thon Buri Rd., Khlong San</td>
+						<td>0 2878 7159,<br>0 2878 7111#1916</td>
+					</tr>
+					<tr>
+						<td>Ukraine</td>
+						<td>219 Soi Phatthanakan 39, Phatthanakan Rd., Suanluang</td>
+						<td>0 2322 0150,<br>0 2322 0152</td>
+					</tr>
+					<tr>
+						<td>Uruguay</td>
+						<td>2114 New Pethburi Rd., Huai Khwang</td>
+						<td>0 2319 7132 to 3</td>
+					</tr>
+					<tr>
+						<td>Uzbekistan</td>
+						<td>83/4 Soi Vithayu 1, Wireless Rd.</td>
+						<td>0 2675 3995 to 6</td>
+					</tr>
+					<tr>
+						<td>Yemen</td>
+						<td>24 Ramkhamhaeng Rd., Soi 24, Tawontawat 1, Hua Mark</td>
+						<td>0 2314 0610 to 3</td>
+					</tr>
+					<tr>
+						<td>Zimbabwe</td>
+						<td>14th Fl., Modern Town Tower,<br>87/110 Sukhumwit 63</td>
+						<td>0 2382 1560,<br>0 2743 5010</td>
+					</tr>
+				</tbody>
+			</table>
 		</section>
 	</div>
 </div>
