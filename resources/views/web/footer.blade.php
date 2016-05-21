@@ -138,9 +138,9 @@
             </ul>
         </div>
     </div>
-    <div class="row">
+<!--     <div class="row">
         <a href="http://pdfcrowd.com/url_to_pdf/">Save this page to a PDF</a>
-    </div>
+    </div> -->
 </div>
 
 <!-- div header -->
