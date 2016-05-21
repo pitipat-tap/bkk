@@ -35,6 +35,9 @@ Route::get('/faq', function () {
     return view('web/faq');
 });
 
+Route::get('/useful-info', function () {
+    return view('web/useful-info');
+});
 
 Route::get('/partners', function () {
     return view('web/partners');

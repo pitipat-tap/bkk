@@ -1,0 +1,24 @@
+@import "resources/assets/sass/settings/settings";
+@import 'foundation';
+
+#magellan-menu{
+	text-align: center;
+	margin: 2em;
+
+	ul{
+		li{
+			padding: 0 2em;
+			display: inline-block;
+		}
+	}
+}
+#importantCalls{
+	width: 100%;
+	
+	td:first-child{
+		width:40%;
+	}
+	td:last-child{
+		width: 60%;
+	}
+}

@@ -132,6 +132,7 @@
                 <li><a href="aboutus">About Us</a></li>
                 <li><a href="partners">Our partners</a></li>
                 <li><a href="faq">FAQ</a></li>
+                <li><a href="useful-info">Useful Info</a></li>
                 <li><a href="#">Sitemap</a></li>
             </ul>
         </div>
