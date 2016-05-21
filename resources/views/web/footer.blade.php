@@ -133,9 +133,13 @@
                 <li><a href="partners">Our partners</a></li>
                 <li><a href="faq">FAQ</a></li>
                 <li><a href="useful-info">Useful Info</a></li>
+                <li><a href="https://www.youtube.com/user/bangkoktourism" target="_blank">Video</a></li>
                 <li><a href="#">Sitemap</a></li>
             </ul>
         </div>
+    </div>
+    <div class="row">
+        <a href="http://pdfcrowd.com/url_to_pdf/">Save this page to a PDF</a>
     </div>
 </div>
 
