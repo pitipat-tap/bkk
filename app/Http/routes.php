@@ -47,6 +47,10 @@ Route::get('/accommodation', function () {
     return view('web/accommodation');
 });
 
+Route::get('/accommodation2', function () {
+    return view('web/accommodation2');
+});
+
 Route::group(array('middleware' => 'auth.staff.already', 'prefix' => 'admin'), function(){
 	Route::get("login", array("as" => "admin-login", "uses" => "AdminAuthController@login"));
     Route::post("login", array("as" => "admin-auth", "uses" => "AdminAuthController@authenticate"));
