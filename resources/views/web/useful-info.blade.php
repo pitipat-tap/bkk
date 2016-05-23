@@ -27,6 +27,7 @@
 	</div>
 	<div class="sections">
 		<section id="importantCalls" data-magellan-target="importantCalls">
+			<h4 class="mg-t-1 mg-b-1" style="text-align: center">Important Calls</h4>
 			<table>
 				<tbody>
 					<caption>Telephone Services</caption>
@@ -315,9 +316,9 @@
 			</table>	
 		</section>
 		<section id="embassies" data-magellan-target="embassies">
-			<table>
+			<table class="mg-t-2">
 				<tbody>
-					<caption>Embassies</caption>
+					<caption><h4>Embassies</h4></caption>
 					<tr>
 						<td><b>Country</b></td>
 						<td><b>Address (Bangkok)</b></td>
@@ -774,9 +775,9 @@
 			</table>
 		</section>
 		<section id="consulates" data-magellan-target="consulates">
-			<table>
+			<table class="mg-t-2">
 				<tbody>
-					<caption>Consulates in Bangkok</caption>
+					<caption><h4>Consulates in Bangkok</h4></caption>
 					<tr>
 						<td><b>Country</b></td>
 						<td><b>Address (Bangkok)</b></td>

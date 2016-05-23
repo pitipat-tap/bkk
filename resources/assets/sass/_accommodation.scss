@@ -1,8 +1,13 @@
+.font{
+	@include breakpoint(small only) {
+		font-size: 2rem;
+	}
+}
 .modify {
 	border:none !important;
 }
 
-.border-right {
+.border-right{
 	background-image: linear-gradient(to left, #bebebe 1px, rgba(190,190,190,0) 1px);
 	background-position: center;
 	background-size: 100% 25px;
@@ -14,8 +19,9 @@
 }
 
 .half-width{
-	width: 50%;
-	
+	@include breakpoint(medium) {
+    	width: 50%; 
+  	}
 }
 
 .border-bottom{

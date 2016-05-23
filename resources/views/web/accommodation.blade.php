@@ -19,9 +19,9 @@
     $(document).ready(function(){
         sessionStorage.setItem("flag", 0);
         $('#accommodation').addClass("active");
-        $('#menu li a').on('click', function(){
+        $('#menu li').on('click', function(){
           $('li a.border-bottom').removeClass('border-bottom');
-          $(this).addClass('border-bottom');
+          $(this).find('a').addClass('border-bottom');
         });
     });
 </script>
@@ -30,26 +30,26 @@
         <img class="orbit-image" src="http://placehold.it/1500x500" alt="Space">
     </a>
 </div>
-<div class="banner-page-title">Accommodation</div>
+<div class="banner-page-title font">Accommodation</div>
 <div class="body-section">
     <div class="row collapse">
-    <div class="medium-12 columns" align="center">
+    <div class="small-12 columns" align="center">
       <ul id="menu" class="tabs modify" id="example-vert-tabs" data-tabs>
-        <li class="medium-3 tabs-title is-active border-right" >
+        <li class="small-3 tabs-title is-active border-right" >
           <a class="background-none half-width border-bottom" href="#panel1v" aria-selected="true">Hotels</a>
         </li>
-        <li class="medium-3 tabs-title border-right" >
+        <li class="small-3 tabs-title border-right" >
           <a class="background-none half-width" href="#panel2v">Hostels</a>
         </li>
-        <li class="medium-3 tabs-title border-right" >
+        <li class="small-3 tabs-title border-right" >
           <a class="background-none half-width" href="#panel3v">Apartments</a>
         </li>
-        <li class="medium-3 tabs-title" >
+        <li class="small-3 tabs-title" >
           <a class="background-none half-width" href="#panel4v">Guesthouse</a>
         </li>
       </ul>
       </div>
-      <div class="medium-12 columns">
+      <div class="small-12 columns">
         <div class="tabs-content modify" data-tabs-content="example-vert-tabs">
           <div class="tabs-panel is-active" id="panel1v">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
