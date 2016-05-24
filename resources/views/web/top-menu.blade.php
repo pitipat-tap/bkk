@@ -52,7 +52,7 @@
                     <li><a href="attraction-category">Attraction</a></li>
                     <li><a href="accommodation">Accommodation</a></li>
                     <li><a href="transportation">Transportation</a></li>
-                    <li><a href="#">Gallery</a></li>
+                    <li><a href="gallery">Gallery</a></li>
                     <li><a>Language</a></li>
                 </ul>
 
