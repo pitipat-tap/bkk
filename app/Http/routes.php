@@ -27,6 +27,10 @@ Route::get('/transportation', function () {
     return view('web/transportation');
 });
 
+Route::get('/gallery', function () {
+    return view('web/gallery');
+});
+
 Route::get('/aboutus', function () {
     return view('web/aboutUs');
 });

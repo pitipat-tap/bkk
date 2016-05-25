@@ -8,13 +8,48 @@
             {!! Html::image("images/logo/bkk-logo.png","bkk-logo",array("class"=>"bkk-logo")) !!}
           </a>
         </li>
-        <li><a class="" href="#">Campaign</a></li>
+        <li>
+            <a class="" href="#">
+                <span lang="th">Campaign TH</span>
+                <span lang="en">Campaign EN</span>
+                <span lang="jp">Campaign JP</span>
+                <span lang="ch">Campaign CN</span>
+            </a>
+        </li>
         <li><a class="" href="attraction-category">Attraction</a></li>
         <li><a id="accommodation" class="" href="accommodation">Accommodation</a></li>
         <li><a class="" href="transportation">Transportation</a></li>
-        <li><a class="" href="#">Gallery</a></li>
+        <li><a class="" href="gallery">Gallery</a></li>
         <li><a class="" href="trip">Trips</a></li>
-        <li><a class="" href="#">language</a></li>
+        <li>
+            <a class="" href="#">language</a>
+             <ul class="menu">
+                  <li>
+                    <a href="#" class="change-language" data-lan="th">
+                    <span>{!! Html::image("images/flag/Thailand.png","Thai",array("class"=>"bkk-logo")) !!}</span>
+                        ไทย
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="change-language" data-lan="en">
+                    <span>{!! Html::image("images/flag/uk.png","Thai",array("class"=>"bkk-logo")) !!}</span>
+                        ไทย
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="change-language" data-lan="jp">
+                    <span>{!! Html::image("images/flag/japan.png","Thai",array("class"=>"bkk-logo")) !!}</span>
+                        ไทย
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="change-language" data-lan="ch">
+                    <span>{!! Html::image("images/flag/China.png","Thai",array("class"=>"bkk-logo")) !!}</span>
+                        ไทย
+                    </a>
+                  </li>
+            </ul>
+        </li>
       </ul>
     </div>
   </div>
@@ -53,7 +88,7 @@
                     <li><a href="attraction-category">Attraction</a></li>
                     <li><a href="accommodation">Accommodation</a></li>
                     <li><a href="transportation">Transportation</a></li>
-                    <li><a href="#">Gallery</a></li>
+                    <li><a href="gallery">Gallery</a></li>
                     <li><a href="trip">Trips</a></li>
                     <li><a>Language</a></li>
                 </ul>
