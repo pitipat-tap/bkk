@@ -48,7 +48,7 @@
 
         @yield("specific_js_head")
     </head>
-    <body>
+    <body draggable="false">
         @yield("body")
         
         <script>
