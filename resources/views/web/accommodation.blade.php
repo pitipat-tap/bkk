@@ -25,11 +25,14 @@
         });
     });
 </script>
-<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-    <a>
-        <img class="orbit-image" src="http://placehold.it/1500x500" alt="Space">
-    </a>
-</div>
+<section>
+  <div class="banner-container show-for-large columns">
+    {!! HTML::image("http://placehold.it/1500x500","bkk-logo",array("class"=>"banner-picture")) !!}
+  </div>
+  <div class="banner-container hide-for-large columns mg-b-1">
+    {!! HTML::image("http://placehold.it/300x400","bkk-logo",array("class"=>"banner-picture")) !!}
+  </div>
+</section>
 <div class="banner-page-title font">Accommodation</div>
 <div class="body-section">
     <div class="row collapse">
