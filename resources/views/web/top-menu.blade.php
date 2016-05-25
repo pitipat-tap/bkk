@@ -54,7 +54,7 @@
                     <li><a href="accommodation">Accommodation</a></li>
                     <li><a href="transportation">Transportation</a></li>
                     <li><a href="#">Gallery</a></li>
-                    <li><a herf="trip">Trips</a></li>
+                    <li><a href="trip">Trips</a></li>
                     <li><a>Language</a></li>
                 </ul>
 

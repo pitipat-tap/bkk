@@ -49,15 +49,19 @@
         @yield("specific_js_head")
     </head>
     <body>
+        @yield("body")
+
+        <script>
+            onload = function() {
+                $('body').addClass('loaded');
+            }
+        </script>
+
         <div id="loader-wrapper">
             <div id="loader"></div>
          
             <div class="loader-section section-left"></div>
-         
         </div>
-
-
-        @yield("body")
         
         <script>
             $(document).foundation();
