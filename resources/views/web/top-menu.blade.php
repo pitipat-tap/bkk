@@ -13,7 +13,35 @@
         <li><a id="accommodation" class="" href="accommodation">Accommodation</a></li>
         <li><a class="" href="transportation">Transportation</a></li>
         <li><a class="" href="gallery">Gallery</a></li>
-        <li><a class="" href="#">language</a></li>
+        <li>
+            <a class="" href="#">language</a>
+             <ul class="menu">
+                  <li>
+                    <a href="#">
+                    <span>{!! Html::image("images/flag/Thailand.png","Thai",array("class"=>"bkk-logo")) !!}</span>
+                        ไทย
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <span>{!! Html::image("images/flag/uk.png","Thai",array("class"=>"bkk-logo")) !!}</span>
+                        ไทย
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <span>{!! Html::image("images/flag/japan.png","Thai",array("class"=>"bkk-logo")) !!}</span>
+                        ไทย
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <span>{!! Html::image("images/flag/China.png","Thai",array("class"=>"bkk-logo")) !!}</span>
+                        ไทย
+                    </a>
+                  </li>
+            </ul>
+        </li>
       </ul>
     </div>
   </div>
