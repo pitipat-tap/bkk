@@ -47,7 +47,7 @@
 							</p>
 						</div>
 						<div class="large-2 show-for-large columns">
-							<a class="button mg-b-0" href="http://www.bts.co.th/customer/th/main.aspx" target="_blank">More Info</a>
+							<a class="button mg-b-0" href="trip">More Info</a>
 						</div>
 					</div>
 				</div>
@@ -73,7 +73,7 @@
 							</p>
 						</div>
 						<div class="large-2 show-for-large columns">
-							<a class="button mg-b-0" href="http://www.bangkokmetro.co.th/index.aspx?Lang=En" target="_blank">More Info</a>
+							<a class="button mg-b-0" href="trip">More Info</a>
 						</div>
 					</div>
 				</div>
@@ -98,7 +98,7 @@
 								Aliquam tempus elit libero, sed pretium purus viverra eu. In pulvinar urna id magna tristique lacinia.
 						</div>
 						<div class="large-2 show-for-large columns">
-							<a class="button mg-b-0" href="http://www.bmta.co.th/?q=th/home" target="_blank">More Info</a>
+							<a class="button mg-b-0" href="trip">More Info</a>
 						</div>
 					</div>
 				</div>
@@ -121,7 +121,7 @@
 				</div>
 				<div class="row columns mg-t-1">
 					<div class="small-12 small-centered columns">
-						<a class="button small-12 columns mg-0" href="http://www.bmta.co.th/?q=th/home" target="_blank">More Info</a>
+						<a class="button small-12 columns mg-0" href="trip">More Info</a>
 					</div>
 				</div>
 			</div>
@@ -139,7 +139,7 @@
 				</div>
 				<div class="row columns mg-t-1">
 					<div class="small-12 small-centered columns">
-						<a class="button small-12 columns mg-0" href="http://www.bmta.co.th/?q=th/home" target="_blank">More Info</a>
+						<a class="button small-12 columns mg-0" href="trip">More Info</a>
 					</div>
 				</div>
 			</div>
@@ -157,7 +157,7 @@
 				</div>
 				<div class="row columns mg-t-1">
 					<div class="small-12 small-centered columns">
-						<a class="button small-12 columns mg-0" href="http://www.bmta.co.th/?q=th/home" target="_blank">More Info</a>
+						<a class="button small-12 columns mg-0" href="trip">More Info</a>
 					</div>
 				</div>
 			</div>
