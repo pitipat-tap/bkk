@@ -23,7 +23,8 @@
 .gallery-img{
     padding: 3px 3px;
     @include breakpoint(medium){
-        max-width: 300px;
+        width: 300px;
+        height: auto;
         position:absolute;
         opacity:0;
         -webkit-transition-property: opacity; /* Safari */
@@ -31,10 +32,20 @@
         transition-property: opacity;
         transition-duration: 0.5s;
         cursor:pointer;
+
+        img{
+            width: 300px;
+            height: auto;
+        }
     }
     @include breakpoint(small){
-        max-width: 100%;
+        width: 100%;
         position:relative;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
     }
 }
 .gallery-img:hover {

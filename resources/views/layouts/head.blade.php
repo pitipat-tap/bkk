@@ -55,7 +55,7 @@
             onload = function() {
                 setInterval(function(){
                     $('body').addClass('loaded');
-                }, 5000);
+                }, 1000);
             }
         </script>
 
