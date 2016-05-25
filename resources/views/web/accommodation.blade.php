@@ -29,7 +29,7 @@
   <div class="banner-container show-for-large columns">
     {!! HTML::image("http://placehold.it/1500x500","bkk-logo",array("class"=>"banner-picture")) !!}
   </div>
-  <div class="banner-container hide-for-large columns mg-b-1">
+  <div class="banner-container hide-for-large columns">
     {!! HTML::image("http://placehold.it/300x400","bkk-logo",array("class"=>"banner-picture")) !!}
   </div>
 </section>

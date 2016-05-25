@@ -24,7 +24,7 @@
 	</div>
 </section>
 <div class="body-section">
-	<div class="banner-page-title mg-b-1">Transportaion</div>
+	<div class="banner-page-title mg-b-1">Recommendation Trips</div>
 
 	<!-- Desktop -->
 	<div class="show-for-large columns">
@@ -37,7 +37,7 @@
 				</div>
 				<div class="transportation-content small-9 large-11 columns pd-r-0">
 					<div class="row pd-t-05 pd-l-1">
-						BTS
+						One day trip
 					</div>
 					<hr class="mg-1">
 					<div class="row pd-l-1">
@@ -63,7 +63,7 @@
 				</div>
 				<div class="transportation-content small-9 large-11 columns pd-r-0">
 					<div class="row pd-t-05 pd-l-1">
-						MRT
+						Two days trip
 					</div>
 					<hr class="mg-1">
 					<div class="row pd-l-1">
@@ -89,7 +89,7 @@
 				</div>
 				<div class="transportation-content small-9 large-11 columns pd-r-0">
 					<div class="row pd-t-05 pd-l-1">
-						BMTA
+						Half day trip
 					</div>
 					<hr class="mg-1">
 					<div class="row pd-l-1">
@@ -114,7 +114,7 @@
 				{!! HTML::image("http://placehold.it/1248x416","bkk-logo",array("class"=>"transportation-picture-mobile")) !!}
 
 				<div class="transportation-content small-12 columns">
-					<h5>BTS</h5>
+					<h5>One day trip</h5>
 					<p>
 						Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
 					</p>
@@ -132,7 +132,7 @@
 				{!! HTML::image("http://placehold.it/1248x416","bkk-logo",array("class"=>"transportation-picture-mobile")) !!}
 
 				<div class="transportation-content small-12 columns">
-					<h5>MRT</h5>
+					<h5>Two days trip</h5>
 					<p>
 						Aliquam orci ante, egestas et imperdiet ac, bibendum vitae orci. Pellentesque mi metus.
 					</p>
@@ -150,7 +150,7 @@
 				{!! HTML::image("http://placehold.it/1248x416","bkk-logo",array("class"=>"transportation-picture-mobile")) !!}
 
 				<div class="transportation-content small-12 columns">
-					<h5>BMTA</h5>
+					<h5>Half day trip</h5>
 					<p>
 						Aliquam tempus elit libero, sed pretium purus viverra eu. In pulvinar urna id magna tristique lacinia.
 					</p>

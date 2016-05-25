@@ -51,8 +51,8 @@ Route::get('/accommodation2', function () {
     return view('web/accommodation2');
 });
 
-Route::get('/trip', function () {
-	return view('web/trip');
+Route::get('/trips', function () {
+	return view('web/trips');
 });
 
 Route::group(array('middleware' => 'auth.staff.already', 'prefix' => 'admin'), function(){
