@@ -3,10 +3,12 @@
 @import "resources/assets/sass/fonts";
 
 @import 'foundation';
- 
+
 @include foundation-everything;
 
 @include top-bar-container;
+
+@import "resources/assets/sass/language";
 
 @import "resources/assets/sass/top-menu";
 @import "resources/assets/sass/banner-page";
@@ -14,6 +16,7 @@
 @import "resources/assets/sass/home";
 @import "resources/assets/sass/accommodation";
 @import "resources/assets/sass/accommodation2";
+@import "resources/assets/sass/gallery";
 @import "resources/assets/sass/loading-page";
 @import "resources/assets/sass/transportation";
 @import "resources/assets/sass/timeline";
