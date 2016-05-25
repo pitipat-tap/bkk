@@ -14,6 +14,7 @@
 @section("body")
 
 @include("web.top-menu")
+
 <a href="#" class="go-top" style="display: none;">Back to top</a>
 
 <div class="banner-page-title">Useful Info</div>

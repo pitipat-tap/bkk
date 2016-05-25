@@ -13,6 +13,7 @@
         <li><a id="accommodation" class="" href="accommodation">Accommodation</a></li>
         <li><a class="" href="transportation">Transportation</a></li>
         <li><a class="" href="#">Gallery</a></li>
+        <li><a class="" href="trip">Trips</a></li>
         <li><a class="" href="#">language</a></li>
       </ul>
     </div>
@@ -53,6 +54,7 @@
                     <li><a href="accommodation">Accommodation</a></li>
                     <li><a href="transportation">Transportation</a></li>
                     <li><a href="#">Gallery</a></li>
+                    <li><a href="trip">Trips</a></li>
                     <li><a>Language</a></li>
                 </ul>
 
