@@ -8,7 +8,13 @@ Array.prototype.max = function() {
 $(window).load(function(){
 
   var currentImg = $('.gallery-img:first-child');
-  var colHight = [0,0,0,0];
+  if(isMobile.tablet && (verge.viewportH() > verge.viewportW())){
+    var colHight = [0,0];
+  }else if(isMobile.tablet && (verge.viewportH() < verge.viewportW())){
+    var colHight = [0,0,0];
+  }else {
+    var colHight = [0,0,0,0];
+  }
 
 // console.log(currentImg);
 // var t = document.querySelectorAll('.gallery-img');
@@ -17,7 +23,7 @@ $(window).load(function(){
   var left = 0 ;
   var currentCol = 0;
 
-  if(!isMobile.any){
+  if(!isMobile.phone){
     $('.gallery-img').click(function(){
         $('.selected-img').css({'display':'block','opacity':'1'});
         $('#selected')[0].src = ($(this).children(":first")[0].src);

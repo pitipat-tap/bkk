@@ -1,8 +1,17 @@
 .gallery-wrapper{
     margin:0 auto;
     position:relative;
-    @include breakpoint(xlarge){
+    @include breakpoint(large){
         width:1200px;
+        height:2000px;
+    }
+    @include breakpoint(medium only){
+        @include breakpoint(portrait){
+            width:600px;
+        }
+        @include breakpoint(landscape){
+            width:900px;
+        }
         height:2000px;
     }
     @include breakpoint(small){
@@ -13,7 +22,7 @@
 }
 .gallery-img{
     padding: 3px 3px;
-    @include breakpoint(xlarge){
+    @include breakpoint(medium){
         max-width: 300px;
         position:absolute;
         opacity:0;
