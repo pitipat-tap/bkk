@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+  $('.change-language').click(function(){
+      document.body.className = $(this).attr('data-lan');
+      console.log(document.body.className);
+  });
+
 	var path = window.location.href;
 	var loc = path.substring(path.lastIndexOf('/')+1);
 
