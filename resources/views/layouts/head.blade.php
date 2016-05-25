@@ -53,7 +53,9 @@
 
         <script>
             onload = function() {
-                $('body').addClass('loaded');
+                setInterval(function(){
+                    $('body').addClass('loaded');
+                }, 10000);
             }
         </script>
 
