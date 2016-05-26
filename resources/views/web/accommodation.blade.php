@@ -61,11 +61,18 @@
             <div class="small-12 medium-7 columns padding-b">
               <h4 class="padding-b"> Title1 </h4>
               <div class="padding-b">
+                <div class="small-4 columns">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i> 00.00 - 00.00
+                </div>
+                <div class="small-4 columns end">
+                  <i class="fa fa-money" aria-hidden="true"></i> 00.00
+                </div>
+              </div>
+              <div class="padding-b">
                 description
               </div>
               <div>
                 <button class="green-btn" type="button">Read more...</button>
-                <button class="white-btn" type="button">Show map</button>
               </div>
             </div>
           </div>
@@ -87,7 +94,6 @@
               </div>
               <div>
                 <button class="green-btn" type="button">Read more...</button>
-                <button class="white-btn" type="button">Show map</button>
               </div>
             </div>
           </div>
@@ -109,7 +115,6 @@
               </div>
               <div>
                 <button class="green-btn" type="button">Read more...</button>
-                <button class="white-btn" type="button">Show map</button>
               </div>
             </div>
           </div>
@@ -131,7 +136,6 @@
               </div>
               <div>
                 <button class="green-btn" type="button">Read more...</button>
-                <button class="white-btn" type="button">Show map</button>
               </div>
             </div>
           </div>
