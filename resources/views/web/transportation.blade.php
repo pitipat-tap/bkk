@@ -17,7 +17,12 @@
 @include("web.banner-picture")
 
 <div class="body-section">
-	<div class="banner-page-title mg-b-1">Transportaion</div>
+    <div class="banner-page-title mg-b-1">
+       <span lang="th">Transportaion</span>
+       <span lang="en">Transportaion</span>
+       <span lang="jp">Transportaion</span>
+       <span lang="ch">Transportaion</span>
+    </div>
 
 	<!-- Desktop -->
 	<div class="show-for-large columns">
@@ -35,12 +40,26 @@
 					<hr class="mg-1">
 					<div class="row pd-l-1">
 						<div class="small-8 large-10 columns">
-							<p>
+							<p lang="th">
+								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+							</p>
+							<p lang="en">
+								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+							</p>
+							<p lang="jp">
+								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+							</p>
+							<p lang="ch">
 								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
 							</p>
 						</div>
 						<div class="large-2 show-for-large columns">
-							<a class="button mg-b-0" href="http://www.bts.co.th/customer/th/main.aspx" target="_blank">More Info</a>
+                            <a class="button mg-b-0" href="http://www.bts.co.th/customer/th/main.aspx" target="_blank">
+                                <span lang="th">More Info</span>
+                                <span lang="en">More Info</span>
+                                <span lang="jp">More Info</span>
+                                <span lang="ch">More Info</span>
+                            </a>
 						</div>
 					</div>
 				</div>
@@ -61,12 +80,26 @@
 					<hr class="mg-1">
 					<div class="row pd-l-1">
 						<div class="small-8 large-10 columns">
-							<p>
-								Aliquam orci ante, egestas et imperdiet ac, bibendum vitae orci. Pellentesque mi metus.
+							<p lang="th">
+								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+							</p>
+							<p lang="en">
+								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+							</p>
+							<p lang="jp">
+								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+							</p>
+							<p lang="ch">
+								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
 							</p>
 						</div>
 						<div class="large-2 show-for-large columns">
-							<a class="button mg-b-0" href="http://www.bangkokmetro.co.th/index.aspx?Lang=En" target="_blank">More Info</a>
+							<a class="button mg-b-0" href="http://www.bangkokmetro.co.th/index.aspx?Lang=En" target="_blank">
+                                <span lang="th">More Info</span>
+                                <span lang="en">More Info</span>
+                                <span lang="jp">More Info</span>
+                                <span lang="ch">More Info</span>
+                            </a>
 						</div>
 					</div>
 				</div>
@@ -87,11 +120,26 @@
 					<hr class="mg-1">
 					<div class="row pd-l-1">
 						<div class="small-8 large-10 columns">
-							<p>
-								Aliquam tempus elit libero, sed pretium purus viverra eu. In pulvinar urna id magna tristique lacinia.
+							<p lang="th">
+								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+							</p>
+							<p lang="en">
+								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+							</p>
+							<p lang="jp">
+								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+							</p>
+							<p lang="ch">
+								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+							</p>
 						</div>
 						<div class="large-2 show-for-large columns">
-							<a class="button mg-b-0" href="http://www.bmta.co.th/?q=th/home" target="_blank">More Info</a>
+							<a class="button mg-b-0" href="http://www.bmta.co.th/?q=th/home" target="_blank">
+                                <span lang="th">More Info</span>
+                                <span lang="en">More Info</span>
+                                <span lang="jp">More Info</span>
+                                <span lang="ch">More Info</span>
+                            </a>
 						</div>
 					</div>
 				</div>
@@ -108,13 +156,27 @@
 
 				<div class="transportation-content small-12 columns">
 					<h5>BTS</h5>
-					<p>
-						Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-					</p>
+                    <p lang="th">
+                        Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                    </p>
+                    <p lang="en">
+                        Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                    </p>
+                    <p lang="jp">
+                        Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                    </p>
+                    <p lang="ch">
+                        Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                    </p>
 				</div>
 				<div class="row columns mg-t-1">
 					<div class="small-12 small-centered columns">
-						<a class="button small-12 columns mg-0" href="http://www.bmta.co.th/?q=th/home" target="_blank">More Info</a>
+						<a class="button small-12 columns mg-0" href="http://www.bmta.co.th/?q=th/home" target="_blank">
+                                <span lang="th">More Info</span>
+                                <span lang="en">More Info</span>
+                                <span lang="jp">More Info</span>
+                                <span lang="ch">More Info</span>
+                            </a>
 					</div>
 				</div>
 			</div>
@@ -126,13 +188,27 @@
 
 				<div class="transportation-content small-12 columns">
 					<h5>MRT</h5>
-					<p>
-						Aliquam orci ante, egestas et imperdiet ac, bibendum vitae orci. Pellentesque mi metus.
-					</p>
+                    <p lang="th">
+                        Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                    </p>
+                    <p lang="en">
+                        Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                    </p>
+                    <p lang="jp">
+                        Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                    </p>
+                    <p lang="ch">
+                        Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                    </p>
 				</div>
 				<div class="row columns mg-t-1">
 					<div class="small-12 small-centered columns">
-						<a class="button small-12 columns mg-0" href="http://www.bmta.co.th/?q=th/home" target="_blank">More Info</a>
+						<a class="button small-12 columns mg-0" href="http://www.bmta.co.th/?q=th/home" target="_blank">
+                                <span lang="th">More Info</span>
+                                <span lang="en">More Info</span>
+                                <span lang="jp">More Info</span>
+                                <span lang="ch">More Info</span>
+                            </a>
 					</div>
 				</div>
 			</div>
@@ -144,13 +220,27 @@
 
 				<div class="transportation-content small-12 columns">
 					<h5>BMTA</h5>
-					<p>
-						Aliquam tempus elit libero, sed pretium purus viverra eu. In pulvinar urna id magna tristique lacinia.
-					</p>
+                    <p lang="th">
+                        Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                    </p>
+                    <p lang="en">
+                        Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                    </p>
+                    <p lang="jp">
+                        Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                    </p>
+                    <p lang="ch">
+                        Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                    </p>
 				</div>
 				<div class="row columns mg-t-1">
 					<div class="small-12 small-centered columns">
-						<a class="button small-12 columns mg-0" href="http://www.bmta.co.th/?q=th/home" target="_blank">More Info</a>
+						<a class="button small-12 columns mg-0" href="http://www.bmta.co.th/?q=th/home" target="_blank">
+                                <span lang="th">More Info</span>
+                                <span lang="en">More Info</span>
+                                <span lang="jp">More Info</span>
+                                <span lang="ch">More Info</span>
+                            </a>
 					</div>
 				</div>
 			</div>
