@@ -1,8 +1,17 @@
 $(document).ready(function() {
 
+  if(localStorage.getItem('language') == null){
+    localStorage.setItem('language',"th");
+    document.body.className = localStorage.getItem('language');
+  }else{
+    document.body.className = localStorage.getItem('language');
+  }
+
+
   $('.change-language').click(function(){
-      document.body.className = $(this).attr('data-lan');
-      console.log(document.body.className);
+      var selectedLanguage = $(this).attr('data-lan');
+      document.body.className = selectedLanguage;
+      localStorage.setItem('language', selectedLanguage);
   });
 
 	var path = window.location.href;
