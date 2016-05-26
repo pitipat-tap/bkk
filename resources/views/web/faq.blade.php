@@ -120,7 +120,6 @@
 								<td>Meteorological department</td>
 								<td>Tel: 0-2399-4568-74 ext 155, 1182</td>
 							</tr>
-
 						</tbody>
 					</table>	
 				</td>
@@ -219,7 +218,6 @@
 		We wish you an enjoyable and safe trip inside Bangkok and around. Please look for a tourist information booth with the logo 
 		of the city if you need any help.
 	</h5>
-
 </div>
 @include("web.footer")
 @stop

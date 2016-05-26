@@ -14,7 +14,6 @@
 @section("body")
 
 @include("web.top-menu")
-
 @include("web.banner-picture")
 
 <div class="body-section">

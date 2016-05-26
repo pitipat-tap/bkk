@@ -52,7 +52,6 @@
         }
     }
 }
-
 .footer{
     border-top:solid 1px;
     border-color: $tertiary-color;
@@ -71,7 +70,6 @@
             overflow: auto;
         }
     }
-
     a{
         color: white;
         font-size: 18px;
@@ -180,7 +178,6 @@
     font-size: 15px;
     color: white;
 }
-
 .off-canvas-wrapper{
     background-color: $primary-color;
 
@@ -194,7 +191,6 @@
         }
     }
 }
-
 .mobile-menu-button{
     margin: 1em 1em auto auto;
     position: fixed;
@@ -204,22 +200,18 @@
     a{
         float: right;
     }
-
     * {
       transition:.25s ease-in-out;
       box-sizing:border-box;
     }
-
     body {
       background:#d9e4ea;
     }
-
     span {
       display:block;
       background:#566973;
       border-radius:2px;
     }
-
     #button-menu-mobile {
       width:80px;
       height:80px;

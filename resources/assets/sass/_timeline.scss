@@ -38,14 +38,12 @@
 			margin: 0.5em;
 		}
 	}
-
 	.label-start{
 		margin-top: 1em;
 	}
 	.label-stop{
 		margin-bottom: 1em;
 	}
-
 	.readmore {
 		background-color: $primary-color;
 		padding: 0.5em;
@@ -80,6 +78,7 @@
 		background-color: $tertiary-color;
 		left: 50%;
 		margin-left: -1.5px;
+
 		@include breakpoint(small) {
 			left: 13%;
 		}
@@ -93,7 +92,6 @@
 	position: relative;
 
 	&:nth-child(odd) .timeline-panel {
-
 		@include breakpoint(large) {
 			float: left;
 			width: 46%;
@@ -122,7 +120,6 @@
 	}
 
 	&:nth-child(even) .timeline-panel {
-
 		@include breakpoint(large) {
 			float: right;
 			width: 46%;

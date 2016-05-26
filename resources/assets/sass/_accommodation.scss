@@ -6,24 +6,20 @@
 .modify {
 	border:none !important;
 }
-
 .border-right{
 	background-image: linear-gradient(to left, #bebebe 1px, rgba(190,190,190,0) 1px);
 	background-position: center;
 	background-size: 100% 25px;
 	background-repeat: no-repeat;
 }
-
 .background-none{
 	background: none !important;
 }
-
 .half-width{
 	@include breakpoint(medium) {
     	width: 50%; 
   	}
 }
-
 .border-bottom{
 	border-bottom: 3px solid black;
 }

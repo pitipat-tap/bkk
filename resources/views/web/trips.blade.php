@@ -7,14 +7,13 @@
 
 
 @section("specific_js_head")
-{!! Html::script("js/verge.min.js") !!}
+
 @stop
 
 
 @section("body")
 
 @include("web.top-menu")
-
 @include("web.banner-picture")
 
 <div class="body-section">

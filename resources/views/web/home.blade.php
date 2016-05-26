@@ -15,7 +15,6 @@
 @section("body")
 
 @include("web.top-menu")
-
 @include("web.banner-orbit")
 
 <section id="home-body">
@@ -122,7 +121,7 @@
                     <button class="forward"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
 
                     <div class="frame" style="overflow: hidden;">
-                        <ul >
+                        <ul>
                             <li class="active">January</li>
                             <li>February</li>
                             <li>March</li>
@@ -157,12 +156,12 @@
                                     Aenean eu pulvinar justo, quis mollis ligula. Nullam commodo odio a luctus blandit.
                                 </p>
                                 <p>
-                                      <div class="large-4 columns">
-                                          <i class="fa fa-map-marker" aria-hidden="true"></i> Bangkok 
-                                      </div>
-                                      <div class="large-4 columns end">
-                                          <i class="fa fa-calendar" aria-hidden="true"></i> 13th 15th April 
-                                      </div>
+                                    <div class="large-4 columns">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Bangkok 
+                                    </div>
+                                    <div class="large-4 columns end">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i> 13th 15th April 
+                                    </div>
                                 </p>
                                 <hr>
                                 <div class="">
@@ -176,7 +175,6 @@
                 </div>
             </div>
         </section>
-
     </div>
 </section>
 

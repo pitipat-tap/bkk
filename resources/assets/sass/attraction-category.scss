@@ -5,7 +5,6 @@
 	width: 100%;
 
 	.category-description{
-
 		@include breakpoint(small) {
             bottom: 0%;
             padding: 0.5em;
@@ -28,6 +27,7 @@
 	float: left;
 
 	.category-description{
+		padding: 0.5em;
 
 		h3{
 			margin: 0;
@@ -35,12 +35,10 @@
 
 		@include breakpoint(small) {
             bottom: 0%;
-            padding: 0.5em;
         }
         @include breakpoint(large) {
 			bottom: 3%;
 			left: 49%;
-			padding: 0.5em;
 			margin: 0;
 		}
 	}
@@ -51,6 +49,7 @@
 	float: right;
 
 	.category-description{
+		padding: 0.5em;
 
 		h3{
 			margin: 0;
@@ -58,12 +57,10 @@
 
 		@include breakpoint(small) {
             top: 0%;
-            padding: 0.5em;
         }
         @include breakpoint(large) {
 			top: 5%;
 			left: 37%;
-			padding: 0.5em;
 			margin: 0;
 		}
 	}
@@ -113,7 +110,6 @@
 	}
 }
 
-
 .category-container{
 	position: relative;
 
@@ -125,7 +121,6 @@
 		margin-bottom: 1em;
     }
 	
-
 	.category-picture{
 		position: relative;
 		top: 0;

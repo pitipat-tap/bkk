@@ -48,8 +48,6 @@
 						<td>AT&T Direct Service</td>
 						<td>001-999-1111-1</td>
 					</tr>
-
-
 				</tbody>
 			</table>
 			<table>
@@ -370,16 +368,14 @@
 					</tr>
 					<tr>
 						<td>Bhutan</td>
-						<td>375/1 Soi Ratchadanivej,<br>
-						Pracha-Uthit Rd., Huai Kwang</td>
+						<td>375/1 Soi Ratchadanivej,<br>Pracha-Uthit Rd., Huai Kwang</td>
 						<td>0 2274 4740 to 2</td>
 						<td>–</td>
 					</tr>
 					<tr>
 						<td>Brazil</td>
 						<td>34 Fl., Lumpini Tower, Rama IV Rd.</td>
-						<td>0 2679 8567 to 8,<br>
-						0 2285 6080</td>
+						<td>0 2679 8567 to 8,<br>0 2285 6080</td>
 						<td>-</td>
 					</tr>
 					<tr>
@@ -396,8 +392,7 @@
 					</tr>
 					<tr>
 						<td>Canada</td>
-						<td>15th Fl., Abdulrahim Place,<br>
-						990 Rama 4 Rd.</td>
+						<td>15th Fl., Abdulrahim Place,<br>990 Rama 4 Rd.</td>
 						<td>0 2636 0540</td>
 						<td>-</td>
 					</tr>
@@ -416,14 +411,12 @@
 					<tr>
 						<td>Cuba</td>
 						<td>Mela Mansion Apt. 7A, 7th Fl., Sukhumwit 27</td>
-						<td>0 2665 2803,<br>
-						0 2661 6563</td>
+						<td>0 2665 2803,<br>0 2661 6563</td>
 						<td>-</td>
 					</tr>
 					<tr>
 						<td>Czech Republic</td>
-						<td>71/6 Ruam Ruedi Soi 2,<br>
-						Phloenchit Rd.</td>
+						<td>71/6 Ruam Ruedi Soi 2,<br>Phloenchit Rd.</td>
 						<td>0 2250 9223 to 4</td>
 						<td>-</td>
 					</tr>
@@ -442,14 +435,12 @@
 					<tr>
 						<td>EU</td>
 						<td>Kian Gwan House II, 19th Fl., Rama IV Rd.</td>
-						<td>0 2305 2600,<br>
-						0 2305 2700</td>
+						<td>0 2305 2600,<br>0 2305 2700</td>
 						<td>-</td>
 					</tr>
 					<tr>
 						<td>Finland</td>
-						<td>16th Fl., Amarin Tower,<br>
-						500 Phloenchit Rd.</td>
+						<td>16th Fl., Amarin Tower,<br>500 Phloenchit Rd.</td>
 						<td>0 2250 8801</td>
 						<td>-</td>
 					</tr>
@@ -515,8 +506,7 @@
 					</tr>
 					<tr>
 						<td>Kazakhstan</td>
-						<td>Suite 4301, 43rd Fl., JTC Bldg.,<br>
-						919/501 Silom</td>
+						<td>Suite 4301, 43rd Fl., JTC Bldg.,<br>919/501 Silom</td>
 						<td>0 2234 6365 to 6</td>
 						<td>-</td>
 					</tr>
@@ -981,10 +971,8 @@
 					</tr>
 					<tr>
 						<td>Panama</td>
-						<td>132/16 Peninsular Tower,<br>
-						Soi 35, Rama VI Rd.</td>
-						<td>0 2279 6350,<br>
-						0 2279 6355</td>
+						<td>132/16 Peninsular Tower,<br>Soi 35, Rama VI Rd.</td>
+						<td>0 2279 6350,<br>0 2279 6355</td>
 					</tr>
 					<tr>
 						<td>Papua New Guinea</td>
