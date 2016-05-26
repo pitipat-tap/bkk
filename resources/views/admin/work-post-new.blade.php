@@ -14,7 +14,7 @@ Add New Work Post |
 @section("specific_js_head")
 {!! Html::script("/js/tinymce/tinymce.min.js") !!}
 {!! Html::script("/js/fancybox/source/jquery.fancybox.pack.js") !!}
-{!! Html::script("/js/admin-work-post-form.js") !!}
+{!! Html::script("/js/backend/admin-work-post-form.js") !!}
 <script>
 	window.onload = function() {
 	  $(':text[name="title"]').focus();
@@ -34,7 +34,7 @@ Add New Work Post |
 
 @section("body")
 
-@include("admin-layouts.menu-admin", array("link" => "workposts", "has_sublink" => 0, "sublink" => ""));
+@include("admin-layouts.menu-admin", array("link" => "workposts", "has_sublink" => 0, "sublink" => ""))
 
 <div class="row full-width container ui-block mg-b small-medium-header hide-for-large-up">
     <div class="small-6 columns">

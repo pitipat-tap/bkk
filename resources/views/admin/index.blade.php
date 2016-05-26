@@ -9,7 +9,7 @@ Dashboard |
 @section("specific_js_head")
 {!! Html::script("/js/Chart.min.js") !!}
 {!! Html::script("/js/moment.min.js") !!}
-{!! Html::script("/js/admin-index.js") !!}
+{!! Html::script("/js/backend/admin-index.js") !!}
 @stop
 
 

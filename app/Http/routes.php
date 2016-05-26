@@ -138,16 +138,35 @@ Route::group(array('middleware' => 'auth.admin', 'prefix' => 'admin'), function(
 	Route::delete("users/{id}", array("as" => "admin-user-delete", "uses" => "AdminUserController@deleteUser"));
 
 	//Work Post
-	Route::get("workposts", array("as" => "admin-work-posts", "uses" => "AdminWorkController@workPosts"));
-	Route::get("workposts/new", array("as" => "admin-work-post-new", "uses" => "AdminWorkController@newWorkPost"));
-	Route::post("workposts/new", array("as" => "admin-work-post-create", "uses" => "AdminWorkController@createWorkPost"));
-	Route::get("workposts/{id}", array("as" => "admin-work-post-preview", "uses" => "AdminWorkController@previewWorkPost"));
-	Route::post("workposts/livepreview", array("as" => "admin-work-post-livepreview", "uses" => "AdminWorkController@livePreviewWorkPost"));
-	Route::get("workposts/{id}/edit", array("as" => "admin-work-post-edit", "uses" => "AdminWorkController@editWorkPost"));
-	Route::patch("workposts/{id}", array("as" => "admin-work-post-update", "uses" => "AdminWorkController@updateWorkPost"));
-	Route::delete("workposts/{id}", array("as" => "admin-work-post-delete", "uses" => "AdminWorkController@deleteWorkPost"));
+	// Route::get("workposts", array("as" => "admin-work-posts", "uses" => "AdminWorkController@workPosts"));
+	// Route::get("workposts/new", array("as" => "admin-work-post-new", "uses" => "AdminWorkController@newWorkPost"));
+	// Route::post("workposts/new", array("as" => "admin-work-post-create", "uses" => "AdminWorkController@createWorkPost"));
+	// Route::get("workposts/{id}", array("as" => "admin-work-post-preview", "uses" => "AdminWorkController@previewWorkPost"));
+	// Route::post("workposts/livepreview", array("as" => "admin-work-post-livepreview", "uses" => "AdminWorkController@livePreviewWorkPost"));
+	// Route::get("workposts/{id}/edit", array("as" => "admin-work-post-edit", "uses" => "AdminWorkController@editWorkPost"));
+	// Route::patch("workposts/{id}", array("as" => "admin-work-post-update", "uses" => "AdminWorkController@updateWorkPost"));
+	// Route::delete("workposts/{id}", array("as" => "admin-work-post-delete", "uses" => "AdminWorkController@deleteWorkPost"));
 
-	Route::get("workposts/{id}/togglefeatured", array("as" => "admin-work-post-toggle-selected", 
-		"uses" => "AdminWorkController@toggleSelectedWork"));
+	// Route::get("workposts/{id}/togglefeatured", array("as" => "admin-work-post-toggle-selected", 
+	// 	"uses" => "AdminWorkController@toggleSelectedWork"));
+
+
+	Route::get("banners", array("as" => "admin-banners", "uses" => "AdminBannerController@banners"));
+	Route::get("banners/new", array("as" => "admin-banner-new", "uses" => "AdminBannerController@newBanner"));
+	Route::post("banners/new", array("as" => "admin-banner-create", "uses" => "AdminBannerController@createBanner"));
+	Route::get("banners/{id}/edit", array("as" => "admin-banner-edit", "uses" => "AdminBannerController@editBanner"));
+	Route::patch("banners/{id}", array("as" => "admin-banner-update", "uses" => "AdminBannerController@updateBanner"));
+	Route::get("banners/{id}/moveup", array("as" => "admin-banner-move-up", "uses" => "AdminBannerController@moveUpBanner"));
+	Route::get("banners/{id}/movedown", array("as" => "admin-banner-move-down", "uses" => "AdminBannerController@moveDownBanner"));
+	Route::get("banners/delete/{id}", array("as" => "admin-banner-delete", "uses" => "AdminBannerController@deleteBanner"));
+
+	Route::get("attractions", array("as" => "admin-attractions", "uses" => "AdminAttractionsController@attractions"));
+	Route::get("attractions/new", array("as" => "admin-attraction-new", "uses" => "AdminAttractionsController@newAttraction"));
+	Route::post("attractions/new", array("as" => "admin-attraction-create", "uses" => "AdminAttractionsController@createAttraction"));
+	Route::get("attractions/{id}/edit", array("as" => "admin-attraction-edit", "uses" => "AdminAttractionsController@editAttraction"));
+	Route::patch("attractions/{id}", array("as" => "admin-attraction-update", "uses" => "AdminAttractionsController@updateAttraction"));
+
+	Route::delete("attractions/{id}", array("as" => "admin-attraction-delete", "uses" => "AdminAttractionsController@deleteWorkPost"));
+
 
 });

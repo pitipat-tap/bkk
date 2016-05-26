@@ -14,7 +14,7 @@ Edit Blog Post |
 @section("specific_js_head")
 {!! Html::script("/js/tinymce/tinymce.min.js") !!}
 {!! Html::script("/js/fancybox/source/jquery.fancybox.pack.js") !!}
-{!! Html::script("/js/admin-blog-post-form.js") !!}
+{!! Html::script("/js/backend/admin-blog-post-form.js") !!}
 @stop
 
 @section("body")

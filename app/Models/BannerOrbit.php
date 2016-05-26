@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class BannerOrbit extends Model {
 
-	protected $table = 'image_posts';
+	protected $table = 'banner_orbit';
 	
 	public static $save_rules = array(
 		"image_url" => "required"

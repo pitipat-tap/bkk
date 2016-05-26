@@ -11,7 +11,7 @@ Edit image post |
 
 
 @section("specific_js_head")
-{!! Html::script("/js/admin-image-post-form.js") !!}
+{!! Html::script("/js/backend/admin-image-post-form.js") !!}
 @stop
 
 

@@ -16,11 +16,10 @@ class CreateBannerTable extends Migration
         {
             $table->increments('id');
             $table->integer('author_id')->references('id')->on('users');
-            $table->string("url")->unique();
-            $table->string("image_url");
             $table->string('name');
+            $table->string("image_url");
             $table->text('caption');
-            $table->boolean('is_select')->default(0);
+            $table->integer('sequence');
             $table->timestamps();
         });
     }
@@ -32,6 +31,6 @@ class CreateBannerTable extends Migration
      */
     public function down()
     {
-        Schema::drop('banner');
+        Schema::drop('banner_orbit');
     }
 }

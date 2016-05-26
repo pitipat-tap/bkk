@@ -13,7 +13,7 @@ Add User |
 
 @section("specific_js_head")
 {!! Html::script("/js/fancybox/source/jquery.fancybox.pack.js") !!}
-{!! Html::script("/js/admin-user-form.js") !!}
+{!! Html::script("/js/backend/admin-user-form.js") !!}
 @stop
 
 
