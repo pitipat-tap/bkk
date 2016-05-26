@@ -20,7 +20,7 @@ Add New Image Post |
 
 @section("body")
 
-@include("admin-layouts.menu-admin", array("link" => "imageposts", "has_sublink" => 1, "sublink" => "imageposts"))
+@include("admin-layouts.menu-admin", array("link" => "banners", "has_sublink" => 0, "sublink" => ""))
 
 <?php
     if(!isset($_SESSION)) 
@@ -41,8 +41,13 @@ Add New Image Post |
 </div>
 
 <div id="admin-imageposts" class="container">
-	{!! Form::open(array("route" => "admin-image-post-create", "method" => "post", "class" => "imagepost-form")) !!}
-		<h3 class="title">{!! Html::linkRoute("admin-image-posts", "Image Posts") !!} <span class="fa fa-angle-right"></span> Add</h3>
+    {!! Form::model($banner, array(
+        "class" => "post-form", 
+        "route" => array("admin-banner-update", $banner->id), 
+        "method" => "patch", 
+        "autocomplete" => "off"))
+    !!}
+		<h3 class="title">{!! Html::linkRoute("admin-banners", "Banner Ordit") !!} <span class="fa fa-angle-right"></span> Add</h3>
 		<br />
 		
 		@include("admin.alert-box")
@@ -59,11 +64,20 @@ Add New Image Post |
         </div>
         
         <div class="row full-width">
+            <div class="small-12 medium-6 columns">
+                <div class="ui-block mg-b medium-half-mg-r">
+                    {!! Form::label("name", "Name") !!}
+                    {!! Form::text("name", null) !!}
+
+                    {!! Form::label("caption", "Caption") !!}
+                    {!! Form::textarea("caption", null, array("rows" => "5")) !!}
+                </div>
+            </div>
         	<div class="small-12 medium-6 columns">
-        		<div class="ui-block mg-b medium-half-mg-r">
+        		<div class="ui-block mg-b medium-half-mg-l">
             		<p class="f-label">Image</p>
 
-                    {!! Html::image("images/admin/icon-placeholder.svg", 
+                    {!! Html::image("$banner->image_url", 
                         "Image", 
                         array(
                             "id" => "post-image",
@@ -90,13 +104,6 @@ Add New Image Post |
                     <p class="text-date">Tips : Use image size > 600 x 315 pixels for Facebook link post with large preview image.</p>
             	</div>
             </div>
-            
-            <div class="small-12 medium-6 columns">
-        		<div class="ui-block mg-b medium-half-mg-l">
-        			{!! Form::label("caption", "Caption") !!}
-		            {!! Form::textarea("caption", null, array("rows" => "5")) !!}
-        		</div>
-    		</div>
     	</div>
     	
     	<div class="small-button-group show-for-small-only">

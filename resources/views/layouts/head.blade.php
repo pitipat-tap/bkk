@@ -48,16 +48,8 @@
 
         @yield("specific_js_head")
     </head>
-    <body class="en" draggable="false">
+    <body class="th" draggable="false">
         @yield("body")
-
-        <script>
-            onload = function() {
-                setInterval(function(){
-                    $('body').addClass('loaded');
-                }, 1000);
-            }
-        </script>
 
         <div id="loader-wrapper">
             <div id="loader"></div>
