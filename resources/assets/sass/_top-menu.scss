@@ -170,8 +170,13 @@
         outline: 0;
     }
 }
+.vertical {
+    a {
+        color:white;
+    }
+}
 #copyright-mobile{
-    position: fixed;
+    position: relative;
     bottom: 0%;
     width: 100%;
     padding: 1em;
