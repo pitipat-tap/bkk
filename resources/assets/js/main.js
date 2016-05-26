@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+  onload = function() {
+      setInterval(function(){
+          $('body').addClass('loaded');
+      }, 100);
+  }
+
   if(localStorage.getItem('language') == null){
     localStorage.setItem('language',"th");
     document.body.className = localStorage.getItem('language');
