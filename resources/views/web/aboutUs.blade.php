@@ -73,7 +73,9 @@
 		</p>
 		<div class="align-center">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.327923570138!2d100.49096021639426!3d13.759087656345015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xd55c5a3036726e66!2sTourism+Division%3B+Culture%2C+Sports+and+Tourism+Department%3B+BMA!5e0!3m2!1sen!2sth!4v1462784638517" width="90%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-			<div class="mg-1">
+		</div>
+		<div class="row">
+			<div class="small-9 medium-5 large-3 small-centered columns">
 				<p class="address">
 	                Address : 17/1 Phra Athit Road,<br>
 	                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp      Phra Nakhon, Bangkok,<br>

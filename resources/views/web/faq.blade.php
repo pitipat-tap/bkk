@@ -441,22 +441,24 @@
 			</tr>
 		</tbody>
 	</table>
-	<h5 lang="th">
-		We wish you an enjoyable and safe trip inside Bangkok and around. Please look for a tourist information booth with the logo 
-		of the city if you need any help.
-	</h5>
-	<h5 lang="en">
-		We wish you an enjoyable and safe trip inside Bangkok and around. Please look for a tourist information booth with the logo 
-		of the city if you need any help.
-	</h5>
-	<h5 lang="jp">
-		We wish you an enjoyable and safe trip inside Bangkok and around. Please look for a tourist information booth with the logo 
-		of the city if you need any help.
-	</h5>
-	<h5 lang="ch">
-		We wish you an enjoyable and safe trip inside Bangkok and around. Please look for a tourist information booth with the logo 
-		of the city if you need any help.
-	</h5>
+	<div class="row pd-1">
+		<h5 lang="th">
+			We wish you an enjoyable and safe trip inside Bangkok and around. Please look for a tourist information booth with the logo 
+			of the city if you need any help.
+		</h5>
+		<h5 lang="en">
+			We wish you an enjoyable and safe trip inside Bangkok and around. Please look for a tourist information booth with the logo 
+			of the city if you need any help.
+		</h5>
+		<h5 lang="jp">
+			We wish you an enjoyable and safe trip inside Bangkok and around. Please look for a tourist information booth with the logo 
+			of the city if you need any help.
+		</h5>
+		<h5 lang="ch">
+			We wish you an enjoyable and safe trip inside Bangkok and around. Please look for a tourist information booth with the logo 
+			of the city if you need any help.
+		</h5>
+	</div>
 </div>
 @include("web.footer")
 @stop
