@@ -19,7 +19,12 @@
 
 <section id="home-body">
     <div class="body-section">
-        <div class="banner-page-title show-for-large columns">Destination</div>
+        <div class="banner-page-title show-for-large columns">
+           <span lang="th" >Destination TH</span>
+           <span lang="en" >Destination EN</span>
+           <span lang="jp" >Destination JP</span>
+           <span lang="ch" >Destination CH</span>
+        </div>
 
         <section class="mg-b-1">
             <!-- desktop -->
@@ -29,27 +34,58 @@
                 </div>
                 <div class="large-4 columns">
                     <div class="destination-highlight">
-                        <h4> Wat Phra Kaew </h4>
-                        <p>
+                        <h4 lang="th"> Wat Phra Kaew TH</h4>
+                        <h4 lang="en"> Wat Phra Kaew EN</h4>
+                        <h4 lang="jp"> Wat Phra Kaew JP</h4>
+                        <h4 lang="ch"> Wat Phra Kaew CH</h4>
+                        {!! HTML::image("http://placehold.it/350x150","",array("class"=>"")) !!}
+                        <p lang="th">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Nam dapibus lectus eget mi aliquam, ac bibendum orci dictum.
                             Ut malesuada molestie enim, et mattis libero vestibulum id.
                             Aenean eu pulvinar justo, quis mollis ligula. Nullam commodo odio a luctus blandit.
+                            Vestibulum at ex convallis, viverra tortor vitae, rutrum ipsum.
+                             Sed quis purus eu velit pretium euismod. 
                         </p>
-                        {!! HTML::image("http://placehold.it/350x150","",array("class"=>"")) !!}
-                        <p>
+                        <p lang="en">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nam dapibus lectus eget mi aliquam, ac bibendum orci dictum.
+                            Ut malesuada molestie enim, et mattis libero vestibulum id.
+                            Aenean eu pulvinar justo, quis mollis ligula. Nullam commodo odio a luctus blandit.
+                            Vestibulum at ex convallis, viverra tortor vitae, rutrum ipsum.
+                             Sed quis purus eu velit pretium euismod. 
+                        </p>
+                        <p lang="jp">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nam dapibus lectus eget mi aliquam, ac bibendum orci dictum.
+                            Ut malesuada molestie enim, et mattis libero vestibulum id.
+                            Aenean eu pulvinar justo, quis mollis ligula. Nullam commodo odio a luctus blandit.
+                            Vestibulum at ex convallis, viverra tortor vitae, rutrum ipsum.
+                             Sed quis purus eu velit pretium euismod. 
+                        </p>
+                        <p lang="ch">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nam dapibus lectus eget mi aliquam, ac bibendum orci dictum.
+                            Ut malesuada molestie enim, et mattis libero vestibulum id.
+                            Aenean eu pulvinar justo, quis mollis ligula. Nullam commodo odio a luctus blandit.
                             Vestibulum at ex convallis, viverra tortor vitae, rutrum ipsum.
                              Sed quis purus eu velit pretium euismod. 
                         </p>
                         <a>
-                            <div> EXPLORE </div>
+                            <div lang="th"> EXPLORE </div>
+                            <div lang="en"> EXPLORE </div>
+                            <div lang="jp"> EXPLORE </div>
+                            <div lang="ch"> EXPLORE </div>
                         </a>
                     </div>
                 </div>
             </div>
             <!-- mobile -->
             <div id="destination-mobile" class="row hide-for-large">
-                <h2>Destination</h2>
+                <h2 lang="th">Destination</h2>
+                <h2 lang="en">Destination</h2>
+                <h2 lang="jp">Destination</h2>
+                <h2 lang="ch">Destination</h2>
                 <form>
                     <div class="row collapse">
                         <div class="small-9 columns">
@@ -68,7 +104,10 @@
             <div class="row">
                 <div class=" large-4 columns">
                     <div class="tag-highlight">
-                        <h2> Campaign </h2>
+                        <h2 lang="th"> Campaign </h2>
+                        <h2 lang="en"> Campaign </h2>
+                        <h2 lang="jp"> Campaign </h2>
+                        <h2 lang="ch"> Campaign </h2>
                         <h1> ___ </h1>
                     </div>
                 </div>
@@ -88,7 +127,10 @@
                 </div>
                 <div class=" large-4 columns">
                     <div class="tag-highlight">
-                        <h2> Attractions</h2>
+                        <h2 lang="th"> Attractions</h2>
+                        <h2 lang="en"> Attractions</h2>
+                        <h2 lang="jp"> Attractions</h2>
+                        <h2 lang="ch"> Attractions</h2>
                         <h1> ___ </h1>
                     </div>
                 </div>
@@ -99,7 +141,10 @@
             <div class="row">
                 <div class=" large-4 columns">
                     <div class="tag-highlight">
-                        <h2> Accommodation </h2>
+                        <h2 lang="th"> Accommodation </h2>
+                        <h2 lang="en"> Accommodation </h2>
+                        <h2 lang="jp"> Accommodation </h2>
+                        <h2 lang="ch"> Accommodation </h2>
                         <h1> ___ </h1>
                     </div>
                 </div>
@@ -112,7 +157,10 @@
             </div>
             <div class="row">
                 <div class="events">
-                    <h2> Events </h2>
+                    <h2 lang="th"> Events </h2>
+                    <h2 lang="en"> Events </h2>
+                    <h2 lang="jp"> Events </h2>
+                    <h2 lang="ch"> Events </h2>
                 </div>
             </div>
             <div class="row">
@@ -122,18 +170,65 @@
 
                     <div class="frame" style="overflow: hidden;">
                         <ul>
-                            <li class="active">January</li>
-                            <li>February</li>
-                            <li>March</li>
-                            <li>April</li>
-                            <li>May</li>
-                            <li>June</li>
-                            <li>July</li>
-                            <li>August</li>
-                            <li>September</li>
-                            <li>October</li>
-                            <li>November</li>
-                            <li>December</li>
+                            <li lang="th" class="active">January</li>
+                            <li lang="en" class="active">January</li>
+                            <li lang="jp" class="active">January</li>
+                            <li lang="ch" class="active">January</li>
+
+                            <li lang="th" >February</li>
+                            <li lang="en" >February</li>
+                            <li lang="jp" >February</li>
+                            <li lang="ch" >February</li>
+
+                            <li lang="th" >March</li>
+                            <li lang="en" >March</li>
+                            <li lang="jp" >March</li>
+                            <li lang="ch" >March</li>
+
+                            <li lang="th" >April</li>
+                            <li lang="en" >April</li>
+                            <li lang="jp" >April</li>
+                            <li lang="ch" >April</li>
+
+                            <li lang="th" >May</li>
+                            <li lang="en" >May</li>
+                            <li lang="jp" >May</li>
+                            <li lang="ch" >May</li>
+
+                            <li lang="th" >June</li>
+                            <li lang="en" >June</li>
+                            <li lang="jp" >June</li>
+                            <li lang="ch" >June</li>
+
+                            <li lang="th" >July</li>
+                            <li lang="en" >July</li>
+                            <li lang="jp" >July</li>
+                            <li lang="ch" >July</li>
+
+                            <li lang="th" >August</li>
+                            <li lang="en" >August</li>
+                            <li lang="jp" >August</li>
+                            <li lang="ch" >August</li>
+
+                            <li lang="th" >September</li>
+                            <li lang="en" >September</li>
+                            <li lang="jp" >September</li>
+                            <li lang="ch" >September</li>
+
+                            <li lang="th" >October</li>
+                            <li lang="en" >October</li>
+                            <li lang="jp" >October</li>
+                            <li lang="ch" >October</li>
+
+                            <li lang="th" >November</li>
+                            <li lang="en" >November</li>
+                            <li lang="jp" >November</li>
+                            <li lang="ch" >November</li>
+
+                            <li lang="th" >December</li>
+                            <li lang="en" >December</li>
+                            <li lang="jp" >December</li>
+                            <li lang="ch" >December</li>
                         </ul>
                     </div>
                 </div>
@@ -148,8 +243,29 @@
                         </div>
                         <div class=" large-6 columns">
                             <div class="event-content">
-                                <h3> Songkarn </h3>
-                                <p>
+                                <h3 lang="th"> Songkarn </h3>
+                                <h3 lang="en"> Songkarn </h3>
+                                <h3 lang="jp"> Songkarn </h3>
+                                <h3 lang="ch"> Songkarn </h3>
+                                <p lang="th">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nam dapibus lectus eget mi aliquam, ac bibendum orci dictum.
+                                    Ut malesuada molestie enim, et mattis libero vestibulum id.
+                                    Aenean eu pulvinar justo, quis mollis ligula. Nullam commodo odio a luctus blandit.
+                                </p>
+                                <p lang="en">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nam dapibus lectus eget mi aliquam, ac bibendum orci dictum.
+                                    Ut malesuada molestie enim, et mattis libero vestibulum id.
+                                    Aenean eu pulvinar justo, quis mollis ligula. Nullam commodo odio a luctus blandit.
+                                </p>
+                                <p lang="jp">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nam dapibus lectus eget mi aliquam, ac bibendum orci dictum.
+                                    Ut malesuada molestie enim, et mattis libero vestibulum id.
+                                    Aenean eu pulvinar justo, quis mollis ligula. Nullam commodo odio a luctus blandit.
+                                </p>
+                                <p lang="ch">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Nam dapibus lectus eget mi aliquam, ac bibendum orci dictum.
                                     Ut malesuada molestie enim, et mattis libero vestibulum id.
@@ -157,16 +273,25 @@
                                 </p>
                                 <p>
                                     <div class="large-4 columns">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Bangkok 
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                            <span lang="th">Bangkok</span>
+                                            <span lang="en">Bangkok</span>
+                                            <span lang="jp">Bangkok</span>
+                                            <span lang="ch">Bangkok</span>
                                     </div>
                                     <div class="large-4 columns end">
-                                        <i class="fa fa-calendar" aria-hidden="true"></i> 13th 15th April 
+                                        <i class="fa fa-calendar" aria-hidden="true"></i> 13th - 15th April 
                                     </div>
                                 </p>
                                 <hr>
                                 <div class="">
                                     <a>
-                                        <div class="see-more"> see more ... </div>
+                                        <div class="see-more"> 
+                                            <span lang="th">see more ...</span>
+                                            <span lang="en">see more ...</span>
+                                            <span lang="jp">see more ...</span>
+                                            <span lang="ch">see more ...</span>
+                                        </div>
                                     </a>
                                 </div>
                             </div>

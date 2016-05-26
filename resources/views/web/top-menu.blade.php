@@ -169,7 +169,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="vertical menu" data-accordion-menu>
+                <ul id="language-change-mobile" class="vertical menu" data-accordion-menu>
                   <li>
                     <a href="#">Language</a>
                     <ul class="menu vertical nested">
