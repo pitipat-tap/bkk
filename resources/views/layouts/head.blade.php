@@ -48,8 +48,14 @@
 
         @yield("specific_js_head")
     </head>
-    <body>
+    <body class="th" draggable="false">
         @yield("body")
+
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+         
+            <div class="loader-section section-left"></div>
+        </div>
         
         <script>
             $(document).foundation();

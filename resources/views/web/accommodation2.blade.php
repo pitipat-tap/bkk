@@ -25,11 +25,9 @@
         });
     });
 </script>
-<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-    <a>
-        <img class="orbit-image" src="http://placehold.it/1500x500" alt="Space">
-    </a>
-</div>
+
+@include("web.banner-picture")
+
 <div class="banner-page-title font">Accommodation</div>
 <div class="body-section border">
   <div class="row collapse ">

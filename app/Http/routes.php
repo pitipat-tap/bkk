@@ -27,6 +27,10 @@ Route::get('/transportation', function () {
     return view('web/transportation');
 });
 
+Route::get('/gallery', function () {
+    return view('web/gallery');
+});
+
 Route::get('/aboutus', function () {
     return view('web/aboutUs');
 });
@@ -49,6 +53,14 @@ Route::get('/accommodation', function () {
 
 Route::get('/accommodation2', function () {
     return view('web/accommodation2');
+});
+
+Route::get('/trips', function () {
+	return view('web/trips');
+});
+
+Route::get('/trip', function () {
+	return view('web/trip');
 });
 
 Route::group(array('middleware' => 'auth.staff.already', 'prefix' => 'admin'), function(){

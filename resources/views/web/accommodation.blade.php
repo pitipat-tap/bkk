@@ -25,15 +25,13 @@
         });
     });
 </script>
-<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-    <a>
-        <img class="orbit-image" src="http://placehold.it/1500x500" alt="Space">
-    </a>
-</div>
+
+@include("web.banner-picture")
+
 <div class="banner-page-title font">Accommodation</div>
 <div class="body-section">
-    <div class="row collapse">
-    <div class="small-12 columns" align="center">
+  <div class="row collapse">
+    <div class="small-12 columns padding-b" align="center">
       <ul id="menu" class="tabs modify" id="example-vert-tabs" data-tabs>
         <li class="small-3 tabs-title is-active border-right" >
           <a class="background-none half-width border-bottom" href="#panel1v" aria-selected="true">Hotels</a>
@@ -48,23 +46,103 @@
           <a class="background-none half-width" href="#panel4v">Guesthouse</a>
         </li>
       </ul>
-      </div>
-      <div class="small-12 columns">
-        <div class="tabs-content modify" data-tabs-content="example-vert-tabs">
-          <div class="tabs-panel is-active" id="panel1v">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="small-12 columns padding-b">
+      <div class="tabs-content modify" data-tabs-content="example-vert-tabs">
+        <div class="tabs-panel is-active" id="panel1v">
+          <div class="row item padding-b">
+            <div class="small-12 medium-5 columns">
+              <a>
+                <img class="orbit-image" src="http://placehold.it/500x300" alt="Space">
+              </a>
+            </div>
+            <div class="small-12 medium-7 columns padding-b">
+              <h4 class="padding-b"> Title1 </h4>
+              <div class="padding-b">
+                <div class="small-4 columns">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i> 00.00 - 00.00
+                </div>
+                <div class="small-4 columns end">
+                  <i class="fa fa-money" aria-hidden="true"></i> 00.00
+                </div>
+              </div>
+              <div class="padding-b">
+                description
+              </div>
+              <div>
+                <button class="green-btn" type="button">Read more...</button>
+              </div>
+            </div>
           </div>
-          <div class="tabs-panel" id="panel2v">
-            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+          <div class="padding-t" align="center">
+              <button class="green-btn" type="button">Load more...</button>
           </div>
-          <div class="tabs-panel" id="panel3v">
-            <img class="thumbnail" src="assets/img/generic/rectangle-3.jpg">
+        </div>
+        <div class="tabs-panel" id="panel2v">
+          <div class="row item padding-b">
+            <div class="small-12 medium-5 columns">
+              <a>
+                <img class="orbit-image" src="http://placehold.it/500x300" alt="Space">
+              </a>
+            </div>
+            <div class="small-12 medium-7 columns padding-b">
+              <h4 class="padding-b"> Title2 </h4>
+              <div class="padding-b">
+                description
+              </div>
+              <div>
+                <button class="green-btn" type="button">Read more...</button>
+              </div>
+            </div>
           </div>
-          <div class="tabs-panel" id="panel4v">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="padding-t" align="center">
+              <button class="green-btn" type="button">Load more...</button>
+          </div>
+        </div>
+        <div class="tabs-panel" id="panel3v">
+          <div class="row item padding-b">
+            <div class="small-12 medium-5 columns">
+              <a>
+                <img class="orbit-image" src="http://placehold.it/500x300" alt="Space">
+              </a>
+            </div>
+            <div class="small-12 medium-7 columns padding-b">
+              <h4 class="padding-b"> Title3 </h4>
+              <div class="padding-b">
+                description
+              </div>
+              <div>
+                <button class="green-btn" type="button">Read more...</button>
+              </div>
+            </div>
+          </div>
+          <div class="padding-t" align="center">
+              <button class="green-btn" type="button">Load more...</button>
+          </div>
+        </div>
+        <div class="tabs-panel" id="panel4v">
+          <div class="row item padding-b">
+            <div class="small-12 medium-5 columns">
+              <a>
+                <img class="orbit-image" src="http://placehold.it/500x300" alt="Space">
+              </a>
+            </div>
+            <div class="small-12 medium-7 columns padding-b">
+              <h4 class="padding-b"> Title4 </h4>
+              <div class="padding-b">
+                description
+              </div>
+              <div>
+                <button class="green-btn" type="button">Read more...</button>
+              </div>
+            </div>
+          </div>
+          <div class="padding-t" align="center">
+              <button class="green-btn" type="button">Load more...</button>
           </div>
         </div>
       </div>
+    </div>
   </div>
 </div>
 

@@ -1,5 +1,25 @@
 $(document).ready(function() {
 
+  onload = function() {
+      setInterval(function(){
+          $('body').addClass('loaded');
+      }, 100);
+  }
+
+  if(localStorage.getItem('language') == null){
+    localStorage.setItem('language',"th");
+    document.body.className = localStorage.getItem('language');
+  }else{
+    document.body.className = localStorage.getItem('language');
+  }
+
+
+  $('.change-language').click(function(){
+      var selectedLanguage = $(this).attr('data-lan');
+      document.body.className = selectedLanguage;
+      localStorage.setItem('language', selectedLanguage);
+  });
+
 	var path = window.location.href;
 	var loc = path.substring(path.lastIndexOf('/')+1);
 

@@ -8,12 +8,83 @@
             {!! Html::image("images/logo/bkk-logo.png","bkk-logo",array("class"=>"bkk-logo")) !!}
           </a>
         </li>
-        <li><a class="" href="#">Campaign</a></li>
-        <li><a class="" href="attraction-category">Attraction</a></li>
-        <li><a id="accommodation" class="" href="accommodation">Accommodation</a></li>
-        <li><a class="" href="transportation">Transportation</a></li>
-        <li><a class="" href="#">Gallery</a></li>
-        <li><a class="" href="#">language</a></li>
+        <li>
+            <a href="#">
+                <span lang="th">Campaign TH</span>
+                <span lang="en">Campaign EN</span>
+                <span lang="jp">Campaign JP</span>
+                <span lang="ch">Campaign CN</span>
+            </a>
+        </li>
+        <li>
+            <a href="attraction-category">
+               <span lang="th">Attraction</span>
+               <span lang="en">Attraction</span>
+               <span lang="jp">Attraction</span>
+               <span lang="ch">Attraction</span>
+            </a>
+        </li>
+        <li>
+            <a id="accommodation" href="accommodation">
+                <span lang="th">Accommodation</span>
+                <span lang="en">Accommodation</span>
+                <span lang="jp">Accommodation</span>
+                <span lang="ch">Accommodation</span>
+            </a>
+        </li>
+        <li>
+            <a href="transportation">
+                <span lang="th">Transportation</span>
+                <span lang="en">Transportation</span>
+                <span lang="jp">Transportation</span>
+                <span lang="ch">Transportation</span>
+            </a>
+        </li>
+        <li>
+            <a href="gallery">
+                <span lang="th">Gallery</span>
+                <span lang="en">Gallery</span>
+                <span lang="jp">Gallery</span>
+                <span lang="ch">Gallery</span>
+            </a>
+        </li>
+        <li>
+            <a href="trips">
+                <span lang="th">Trips</span>
+                <span lang="en">Trips</span>
+                <span lang="jp">Trips</span>
+                <span lang="ch">Trips</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">language</a>
+             <ul class="menu">
+                  <li>
+                    <a href="#" class="change-language" data-lan="th">
+                    <span>{!! Html::image("images/flag/Thailand.png","Thai",array("class"=>"bkk-logo")) !!}</span>
+                        ไทย
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="change-language" data-lan="en">
+                    <span>{!! Html::image("images/flag/uk.png","Thai",array("class"=>"bkk-logo")) !!}</span>
+                        ไทย
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="change-language" data-lan="jp">
+                    <span>{!! Html::image("images/flag/japan.png","Thai",array("class"=>"bkk-logo")) !!}</span>
+                        ไทย
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="change-language" data-lan="ch">
+                    <span>{!! Html::image("images/flag/China.png","Thai",array("class"=>"bkk-logo")) !!}</span>
+                        ไทย
+                    </a>
+                  </li>
+            </ul>
+        </li>
       </ul>
     </div>
   </div>
@@ -49,11 +120,65 @@
 
             <!-- Menu -->
                 <ul id="menu-mobile" class="vertical menu mg-t-1">
-                    <li><a href="attraction-category">Attraction</a></li>
-                    <li><a href="accommodation">Accommodation</a></li>
-                    <li><a href="transportation">Transportation</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a>Language</a></li>
+                    <li>
+                        <a href="#">
+                            <span lang="th">Campaign TH</span>
+                            <span lang="en">Campaign EN</span>
+                            <span lang="jp">Campaign JP</span>
+                            <span lang="ch">Campaign CN</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="attraction-category">
+                           <span lang="th">Attraction</span>
+                           <span lang="en">Attraction</span>
+                           <span lang="jp">Attraction</span>
+                           <span lang="ch">Attraction</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="accommodation">
+                            <span lang="th">Accommodation</span>
+                            <span lang="en">Accommodation</span>
+                            <span lang="jp">Accommodation</span>
+                            <span lang="ch">Accommodation</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="transportation">
+                            <span lang="th">Transportation</span>
+                            <span lang="en">Transportation</span>
+                            <span lang="jp">Transportation</span>
+                            <span lang="ch">Transportation</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gallery">
+                            <span lang="th">Gallery</span>
+                            <span lang="en">Gallery</span>
+                            <span lang="jp">Gallery</span>
+                            <span lang="ch">Gallery</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="trips">
+                            <span lang="th">Trips</span>
+                            <span lang="en">Trips</span>
+                            <span lang="jp">Trips</span>
+                            <span lang="ch">Trips</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul id="language-change-mobile" class="vertical menu" data-accordion-menu>
+                  <li>
+                    <a href="#">Language</a>
+                    <ul class="menu vertical nested">
+                      <li><a class="change-language" data-lan="th" href="#">ไทย</a></li>
+                      <li><a class="change-language" data-lan="en" href="#">ไทย</a></li>
+                      <li><a class="change-language" data-lan="jp" href="#">ไทย</a></li>
+                      <li><a class="change-language" data-lan="ch" href="#">ไทย</a></li>
+                    </ul>
+                  </li>
                 </ul>
 
                 <div id="copyright-mobile">
