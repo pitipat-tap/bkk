@@ -15,14 +15,7 @@
 
 @include("web.top-menu")
 
-<section>
-	<div class="banner-container show-for-large columns">
-		{!! HTML::image("http://placehold.it/1500x500","bkk-logo",array("class"=>"banner-picture")) !!}
-	</div>
-	<div class="banner-container hide-for-large columns">
-		{!! HTML::image("http://placehold.it/300x400","bkk-logo",array("class"=>"banner-picture")) !!}
-	</div>
-</section>
+@include("web.banner-picture")
 
 <div class="body-section">
 	<div class="banner-page-title">Attraction</div>
