@@ -2,12 +2,12 @@
 
     function defaultTitle()
     {
-        return " Kiwi Launcher | Creative Launcher ";
+        return " Bangkok Smiles | Creative Launcher ";
     }
 
     function defaultDescription()
     {
-        return "Kiwilauncher .......";
+        return "Bangkok Smiles .......";
     }
 
     function isMenuItemActive ($viewLink, $menuLink)
@@ -76,6 +76,7 @@
     }
 
 ?>
+
 <nav id="left-side-menu" class="side-menu full-height">
 	<div class="brand">
 		
@@ -136,13 +137,21 @@
     			</li>
     		</ul>
     	</li>
-
         <li>
-            <a href="{!! URL::route('admin-work-posts') !!}"  class="{!! isAdminNavLinkActive($link, 'workposts') !!}">
-                <span class="icon fa fa-book"></span> Work post
+            <a href="{!! URL::route('admin-banners') !!}"  class="{!! isAdminNavLinkActive($link, 'banner_orbit') !!}">
+                <span class="icon fa fa-camera"></span> Banner Orbit
             </a>
         </li>
-
+        <li>
+            <a href="{!! URL::route('admin-attractions') !!}"  class="{!! isAdminNavLinkActive($link, 'attractions') !!}">
+                <span class="icon fa fa-flag"></span> Attractions
+            </a>
+        </li>
+         <li>
+            <a href="{!! URL::route('admin-attractions') !!}"  class="{!! isAdminNavLinkActive($link, 'workposts') !!}">
+                <span class="icon fa fa-cutlery "></span> Work post
+            </a>
+        </li>
         <li>
             <a href="{!! URL::route('admin-filemanager') !!}" class="{!! isAdminNavLinkActive($link, 'filemanager') !!}">
                 <span class="icon fa fa-folder"></span> File manager

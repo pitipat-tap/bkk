@@ -71,4 +71,9 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	    return $this->hasMany('App\Models\BannerOrbit', 'author_id');
 	}
 
+	public function attraction()
+	{
+	    return $this->hasMany('App\Models\Attractions', 'author_id');
+	}
+
 }

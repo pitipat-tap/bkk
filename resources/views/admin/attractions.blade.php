@@ -2,7 +2,7 @@
 
 
 @section("title")
-Work Posts | 
+Attractions | 
 @stop
 
 
@@ -13,12 +13,13 @@ Work Posts |
 
 <?php
 use Chromabits\Pagination\FoundationPresenter;
+use Illuminate\Support\Facades\Input;
 ?>
 
 
 @section("body")
 
-@@include("admin-layouts.menu-admin", array("link" => "workposts", "has_sublink" => 0, "sublink" => ""))
+@include("admin-layouts.menu-admin", array("link" => "attractions", "has_sublink" => 0, "sublink" => ""))
 
 <nav id="right-side-menu" class="side-menu full-height">
 	<br />
@@ -37,7 +38,7 @@ use Chromabits\Pagination\FoundationPresenter;
     		) !!}
 		</li>
         <li class="has-pd">
-        	{!! Form::open(array("route" => "admin-work-posts", "method" => "GET")) !!}
+        	{!! Form::open(array("route" => "admin-attractions", "method" => "GET")) !!}
 				{!! Form::label("q", "Search") !!}
 				<div class="row collapse">
 					<div class="small-9 columns">
@@ -59,7 +60,7 @@ use Chromabits\Pagination\FoundationPresenter;
         </a>
     </div>
     <div class="small-6 columns align-right">
-    	<a class="link-icon mg-r" href="{!! URL::route('admin-work-post-new') !!}">
+    	<a class="link-icon mg-r" href="{!! URL::route('admin-attraction-new') !!}">
     		<span class="fa fa-plus"></span>
     	</a>
         <a class="side-menu-toggle link-icon" data-side="right">
@@ -69,7 +70,7 @@ use Chromabits\Pagination\FoundationPresenter;
 </div>
 
 <div id="admin-blogposts" class="container">
-	<h3 class="title">Blog Posts</h3>
+	<h3 class="title">Attractions</h3>
 	<br />
 	
 	@include("admin.alert-box")
@@ -93,13 +94,13 @@ use Chromabits\Pagination\FoundationPresenter;
 				<p>Tag : {!! Input::get("tag") !!}</p>
 			@endif
 			
-			<p>({!! Html::linkRoute("admin-work-posts", "View all data") !!})</p>
+			<p>({!! Html::linkRoute("admin-attractions", "View all data") !!})</p>
 			<br />
 		</div>
 	@endif
 	
 	<div class="show-for-large-up">
-		{!! Html::linkRoute("admin-work-post-new", "Add Post", [], array("class" => "button")) !!}
+		{!! Html::linkRoute("admin-attraction-new", "Add Attraction", [], array("class" => "button")) !!}
 		<br /><br />
 	</div>
 	
@@ -119,7 +120,7 @@ use Chromabits\Pagination\FoundationPresenter;
 					<p>Tag : {!! Input::get("tag") !!}</p>
 				@endif
 				
-				<p>({!! Html::linkRoute("admin-work-posts", "View all data") !!})</p>
+				<p>({!! Html::linkRoute("admin-attractions", "View all data") !!})</p>
 				<br />
 				
 			@endif
@@ -139,7 +140,7 @@ use Chromabits\Pagination\FoundationPresenter;
 		</div>
 		
 		<div class="small-12 large-4 columns medium-pd-l">
-			{!! Form::open(array("route" => "admin-work-posts", "method" => "GET")) !!}
+			{!! Form::open(array("route" => "admin-attractions", "method" => "GET")) !!}
 				{!! Form::label("q", "Search") !!}
 				<div class="row collapse">
 					<div class="small-9 columns">
@@ -161,26 +162,26 @@ use Chromabits\Pagination\FoundationPresenter;
 	</div>
 	
 	<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
-		@foreach ($posts as $post)
+		@foreach ($attractions as $attraction)
 			<li>
 				<div class="post-item ui-block ui-card no-pd">
-					<p class="post-feature-image">{!! Html::image($post->feature_image_url) !!}</p>
+					<p class="post-feature-image">{!! Html::image($attraction->image_url_1) !!}</p>
 					<div class="post-details">
 						<h5>
-							{!! $post->title !!}
-							<span class="status">{!! ($post->status == "draft") ? " (".$post->status.")" : "" !!}</span>
+							{!! $attraction->title !!}
+							<span class="status">{!! ($attraction->status == "draft") ? " (".$attraction->status.")" : "" !!}</span>
 						</h5>
 						
 						<p>
-							@if (!$post->is_selected)
+							@if (!$attraction->is_selected)
 								@if (Auth::user()->role == "admin")
-									<a href="{!! URL::route('admin-work-post-toggle-selected', array($post->id)) !!}" title="Set Featured">
+									<a href="{!! URL::route('admin-attraction-toggle-selected', array($attraction->id)) !!}" title="Set Featured">
 										<span class="tf-icon fa fa-star"></span>
 									</a>
 								@endif
 							@else
 								@if (Auth::user()->role == "admin")
-									<a href="{!! URL::route('admin-work-post-toggle-selected', array($post->id)) !!}" title="Unset Featured">
+									<a href="{!! URL::route('admin-attraction-toggle-selected', array($attraction->id)) !!}" title="Unset Featured">
 										<span class="tf-icon featured fa fa-star"></span>
 									</a>
 								@else
@@ -191,29 +192,29 @@ use Chromabits\Pagination\FoundationPresenter;
 						
 						<p class="show-for-large-up">
 							By 
-							{!! Html::linkRoute("admin-work-posts", $post->author->username, 
-							array("author" => $post->author->username)) !!}
+							{!! Html::linkRoute("admin-attractions", $attraction->author->username, 
+							array("author" => $attraction->author->username)) !!}
 						</p>
 						
 						
-						<p class="text-date show-for-large-up">Created : {!! date("M n, Y g:i A", strtotime($post->created_at)) !!}</p>
-						@if ($post->updated_at != $post->created_at)
-							<p class="text-date show-for-large-up">Last edited : {!! date("M n, Y g:i A", strtotime($post->updated_at)) !!}</p>
+						<p class="text-date show-for-large-up">Created : {!! date("M n, Y g:i A", strtotime($attraction->created_at)) !!}</p>
+						@if ($attraction->updated_at != $attraction->created_at)
+							<p class="text-date show-for-large-up">Last edited : {!! date("M n, Y g:i A", strtotime($attraction->updated_at)) !!}</p>
 						@endif
 						
-						<p class="text-date show-for-large-up">{!! $post->hits !!} views</p>
+						<p class="text-date show-for-large-up">{!! $attraction->hits !!} views</p>
 						
 						<div class="row">
 							<div class="small-4 columns">
-								{!! Html::linkRoute("admin-work-post-preview", "Preview", 
-									array($post->id),
+								{!! Html::linkRoute("admin-attraction-preview", "Preview", 
+									array($attraction->id),
 									array("class" => "card-button"))
 								!!}
 							</div>
 							<div class="small-4 columns">
-								@if (Auth::user()->role == "admin" || Auth::user()->id == $post->author->id)
-									{!! Html::linkRoute("admin-work-post-edit", "Edit", 
-										array($post->id), 
+								@if (Auth::user()->role == "admin" || Auth::user()->id == $attraction->author->id)
+									{!! Html::linkRoute("admin-attraction-edit", "Edit", 
+										array($attraction->id), 
 										array("class" => "card-button"))
 									!!}
 								@else
@@ -221,12 +222,12 @@ use Chromabits\Pagination\FoundationPresenter;
 								@endif
 							</div>
 							<div class="small-4 columns">
-								@if (Auth::user()->role == "admin" || Auth::user()->id == $post->author->id)
-									<a class="card-button end" data-reveal-id="delete-modal-id-{!! $post->id !!}">Delete</a>
-									<div id="delete-modal-id-{!! $post->id !!}" class="reveal-modal tiny" data-reveal>
+								@if (Auth::user()->role == "admin" || Auth::user()->id == $attraction->author->id)
+									<a class="card-button end" data-reveal-id="delete-modal-id-{!! $attraction->id !!}">Delete</a>
+									<div id="delete-modal-id-{!! $attraction->id !!}" class="reveal-modal tiny" data-reveal>
 										<h4>Confirm delete</h4>
-										<p>"{!! $post->title !!}"</p>
-										{!! Form::open(array("route" => array("admin-work-post-delete", $post->id), "method" => "delete")) !!}
+										<p>"{!! $attraction->title !!}"</p>
+										{!! Form::open(array("route" => array("admin-attraction-delete", $attraction->id), "method" => "delete")) !!}
 											{!! Form::button("Delete", array("type" => "submit")) !!}
 										{!! Form::close() !!}
 										<a class="close-reveal-modal">&#215;</a>
@@ -242,9 +243,9 @@ use Chromabits\Pagination\FoundationPresenter;
 		@endforeach
 	</ul>
 	
-	@if ($posts->total() > $posts->perPage())
+	@if ($attractions->total() > $attractions->perPage())
 		<div class="pagination-container">
-			{!! str_replace('/?', '?', $posts->appends(Request::except("page"))->render(new FoundationPresenter($posts))) !!}
+			{!! str_replace('/?', '?', $attractions->appends(Request::except("page"))->render(new FoundationPresenter($attractions))) !!}
 		</div>
 	@endif
 </div>

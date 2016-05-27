@@ -14,7 +14,7 @@ Add New Blog Post |
 @section("specific_js_head")
 {!! Html::script("/js/tinymce/tinymce.min.js") !!}
 {!! Html::script("/js/fancybox/source/jquery.fancybox.pack.js") !!}
-{!! Html::script("/js/admin-blog-post-form.js") !!}
+{!! Html::script("/js/backend/admin-blog-post-form.js") !!}
 <script>
 	window.onload = function() {
 	  $(':text[name="title"]').focus();

@@ -7,7 +7,7 @@ Image posts |
 
 
 @section("specific_js_head")
-{!! Html::script("/js/admin-image-posts.js") !!}
+{!! Html::script("/js/backend/admin-image-posts.js") !!}
 @stop
 
 
