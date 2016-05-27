@@ -108,7 +108,7 @@ Edit Attractions |
 						<div class="small-12 large-6 columns">
 							<div class="ui-block mg-b medium-half-mg-l">
 								<div class="row">
-									<h6>English</h6>	
+									<h6>English</h6>
 									<div class="small-12 large-6 columns" >
 										{!! Form::label("title_english", "Title") !!}
 										{!! Form::text("title_english", null) !!}
@@ -127,7 +127,7 @@ Edit Attractions |
 						<div class="small-12 large-6 columns">
 							<div class="ui-block mg-b medium-half-mg-l">
 								<div class="row">
-									<h6>Japan</h6>	
+									<h6>Japan</h6>
 									<div class="small-12 large-6 columns" >
 										{!! Form::label("title_japan", "Title") !!}
 										{!! Form::text("title_japan", null) !!}
@@ -146,7 +146,7 @@ Edit Attractions |
 						<div class="small-12 large-6 columns">
 							<div class="ui-block mg-b medium-half-mg-l">
 								<div class="row">
-									<h6>China</h6>	
+									<h6>China</h6>
 									<div class="small-12 large-6 columns" >
 										{!! Form::label("title_china", "Title") !!}
 												{!! Form::text("title_china", null) !!}
@@ -200,14 +200,25 @@ Edit Attractions |
 
 									<?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=screenshots-URL".$i; ?>
 									<a class="select-image-open" href="<?php echo $p_link; ?>">
-					                    {!! Html::image($attraction["image_url_".$i], 
-					                        "Image-$i", 
-					                        array(
-					                            "id" => "screenshots".$i ,
-					                            "class" => "post-image"
-					                            )
-					                        )
-					                    !!}
+										@if( $attraction["image_url_".$i] != null && $attraction["image_url_".$i] != '')
+						                    {!! Html::image($attraction["image_url_".$i], 
+						                        "Image-$i", 
+						                        array(
+						                            "id" => "screenshots".$i ,
+						                            "class" => "post-image"
+						                            )
+						                        )
+						                    !!}
+						                @else
+						                	{!! Html::image('/images/admin/icon-placeholder.svg', 
+						                        "Image-$i", 
+						                        array(
+						                            "id" => "screenshots".$i ,
+						                            "class" => "post-image"
+						                            )
+						                        )
+						                    !!}
+						                @endif
 				                    </a>
 				                    {!! Form::text("screenshots_URL".$i, 
 				                        $attraction["image_url_".$i], 

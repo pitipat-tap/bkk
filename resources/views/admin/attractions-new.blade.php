@@ -107,7 +107,7 @@ Add New Work Post |
 						<div class="small-12 large-6 columns">
 							<div class="ui-block mg-b medium-half-mg-l">
 								<div class="row">
-									<h6>English</h6>	
+									<h6>English</h6>
 									<div class="small-12 large-6 columns" >
 										{!! Form::label("title_english", "Title") !!}
 										{!! Form::text("title_english", null) !!}
@@ -126,7 +126,7 @@ Add New Work Post |
 						<div class="small-12 large-6 columns">
 							<div class="ui-block mg-b medium-half-mg-l">
 								<div class="row">
-									<h6>Japan</h6>	
+									<h6>Japan</h6>
 									<div class="small-12 large-6 columns" >
 										{!! Form::label("title_japan", "Title") !!}
 										{!! Form::text("title_japan", null) !!}
@@ -145,18 +145,18 @@ Add New Work Post |
 						<div class="small-12 large-6 columns">
 							<div class="ui-block mg-b medium-half-mg-l">
 								<div class="row">
-									<h6>China</h6>	
+									<h6>China</h6>
 									<div class="small-12 large-6 columns" >
 										{!! Form::label("title_china", "Title") !!}
 												{!! Form::text("title_china", null) !!}
 									</div>
 									<div class="small-12 large-6 columns" >
 										{!! Form::label("opening_day_china", "Opening day") !!}
-												{!! Form::text("opening_day_china", null) !!}
+										{!! Form::text("opening_day_china", null) !!}
 									</div>
 									<div class="small-12 columns">
 										{!! Form::label("description_china", "Description") !!}
-											{!! Form::textarea("description_china", null, array("rows" => "4")) !!}
+										{!! Form::textarea("description_china", null, array("rows" => "4")) !!}
 									</div>
 								</div>
 							</div>
