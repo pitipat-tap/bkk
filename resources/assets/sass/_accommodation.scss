@@ -30,6 +30,12 @@
 	background: none !important;
 }
 .half-width{
+	text-align: center;
+	margin: auto;
+	@include breakpoint(small-only) {
+    	padding-left: 0 !important;
+    	padding-right: 0 !important; 
+  	}
 	@include breakpoint(medium) {
     	width: 50%; 
   	}

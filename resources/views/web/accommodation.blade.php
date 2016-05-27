@@ -31,7 +31,7 @@
 <div class="banner-page-title font">Accommodation</div>
 <div class="body-section">
   <div class="row collapse">
-    <div class="small-12 columns padding-b" align="center">
+    <div class="small-12 columns padding-b">
       <ul id="menu" class="tabs modify" id="example-vert-tabs" data-tabs>
         <li class="small-3 tabs-title is-active border-right" >
           <a class="background-none half-width border-bottom" href="#panel1v" aria-selected="true">Hotels</a>
@@ -59,10 +59,10 @@
             <div class="small-12 medium-7 columns padding-b">
               <h4 class="padding-b"> Title1 </h4>
               <div class="padding-b">
-                <div class="small-4 columns">
+                <div class="small-6 medium-4 columns">
                   <i class="fa fa-clock-o" aria-hidden="true"></i> 00.00 - 00.00
                 </div>
-                <div class="small-4 columns end">
+                <div class="small-6 medium-4 columns end">
                   <i class="fa fa-money" aria-hidden="true"></i> 00.00
                 </div>
               </div>
@@ -88,6 +88,14 @@
             <div class="small-12 medium-7 columns padding-b">
               <h4 class="padding-b"> Title2 </h4>
               <div class="padding-b">
+                <div class="small-6 medium-4 columns">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i> 00.00 - 00.00
+                </div>
+                <div class="small-6 medium-4 columns end">
+                  <i class="fa fa-money" aria-hidden="true"></i> 00.00
+                </div>
+              </div>
+              <div class="padding-b">
                 description
               </div>
               <div>
@@ -109,6 +117,14 @@
             <div class="small-12 medium-7 columns padding-b">
               <h4 class="padding-b"> Title3 </h4>
               <div class="padding-b">
+                <div class="small-6 medium-4 columns">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i> 00.00 - 00.00
+                </div>
+                <div class="small-6 medium-4 columns end">
+                  <i class="fa fa-money" aria-hidden="true"></i> 00.00
+                </div>
+              </div>
+              <div class="padding-b">
                 description
               </div>
               <div>
@@ -129,6 +145,14 @@
             </div>
             <div class="small-12 medium-7 columns padding-b">
               <h4 class="padding-b"> Title4 </h4>
+              <div class="padding-b">
+                <div class="small-6 medium-4 columns">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i> 00.00 - 00.00
+                </div>
+                <div class="small-6 medium-4 columns end">
+                  <i class="fa fa-money" aria-hidden="true"></i> 00.00
+                </div>
+              </div>
               <div class="padding-b">
                 description
               </div>
