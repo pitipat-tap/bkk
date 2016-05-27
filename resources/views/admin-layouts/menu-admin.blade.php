@@ -83,14 +83,16 @@
 	</div>
 	<br />
 	
-    <div class="profile">
-        @if (Auth::user()->profile_image == null || trim(Auth::user()->profile_image == ""))
-    		<?php $profile_image = URL::to("/image/admin/default-profile-image.jpg"); ?>
-    	@else
-    		<?php $profile_image = Auth::user()->profile_image; ?>
-    	@endif
-    	{!! Html::image($profile_image, "Profile image") !!}
-        <h6>{!! Auth::user()->username !!}</h6>
+    <div class="profile" >
+        <a href="{!! URL::route('admin-profile-edit') !!}">
+            @if (Auth::user()->profile_image == null || trim(Auth::user()->profile_image == ""))
+        		<?php $profile_image = URL::to("/images/admin/default-profile-image.jpg"); ?>
+        	@else
+        		<?php $profile_image = Auth::user()->profile_image; ?>
+        	@endif
+        	{!! Html::image($profile_image, "Profile image") !!}
+            <h6>{!! Auth::user()->username !!}</h6>
+        </a>
     </div>
     
     <ul class="root-menu">
@@ -170,7 +172,7 @@
     
     <ul class="root-menu">
     	<li>
-        	<a href="{!! URL::route('admin-profile-edit') !!}"  class="{!! isAdminNavLinkActive($link, 'editprofile') !!}">
+        	<a v  class="{!! isAdminNavLinkActive($link, 'editprofile') !!}">
                 <span class="icon fa fa-wrench"></span> Edit profile
             </a>
 		</li>

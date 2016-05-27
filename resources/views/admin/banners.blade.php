@@ -66,18 +66,32 @@ use Illuminate\Support\Facades\Input;
                     	<p> {!! $banner->caption !!} </p>
                     </td>
                     <td>
-                    	<a class="button " href="{!! URL::route('admin-banner-edit', array($banner->id)) !!}" data-reveal-id="myModal{!! $banner->id !!}">edit</a>
-                        <a class="button alert" href="{!! URL::route('admin-banner-delete', array($banner->id)) !!}" data-reveal-id="myModal{!! $banner->id !!}">Delete</a> <br><br>
                         @if( $index == 0 )
-                        	<a class="button disabled" href="#" data-reveal-id="myModal{!! $banner->id !!}">Move Up</a>
+                        	<a class="button secondary" disabled">
+                                <span class="icon fa fa-arrow-up">
+                            </a>
                         @else
-                        	<a class="button success" href="{!! URL::route('admin-banner-move-up', array($banner->id)) !!}"" data-reveal-id="myModal{!! $banner->id !!}">Move Up</a>
+                        	<a class="button success " href="{!! URL::route('admin-banner-move-up', array($banner->id)) !!}">
+                                <span class="icon fa fa-arrow-up">
+                            </a>
                         @endif
-                    	@if( $index+1 ==  sizeof($banners))
-                        	<a class="button disabled" href="#" data-reveal-id="myModal{!! $banner->id !!}">Move Down</a>
+                        @if( $index+1 ==  sizeof($banners))
+                            <a class="button secondary" disabled>
+                                <span class="icon fa fa-arrow-down">
+                            </a>
                         @else
-                        	<a class="button success" href="{!! URL::route('admin-banner-move-down', array($banner->id)) !!}"" data-reveal-id="myModal{!! $banner->id !!}">Move Down</a>
+                            <a class="button success" href="{!! URL::route('admin-banner-move-down', array($banner->id)) !!}">
+                                <span class="icon fa fa-arrow-down">
+                            </a>
                         @endif
+                        <div class="show-for-small-only"> <br> </div>
+                        <a class="button" href="{!! URL::route('admin-banner-edit', array($banner->id)) !!}">
+                            edit
+                        </a>
+                        <div class="show-for-small-only"> <br> </div>
+                        <a class="button alert" href="{!! URL::route('admin-banner-delete', array($banner->id)) !!}" data-reveal-id="myModal{!! $banner->id !!}">
+                            Delete
+                        </a>
                     	
                     </td>
                 </tr>

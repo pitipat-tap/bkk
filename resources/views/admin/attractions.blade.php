@@ -53,7 +53,7 @@ use Illuminate\Support\Facades\Input;
     </ul>
 </nav>
 
-<div class="row container ui-block mg-b small-medium-header hide-for-large-up">
+<!-- <div class="row container ui-block mg-b small-medium-header hide-for-large-up">
     <div class="small-6 columns">
         <a class="side-menu-toggle link-icon" data-side="left">
             <span class="fa fa-bars"></span>
@@ -67,7 +67,7 @@ use Illuminate\Support\Facades\Input;
             <span class="fa fa-search"></span>
         </a>
     </div>
-</div>
+</div> -->
 
 <div id="admin-blogposts" class="container">
 	<h3 class="title">Attractions</h3>
@@ -172,7 +172,7 @@ use Illuminate\Support\Facades\Input;
 							<span class="status">{!! ($attraction->status == "draft") ? " (".$attraction->status.")" : "" !!}</span>
 						</h5>
 						
-						<p>
+<!-- 						<p>
 							@if (!$attraction->is_selected)
 								@if (Auth::user()->role == "admin")
 									<a href="{!! URL::route('admin-attraction-toggle-selected', array($attraction->id)) !!}" title="Set Featured">
@@ -188,7 +188,7 @@ use Illuminate\Support\Facades\Input;
 									<span class="tf-icon featured fa fa-star"></span>
 								@endif
 							@endif
-						</p>
+						</p> -->
 						
 						<p class="show-for-large-up">
 							By 
@@ -205,13 +205,7 @@ use Illuminate\Support\Facades\Input;
 						<p class="text-date show-for-large-up">{!! $attraction->hits !!} views</p>
 						
 						<div class="row">
-							<div class="small-4 columns">
-								{!! Html::linkRoute("admin-attraction-preview", "Preview", 
-									array($attraction->id),
-									array("class" => "card-button"))
-								!!}
-							</div>
-							<div class="small-4 columns">
+							<div class="small-6 columns">
 								@if (Auth::user()->role == "admin" || Auth::user()->id == $attraction->author->id)
 									{!! Html::linkRoute("admin-attraction-edit", "Edit", 
 										array($attraction->id), 
@@ -221,7 +215,7 @@ use Illuminate\Support\Facades\Input;
 									<span class="card-button disabled">Edit</span>
 								@endif
 							</div>
-							<div class="small-4 columns">
+							<div class="small-6 columns">
 								@if (Auth::user()->role == "admin" || Auth::user()->id == $attraction->author->id)
 									<a class="card-button end" data-reveal-id="delete-modal-id-{!! $attraction->id !!}">Delete</a>
 									<div id="delete-modal-id-{!! $attraction->id !!}" class="reveal-modal tiny" data-reveal>

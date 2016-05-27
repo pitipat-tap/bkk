@@ -67,74 +67,126 @@ Edit Attractions |
 		<div class="row full-width">
 		    <div class="small-12 columns">
 		    	<div class="ui-block mg-b medium-half-mg-r">
-			    	<div class="ui-block mg-b medium-half-mg-l">
-			    		<div class="row">
-			    			<h6>Thai</h6>
-			    			<div class="small-12 large-6 columns" >
-			    				{!! Form::label("title_thai", "Title") !!}
-		               			{!! Form::text("title_thai", null) !!}
-			    			</div>
-			    			<div class="small-12 large-6 columns" >
-			    				{!! Form::label("opening_day_thai", "Opening day") !!}
-		               			{!! Form::text("opening_day_thai", null) !!}
-			    			</div>
-			    			<div class="small-12 columns">
-				    			{!! Form::label("description_thai", "Description") !!}
-		                		{!! Form::textarea("description_thai", null, array("rows" => "4")) !!}
-			    			</div>
-			    		</div>
+			    	<div class="row">
+						<div class="small-12 columns" >
+							<div class="ui-block mg-b medium-half-mg-l">
+								<div class="row">
+									<div class="small-12 columns" >
+										{!! Form::checkbox('attraction', 'true', $attraction->is_attraction) !!}
+										{!! Form::label('attraction', 'Attraction') !!}
+										<div class="show-for-small-only"> <br> </div>
+										{!! Form::checkbox('accommodation', 'true', $attraction->is_accommodation) !!}
+										{!! Form::label('accommodation', 'Accommodation') !!}
+										<div class="show-for-small-only"> <br> </div>
+										{!! Form::checkbox('campaign', 'true', $attraction->is_campaign) !!}
+										{!! Form::label('campaign', 'Campaign') !!}
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-			    	<div class="ui-block mg-b medium-half-mg-l">
-						<div class="row">
-							<h6>English</h6>	
-			    			<div class="small-12 large-6 columns" >
-			    				{!! Form::label("title_english", "Title") !!}
-		               			{!! Form::text("title_english", null) !!}
-			    			</div>
-			    			<div class="small-12 large-6 columns" >
-			    				{!! Form::label("opening_day_english", "Opening day") !!}
-		               			{!! Form::text("opening_day_english", null) !!}
-			    			</div>
-			    			<div class="small-12 columns">
-				    			{!! Form::label("description_english", "Description") !!}
-		                		{!! Form::textarea("description_english", null, array("rows" => "4")) !!}
-			    			</div>
-				    	</div>
+					<div class="row">
+						<div class="small-12 large-6 columns">
+							<div class="ui-block mg-b medium-half-mg-l">
+								<div class="row">
+									<h6>Thai</h6>
+									<div class="small-12 large-6 columns" >
+										{!! Form::label("title_thai", "Title") !!}
+										{!! Form::text("title_thai", null) !!}
+									</div>
+									<div class="small-12 large-6 columns" >
+										{!! Form::label("opening_day_thai", "Opening day") !!}
+										{!! Form::text("opening_day_thai", null) !!}
+									</div>
+									<div class="small-12 columns">
+										{!! Form::label("description_thai", "Description") !!}
+										{!! Form::textarea("description_thai", null, array("rows" => "4")) !!}
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="small-12 large-6 columns">
+							<div class="ui-block mg-b medium-half-mg-l">
+								<div class="row">
+									<h6>English</h6>	
+									<div class="small-12 large-6 columns" >
+										{!! Form::label("title_english", "Title") !!}
+										{!! Form::text("title_english", null) !!}
+									</div>
+									<div class="small-12 large-6 columns" >
+										{!! Form::label("opening_day_english", "Opening day") !!}
+										{!! Form::text("opening_day_english", null) !!}
+									</div>
+									<div class="small-12 columns">
+										{!! Form::label("description_english", "Description") !!}
+										{!! Form::textarea("description_english", null, array("rows" => "4")) !!}
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="small-12 large-6 columns">
+							<div class="ui-block mg-b medium-half-mg-l">
+								<div class="row">
+									<h6>Japan</h6>	
+									<div class="small-12 large-6 columns" >
+										{!! Form::label("title_japan", "Title") !!}
+										{!! Form::text("title_japan", null) !!}
+									</div>
+									<div class="small-12 large-6 columns" >
+										{!! Form::label("opening_day_japan", "Opening day") !!}
+										{!! Form::text("opening_day_japan", null) !!}
+									</div>
+									<div class="small-12 columns">
+										{!! Form::label("description_japan", "Description") !!}
+										{!! Form::textarea("description_japan", null, array("rows" => "4")) !!}
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="small-12 large-6 columns">
+							<div class="ui-block mg-b medium-half-mg-l">
+								<div class="row">
+									<h6>China</h6>	
+									<div class="small-12 large-6 columns" >
+										{!! Form::label("title_china", "Title") !!}
+												{!! Form::text("title_china", null) !!}
+									</div>
+									<div class="small-12 large-6 columns" >
+										{!! Form::label("opening_day_china", "Opening day") !!}
+												{!! Form::text("opening_day_china", null) !!}
+									</div>
+									<div class="small-12 columns">
+										{!! Form::label("description_china", "Description") !!}
+											{!! Form::textarea("description_china", null, array("rows" => "4")) !!}
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-				    <div class="ui-block mg-b medium-half-mg-l">
-				    	<div class="row">
-							<h6>Japan</h6>	
-			    			<div class="small-12 large-6 columns" >
-			    				{!! Form::label("title_japan", "Title") !!}
-		               			{!! Form::text("title_japan", null) !!}
-			    			</div>
-			    			<div class="small-12 large-6 columns" >
-			    				{!! Form::label("opening_day_japan", "Opening day") !!}
-		               			{!! Form::text("opening_day_japan", null) !!}
-			    			</div>
-			    			<div class="small-12 columns">
-				    			{!! Form::label("description_japan", "Description") !!}
-		                		{!! Form::textarea("description_japan", null, array("rows" => "4")) !!}
-			    			</div>
-				    	</div>
+					<div class="row">
+						<div class="small-12 columns" >
+							<div class="ui-block mg-b medium-half-mg-l">
+								<div class="row">
+									<div class="small-12 large-6 columns" >
+										{!! Form::label("opening_hours", "Opening Hours") !!}
+										{!! Form::text("opening_hours", null) !!}
+									</div>
+									<div class="small-12 large-6 columns" >
+										{!! Form::label("admission_free", "Admission Free") !!}
+										{!! Form::text("admission_free", null) !!}
+									</div>
+									<div class="small-12 columns" >
+										{!! Form::label("map_url", "Map URL") !!}
+										{!! Form::text("map_url", null) !!}
+									</div>
+									<div class="small-12 columns" >
+										{!! Form::label("remark", "Remark") !!}
+										{!! Form::text("remark", null) !!}
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					 <div class="ui-block mg-b medium-half-mg-l">
-					    <div class="row">	
-							<h6>China</h6>	
-			    			<div class="small-12 large-6 columns" >
-			    				{!! Form::label("title_china", "Title") !!}
-		               			{!! Form::text("title_china", null) !!}
-			    			</div>
-			    			<div class="small-12 large-6 columns" >
-			    				{!! Form::label("opening_day_china", "Opening day") !!}
-		               			{!! Form::text("opening_day_china", null) !!}
-			    			</div>
-			    			<div class="small-12 columns">
-				    			{!! Form::label("description_china", "Description") !!}
-		                		{!! Form::textarea("description_china", null, array("rows" => "4")) !!}
-			    			</div>
-				    	</div>
-				    </div>
 
 	                <div class="row">
 		                @for($i = 1; $i <= 5; $i++)

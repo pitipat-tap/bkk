@@ -66,7 +66,7 @@ class AdminBannerController extends Controller {
 
 		$banner1 = BannerOrbit::find($id);
 		$banner2 = BannerOrbit::where('sequence', '>' ,$banner1->sequence)->orderBy('sequence', 'ASC')->first();
-		if (!$baner || !$uperBaner)
+		if (!$banner1 || !$banner2)
 			return Redirect::route("admin-banners")->with('error', 'Cannot edit data');
 
 		$banner1->sequence += 1;

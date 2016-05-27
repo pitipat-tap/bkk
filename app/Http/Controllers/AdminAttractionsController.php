@@ -43,6 +43,26 @@ class AdminAttractionsController extends Controller {
 			$attraction->image_url_3 = trim(Request::input("screenshots_URL3"));
 			$attraction->image_url_4 = trim(Request::input("screenshots_URL4"));
 			$attraction->image_url_5 = trim(Request::input("screenshots_URL5"));
+			$attraction->opening_hours = trim(Request::input("opening_hours"));
+            $attraction->admission_free = trim(Request::input("admission_free"));
+            $attraction->map_url = trim(Request::input("map_url"));
+            $attraction->remark = trim(Request::input("remark"));
+
+			if(trim(Request::input("attraction")) == 'true')
+				$attraction->is_attraction = 1;
+			else
+				$attraction->is_attraction = 0;
+
+			if(trim(Request::input("accommodation")) == 'true')
+				$attraction->is_accommodation = 1;
+			else
+				$attraction->is_accommodation = 0;
+
+			if(trim(Request::input("ampaign")) == 'true')
+				$attraction->is_campaign = 1;
+			else
+				$attraction->is_campaign = 0;
+
 
 			if ($attraction->save()) {
 				return Redirect::route("admin-attractions")->with("success", "New post was created");
@@ -101,6 +121,26 @@ class AdminAttractionsController extends Controller {
 			$attraction->image_url_3 = trim(Request::input("screenshots_URL3"));
 			$attraction->image_url_4 = trim(Request::input("screenshots_URL4"));
 			$attraction->image_url_5 = trim(Request::input("screenshots_URL5"));
+			$attraction->opening_hours = trim(Request::input("opening_hours"));
+            $attraction->admission_free = trim(Request::input("admission_free"));
+            $attraction->map_url = trim(Request::input("map_url"));
+            $attraction->remark = trim(Request::input("remark"));
+
+			if(trim(Request::input("attraction")) == 'true')
+				$attraction->is_attraction = 1;
+			else
+				$attraction->is_attraction = 0;
+
+			if(trim(Request::input("accommodation")) == 'true')
+				$attraction->is_accommodation = 1;
+			else
+				$attraction->is_accommodation = 0;
+
+			if(trim(Request::input("ampaign")) == 'true')
+				$attraction->is_campaign = 1;
+			else
+				$attraction->is_campaign = 0;
+			
 			
 	        if ($attraction->save()) {
 	            return Redirect::route("admin-attractions")->with("success", "Updated attraction was saved");

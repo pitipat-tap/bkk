@@ -180,5 +180,8 @@ Route::group(array('middleware' => 'auth.admin', 'prefix' => 'admin'), function(
 
 	Route::delete("attractions/{id}", array("as" => "admin-attraction-delete", "uses" => "AdminAttractionsController@deleteWorkPost"));
 
+	Route::get("workposts/{id}/togglefeatured", array("as" => "admin-attraction-toggle-selected", 
+		"uses" => "AdminAttractionsController@toggleSelectedWork"));
+
 
 });
