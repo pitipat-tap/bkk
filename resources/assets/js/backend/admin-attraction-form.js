@@ -50,8 +50,14 @@ $(document).ready(function() {
 });
 
 function removeImage(id){
+	var currentHostName = "";
+	if(window.location.origin.indexOf("local") > 0) {
+	      currentHostName = window.location.origin + '/bkk/public';
+	} else {
+	      currentHostName = window.location.origin ;
+	}
 	document.getElementById('screenshots-URL'+id).value = "";
-	document.getElementById('screenshots'+id).src = "";
+	document.getElementById('screenshots'+id).src = currentHostName+"/images/admin/icon-placeholder.svg";
 }
 
 

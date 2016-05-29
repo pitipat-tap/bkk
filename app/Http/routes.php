@@ -10,13 +10,19 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+use App\Models\BannerOrbit;
 Route::get('/', function () {
-    return view('web/home');
+	$banners = BannerOrbit::orderBy('sequence', 'ASC')->get();
+    return view('web/home',array(
+				"banners" => $banners
+			));
 });
 
 Route::get('/home', function () {
-    return view('web/home');
+    $banners = BannerOrbit::orderBy('sequence', 'ASC')->get();
+    return view('web/home',array(
+				"banners" => $banners
+			));
 });
 
 Route::get('/attraction-category', function () {
@@ -149,20 +155,6 @@ Route::group(array('middleware' => 'auth.admin', 'prefix' => 'admin'), function(
 	Route::patch("users/{id}", array("as" => "admin-user-update", "uses" => "AdminUserController@updateUser"));
 	Route::delete("users/{id}", array("as" => "admin-user-delete", "uses" => "AdminUserController@deleteUser"));
 
-	//Work Post
-	// Route::get("workposts", array("as" => "admin-work-posts", "uses" => "AdminWorkController@workPosts"));
-	// Route::get("workposts/new", array("as" => "admin-work-post-new", "uses" => "AdminWorkController@newWorkPost"));
-	// Route::post("workposts/new", array("as" => "admin-work-post-create", "uses" => "AdminWorkController@createWorkPost"));
-	// Route::get("workposts/{id}", array("as" => "admin-work-post-preview", "uses" => "AdminWorkController@previewWorkPost"));
-	// Route::post("workposts/livepreview", array("as" => "admin-work-post-livepreview", "uses" => "AdminWorkController@livePreviewWorkPost"));
-	// Route::get("workposts/{id}/edit", array("as" => "admin-work-post-edit", "uses" => "AdminWorkController@editWorkPost"));
-	// Route::patch("workposts/{id}", array("as" => "admin-work-post-update", "uses" => "AdminWorkController@updateWorkPost"));
-	// Route::delete("workposts/{id}", array("as" => "admin-work-post-delete", "uses" => "AdminWorkController@deleteWorkPost"));
-
-	// Route::get("workposts/{id}/togglefeatured", array("as" => "admin-work-post-toggle-selected", 
-	// 	"uses" => "AdminWorkController@toggleSelectedWork"));
-
-
 	Route::get("banners", array("as" => "admin-banners", "uses" => "AdminBannerController@banners"));
 	Route::get("banners/new", array("as" => "admin-banner-new", "uses" => "AdminBannerController@newBanner"));
 	Route::post("banners/new", array("as" => "admin-banner-create", "uses" => "AdminBannerController@createBanner"));
@@ -177,11 +169,10 @@ Route::group(array('middleware' => 'auth.admin', 'prefix' => 'admin'), function(
 	Route::post("attractions/new", array("as" => "admin-attraction-create", "uses" => "AdminAttractionsController@createAttraction"));
 	Route::get("attractions/{id}/edit", array("as" => "admin-attraction-edit", "uses" => "AdminAttractionsController@editAttraction"));
 	Route::patch("attractions/{id}", array("as" => "admin-attraction-update", "uses" => "AdminAttractionsController@updateAttraction"));
+	Route::delete("attractions/{id}", array("as" => "admin-attraction-delete", "uses" => "AdminAttractionsController@deleteAttraction"));
 
-	Route::delete("attractions/{id}", array("as" => "admin-attraction-delete", "uses" => "AdminAttractionsController@deleteWorkPost"));
-
-	Route::get("workposts/{id}/togglefeatured", array("as" => "admin-attraction-toggle-selected", 
-		"uses" => "AdminAttractionsController@toggleSelectedWork"));
+	// Route::get("workposts/{id}/togglefeatured", array("as" => "admin-attraction-toggle-selected", 
+	// 	"uses" => "AdminAttractionsController@toggleSelectedWork"));
 
 
 });

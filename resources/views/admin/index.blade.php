@@ -28,6 +28,27 @@ Dashboard |
 <div id="dashboard" class="container">
 	<h3 class="title">Dashboard</h3>
 	<br />
+
+	<ul class="small-block-grid-2 medium-block-grid-2 large-block-grid-4 stat-block-group">
+		<li>
+			<a href="{!! URL::route('admin-image-posts') !!}" class="count-block">
+				<div class="ui-block align-center">
+					<h4>{!! $imageposts->count() !!}</h4>
+					<p>Image posts</p>
+				</div>
+			</a>
+		</li>
+		
+		<li>
+			<a href="{!! URL::route('admin-attractions') !!}" class="count-block">
+				<div class="ui-block align-center">
+					<h4>{!! $attractions->count() !!}</h4>
+					<p>Attractions</p>
+				</div>
+			</a>
+		</li>
+	</ul>
+	<br />
 	
 </div>
 

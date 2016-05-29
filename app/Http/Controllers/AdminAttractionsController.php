@@ -13,6 +13,8 @@ class AdminAttractionsController extends Controller {
 	
 	// ----------------------------------------Image Posts----------------------------------------
 	public function attractions(){
+		// TODO search
+
 		$attractions = Attractions::orderBy('created_at', 'DESC')->paginate(20);
 
 		return view("admin.attractions", array(
@@ -38,6 +40,10 @@ class AdminAttractionsController extends Controller {
 			$attraction->description_english = trim(Request::input("description_english"));
 			$attraction->description_japan = trim(Request::input("description_japan"));
 			$attraction->description_china = trim(Request::input("description_china"));
+			$attraction->opening_day_thai = trim(Request::input("opening_day_thai"));
+			$attraction->opening_day_english = trim(Request::input("opening_day_english"));
+			$attraction->opening_day_japan = trim(Request::input("opening_day_japan"));
+			$attraction->opening_day_china = trim(Request::input("opening_day_china"));
 			$attraction->image_url_1 = trim(Request::input("screenshots_URL1"));
 			$attraction->image_url_2 = trim(Request::input("screenshots_URL2"));
 			$attraction->image_url_3 = trim(Request::input("screenshots_URL3"));
@@ -116,6 +122,10 @@ class AdminAttractionsController extends Controller {
 			$attraction->description_english = trim(Request::input("description_english"));
 			$attraction->description_japan = trim(Request::input("description_japan"));
 			$attraction->description_china = trim(Request::input("description_china"));
+			$attraction->opening_day_thai = trim(Request::input("opening_day_thai"));
+			$attraction->opening_day_english = trim(Request::input("opening_day_english"));
+			$attraction->opening_day_japan = trim(Request::input("opening_day_japan"));
+			$attraction->opening_day_china = trim(Request::input("opening_day_china"));
 			$attraction->image_url_1 = trim(Request::input("screenshots_URL1"));
 			$attraction->image_url_2 = trim(Request::input("screenshots_URL2"));
 			$attraction->image_url_3 = trim(Request::input("screenshots_URL3"));
@@ -151,6 +161,21 @@ class AdminAttractionsController extends Controller {
 		else {
             return Redirect::back()->with('error', 'Errors')->withErrors($validator)->withInput();
         }
+	}
+
+	public function deleteAttraction($id)
+	{
+		// Check if not admin role, and not author's item
+		if (Auth::user()->role != "admin" && Auth::user()->id != $post->author->id) {
+			return Redirect::route("admin-attractions")->with('error', 'Cannot delete Attraction');
+		}
+		// Check is exist
+		$attraction = Attractions::find($id);
+		if (!$attraction)
+			return Redirect::route("admin-attractions")->with('error', 'Cannot delete Attraction');
+		
+		$attraction->delete();
+		return Redirect::back()->with("success", "Attraction was deleted");
 	}
 
 

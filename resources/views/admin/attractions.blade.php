@@ -53,7 +53,7 @@ use Illuminate\Support\Facades\Input;
     </ul>
 </nav>
 
-<!-- <div class="row container ui-block mg-b small-medium-header hide-for-large-up">
+<div class="row container ui-block mg-b small-medium-header hide-for-large-up">
     <div class="small-6 columns">
         <a class="side-menu-toggle link-icon" data-side="left">
             <span class="fa fa-bars"></span>
@@ -67,7 +67,7 @@ use Illuminate\Support\Facades\Input;
             <span class="fa fa-search"></span>
         </a>
     </div>
-</div> -->
+</div>
 
 <div id="admin-blogposts" class="container">
 	<h3 class="title">Attractions</h3>
@@ -168,34 +168,15 @@ use Illuminate\Support\Facades\Input;
 					<p class="post-feature-image">{!! Html::image($attraction->image_url_1) !!}</p>
 					<div class="post-details">
 						<h5>
-							{!! $attraction->title !!}
+							{!! $attraction->title_thai !!}
 							<span class="status">{!! ($attraction->status == "draft") ? " (".$attraction->status.")" : "" !!}</span>
 						</h5>
-						
-<!-- 						<p>
-							@if (!$attraction->is_selected)
-								@if (Auth::user()->role == "admin")
-									<a href="{!! URL::route('admin-attraction-toggle-selected', array($attraction->id)) !!}" title="Set Featured">
-										<span class="tf-icon fa fa-star"></span>
-									</a>
-								@endif
-							@else
-								@if (Auth::user()->role == "admin")
-									<a href="{!! URL::route('admin-attraction-toggle-selected', array($attraction->id)) !!}" title="Unset Featured">
-										<span class="tf-icon featured fa fa-star"></span>
-									</a>
-								@else
-									<span class="tf-icon featured fa fa-star"></span>
-								@endif
-							@endif
-						</p> -->
 						
 						<p class="show-for-large-up">
 							By 
 							{!! Html::linkRoute("admin-attractions", $attraction->author->username, 
 							array("author" => $attraction->author->username)) !!}
 						</p>
-						
 						
 						<p class="text-date show-for-large-up">Created : {!! date("M n, Y g:i A", strtotime($attraction->created_at)) !!}</p>
 						@if ($attraction->updated_at != $attraction->created_at)
@@ -220,7 +201,7 @@ use Illuminate\Support\Facades\Input;
 									<a class="card-button end" data-reveal-id="delete-modal-id-{!! $attraction->id !!}">Delete</a>
 									<div id="delete-modal-id-{!! $attraction->id !!}" class="reveal-modal tiny" data-reveal>
 										<h4>Confirm delete</h4>
-										<p>"{!! $attraction->title !!}"</p>
+										<p>"{!! $attraction->title_thai !!}"</p>
 										{!! Form::open(array("route" => array("admin-attraction-delete", $attraction->id), "method" => "delete")) !!}
 											{!! Form::button("Delete", array("type" => "submit")) !!}
 										{!! Form::close() !!}

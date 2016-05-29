@@ -9,6 +9,7 @@ use DB;
 use App\Models\user;
 use App\Models\BlogPost;
 use App\Models\ImagePost;
+use App\Models\Attractions;
 use Illuminate\Support\Facades\Hash;
 
 class AdminCommonController extends Controller {
@@ -16,7 +17,9 @@ class AdminCommonController extends Controller {
 	public function index()
 	{
 		//$blogposts = BlogPost::all();
-		//$imageposts = ImagePost::all();
+		$imageposts = ImagePost::all();
+		$attractions = Attractions::all();
+		
 		// $subscriptions = Subscription::all();
 		
 		//$blogposts_mostviewed = BlogPost::orderBy("hits", "DESC")->orderBy("created_at", "DESC")->take(5)->get();
@@ -26,7 +29,8 @@ class AdminCommonController extends Controller {
 		
 		return view("admin.index", array(
 			//"blogposts" => $blogposts,
-			//"imageposts" => $imageposts,
+			"imageposts" => $imageposts,
+			"attractions" => $attractions,
 			// "subscriptions" => $subscriptions,
 			//"blogposts_mostviewed" => $blogposts_mostviewed,
 			//"blogposts_recent" => $blogposts_recent,
