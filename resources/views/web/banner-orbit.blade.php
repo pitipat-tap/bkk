@@ -11,7 +11,7 @@
                     <li class="orbit-slide">
                 @endif
                         <a>
-                            {!! Html::image($banner->image_url, 'alt', array("class"=>"orbit-image")) !!}
+                            {!! Html::image($banner->desktop_image_url, 'alt', array("class"=>"orbit-image")) !!}
                             <figcaption class="orbit-caption">{!! $banner->caption !!}</figcaption>
                         </a>
                     </li>
@@ -40,7 +40,7 @@
                     <li class="orbit-slide">
                 @endif
                         <a>
-                            {!! Html::image($banner->image_url, 'alt', array("class"=>"orbit-image")) !!}
+                            {!! Html::image($banner->tablet_image_url, 'alt', array("class"=>"orbit-image")) !!}
                             <figcaption class="orbit-caption">{!! $banner->caption !!}</figcaption>
                         </a>
                     </li>
@@ -58,7 +58,7 @@
                     <li class="orbit-slide">
                 @endif
                         <a>
-                            {!! Html::image($banner->image_url, 'alt', array("class"=>"orbit-image")) !!}
+                            {!! Html::image($banner->mobile_image_url, 'alt', array("class"=>"orbit-image")) !!}
                             <figcaption class="orbit-caption">{!! $banner->caption !!}</figcaption>
                         </a>
                     </li>
