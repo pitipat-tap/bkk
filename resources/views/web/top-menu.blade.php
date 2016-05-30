@@ -108,7 +108,7 @@
 </div>
 
 <section>
-    <div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper" style="overflow-y: hidden">
         <div id="offCanvasInner" class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
             <div class="off-canvas position-right hide-for-large" id="offCanvas" data-off-canvas data-position="right">
 
@@ -193,3 +193,5 @@
 
             <div id="offCanvasContent" class="off-canvas-content" data-off-canvas-content>
             <!-- Page content -->
+
+            <a href="#" id="go-top" class="hide">Back to top</a>

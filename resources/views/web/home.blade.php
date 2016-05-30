@@ -15,6 +15,7 @@
 @section("body")
 
 @include("web.top-menu")
+
 @include("web.banner-orbit")
 
 <section id="home-body">

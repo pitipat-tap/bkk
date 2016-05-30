@@ -27,38 +27,29 @@
                 <li class="is-active orbit-slide">
                     <ul class="thumbnail-banner">
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/120x120" alt=""></a>
+                            <a href="http://vrtweb.rd.go.th/" target="_blank"><img class="partner-thumbnail" src="images/logo/footer/vat.png" alt=""></a>
                         </li>
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/120x120" alt=""></a>
+                            <a href="http://www.atta.or.th/" target="_blank"><img class="partner-thumbnail" src="images/logo/footer/atta.png" alt=""></a>
                         </li>
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/120x120" alt=""></a>
+                            <a href="http://www.tourismthailand.org/" target="_blank"><img class="partner-thumbnail" src="images/logo/footer/amazing-thailand.png" alt=""></a>
                         </li>
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/120x120" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/120x120" alt=""></a>
+                            <a href="http://lowermekong.org/" target="_blank"><img class="partner-thumbnail" src="images/logo/footer/lmi.png" alt=""></a>
                         </li>
                     </ul>
                 </li>
                 <li class="orbit-slide">
                     <ul class="thumbnail-banner">
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/120x120" alt=""></a>
+                            <a href="http://www.bangkok.go.th/" target="_blank"><img class="partner-thumbnail" src="images/logo/footer/bangkok-metro.png" alt=""></a>
                         </li>
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/120x120" alt=""></a>
+                            <a href="http://www.touristpolice.go.th/" target="_blank"><img class="partner-thumbnail" src="images/logo/footer/police.png" alt=""></a>
                         </li>
                         <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/120x120" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/120x120" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="" target="_blank"><img class="thumbnail" src="http://placehold.it/120x120" alt=""></a>
+                            <a href="http://airportthai.co.th/" target="_blank"><img class="partner-thumbnail" src="images/logo/footer/aot.png" alt=""></a>
                         </li>
                     </ul>
                 </li>

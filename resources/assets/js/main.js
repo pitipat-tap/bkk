@@ -30,23 +30,20 @@ $(document).ready(function() {
 		}
 	});
 
-    function setPageBanner() {
-        // partner page
-        var path = window.location.href;
-        var loc = path.substring(path.lastIndexOf('/')+1);
-
-        if(loc=="partners") {
-            document.getElementById("partners").style.display = "none";
-        }
-
-        if (Foundation.MediaQuery.atLeast('large')) {
-            document.getElementById('banner-img').src = "http://placehold.it/1500x500";
-        } else if (Foundation.MediaQuery.atLeast('medium')) {
-            document.getElementById('banner-img').src = "http://placehold.it/400x300";
+    // show & hide back to top button
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+            $('#go-top').fadeIn(300);
+            $('#go-top').removeClass('hide');
         } else {
-            document.getElementById('banner-img').src = "http://placehold.it/300x400";
+            $('#go-top').fadeOut(300);
+            $('#go-top').addClass('hide');
         }
-    }
+    });
 
-    setPageBanner();
+    $('.go-top').click(function(event) {
+        event.preventDefault();
+
+        $('html, body').animate({scrollTop: 0}, 300);
+    })
 });

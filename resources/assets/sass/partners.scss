@@ -1,11 +1,16 @@
 @import "resources/assets/sass/settings/settings";
 @import 'foundation';
 
-.thumbnail-partners{
+.partners{
 	text-align: center;
 	margin: 1em 0;
 	li{
 		display: inline-block;
+        position: relative;
+        width: 150px;
+        height: 150px;
+        margin: 0 5%;
+        border: 1px solid $tertiary-color;
 
 		@include breakpoint(small) {
             margin: 1em 1em;
@@ -13,5 +18,25 @@
         @include breakpoint(large) {
             margin: 1em 2em;
         }
+
+        a{
+            height: 150px;
+            width: 150px;
+            display: block;
+        }
+
+        .thumbnail-container{
+        	position: absolute;
+            top: -9999px;
+            bottom: -9999px;
+            left: -9999px;
+            right: -9999px;
+            margin: auto;
+        	width: 95%;
+        	height: auto;
+        }
+	}
+	li:hover{
+		box-shadow: 3px 3px 3px $tertiary-color;
 	}
 }

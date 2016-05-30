@@ -68,6 +68,9 @@ Route::get('/trips', function () {
 Route::get('/trip', function () {
 	return view('web/trip');
 });
+Route::get('/one-day-trip', function () {
+	return view('web/one-day-trip');
+});
 
 Route::group(array('middleware' => 'auth.staff.already', 'prefix' => 'admin'), function(){
 	Route::get("login", array("as" => "admin-login", "uses" => "AdminAuthController@login"));

@@ -30,7 +30,51 @@
             height: 1em;
         }
     }
-	
+}
+.orbit-slide{
+    overflow: hidden;
+    position: relative;
+
+    @include breakpoint(small only) {
+        height: 75vh;
+    }
+    @include breakpoint(medium only) {
+        height: 65vh;
+    }
+    @include breakpoint(large) {
+        height: auto;
+    }
+
+    .orbit-image{
+        @include breakpoint(small only) {
+            height: 75vh;
+            width: auto;
+            max-width: none;
+            overflow-x: hidden;
+            position: absolute;
+            top: -9999px;
+            bottom: -9999px;
+            left: -9999px;
+            right: -9999px;
+            margin: auto;
+        }
+        @include breakpoint(medium only) {
+            height: 65vh;
+            width: auto;
+            max-width: none;
+            overflow-x: hidden;
+            position: absolute;
+            top: -9999px;
+            bottom: -9999px;
+            left: -9999px;
+            right: -9999px;
+            margin: auto;
+        }
+        @include breakpoint(large) {
+            height: auto;
+            width: 100%;
+        }
+    }
 }
 
 #home-body{
