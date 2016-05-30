@@ -48,7 +48,7 @@
 
         @yield("specific_js_head")
     </head>
-    <body class="th" draggable="false">
+    <body id="body" class="th" draggable="false">
         @yield("body")
 
         <div id="loader-wrapper">
