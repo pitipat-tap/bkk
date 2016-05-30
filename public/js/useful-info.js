@@ -1,1 +1,1 @@
-$(document).ready(function(){$(window).scroll(function(){$(this).scrollTop()>200?$(".go-top").fadeIn(500):$(".go-top").fadeOut(300)}),$(".go-top").click(function(o){o.preventDefault(),$("html, body").animate({scrollTop:0},300)})});
+$(document).ready(function(){$(window).scroll(function(){$(this).scrollTop()>100?($("#go-top").fadeIn(300),$("#go-top").removeClass("hide")):($("#go-top").fadeOut(300),$("#go-top").addClass("hide"))}),$(".go-top").click(function(o){o.preventDefault(),$("html, body").animate({scrollTop:0},300)})});

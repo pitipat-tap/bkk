@@ -1,9 +1,11 @@
 $(document).ready(function() {
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 200) {
-            $('.go-top').fadeIn(500);
+        if ($(this).scrollTop() > 100) {
+            $('#go-top').fadeIn(300);
+            $('#go-top').removeClass('hide');
         } else {
-            $('.go-top').fadeOut(300);
+            $('#go-top').fadeOut(300);
+            $('#go-top').addClass('hide');
         }
     });
 
