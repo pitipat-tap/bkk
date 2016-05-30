@@ -1,5 +1,10 @@
 $(document).ready(function() {
 	$('.desktop-banner-open').fancybox({
+		helpers: {
+		    overlay: {
+				locked: false
+			}
+		},
 		width: 900,
 		height: 600,
 		type: "iframe",
@@ -13,6 +18,11 @@ $(document).ready(function() {
 	});
 
 	$('.tablet-banner-open').fancybox({
+		helpers: {
+		    overlay: {
+				locked: false
+			}
+		},
 		width: 900,
 		height: 600,
 		type: "iframe",
@@ -26,6 +36,11 @@ $(document).ready(function() {
 	});
 
 	$('.mobile-banner-open').fancybox({
+		helpers: {
+		    overlay: {
+				locked: false
+			}
+		},
 		width: 900,
 		height: 600,
 		type: "iframe",

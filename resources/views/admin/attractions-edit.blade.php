@@ -211,7 +211,16 @@ Edit Attractions |
 
 									<?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=screenshots-URL".$i; ?>
 									<a class="select-image-open" href="<?php echo $p_link; ?>">
-										@if( $attraction["image_url_".$i] != null && $attraction["image_url_".$i] != '')
+										@if( old('image_url_'.$i) != null && old('image_url_'.$i) != '')
+						                    {!! Html::image(old('image_url_'.$i), 
+						                        "Image-$i", 
+						                        array(
+						                            "id" => "screenshots".$i ,
+						                            "class" => "post-image"
+						                            )
+						                        )
+						                    !!}
+						                @elseif( $attraction["image_url_".$i] != null && $attraction["image_url_".$i] != '')
 						                    {!! Html::image($attraction["image_url_".$i], 
 						                        "Image-$i", 
 						                        array(
@@ -231,8 +240,8 @@ Edit Attractions |
 						                    !!}
 						                @endif
 				                    </a>
-				                    {!! Form::text("screenshots_URL".$i, 
-				                        $attraction["image_url_".$i], 
+				                    {!! Form::text("image_url_".$i, 
+				                        null, 
 				                        array(
 				                            "id" => "screenshots-URL".$i,
 				                            "class" => "image-url far-away",

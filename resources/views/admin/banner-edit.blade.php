@@ -90,14 +90,36 @@ Add New Image Post |
                     <p class="f-label">Desktop Image</p>
                     <?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=desktop-image-url"; ?>
                     <a class="desktop-banner-open" href="<?php echo $p_link; ?>">
-                        {!! Html::image($banner->desktop_image_url, 
-                            "Image", 
-                            array(
-                                "id" => "desktop-post-image",
-                                "class" => "post-image-new"
+                        @if(old('desktop_image_url') == null || old('desktop_image_url') == '')
+                             @if($banner->desktop_image_url == null || $banner->desktop_image_url == '')
+                                 {!! Html::image("images/admin/icon-placeholder.svg", 
+                                    "Image", 
+                                    array(
+                                        "id" => "desktop-post-image",
+                                        "class" => "post-image-new"
+                                        )
+                                    )
+                                !!}
+                            @else
+                                {!! Html::image($banner->desktop_image_url, 
+                                    "Image", 
+                                    array(
+                                        "id" => "desktop-post-image",
+                                        "class" => "post-image-new"
+                                        )
+                                    )
+                                !!}
+                            @endif
+                        @else
+                            {!! Html::image(old('desktop_image_url'), 
+                                "Image", 
+                                array(
+                                    "id" => "desktop-post-image",
+                                    "class" => "post-image-new"
+                                    )
                                 )
-                            )
-                        !!}
+                            !!}
+                        @endif
                     </a>
                     {!! Form::text("desktop_image_url", 
                         null, 
@@ -121,14 +143,36 @@ Add New Image Post |
                     <p class="f-label">Tablet Image</p>
                     <?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=tablet-image-url"; ?>
                     <a class="tablet-banner-open" type="button" href="<?php echo $p_link; ?>">
-                        {!! Html::image($banner->tablet_image_url, 
-                            "Image", 
-                            array(
-                                "id" => "tablet-post-image",
-                                "class" => "post-image-new"
+                        @if(old('tablet_image_url') == null || old('tablet_image_url') == '')
+                             @if($banner->tablet_image_url == null || $banner->tablet_image_url == '')
+                                 {!! Html::image("images/admin/icon-placeholder.svg", 
+                                    "Image", 
+                                    array(
+                                        "id" => "tablet-post-image",
+                                        "class" => "post-image-new"
+                                        )
+                                    )
+                                !!}
+                            @else
+                                {!! Html::image($banner->tablet_image_url, 
+                                    "Image", 
+                                    array(
+                                        "id" => "tablet-post-image",
+                                        "class" => "post-image-new"
+                                        )
+                                    )
+                                !!}
+                            @endif
+                        @else
+                            {!! Html::image(old('tablet_image_url'), 
+                                "Image", 
+                                array(
+                                    "id" => "tablet-post-image",
+                                    "class" => "post-image-new"
+                                    )
                                 )
-                            )
-                        !!}
+                            !!}
+                        @endif
                     </a>
                     {!! Form::text("tablet_image_url", 
                         null, 
@@ -153,14 +197,36 @@ Add New Image Post |
                     <p class="f-label">Mobile Image</p>
                     <?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=moblie-image-url"; ?>
                     <a class="mobile-banner-open" type="button" href="<?php echo $p_link; ?>">
-                        {!! Html::image($banner->mobile_image_url, 
-                            "Image", 
-                            array(
-                                "id" => "moblie-post-image",
-                                "class" => "post-image-new"
+                        @if(old('mobile_image_url') == null || old('mobile_image_url') == '')
+                             @if($banner->mobile_image_url == null || $banner->mobile_image_url == '')
+                                 {!! Html::image("images/admin/icon-placeholder.svg", 
+                                    "Image", 
+                                    array(
+                                        "id" => "moblie-post-image",
+                                        "class" => "post-image-new"
+                                        )
+                                    )
+                                !!}
+                            @else
+                                {!! Html::image($banner->mobile_image_url, 
+                                    "Image", 
+                                    array(
+                                        "id" => "moblie-post-image",
+                                        "class" => "post-image-new"
+                                        )
+                                    )
+                                !!}
+                            @endif
+                        @else
+                            {!! Html::image(old('mobile_image_url'), 
+                                "Image", 
+                                array(
+                                    "id" => "moblie-post-image",
+                                    "class" => "post-image-new"
+                                    )
                                 )
-                            )
-                        !!}
+                            !!}
+                        @endif
                     </a>
                     {!! Form::text("mobile_image_url", 
                         null, 

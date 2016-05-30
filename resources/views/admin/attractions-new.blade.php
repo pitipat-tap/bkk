@@ -208,16 +208,27 @@ Add New Work Post |
 									<p class="f-label">Image {!! $i !!}</p>
 									<?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=screenshots-URL".$i; ?>
 									<a class="select-image-open" href="<?php echo $p_link; ?>">
-										{!! Html::image("/images/admin/icon-placeholder.svg", 
-											"Image-$i", 
-												array(
-													"id" => "screenshots".$i ,
-													"class" => "post-image"
+										@if( old('image_url_'.$i) != null && old('image_url_'.$i) != '')
+						                    {!! Html::image(old('image_url_'.$i), 
+						                        "Image-$i", 
+						                        array(
+						                            "id" => "screenshots".$i ,
+						                            "class" => "post-image"
+						                            )
+						                        )
+						                    !!}
+						                @else 
+											{!! Html::image("/images/admin/icon-placeholder.svg", 
+												"Image-$i", 
+													array(
+														"id" => "screenshots".$i ,
+														"class" => "post-image"
+													)
 												)
-											)
-										!!}
+											!!}
+										@endif
 									</a>
-									{!! Form::text("screenshots_URL".$i, 
+									{!! Form::text("image_url_".$i, 
 										null, 
 										array(
 												"id" => "screenshots-URL".$i,
