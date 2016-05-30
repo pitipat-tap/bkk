@@ -28,14 +28,17 @@ class AdminBannerController extends Controller {
 		$validator = Validator::make(Request::all(), BannerOrbit::$save_rules, BannerOrbit::$custom_messages);
 		
 		if ($validator->passes()) {
-			$banners = new BannerOrbit;
-			$banners->author()->associate(Auth::user());
-			$banners->name = trim(Request::input("name"));
-			$banners->image_url = trim(Request::input("image_url"));
-			$banners->caption = trim(Request::input("caption"));
-			$banners->sequence =  BannerOrbit::count()+1;
+			$banner = new BannerOrbit;
+			$banner->author()->associate(Auth::user());
+			$banner->name = trim(Request::input("name"));
+			$banner->caption = trim(Request::input("caption"));
+			$banner->link_url = trim(Request::input("link_url"));
+			$banner->desktop_image_url = trim(Request::input("desktop_image_url"));
+			$banner->tablet_image_url = trim(Request::input("tablet_image_url"));
+			$banner->mobile_image_url = trim(Request::input("mobile_image_url"));
+			$banner->sequence =  BannerOrbit::count()+1;
 			
-			if ($banners->save()) {
+			if ($banner->save()) {
 				return Redirect::route("admin-banners")->with("success", "New banner was created");
 			} else {
 				return Redirect::back()->with('error', 'Cannot save data')->withInput(Request::except("image_url"));
@@ -44,38 +47,6 @@ class AdminBannerController extends Controller {
 		else {
 			return Redirect::back()->with('error', 'Errors')->withErrors($validator)->withInput(Request::except("image_url"));
 		}
-	}
-
-	public function moveUpBanner($id){
-
-		$banner1 = BannerOrbit::find($id);
-		$banner2 = BannerOrbit::where('sequence', '<' ,$banner1->sequence)->orderBy('sequence', 'DESC')->first();
-		if (!$banner1 || !$banner2)
-			return Redirect::route("admin-banners")->with('error', 'Cannot edit data');
-
-		$banner1->sequence -= 1;
-		$banner2->sequence += 1;
-
-		$banner1->save();
-		$banner2->save();
-
-		return Redirect::route("admin-banners")->with('error', 'Cannot edit data');
-	}
-
-	public function moveDownBanner($id){
-
-		$banner1 = BannerOrbit::find($id);
-		$banner2 = BannerOrbit::where('sequence', '>' ,$banner1->sequence)->orderBy('sequence', 'ASC')->first();
-		if (!$banner1 || !$banner2)
-			return Redirect::route("admin-banners")->with('error', 'Cannot edit data');
-
-		$banner1->sequence += 1;
-		$banner2->sequence -= 1;
-
-		$banner1->save();
-		$banner2->save();
-
-		return Redirect::route("admin-banners")->with('error', 'Cannot edit data');
 	}
 
 	public function editBanner($id)
@@ -111,8 +82,11 @@ class AdminBannerController extends Controller {
 		
 		if ($validator->passes()) {
 			$banner->name = trim(Request::input("name"));
-			$banner->image_url = trim(Request::input("image_url"));
 			$banner->caption = trim(Request::input("caption"));
+			$banner->link_url = trim(Request::input("link_url"));
+			$banner->desktop_image_url = trim(Request::input("desktop_image_url"));
+			$banner->tablet_image_url = trim(Request::input("tablet_image_url"));
+			$banner->mobile_image_url = trim(Request::input("mobile_image_url"));
 			
 	        if ($banner->save()) {
 	            return Redirect::route("admin-banners")->with("success", "Updated Banner was saved");
@@ -123,6 +97,38 @@ class AdminBannerController extends Controller {
 		else {
             return Redirect::back()->with('error', 'Errors')->withErrors($validator)->withInput();
         }
+	}
+
+	public function moveUpBanner($id){
+
+		$banner1 = BannerOrbit::find($id);
+		$banner2 = BannerOrbit::where('sequence', '<' ,$banner1->sequence)->orderBy('sequence', 'DESC')->first();
+		if (!$banner1 || !$banner2)
+			return Redirect::route("admin-banners")->with('error', 'Cannot edit data');
+
+		$banner1->sequence -= 1;
+		$banner2->sequence += 1;
+
+		$banner1->save();
+		$banner2->save();
+
+		return Redirect::route("admin-banners")->with('error', 'Cannot edit data');
+	}
+
+	public function moveDownBanner($id){
+
+		$banner1 = BannerOrbit::find($id);
+		$banner2 = BannerOrbit::where('sequence', '>' ,$banner1->sequence)->orderBy('sequence', 'ASC')->first();
+		if (!$banner1 || !$banner2)
+			return Redirect::route("admin-banners")->with('error', 'Cannot edit data');
+
+		$banner1->sequence += 1;
+		$banner2->sequence -= 1;
+
+		$banner1->save();
+		$banner2->save();
+
+		return Redirect::route("admin-banners")->with('error', 'Cannot edit data');
 	}
 
 	public function deleteBanner($id)
