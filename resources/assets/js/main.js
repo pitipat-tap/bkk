@@ -36,7 +36,22 @@ $(document).ready(function() {
 
     if(loc=="partners") {
         document.getElementById("partners").style.display = "none";
+    } else if(loc=="accommodation" || loc=="accommodation2") {
+        $('#accommodation').addClass('active');
+    } else if(loc=="attraction" || loc=="attraction-category") {
+        $('#attraction').addClass('active');
+    } else if(loc=="campaign") {
+        $('#campaign').addClass('active');
+    } else if(loc=="gallery") {
+        $('#gallery').addClass('active');
+    } else if(loc=="trips" || loc=="trip") {
+        $('#trips').addClass('active');
+    } else if(loc=="transportation") {
+        $('#transportation').addClass('active');
+    } else {
+        
     }
+
 
     // show & hide back to top button
     $(window).scroll(function() {

@@ -25,7 +25,7 @@
             </a>
         </li>
         <li>
-            <a id="accommodation" href="accommodation">
+            <a href="accommodation">
                 <span lang="th">Accommodation</span>
                 <span lang="en">Accommodation</span>
                 <span lang="jp">Accommodation</span>
@@ -119,8 +119,8 @@
                 </div>
 
             <!-- Menu -->
-                <ul id="menu-mobile" class="vertical menu mg-t-1">
-                    <li>
+                <ul id="menu-mobile" class="vertical menu">
+                    <li id="campaign">
                         <a href="#">
                             <span lang="th">Campaign TH</span>
                             <span lang="en">Campaign EN</span>
@@ -128,7 +128,7 @@
                             <span lang="ch">Campaign CN</span>
                         </a>
                     </li>
-                    <li>
+                    <li id="attraction">
                         <a href="attraction-category">
                            <span lang="th">Attraction</span>
                            <span lang="en">Attraction</span>
@@ -136,7 +136,7 @@
                            <span lang="ch">Attraction</span>
                         </a>
                     </li>
-                    <li>
+                    <li id="accommodation">
                         <a href="accommodation">
                             <span lang="th">Accommodation</span>
                             <span lang="en">Accommodation</span>
@@ -144,7 +144,7 @@
                             <span lang="ch">Accommodation</span>
                         </a>
                     </li>
-                    <li>
+                    <li id="transportation">
                         <a href="transportation">
                             <span lang="th">Transportation</span>
                             <span lang="en">Transportation</span>
@@ -152,7 +152,7 @@
                             <span lang="ch">Transportation</span>
                         </a>
                     </li>
-                    <li>
+                    <li id="gallery">
                         <a href="gallery">
                             <span lang="th">Gallery</span>
                             <span lang="en">Gallery</span>
@@ -160,7 +160,7 @@
                             <span lang="ch">Gallery</span>
                         </a>
                     </li>
-                    <li>
+                    <li id="trips">
                         <a href="trips">
                             <span lang="th">Trips</span>
                             <span lang="en">Trips</span>

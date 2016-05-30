@@ -45,10 +45,6 @@
     width: 100%;
     height: auto;
 }
-.active{
-    border-bottom:solid;
-    border-color: $primary-color;
-}
 .menu > li {
     padding: 0 2px;
     letter-spacing: 0.5px;
@@ -182,8 +178,8 @@
         line-height: 1.5em;
         color: white;
     }
-    li:active{
-        border-left: solid 8px yellow;
+    li.active{
+        border-left: solid 8px green;
         background-color: $secondary-color;
         a{
             color: dimgray;
