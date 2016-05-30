@@ -61,25 +61,25 @@
              <ul class="menu">
                   <li>
                     <a href="#" class="change-language" data-lan="th">
-                    <span>{!! Html::image("images/flag/Thailand.png","Thai",array("class"=>"bkk-logo")) !!}</span>
+                    <span>{!! Html::image("images/flag/Thailand.png","Thai",array("class"=>"lang-logo")) !!}</span>
                         ไทย
                     </a>
                   </li>
                   <li>
                     <a href="#" class="change-language" data-lan="en">
-                    <span>{!! Html::image("images/flag/uk.png","Thai",array("class"=>"bkk-logo")) !!}</span>
+                    <span>{!! Html::image("images/flag/uk.png","Thai",array("class"=>"lang-logo")) !!}</span>
                         ไทย
                     </a>
                   </li>
                   <li>
                     <a href="#" class="change-language" data-lan="jp">
-                    <span>{!! Html::image("images/flag/japan.png","Thai",array("class"=>"bkk-logo")) !!}</span>
+                    <span>{!! Html::image("images/flag/japan.png","Thai",array("class"=>"lang-logo")) !!}</span>
                         ไทย
                     </a>
                   </li>
                   <li>
                     <a href="#" class="change-language" data-lan="ch">
-                    <span>{!! Html::image("images/flag/China.png","Thai",array("class"=>"bkk-logo")) !!}</span>
+                    <span>{!! Html::image("images/flag/China.png","Thai",array("class"=>"lang-logo")) !!}</span>
                         ไทย
                     </a>
                   </li>

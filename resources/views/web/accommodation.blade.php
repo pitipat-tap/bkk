@@ -16,14 +16,14 @@
 @include("web.top-menu")
 
 <script>
-    $(document).ready(function(){
-        sessionStorage.setItem("flag", 0);
-        $('#accommodation').addClass("active");
-        $('#menu li').on('click', function(){
-          $('li a.border-bottom').removeClass('border-bottom');
-          $(this).find('a').addClass('border-bottom');
-        });
-    });
+//     $(document).ready(function(){
+//         sessionStorage.setItem("flag", 0);
+//         $('#accommodation').addClass("active");
+//         $('#menu li').on('click', function(){
+//           $('li a.border-bottom').removeClass('border-bottom');
+//           $(this).find('a').addClass('border-bottom');
+//         });
+//     });
 </script>
 
 <section>
