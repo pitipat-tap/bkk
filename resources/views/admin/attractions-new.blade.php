@@ -77,8 +77,19 @@ Add New Work Post |
 										{!! Form::checkbox('accommodation', 'true') !!}
 										{!! Form::label('accommodation', 'Accommodation') !!}
 										<div class="show-for-small-only"> <br> </div>
-										{!! Form::checkbox('campaign', 'true') !!}
-										{!! Form::label('campaign', 'Campaign') !!}
+										{!! Form::checkbox('event', 'true') !!}
+										{!! Form::label('event', 'Event') !!}
+									</div>
+									<div class="small-12 medium-6 large-3 end columns" >
+										{!! Form::label("category", "Category") !!}
+				               			{!! Form::select('category', array(
+												'arts_and_culture' => 'ARTS and CULTURE',
+												'food_and_drink' => 'FOOD and DRINK',
+												'parks_and_gardens' => 'PARKS and GARDENS',
+												'events' => 'Events',
+												'shopping' => 'Shopping'
+											))
+										!!}
 									</div>
 								</div>
 							</div>

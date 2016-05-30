@@ -13,6 +13,7 @@ public/css/
 public/images/
 public/uploads/*
 public/storage
+public/js/backend/
 
 .php~
 *.scss~

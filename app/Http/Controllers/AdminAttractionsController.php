@@ -54,6 +54,7 @@ class AdminAttractionsController extends Controller {
             $attraction->map_url = trim(Request::input("map_url"));
             $attraction->remark = trim(Request::input("remark"));
 
+            $attraction->category = trim(Request::input("category"));
 			if(trim(Request::input("attraction")) == 'true')
 				$attraction->is_attraction = 1;
 			else
@@ -64,10 +65,10 @@ class AdminAttractionsController extends Controller {
 			else
 				$attraction->is_accommodation = 0;
 
-			if(trim(Request::input("ampaign")) == 'true')
-				$attraction->is_campaign = 1;
+			if(trim(Request::input("event")) == 'true')
+				$attraction->is_event = 1;
 			else
-				$attraction->is_campaign = 0;
+				$attraction->is_event = 0;
 
 
 			if ($attraction->save()) {
@@ -136,6 +137,7 @@ class AdminAttractionsController extends Controller {
             $attraction->map_url = trim(Request::input("map_url"));
             $attraction->remark = trim(Request::input("remark"));
 
+            $attraction->category = trim(Request::input("category"));
 			if(trim(Request::input("attraction")) == 'true')
 				$attraction->is_attraction = 1;
 			else
@@ -146,10 +148,10 @@ class AdminAttractionsController extends Controller {
 			else
 				$attraction->is_accommodation = 0;
 
-			if(trim(Request::input("ampaign")) == 'true')
-				$attraction->is_campaign = 1;
+			if(trim(Request::input("event")) == 'true')
+				$attraction->is_event = 1;
 			else
-				$attraction->is_campaign = 0;
+				$attraction->is_event = 0;
 			
 			
 	        if ($attraction->save()) {

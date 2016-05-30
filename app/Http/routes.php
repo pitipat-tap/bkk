@@ -86,7 +86,6 @@ Route::group(array('middleware' => 'auth.staff', 'prefix' => 'admin'), function(
 	Route::patch("editprofile", array("as" => "admin-profile-update", "uses" => "AdminCommonController@updateProfile"));
 	Route::get("logout", array("as" => "admin-logout", "uses" => "AdminAuthController@logout"));
 	
-	
 	// Blog Post
 	Route::get("blogposts", array("as" => "admin-blog-posts", "uses" => "AdminEventController@blogPosts"));
 	Route::get("blogposts/new", array("as" => "admin-blog-post-new", "uses" => "AdminEventController@newEventPost"));
@@ -97,10 +96,8 @@ Route::group(array('middleware' => 'auth.staff', 'prefix' => 'admin'), function(
 	Route::patch("blogposts/{id}", array("as" => "admin-blog-post-update", "uses" => "AdminEventController@updateEventPost"));
 	Route::delete("blogposts/{id}", array("as" => "admin-blog-post-delete", "uses" => "AdminEventController@deleteEventPost"));
 	
-	
 	// Blog Tag
 	Route::get("blogtags", array("as" => "admin-blog-tags", "uses" => "AdminEventController@blogTags"));
-	
 	
 	// Image Post
 	Route::get("imageposts", array("as" => "admin-image-posts", "uses" => "AdminImageController@imagePosts"));
@@ -112,11 +109,9 @@ Route::group(array('middleware' => 'auth.staff', 'prefix' => 'admin'), function(
 	Route::patch("imageposts/{id}", array("as" => "admin-image-post-update", "uses" => "AdminImageController@updateImagePost"));
 	Route::delete("imageposts/{id}", array("as" => "admin-image-post-delete", "uses" => "AdminImageController@deleteImagePost"));
 	
-	
 	// Image Tag
 	Route::get("imagetags", array("as" => "admin-image-tags", "uses" => "AdminImageController@imageTags"));
 	Route::delete("imagetags/{id}", array("as" => "admin-blog-tag-delete", "uses" => "AdminImageController@deleteImageTag"));
-	
 	
 	// File manager
 	Route::get("filemanager", array("as" => "admin-filemanager", "uses" => "AdminCommonController@fileManager"));
@@ -131,24 +126,20 @@ Route::group(array('middleware' => 'auth.admin', 'prefix' => 'admin'), function(
 	// Blog post
 	Route::get("blogposts/{id}/togglefeatured", array("as" => "admin-blog-post-togglefeatured", 
 		"uses" => "AdminEventController@toggleFeaturedEventPost"));
-		
 	
 	// Blog tag
 	Route::delete("blogtags/{id}", array("as" => "admin-blog-tag-delete", "uses" => "AdminEventController@deleteEventTag"));
 	Route::get("blogtags/{id}/togglefeatured", array("as" => "admin-blog-tag-togglefeatured", 
 		"uses" => "AdminEventController@toggleFeaturedEventTag"));
 		
-		
 	// Image post
 	Route::get("imageposts/{id}/togglefeatured", array("as" => "admin-image-post-togglefeatured", 
 		"uses" => "AdminImageController@toggleFeaturedImagePost"));
-		
 		
 	// Image tag
 	Route::delete("imagetags/{id}", array("as" => "admin-image-tag-delete", "uses" => "AdminImageController@deleteImageTag"));
 	Route::get("imagetags/{id}/togglefeatured", array("as" => "admin-image-tag-togglefeatured", 
 		"uses" => "AdminImageController@toggleFeaturedImageTag"));
-	
 	
 	// User
 	Route::get("users", array("as" => "admin-users", "uses" => "AdminUserController@users"));
@@ -176,6 +167,5 @@ Route::group(array('middleware' => 'auth.admin', 'prefix' => 'admin'), function(
 
 	// Route::get("workposts/{id}/togglefeatured", array("as" => "admin-attraction-toggle-selected", 
 	// 	"uses" => "AdminAttractionsController@toggleSelectedWork"));
-
 
 });

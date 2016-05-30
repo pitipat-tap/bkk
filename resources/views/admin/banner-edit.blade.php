@@ -14,7 +14,7 @@ Add New Image Post |
 @section("specific_js_head")
 {!! Html::script("/js/tinymce/tinymce.min.js") !!}
 {!! Html::script("/js/fancybox/source/jquery.fancybox.pack.js") !!}
-{!! Html::script("/js/backend/admin-image-post-form.js") !!}
+{!! Html::script("/js/backend/admin-banner-form.js") !!}
 @stop
 
 
@@ -64,31 +64,45 @@ Add New Image Post |
         </div>
         
         <div class="row full-width">
-            <div class="small-12 medium-6 columns">
+            <div class="small-12 columns">
                 <div class="ui-block mg-b medium-half-mg-r">
-                    {!! Form::label("name", "Name") !!}
-                    {!! Form::text("name", null) !!}
-
-                    {!! Form::label("caption", "Caption") !!}
-                    {!! Form::textarea("caption", null, array("rows" => "5")) !!}
+                    <div class="row">
+                        <div class="small-12 medium-6 columns">
+                            {!! Form::label("name", "Name") !!}
+                            {!! Form::text("name", null) !!}
+                        </div>
+                        <div class="small-12 medium-6 columns">
+                            {!! Form::label("link_url", "link URL") !!}
+                            {!! Form::text("link_url", null) !!}
+                        </div>
+                        <div class="small-12 columns">
+                            {!! Form::label("caption", "Caption") !!}
+                            {!! Form::textarea("caption", null, array("rows" => "5")) !!}
+                        </div>
+                    </div>
                 </div>
             </div>
-        	<div class="small-12 medium-6 columns">
-        		<div class="ui-block mg-b medium-half-mg-l">
-            		<p class="f-label">Image</p>
+        </div>
 
-                    {!! Html::image("$banner->image_url", 
-                        "Image", 
-                        array(
-                            "id" => "post-image",
-                            "class" => "post-image-new"
+        <div class="row full-width">
+            <div class="small-12 medium-4 columns">
+                <div class="ui-block mg-b medium-half-mg-l">
+                    <p class="f-label">Desktop Image</p>
+                    <?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=desktop-image-url"; ?>
+                    <a class="desktop-banner-open" href="<?php echo $p_link; ?>">
+                        {!! Html::image($banner->desktop_image_url, 
+                            "Image", 
+                            array(
+                                "id" => "desktop-post-image",
+                                "class" => "post-image-new"
+                                )
                             )
-                        )
-                    !!}
-                    {!! Form::text("image_url", 
+                        !!}
+                    </a>
+                    {!! Form::text("desktop_image_url", 
                         null, 
                         array(
-                            "id" => "image-url",
+                            "id" => "desktop-image-url",
                             "class" => "image-url far-away",
                             "autocomplete" => "off",
                             "readonly" => "readonly"
@@ -97,12 +111,71 @@ Add New Image Post |
                     !!}
                         
                     <p>
-                    	<?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=image-url"; ?>
-                    	<a class="fm-open" type="button" href="<?php echo $p_link; ?>">Select Image</a>
+                        <a class="desktop-banner-open" type="button" href="<?php echo $p_link; ?>">Select Image</a>
                     </p>
-                    
-                    <p class="text-date">Tips : Use image size > 600 x 315 pixels for Facebook link post with large preview image.</p>
-            	</div>
+                </div>
+            </div>
+
+            <div class="small-12 medium-4 columns">
+                <div class="ui-block mg-b medium-half-mg-l">
+                    <p class="f-label">Tablet Image</p>
+                    <?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=tablet-image-url"; ?>
+                    <a class="tablet-banner-open" type="button" href="<?php echo $p_link; ?>">
+                        {!! Html::image($banner->tablet_image_url, 
+                            "Image", 
+                            array(
+                                "id" => "tablet-post-image",
+                                "class" => "post-image-new"
+                                )
+                            )
+                        !!}
+                    </a>
+                    {!! Form::text("tablet_image_url", 
+                        null, 
+                        array(
+                            "id" => "tablet-image-url",
+                            "class" => "image-url far-away",
+                            "autocomplete" => "off",
+                            "readonly" => "readonly"
+                            ) 
+                        ) 
+                    !!}
+                        
+                    <p>
+                        <a class="tablet-banner-open" type="button" href="<?php echo $p_link; ?>">Select Image</a>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="small-12 medium-4 columns">
+                <div class="ui-block mg-b medium-half-mg-l">
+                    <p class="f-label">Mobile Image</p>
+                    <?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=moblie-image-url"; ?>
+                    <a class="mobile-banner-open" type="button" href="<?php echo $p_link; ?>">
+                        {!! Html::image($banner->mobile_image_url, 
+                            "Image", 
+                            array(
+                                "id" => "moblie-post-image",
+                                "class" => "post-image-new"
+                                )
+                            )
+                        !!}
+                    </a>
+                    {!! Form::text("mobile_image_url", 
+                        null, 
+                        array(
+                            "id" => "moblie-image-url",
+                            "class" => "image-url far-away",
+                            "autocomplete" => "off",
+                            "readonly" => "readonly"
+                            ) 
+                        ) 
+                    !!}
+                        
+                    <p>
+                        <a class="mobile-banner-open" type="button" href="<?php echo $p_link; ?>">Select Image</a>
+                </p>
             </div>
     	</div>
     	

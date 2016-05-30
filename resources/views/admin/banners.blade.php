@@ -59,7 +59,7 @@ use Illuminate\Support\Facades\Input;
                 		<p>{!! $banner->sequence !!}</p>
                 	</td>
                     <td>
-                    	{!! Html::image($banner->image_url, 'alt', array( 'style' => "height: 150px" )) !!}
+                    	{!! Html::image($banner->desktop_image_url, 'alt', array( 'style' => "height: 150px" )) !!}
                     </td>
                     <td class="show-for-large-up">
                     	<h5> {!! $banner->name !!} </h5>
