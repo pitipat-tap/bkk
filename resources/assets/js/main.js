@@ -30,11 +30,28 @@ $(document).ready(function() {
 		}
 	});
 
-  // partner page
-  var path = window.location.href;
-  var loc = path.substring(path.lastIndexOf('/')+1);
+    // partner page
+    var path = window.location.href;
+    var loc = path.substring(path.lastIndexOf('/')+1);
 
-  if(loc=="partners") {
-      document.getElementById("partners").style.display = "none";
-  }
+    if(loc=="partners") {
+        document.getElementById("partners").style.display = "none";
+    }
+
+    // show & hide back to top button
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+            $('#go-top').fadeIn(300);
+            $('#go-top').removeClass('hide');
+        } else {
+            $('#go-top').fadeOut(300);
+            $('#go-top').addClass('hide');
+        }
+    });
+
+    $('.go-top').click(function(event) {
+        event.preventDefault();
+
+        $('html, body').animate({scrollTop: 0}, 500);
+    })
 });
