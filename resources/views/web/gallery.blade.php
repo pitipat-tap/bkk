@@ -16,8 +16,10 @@
 <div class="body-section">
 	<div class="banner-page-title centered columns mg-b-1">Gallery</div>
 
+        <h1 align="center"> for web only </h1>
+
 	<!-- Desktop -->
-	<div class="columns">
+	<div class="columns hide-for-print">
         <div class="selected-img">
             <div class="selected-frame" align="center">
                 <img id="selected" src="">

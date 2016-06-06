@@ -79,12 +79,12 @@
               <div class="padding-b">
                 description
               </div>
-              <div>
+              <div class="hide-for-print">
                 <button class="green-btn" type="button">Read more...</button>
               </div>
             </div>
           </div>
-          <div class="padding-t" align="center">
+          <div class="padding-t hide-for-print" align="center">
               <button class="green-btn" type="button">Load more...</button>
           </div>
         </div>
@@ -108,12 +108,12 @@
               <div class="padding-b">
                 description
               </div>
-              <div>
+              <div class="hide-for-print">
                 <button class="green-btn" type="button">Read more...</button>
               </div>
             </div>
           </div>
-          <div class="padding-t" align="center">
+          <div class="padding-t hide-for-print" align="center">
               <button class="green-btn" type="button">Load more...</button>
           </div>
         </div>
@@ -137,12 +137,12 @@
               <div class="padding-b">
                 description
               </div>
-              <div>
+              <div class="hide-for-print">
                 <button class="green-btn" type="button">Read more...</button>
               </div>
             </div>
           </div>
-          <div class="padding-t" align="center">
+          <div class="padding-t hide-for-print" align="center">
               <button class="green-btn" type="button">Load more...</button>
           </div>
         </div>
@@ -166,12 +166,12 @@
               <div class="padding-b">
                 description
               </div>
-              <div>
+              <div class="hide-for-print">
                 <button class="green-btn" type="button">Read more...</button>
               </div>
             </div>
           </div>
-          <div class="padding-t" align="center">
+          <div class="padding-t hide-for-print" align="center">
               <button class="green-btn" type="button">Load more...</button>
           </div>
         </div>

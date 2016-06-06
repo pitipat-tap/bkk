@@ -3,12 +3,15 @@
   <div id="responsive-menu">
     <div class="top-menu-container" align="left">
       <ul class="dropdown menu" data-dropdown-menu>
-        <li>
+        <li class="show-for-print">
+            {!! Html::image("images/logo/bkk-logo.png","bkk-logo",array("class"=>"bkk-logo")) !!}
+        </li>
+        <li class="hide-for-print">
           <a class="logo" href="home">
             {!! Html::image("images/logo/bkk-logo.png","bkk-logo",array("class"=>"bkk-logo")) !!}
           </a>
         </li>
-        <li>
+        <li class="hide-for-print">
             <a href="#">
                 <span lang="th">Campaign TH</span>
                 <span lang="en">Campaign EN</span>
@@ -16,7 +19,7 @@
                 <span lang="ch">Campaign CN</span>
             </a>
         </li>
-        <li>
+        <li class="hide-for-print">
             <a href="attraction-category">
                <span lang="th">Attraction</span>
                <span lang="en">Attraction</span>
@@ -24,7 +27,7 @@
                <span lang="ch">Attraction</span>
             </a>
         </li>
-        <li>
+        <li class="hide-for-print">
             <a href="accommodation">
                 <span lang="th">Accommodation</span>
                 <span lang="en">Accommodation</span>
@@ -32,7 +35,7 @@
                 <span lang="ch">Accommodation</span>
             </a>
         </li>
-        <li>
+        <li class="hide-for-print">
             <a href="transportation">
                 <span lang="th">Transportation</span>
                 <span lang="en">Transportation</span>
@@ -40,7 +43,7 @@
                 <span lang="ch">Transportation</span>
             </a>
         </li>
-        <li>
+        <li class="hide-for-print">
             <a href="gallery">
                 <span lang="th">Gallery</span>
                 <span lang="en">Gallery</span>
@@ -48,7 +51,7 @@
                 <span lang="ch">Gallery</span>
             </a>
         </li>
-        <li>
+        <li class="hide-for-print">
             <a href="trips">
                 <span lang="th">Trips</span>
                 <span lang="en">Trips</span>
@@ -56,7 +59,7 @@
                 <span lang="ch">Trips</span>
             </a>
         </li>
-        <li>
+        <li class="hide-for-print">
             <a href="#">language</a>
              <ul class="menu">
                   <li>
@@ -91,7 +94,7 @@
 </div>
 
 <!-- mobile -->
-<div class="mobile-menu-button hide-for-large" data-toggle="offCanvas">
+<div class="mobile-menu-button hide-for-large hide-for-print" data-toggle="offCanvas">
     <a>
         <div id="button-menu-mobile">
             <div id="hamburger">
@@ -194,4 +197,4 @@
             <div id="offCanvasContent" class="off-canvas-content" data-off-canvas-content>
             <!-- Page content -->
 
-            <a href="#" id="go-top" class="hide">Back to top</a>
+            <a href="#" id="go-top" class="hide hide-for-print">Back to top</a>

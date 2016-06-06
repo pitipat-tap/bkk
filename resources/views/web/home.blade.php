@@ -72,7 +72,7 @@
                             Vestibulum at ex convallis, viverra tortor vitae, rutrum ipsum.
                              Sed quis purus eu velit pretium euismod. 
                         </p>
-                        <a>
+                        <a class="hide-for-print">
                             <div lang="th"> EXPLORE </div>
                             <div lang="en"> EXPLORE </div>
                             <div lang="jp"> EXPLORE </div>
@@ -82,7 +82,7 @@
                 </div>
             </div>
             <!-- mobile -->
-            <div id="destination-mobile" class="row hide-for-large">
+            <div id="destination-mobile" class="row hide-for-large hide-for-print">
                 <h2 lang="th">Destination</h2>
                 <h2 lang="en">Destination</h2>
                 <h2 lang="jp">Destination</h2>
@@ -286,7 +286,7 @@
                                 </p>
                                 <hr>
                                 <div class="">
-                                    <a>
+                                    <a class="hide-for-print">
                                         <div class="see-more"> 
                                             <span lang="th">see more ...</span>
                                             <span lang="en">see more ...</span>
