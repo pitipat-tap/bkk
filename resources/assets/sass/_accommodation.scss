@@ -11,7 +11,9 @@
 .padding-t{
 	padding-top: 20px;
 }
-
+.margin-b{
+	margin-bottom: 20px;
+}
 .modify {
 	border:none !important;
 	li{
@@ -48,6 +50,15 @@
 	border-bottom: 1px solid $tertiary-color;
 }
 
+.desc{
+	overflow: hidden;
+   	text-overflow: ellipsis;
+   	display: -webkit-box;
+   	line-height: 16px;     /* fallback */
+   	max-height: 48px;      /* fallback */
+   	-webkit-line-clamp: 2; /* number of lines to show */
+   	-webkit-box-orient: vertical;
+}
 .green-btn{
 	width: 150px;
 	height: 50px;

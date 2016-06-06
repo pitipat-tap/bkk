@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<HTML>
+<HTML> 
     <head>
         <meta charset="utf-8"></meta>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,11 +44,11 @@
         {!! HTML::script("js/verge.min.js") !!}
 	
         {!! HTML::script("js/main.js") !!}
-
+       
 
         @yield("specific_js_head")
     </head>
-    <body id="body" class="th" draggable="false">
+    <body id="body" class="th" draggable="false" >  
         @yield("body")
 
         <div id="loader-wrapper">
@@ -56,7 +56,6 @@
          
             <div class="loader-section section-left"></div>
         </div>
-        
         <script>
             $(document).foundation();
         </script>
