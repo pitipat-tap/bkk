@@ -87,7 +87,8 @@ Add New Work Post |
 												'food_and_drink' => 'FOOD and DRINK',
 												'parks_and_gardens' => 'PARKS and GARDENS',
 												'events' => 'Events',
-												'shopping' => 'Shopping'
+												'shopping' => 'Shopping',
+												'hotel' => 'Hotel'
 											))
 										!!}
 									</div>

@@ -15,7 +15,8 @@ class AdminAttractionsController extends Controller {
 	public function attractions(){
 		// TODO search
 
-		$attractions = Attractions::orderBy('created_at', 'DESC')->paginate(20);
+
+		$attractions = Attractions::orderBy('created_at', 'DESC')->paginate(18);
 
 		return view("admin.attractions", array(
 				"attractions" => $attractions
