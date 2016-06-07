@@ -83,12 +83,16 @@ Add New Work Post |
 									<div class="small-12 medium-6 large-3 end columns" >
 										{!! Form::label("category", "Category") !!}
 				               			{!! Form::select('category', array(
+												'' => '',
 												'arts_and_culture' => 'ARTS and CULTURE',
 												'food_and_drink' => 'FOOD and DRINK',
 												'parks_and_gardens' => 'PARKS and GARDENS',
 												'events' => 'Events',
 												'shopping' => 'Shopping',
-												'hotel' => 'Hotel'
+												'hotel' => 'Hotel',
+												'hostel' => 'Hostel',
+												'guest_house' => 'Guest house',
+												'apartment' => 'Apartment'
 											))
 										!!}
 									</div>
@@ -107,7 +111,7 @@ Add New Work Post |
 									</div>
 									<div class="small-12 large-6 columns" >
 										{!! Form::label("opening_day_thai", "Opening day") !!}
-										{!! Form::text("opening_day_thai", null) !!}
+										{!! Form::text("opening_day_thai","ทุกวัน", null) !!}
 									</div>
 									<div class="small-12 columns">
 										{!! Form::label("description_thai", "Description") !!}
@@ -126,7 +130,7 @@ Add New Work Post |
 									</div>
 									<div class="small-12 large-6 columns" >
 										{!! Form::label("opening_day_english", "Opening day") !!}
-										{!! Form::text("opening_day_english", null) !!}
+										{!! Form::text("opening_day_english","everyday", null) !!}
 									</div>
 									<div class="small-12 columns">
 										{!! Form::label("description_english", "Description") !!}
@@ -145,7 +149,7 @@ Add New Work Post |
 									</div>
 									<div class="small-12 large-6 columns" >
 										{!! Form::label("opening_day_japan", "Opening day") !!}
-										{!! Form::text("opening_day_japan", null) !!}
+										{!! Form::text("opening_day_japan","everyday", null) !!}
 									</div>
 									<div class="small-12 columns">
 										{!! Form::label("description_japan", "Description") !!}
@@ -164,7 +168,7 @@ Add New Work Post |
 									</div>
 									<div class="small-12 large-6 columns" >
 										{!! Form::label("opening_day_china", "Opening day") !!}
-										{!! Form::text("opening_day_china", null) !!}
+										{!! Form::text("opening_day_china","everyday", null) !!}
 									</div>
 									<div class="small-12 columns">
 										{!! Form::label("description_china", "Description") !!}

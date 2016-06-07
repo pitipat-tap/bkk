@@ -16,7 +16,7 @@
 <div class="body-section">
 	<div class="banner-page-title centered columns mg-b-1">Gallery</div>
 
-        <h1 align="center"> for web only </h1>
+        <h1 class="show-for-print" align="center"> for web only </h1>
 
 	<!-- Desktop -->
 	<div class="columns hide-for-print">

@@ -13,6 +13,36 @@
 
 @section("body")
 
+<script>
+    window.onbeforeprint = function() {
+        console.log($('.bounce-in'));
+    };
+
+    (function() {
+            var beforePrint = function() {
+                $('.timeline-panel').removeClass('bounce-in');
+                console.log('Functionality to run before printing.');
+                            };
+        var afterPrint = function() {
+                console.log('Functionality to run after printing');
+                $('.timeline-panel').addClass('bounce-in');
+                        };
+
+        if (window.matchMedia) {
+            var mediaQueryList = window.matchMedia('print');
+            mediaQueryList.addListener(function(mql) {
+                if (mql.matches) {
+                    beforePrint();
+                } else {
+                    afterPrint();
+                }
+            });
+        }
+
+        window.onbeforeprint = beforePrint;
+        window.onafterprint = afterPrint;
+    }());
+</script>
 @include("web.top-menu")
 
 <section>
