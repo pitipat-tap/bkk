@@ -35,6 +35,17 @@ gulp.task('minify-js', function () {
         .pipe(uglify())
         .pipe(gulp.dest('./public/js/'))
         .pipe(notify({ message: 'Minify-js complete: <%= file.relative %>'}));
+    gulp.src('public/js/modernizr/modernizr.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('./public/js/modernizr'))
+        .pipe(notify({ message: 'Minify-js complete: <%= file.relative %>'}));
+});
+
+gulp.task('minify-modernizr', function () {
+    gulp.src('public/js/modernizr/modernizr.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('./public/js/modernizr'))
+        .pipe(notify({ message: 'Minify-js complete: <%= file.relative %>'}));
 });
 
 gulp.task('compile', function () {
