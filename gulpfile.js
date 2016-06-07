@@ -41,11 +41,13 @@ gulp.task('minify-js', function () {
         .pipe(notify({ message: 'Minify-js complete: <%= file.relative %>'}));
 });
 
-gulp.task('minify-modernizr', function () {
-    gulp.src('public/js/modernizr/modernizr.js')
-        .pipe(uglify())
-        .pipe(gulp.dest('./public/js/modernizr'))
-        .pipe(notify({ message: 'Minify-js complete: <%= file.relative %>'}));
+gulp.task('minify-css', function () {
+    gulp.src('resources/assets/sass/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer('last 2 version'))
+        .pipe(cssnano())
+        .pipe(gulp.dest('./public/css/'))
+        .pipe(notify({ message: 'Compile scss task complete: <%= file.relative %>'}));
 });
 
 gulp.task('compile', function () {
