@@ -53,9 +53,9 @@ Route::get('/partners', function () {
     return view('web/partners');
 });
 
-Route::get('/accommodation', function () {
-    return view('web/accommodation');
-});
+Route::get("accommodation", array("as" => "accommodation", "uses" => "WebController@accommodation"));
+Route::get("accommodation/{id}", array("as" => "accommodation-post", "uses" => "WebController@accommodationPost"));
+Route::get("accommodationJson", array("as" => "accommodationJson", "uses" => "WebController@accommodationJson"));
 
 Route::get('/accommodation2', function () {
     return view('web/accommodation2');
