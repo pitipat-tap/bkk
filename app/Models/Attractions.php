@@ -12,24 +12,16 @@ class Attractions extends Model {
 		return array(
 			"title_thai" => "required",
             "title_english" => "required",
-            "title_japan" => "required",
-            "title_china" => "required",
             "description_thai" => "required",
             "description_english" => "required",
-            "description_japan" => "required",
-            "description_china" => "required",
 		);
 	}
 
 	public static $custom_messages = array(
 		"title_thai.required" => "The title thai is required.",
 		"title_english.required" => "The title english is required.", 
-		"title_japan.required" => "The title japan is required.",
-		"title_china.required" => "The title china is required.",
 		"description_thai.required" => "The description thai required.",
 		"description_english.required" => "The description english required.",
-		"description_japan.required" => "The description japan required.",
-		"description_china.required" => "The description china required.",
 	);
 
 	public function author()

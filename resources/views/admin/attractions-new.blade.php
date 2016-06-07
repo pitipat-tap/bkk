@@ -83,12 +83,16 @@ Add New Work Post |
 									<div class="small-12 medium-6 large-3 end columns" >
 										{!! Form::label("category", "Category") !!}
 				               			{!! Form::select('category', array(
+												'' => '',
 												'arts_and_culture' => 'ARTS and CULTURE',
 												'food_and_drink' => 'FOOD and DRINK',
 												'parks_and_gardens' => 'PARKS and GARDENS',
 												'events' => 'Events',
 												'shopping' => 'Shopping',
-												'hotel' => 'Hotel'
+												'hotel' => 'Hotel',
+												'hostel' => 'Hostel',
+												'guest_house' => 'Guest house',
+												'apartment' => 'Apartment'
 											))
 										!!}
 									</div>

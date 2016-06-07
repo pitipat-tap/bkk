@@ -15,7 +15,6 @@ class AdminAttractionsController extends Controller {
 	public function attractions(){
 		// TODO search
 
-
 		$attractions = Attractions::orderBy('created_at', 'DESC')->paginate(18);
 
 		return view("admin.attractions", array(
@@ -58,6 +57,26 @@ class AdminAttractionsController extends Controller {
             $attraction->commute = trim(Request::input("commute"));
             $attraction->map_url = trim(Request::input("map_url"));
             $attraction->remark = trim(Request::input("remark"));
+
+            if($attraction->title_japan == null || $attraction->title_japan == ''){
+            	$attraction->title_japan == $attraction->title_english
+            }
+            if($attraction->title_china == null || $attraction->title_china == ''){
+            	$attraction->title_china == $attraction->title_english
+            }
+            if($attraction->description_japan == null || $attraction->description_japan == ''){
+            	$attraction->description_japan == $attraction->description_english
+            }
+            if($attraction->description_china == null || $attraction->description_china == ''){
+            	$attraction->description_china == $attraction->description_english
+            }
+            if($attraction->opening_day_japan == null || $attraction->opening_day_japan == ''){
+            	$attraction->opening_day_japan == $attraction->opening_day_english
+            }
+            if($attraction->opening_day_china == null || $attraction->opening_day_china == ''){
+            	$attraction->opening_day_china == $attraction->opening_day_english
+            }
+
 
             $attraction->category = trim(Request::input("category"));
 			if(trim(Request::input("attraction")) == 'true')
@@ -145,6 +164,25 @@ class AdminAttractionsController extends Controller {
             $attraction->commute = trim(Request::input("commute"));
             $attraction->map_url = trim(Request::input("map_url"));
             $attraction->remark = trim(Request::input("remark"));
+
+            if($attraction->title_japan == null || $attraction->title_japan == ''){
+            	$attraction->title_japan == $attraction->title_english
+            }
+            if($attraction->title_china == null || $attraction->title_china == ''){
+            	$attraction->title_china == $attraction->title_english
+            }
+            if($attraction->description_japan == null || $attraction->description_japan == ''){
+            	$attraction->description_japan == $attraction->description_english
+            }
+            if($attraction->description_china == null || $attraction->description_china == ''){
+            	$attraction->description_china == $attraction->description_english
+            }
+            if($attraction->opening_day_japan == null || $attraction->opening_day_japan == ''){
+            	$attraction->opening_day_japan == $attraction->opening_day_english
+            }
+            if($attraction->opening_day_china == null || $attraction->opening_day_china == ''){
+            	$attraction->opening_day_china == $attraction->opening_day_english
+            }
 
             $attraction->category = trim(Request::input("category"));
 			if(trim(Request::input("attraction")) == 'true')
