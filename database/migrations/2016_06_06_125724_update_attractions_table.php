@@ -27,7 +27,7 @@ class UpdateAttractionsTable extends Migration
     public function down()
     {
         //
-         Schema::table('attractions', function($table) {
+        Schema::table('attractions', function($table) {
             $table->dropColumn('address');
             $table->dropColumn('commute');
         });

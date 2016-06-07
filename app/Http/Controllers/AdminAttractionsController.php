@@ -51,6 +51,8 @@ class AdminAttractionsController extends Controller {
 			$attraction->image_url_5 = trim(Request::input("image_url_5"));
 			$attraction->opening_hours = trim(Request::input("opening_hours"));
             $attraction->admission_free = trim(Request::input("admission_free"));
+            $attraction->telephone_number = trim(Request::input("telephone_number"));
+            $attraction->website = trim(Request::input("website"));
             $attraction->address = trim(Request::input("address"));
             $attraction->commute = trim(Request::input("commute"));
             $attraction->map_url = trim(Request::input("map_url"));
@@ -136,6 +138,8 @@ class AdminAttractionsController extends Controller {
 			$attraction->image_url_5 = trim(Request::input("image_url_5"));
 			$attraction->opening_hours = trim(Request::input("opening_hours"));
             $attraction->admission_free = trim(Request::input("admission_free"));
+            $attraction->telephone_number = trim(Request::input("telephone_number"));
+            $attraction->website = trim(Request::input("website"));
             $attraction->address = trim(Request::input("address"));
             $attraction->commute = trim(Request::input("commute"));
             $attraction->map_url = trim(Request::input("map_url"));

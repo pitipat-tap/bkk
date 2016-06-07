@@ -186,6 +186,14 @@ Edit Attractions |
 										{!! Form::label("admission_free", "Admission Free") !!}
 										{!! Form::text("admission_free", null) !!}
 									</div>
+									<div class="small-12 large-6 columns" >
+										{!! Form::label("telephone_number", "Telephone Number") !!}
+										{!! Form::text("telephone_number", null) !!}
+									</div>
+									<div class="small-12 large-6 columns" >
+										{!! Form::label("website", "Website") !!}
+										{!! Form::text("website", null) !!}
+									</div>
 									<div class="small-12 columns">
 										{!! Form::label("address", "Address") !!}
 										{!! Form::textarea("address", null, array("rows" => "2")) !!}
