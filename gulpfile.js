@@ -4,7 +4,8 @@ var gulp = require('gulp'),
     cssnano = require('gulp-cssnano'),
     notify = require('gulp-notify'),
     del = require('del'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    imageop = require('gulp-image-optimization');
 
 gulp.task('default',['clean'], function() {
 
@@ -43,6 +44,15 @@ gulp.task('compile', function () {
         //.pipe(cssnano())
         .pipe(gulp.dest('./public/css/'))
         .pipe(notify({ message: 'Compile scss task complete: <%= file.relative %>'}));
+});
+
+//optimize image 
+gulp.task('images', function(cb) {
+    gulp.src(['public/images/**/*.png','public/images/**/*.jpg','public/images/**/*.gif','public/images/**/*.jpeg']).pipe(imageop({
+        optimizationLevel: 5,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('public/images')).on('end', cb).on('error', cb);
 });
 
 //Watch task
