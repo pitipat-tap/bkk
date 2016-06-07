@@ -105,7 +105,7 @@
 		}
 		
 		&:before {
-			right: -15px;
+			right: -14px;
 
 			@include breakpoint(medium down) {
 				border-left-width: 0;
@@ -115,7 +115,7 @@
 			}
 		}
 		&:after {
-			right: -14px;
+			right: -13px;
 
 			@include breakpoint(medium down) {
 				border-left-width: 0;
@@ -134,7 +134,7 @@
 		}
 
 		&:before {
-			left: -15px;
+			left: -14px;
 			border-left-width: 0;
 			border-right-width: 15px;
 			right: auto;
@@ -142,12 +142,12 @@
 			@include breakpoint(medium down) {
 				border-left-width: 0;
 				border-right-width: 15px;
-				left: -15px;
+				left: -14px;
 				right: auto;
 			}
 		}
 		&:after {
-			left: -14px;
+			left: -13px;
 			border-left-width: 0;
 			border-right-width: 14px;
 			right: auto;

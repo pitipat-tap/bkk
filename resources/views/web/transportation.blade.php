@@ -65,7 +65,7 @@
 						</div>
 						<div class="row">
 							<div class="small-12 small-centered large-2 large-uncentered columns">
-	                            <a class="button small-12 columns" href="http://www.bts.co.th/customer/th/main.aspx" target="_blank">
+	                            <a class="button small-12 columns hide-for-print" href="http://www.bts.co.th/customer/th/main.aspx" target="_blank">
 	                                <span lang="th">More Info</span>
 	                                <span lang="en">More Info</span>
 	                                <span lang="jp">More Info</span>
@@ -107,7 +107,7 @@
 						</div>
 						<div class="row">
 							<div class="small-12 small-centered large-2 large-uncentered columns">
-								<a class="button small-12 columns" href="http://www.bangkokmetro.co.th/index.aspx?Lang=En" target="_blank">
+								<a class="button small-12 columns hide-for-print" href="http://www.bangkokmetro.co.th/index.aspx?Lang=En" target="_blank">
 	                                <span lang="th">More Info</span>
 	                                <span lang="en">More Info</span>
 	                                <span lang="jp">More Info</span>
@@ -149,7 +149,7 @@
 						</div>
 						<div class="row">
 							<div class="small-12 small-centered large-2 large-uncentered columns">
-								<a class="button small-12 columns" href="http://www.bmta.co.th/?q=th/home" target="_blank">
+								<a class="button small-12 columns hide-for-print" href="http://www.bmta.co.th/?q=th/home" target="_blank">
 	                                <span lang="th">More Info</span>
 	                                <span lang="en">More Info</span>
 	                                <span lang="jp">More Info</span>

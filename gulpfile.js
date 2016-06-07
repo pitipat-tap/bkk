@@ -47,5 +47,9 @@ gulp.task('compile', function () {
 
 //Watch task
 gulp.task('watch',function() {
-    gulp.watch('resources/assets/sass/*.scss',['default']);
+    gulp.watch('resources/assets/sass/*.scss',['compile']);
+});
+
+gulp.task('watch-js',function() {
+    gulp.watch('resources/assets/sass/*.scss',['compile','minify-js']);
 });

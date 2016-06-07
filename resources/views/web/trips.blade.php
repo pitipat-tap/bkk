@@ -68,7 +68,7 @@
 						</div>
 						<div class="row">
 							<div class="small-12 small-centered large-2 large-uncentered columns">
-	                            <a class="button small-12 columns" href="one-day-trip">
+	                            <a class="button small-12 columns hide-for-print" href="one-day-trip">
 	                               <span lang="th">More Info</span>
 	                               <span lang="en">More Info</span>
 	                               <span lang="jp">More Info</span>
@@ -113,7 +113,7 @@
 						</div>
 						<div class="row">
 							<div class="small-12 small-centered large-2 large-uncentered columns">
-	                            <a class="button small-12 columns" href="trip">
+	                            <a class="button small-12 columns hide-for-print" href="trip">
 	                               <span lang="th">More Info</span>
 	                               <span lang="en">More Info</span>
 	                               <span lang="jp">More Info</span>
@@ -158,7 +158,7 @@
 						</div>
 						<div class="row">
 							<div class="small-12 small-centered large-2 large-uncentered columns">
-	                            <a class="button small-12 columns" href="trip">
+	                            <a class="button small-12 columns hide-for-print" href="trip">
 	                               <span lang="th">More Info</span>
 	                               <span lang="en">More Info</span>
 	                               <span lang="jp">More Info</span>
@@ -203,7 +203,7 @@
 						</div>
 						<div class="row">
 							<div class="small-12 small-centered large-2 large-uncentered columns">
-	                            <a class="button small-12 columns" href="trip">
+	                            <a class="button small-12 columns hide-for-print" href="trip">
 	                               <span lang="th">More Info</span>
 	                               <span lang="en">More Info</span>
 	                               <span lang="jp">More Info</span>
@@ -248,7 +248,7 @@
 						</div>
 						<div class="row">
 							<div class="small-12 small-centered large-2 large-uncentered columns">
-	                            <a class="button small-12 columns" href="trip">
+	                            <a class="button small-12 columns hide-for-print" href="trip">
 	                               <span lang="th">More Info</span>
 	                               <span lang="en">More Info</span>
 	                               <span lang="jp">More Info</span>
@@ -293,7 +293,7 @@
 						</div>
 						<div class="row">
 							<div class="small-12 small-centered large-2 large-uncentered columns">
-	                            <a class="button small-12 columns" href="trip">
+	                            <a class="button small-12 columns hide-for-print" href="trip">
 	                               <span lang="th">More Info</span>
 	                               <span lang="en">More Info</span>
 	                               <span lang="jp">More Info</span>
@@ -338,7 +338,7 @@
 						</div>
 						<div class="row">
 							<div class="small-12 small-centered large-2 large-uncentered columns">
-	                            <a class="button small-12 columns" href="trip">
+	                            <a class="button small-12 columns hide-for-print" href="trip">
 	                               <span lang="th">More Info</span>
 	                               <span lang="en">More Info</span>
 	                               <span lang="jp">More Info</span>

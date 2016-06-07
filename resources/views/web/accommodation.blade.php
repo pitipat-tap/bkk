@@ -93,14 +93,18 @@
                   Read more...</a>  
                 </div>
               </div>
+              <div class="padding-b">
+                description
+              </div>
+              <div class="hide-for-print">
+                <button class="green-btn" type="button">Read more...</button>
+              </div>
             </div>
 
-            <div class="padding-t" align="center">
+            <div class="padding-t hide-for-print" align="center">
               <button class="green-btn" type="button" ng-click="loadmore()">Load more...</button>
             </div>
           </div>
-
-        
         <div class="tabs-panel" id="panel2v">
           <div class="row item padding-b">
             <div class="small-12 medium-5 columns">
@@ -121,12 +125,12 @@
               <div class="padding-b">
                 description
               </div>
-              <div>
+              <div class="hide-for-print">
                 <button class="green-btn" type="button">Read more...</button>
               </div>
             </div>
           </div>
-          <div class="padding-t" align="center">
+          <div class="padding-t hide-for-print" align="center">
               <button class="green-btn" type="button">Load more...</button>
           </div>
         </div>
@@ -150,12 +154,12 @@
               <div class="padding-b">
                 description
               </div>
-              <div>
+              <div class="hide-for-print">
                 <button class="green-btn" type="button">Read more...</button>
               </div>
             </div>
           </div>
-          <div class="padding-t" align="center">
+          <div class="padding-t hide-for-print" align="center">
               <button class="green-btn" type="button">Load more...</button>
           </div>
         </div>
@@ -179,12 +183,12 @@
               <div class="padding-b">
                 description
               </div>
-              <div>
+              <div class="hide-for-print">
                 <button class="green-btn" type="button">Read more...</button>
               </div>
             </div>
           </div>
-          <div class="padding-t" align="center">
+          <div class="padding-t hide-for-print" align="center">
               <button class="green-btn" type="button">Load more...</button>
           </div>
         </div>
