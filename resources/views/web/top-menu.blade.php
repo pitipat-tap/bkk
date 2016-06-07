@@ -12,14 +12,6 @@
           </a>
         </li>
         <li class="hide-for-print">
-            <a href="#">
-                <span lang="th">Campaign TH</span>
-                <span lang="en">Campaign EN</span>
-                <span lang="jp">Campaign JP</span>
-                <span lang="ch">Campaign CN</span>
-            </a>
-        </li>
-        <li class="hide-for-print">
             <a href="attraction-category">
                <span lang="th">Attraction</span>
                <span lang="en">Attraction</span>
