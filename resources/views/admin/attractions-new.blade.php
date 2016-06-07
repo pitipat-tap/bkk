@@ -106,7 +106,7 @@ Add New Work Post |
 									</div>
 									<div class="small-12 large-6 columns" >
 										{!! Form::label("opening_day_thai", "Opening day") !!}
-										{!! Form::text("opening_day_thai", null) !!}
+										{!! Form::text("opening_day_thai","ทุกวัน", null) !!}
 									</div>
 									<div class="small-12 columns">
 										{!! Form::label("description_thai", "Description") !!}
@@ -125,7 +125,7 @@ Add New Work Post |
 									</div>
 									<div class="small-12 large-6 columns" >
 										{!! Form::label("opening_day_english", "Opening day") !!}
-										{!! Form::text("opening_day_english", null) !!}
+										{!! Form::text("opening_day_english","everyday", null) !!}
 									</div>
 									<div class="small-12 columns">
 										{!! Form::label("description_english", "Description") !!}
@@ -144,7 +144,7 @@ Add New Work Post |
 									</div>
 									<div class="small-12 large-6 columns" >
 										{!! Form::label("opening_day_japan", "Opening day") !!}
-										{!! Form::text("opening_day_japan", null) !!}
+										{!! Form::text("opening_day_japan","everyday", null) !!}
 									</div>
 									<div class="small-12 columns">
 										{!! Form::label("description_japan", "Description") !!}
