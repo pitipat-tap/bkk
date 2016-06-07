@@ -266,13 +266,13 @@
           left:20px;
           margin:10px 0;
           &:nth-child(1){
-            transition-delay:.5s;
+            transition-delay:.375s;
           }
           &:nth-child(2){
-            transition-delay:.625s;
+            transition-delay:.5s;
           }
           &:nth-child(3){
-            transition-delay:.75s;
+            transition-delay:.625s;
           }
         }
       }
@@ -321,13 +321,13 @@
         span {
           &:nth-child(1){
             height:65%;
-            transition-delay:.625s;
+            transition-delay:.5s;
           }
         }
         span {
           &:nth-child(2){
             width:65%;
-            transition-delay:.375s;
+            transition-delay:.25s;
           }
         }    
       }
