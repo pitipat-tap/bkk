@@ -163,7 +163,7 @@ Add New Work Post |
 									</div>
 									<div class="small-12 large-6 columns" >
 										{!! Form::label("opening_day_china", "Opening day") !!}
-										{!! Form::text("opening_day_china", null) !!}
+										{!! Form::text("opening_day_china","everyday", null) !!}
 									</div>
 									<div class="small-12 columns">
 										{!! Form::label("description_china", "Description") !!}
