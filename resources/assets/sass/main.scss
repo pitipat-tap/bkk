@@ -21,6 +21,27 @@
 @import "resources/assets/sass/transportation";
 @import "resources/assets/sass/timeline";
 
+@media print {
+    .hide-for-large,.show-for-small-only,.show-for-medium-only {
+        display: none !important;
+    }
+    a[href]:after {
+        content: "";
+    }
+    .category-description {
+        position:relative !important;
+    }
+    .tabs-panel {
+        display: block !important;
+    }
+    .timeline-panel {
+        float: right !important;
+        width:100%;
+    }
+    .timeline:before{
+        display:none;
+    }
+}
 $main-color:#7FCAA8;
 a {
     font-size:20px;
