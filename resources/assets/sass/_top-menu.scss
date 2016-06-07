@@ -35,9 +35,7 @@
         height: 100px;
     }
     @include breakpoint(large) {
-        min-width: 150px;
-        min-height: 100px;
-        width: 100%;
+        width: 130px;
         height: auto;
     }
 }
@@ -345,6 +343,7 @@
     font-size: 1em;
     padding: 10px;
     margin: 0;
+    z-index: 999;
 
     @include breakpoint(medium down) {
         bottom: 3%;
