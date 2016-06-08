@@ -82,6 +82,7 @@ class AdminAttractionsController extends Controller {
             $attraction->commute = trim(Request::input("commute"));
             $attraction->map_url = trim(Request::input("map_url"));
             $attraction->remark = trim(Request::input("remark"));
+            $attraction->priority = trim(Request::input("priority"));
 
             if($attraction->title_japan == null || $attraction->title_japan == ''){
             	$attraction->title_japan = $attraction->title_english;
@@ -189,6 +190,7 @@ class AdminAttractionsController extends Controller {
             $attraction->commute = trim(Request::input("commute"));
             $attraction->map_url = trim(Request::input("map_url"));
             $attraction->remark = trim(Request::input("remark"));
+            $attraction->priority = trim(Request::input("priority"));
 
             if($attraction->title_japan == null || $attraction->title_japan == ''){
             	$attraction->title_japan = $attraction->title_english;

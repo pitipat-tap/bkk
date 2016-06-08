@@ -96,6 +96,10 @@ Add New Work Post |
 											))
 										!!}
 									</div>
+									<div class="small-12 medium-6 large-3 end columns" >
+										{!! Form::label("priority", "Priority") !!}
+										{!! Form::number("priority", 100) !!}
+									</div>
 								</div>
 							</div>
 						</div>
