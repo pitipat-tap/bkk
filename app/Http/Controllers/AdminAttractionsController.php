@@ -15,7 +15,32 @@ class AdminAttractionsController extends Controller {
 	public function attractions(){
 		// TODO search
 
-		$attractions = Attractions::orderBy('created_at', 'DESC')->paginate(18);
+		$q = Request::input("q");
+		$tag = Request::input("tag");
+
+		$attractions = Attractions::where(function ($query) {
+				if(trim(Request::input("attraction")) == 'true')
+					$query->orWhere('is_attraction', 1);
+				if(trim(Request::input("accommodation")) == 'true')
+					$query->orWhere('is_accommodation', 1);
+				if(trim(Request::input("event")) == 'true')
+					$query->orWhere('is_event', 1);
+			});
+		if($q != null){
+			$attractions = $attractions->where(function ($query) {
+				$q = Request::input("q");
+			    $query->where('title_thai', 'LIKE', "%".$q."%")
+			          ->orWhere('title_english', 'LIKE', "%".$q."%")
+			          ->orWhere('title_japan', 'LIKE', "%".$q."%")
+			          ->orWhere('title_china', 'LIKE', "%".$q."%")
+			          ->orWhere('description_thai', 'LIKE', "%".$q."%")
+			          ->orWhere('description_english', 'LIKE', "%".$q."%")
+			          ->orWhere('description_japan', 'LIKE', "%".$q."%")
+			          ->orWhere('description_china', 'LIKE', "%".$q."%");
+			});
+		}
+
+		$attractions = $attractions->orderBy('created_at', 'DESC')->paginate(18);
 
 		return view("admin.attractions", array(
 				"attractions" => $attractions
