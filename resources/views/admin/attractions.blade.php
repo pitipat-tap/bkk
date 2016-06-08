@@ -12,7 +12,6 @@ Attractions |
 
 
 <?php
-use Chromabits\Pagination\FoundationPresenter;
 use Illuminate\Support\Facades\Input;
 ?>
 
@@ -107,6 +106,8 @@ use Illuminate\Support\Facades\Input;
 	<div class="row full-width ui-block mg-b show-for-large-up">
 		<div class="small-12 columns">
 			<h4>Filter</h4>
+
+
 			
 			@if (Input::get("q") != null || 
 				Input::get("status") != null || 
@@ -126,37 +127,40 @@ use Illuminate\Support\Facades\Input;
 			@endif
 		</div>
 		
-		<div class="small-12 large-4 columns medium-pd-r">
-			{!! Form::label("status-select", "Status") !!}
-			{!! Form::select("status", 
-		    	array(
-		    		"null" => "All", 
-		    		"published" => "Published", 
-		    		"draft" => "Draft"
-    			), 
-	    		Input::get("status"),
-	    		array("class" => "status-select", "data-media" => "large")
-    		) !!}
-		</div>
 		
-		<div class="small-12 large-4 columns medium-pd-l">
-			{!! Form::open(array("route" => "admin-attractions", "method" => "GET")) !!}
-				{!! Form::label("q", "Search") !!}
-				<div class="row collapse">
-					<div class="small-9 columns">
-						{!! Form::text("q", Input::get("q")) !!}
+		{!! Form::open(array("route" => "admin-attractions", "method" => "GET")) !!}
+			<div class="small-12 large-4 columns medium-pd-r">
+					{!! Form::label("q", "Search") !!}
+					<div class="row collapse">
+						<div class="small-9 columns">
+							{!! Form::text("q", Input::get("q")) !!}
+						</div>
+						<div class="small-3 columns">
+							{!! Form::button("Search", 
+								array(
+					                "class" => "button secondary postfix", 
+					                "type" => "submit"
+				                )
+							) !!}
+						</div>
 					</div>
-					<div class="small-3 columns">
-						{!! Form::button("Search", 
-							array(
-				                "class" => "button secondary postfix", 
-				                "type" => "submit"
-			                )
-						) !!}
+			</div>
+			<div class="small-12 large-4 columns medium-pd-l end">
+				<br>
+				<div class="row">
+					<div class="small-12 columns" >
+						{!! Form::checkbox('attraction', 'true') !!}
+						{!! Form::label('attraction', 'Attraction') !!}
+						<div class="show-for-small-only"> <br> </div>
+						{!! Form::checkbox('accommodation', 'true') !!}
+						{!! Form::label('accommodation', 'Accommodation') !!}
+						<div class="show-for-small-only"> <br> </div>
+						{!! Form::checkbox('event', 'true') !!}
+						{!! Form::label('event', 'Event') !!}
 					</div>
-				</div>
-			{!! Form::close() !!}
-		</div>
+	            </div>
+			</div>
+		{!! Form::close() !!}
 		
 		<div class="small-12 large-4 columns"></div>
 	</div>
@@ -218,11 +222,7 @@ use Illuminate\Support\Facades\Input;
 		@endforeach
 	</ul>
 	
-	@if ($attractions->total() > $attractions->perPage())
-		<div class="pagination-container">
-			{!! str_replace('/?', '?', $attractions->appends(Request::except("page"))->render(new FoundationPresenter($attractions))) !!}
-		</div>
-	@endif
+	<div class="pagination"> {!! $attractions->links() !!} </div>
 </div>
 
 @stop
