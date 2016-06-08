@@ -40,7 +40,7 @@ class AdminAttractionsController extends Controller {
 			});
 		}
 
-		$attractions = $attractions->orderBy('created_at', 'DESC')->paginate(18);
+		$attractions = $attractions->orderBy('priority', 'ASC')->orderBy('created_at', 'DESC')->paginate(18);
 
 		return view("admin.attractions", array(
 				"attractions" => $attractions

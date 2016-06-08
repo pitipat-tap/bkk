@@ -14,6 +14,8 @@ class FixAttractionsTable2 extends Migration
     {
         //
         Schema::table('attractions', function($table) {
+            $table->text('address');
+            $table->text('commute');
             $table->text('telephone_number');
             $table->text('website');
         });
@@ -28,6 +30,8 @@ class FixAttractionsTable2 extends Migration
     {
         //
         Schema::table('attractions', function($table) {
+            $table->dropColumn('address');
+            $table->dropColumn('commute');
             $table->dropColumn('telephone_number');
             $table->dropColumn('website');
         });
