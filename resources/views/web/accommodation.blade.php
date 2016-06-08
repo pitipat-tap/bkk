@@ -7,7 +7,6 @@
 
 @section("specific_js_head")
 {!! Html::script("js/verge.min.js") !!}
-{!! Html::script("js/app.js") !!}
 @stop
 
 
@@ -42,7 +41,7 @@
 </section>
 
 <div class="banner-page-title font">Accommodation </div>
-<div class="body-section" ng-app="bkkApp" ng-controller="AccommodationController" ng-init="init()">
+<div class="body-section" ng-controller="AccommodationController" ng-init="init()">
   <div class="row collapse">
     <div class="small-12 columns padding-b">
       <ul id="menu" class="tabs modify" id="example-vert-tabs" data-tabs>
