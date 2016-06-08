@@ -29,6 +29,10 @@ Route::get('/attraction-category', function () {
     return view('web/attraction-category');
 });
 
+Route::get('/attraction-select', function () {
+    return view('web/attraction-select');
+});
+
 Route::get('/transportation', function () {
     return view('web/transportation');
 });
