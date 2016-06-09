@@ -33,6 +33,10 @@ Route::get('/attraction-select', function () {
     return view('web/attraction-select');
 });
 
+Route::get('/attraction', function () {
+    return view('web/attraction');
+});
+
 Route::get('/transportation', function () {
     return view('web/transportation');
 });
