@@ -37,10 +37,10 @@
 	<div id="category-container-1" class="category-container">
 		<a href="#">
 			<div class="category-picture show-for-large">
-				{!! HTML::image("http://placehold.it/1248x412","bkk-logo",array("class"=>"")) !!}
+				{!! HTML::image("uploads/normal/attraction_category/art_large.jpg","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="category-picture hide-for-large">
-				{!! HTML::image("http://placehold.it/400x300","bkk-logo",array("class"=>"")) !!}
+				{!! HTML::image("uploads/normal/attraction_category/art_medium.jpg","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="category-description">
 				<h3 lang="th">ARTS AND CULTURE</h3>
@@ -71,10 +71,10 @@
 		<div id="category-container-2" class="category-container">
 			<a href="#">
 				<div class="category-picture show-for-large">
-					{!! HTML::image("http://placehold.it/620x412","bkk-logo",array("class"=>"")) !!}
+					{!! HTML::image("uploads/normal/attraction_category/food_large.jpg","bkk-logo",array("class"=>"")) !!}
 				</div>
 				<div class="category-picture hide-for-large">
-					{!! HTML::image("http://placehold.it/300x400","bkk-logo",array("class"=>"")) !!}
+					{!! HTML::image("uploads/normal/attraction_category/food_large.jpg","bkk-logo",array("class"=>"")) !!}
 				</div>
 				<div class="category-description">
 					<h3 lang="th">FOOD AND DRINK</h3>
@@ -87,10 +87,10 @@
 		<div id="category-container-3" class="category-container">
 			<a href="">
 				<div class="category-picture show-for-large">
-					{!! HTML::image("http://placehold.it/620x412","bkk-logo",array("class"=>"")) !!}
+					{!! HTML::image("uploads/normal/attraction_category/park_large.jpg","bkk-logo",array("class"=>"")) !!}
 				</div>
 				<div class="category-picture hide-for-large">
-					{!! HTML::image("http://placehold.it/300x400","bkk-logo",array("class"=>"")) !!}
+					{!! HTML::image("uploads/normal/attraction_category/park_large.jpg","bkk-logo",array("class"=>"")) !!}
 				</div>
 				<div class="category-description">
 					<h3 lang="th">PARKS AND GARDENS</h3>
@@ -104,10 +104,10 @@
 	<div id="category-container-4" class="category-container">
 		<a href="#">
 			<div class="category-picture show-for-large">
-				{!! HTML::image("http://placehold.it/1248x412","bkk-logo",array("class"=>"")) !!}
+				{!! HTML::image("uploads/normal/attraction_category/event_large.jpg","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="category-picture hide-for-large">
-				{!! HTML::image("http://placehold.it/400x300","bkk-logo",array("class"=>"")) !!}
+				{!! HTML::image("uploads/normal/attraction_category/event_large.jpg","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="category-description">
 				<h3>Events</h3>
@@ -134,10 +134,10 @@
 	<div id="category-container-5" class="category-container">
 		<a href="#">
 			<div class="category-picture show-for-large">
-				{!! HTML::image("http://placehold.it/1248x412","bkk-logo",array("class"=>"")) !!}
+				{!! HTML::image("uploads/normal/attraction_category/shopping_large.jpg","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="category-picture hide-for-large">
-				{!! HTML::image("http://placehold.it/400x300","bkk-logo",array("class"=>"")) !!}
+				{!! HTML::image("uploads/normal/attraction_category/shopping_large.jpg","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="category-description">
 				<h3 lang="th">Shopping</h3>
