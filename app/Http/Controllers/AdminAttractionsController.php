@@ -40,7 +40,7 @@ class AdminAttractionsController extends Controller {
 			});
 		}
 
-		$attractions = $attractions->orderBy('created_at', 'DESC')->paginate(18);
+		$attractions = $attractions->orderBy('priority', 'ASC')->orderBy('created_at', 'DESC')->paginate(18);
 
 		return view("admin.attractions", array(
 				"attractions" => $attractions
@@ -82,6 +82,7 @@ class AdminAttractionsController extends Controller {
             $attraction->commute = trim(Request::input("commute"));
             $attraction->map_url = trim(Request::input("map_url"));
             $attraction->remark = trim(Request::input("remark"));
+            $attraction->priority = trim(Request::input("priority"));
 
             if($attraction->title_japan == null || $attraction->title_japan == ''){
             	$attraction->title_japan = $attraction->title_english;
@@ -189,6 +190,7 @@ class AdminAttractionsController extends Controller {
             $attraction->commute = trim(Request::input("commute"));
             $attraction->map_url = trim(Request::input("map_url"));
             $attraction->remark = trim(Request::input("remark"));
+            $attraction->priority = trim(Request::input("priority"));
 
             if($attraction->title_japan == null || $attraction->title_japan == ''){
             	$attraction->title_japan = $attraction->title_english;

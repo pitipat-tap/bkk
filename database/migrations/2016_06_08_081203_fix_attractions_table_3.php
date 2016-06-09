@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class UpdateAttractionsTable extends Migration
+class FixAttractionsTable3 extends Migration
 {
     /**
      * Run the migrations.
@@ -14,8 +14,7 @@ class UpdateAttractionsTable extends Migration
     {
         //
         Schema::table('attractions', function($table) {
-            $table->text('address');
-            $table->text('commute');
+            $table->integer('priority')->default(100);
         });
     }
 
@@ -28,8 +27,7 @@ class UpdateAttractionsTable extends Migration
     {
         //
         Schema::table('attractions', function($table) {
-            $table->dropColumn('address');
-            $table->dropColumn('commute');
+            $table->dropColumn('priority');
         });
     }
 }

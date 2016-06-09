@@ -7,7 +7,6 @@
 
 @section("specific_js_head")
 {!! Html::script("js/verge.min.js") !!}
-{!! Html::script("js/app.js") !!}
 @stop
 
 
@@ -31,18 +30,18 @@
 
 <section>
   <div class="banner-containers show-for-large">
-    {!! HTML::image("http://placehold.it/1500x500","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
+    {!! HTML::image("uploads/normal/banner/accommodation_large.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
   </div>
   <div class="banner-containers show-for-medium-only">
-    {!! HTML::image("http://placehold.it/400x300","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
+    {!! HTML::image("uploads/normal/banner/accommodation_medium.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
   </div>
   <div class="banner-containers show-for-small-only">
-    {!! HTML::image("http://placehold.it/300x400","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
+    {!! HTML::image("uploads/normal/banner/accommodation_small.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
   </div>
 </section>
 
 <div class="banner-page-title font">Accommodation </div>
-<div class="body-section" ng-app="bkkApp" ng-controller="AccommodationController" ng-init="init()">
+<div class="body-section" ng-controller="AccommodationController" ng-init="init()">
   <div class="row collapse">
     <div class="small-12 columns padding-b">
       <ul id="menu" class="tabs modify" id="example-vert-tabs" data-tabs>
