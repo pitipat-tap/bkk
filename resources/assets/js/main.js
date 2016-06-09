@@ -1,10 +1,8 @@
-$(document).ready(function() {
+$(window).load(function(){
 
-  onload = function() {
-      setInterval(function(){
-          $('body').addClass('loaded');
-      }, 100);
-  }
+      $('body').addClass('loaded');
+});
+$(document).ready(function() {
 
   if(localStorage.getItem('language') == null){
     localStorage.setItem('language',"th");
@@ -18,6 +16,7 @@ $(document).ready(function() {
       var selectedLanguage = $(this).attr('data-lan');
       document.body.className = selectedLanguage;
       localStorage.setItem('language', selectedLanguage);
+      $('body').addClass('loaded');
   });
 
 	// mobile menu

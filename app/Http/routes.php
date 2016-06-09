@@ -11,66 +11,43 @@
 |
 */
 use App\Models\BannerOrbit;
-Route::get('/', function () {
-	$banners = BannerOrbit::orderBy('sequence', 'ASC')->get();
-    return view('web/home',array(
-				"banners" => $banners
-			));
+use App\Models\Attractions;
+Route::get('/',array("as" => "home", "uses" => "WebController@home"));
+
+Route::get('/attraction-category', array("as" => "attractionCategory" ,"uses" => "WebController@attractionCategory"));
+
+Route::get('/attraction-select/{category}', function ($category) {
+    $attractions = Attractions::where("category",$category)->paginate(5);
+    return view('web/attraction-select',array(
+        "attractions" => $attractions,
+    ));
 });
 
-Route::get('/home', function () {
-    $banners = BannerOrbit::orderBy('sequence', 'ASC')->get();
-    return view('web/home',array(
-				"banners" => $banners
-			));
-});
+Route::get('/attraction/{id}',array("as" => "attraction" ,"uses" => "WebController@attraction"));
 
-Route::get('/attraction-category', function () {
-    return view('web/attraction-category');
-});
+Route::get('/transportation',array("as" => "transportation" ,"uses" => "WebController@transportation"));
 
-Route::get('/transportation', function () {
-    return view('web/transportation');
-});
+Route::get('/gallery',array("as" => "gallery" ,"uses" => "WebController@gallery"));
 
-Route::get('/gallery', function () {
-    return view('web/gallery');
-});
+Route::get('/aboutus',array("as" => "aboutus" ,"uses" => "WebController@aboutus"));
 
-Route::get('/aboutus', function () {
-    return view('web/aboutUs');
-});
+Route::get('/faq', array("as" => "WebController@faq"));
 
-Route::get('/faq', function () {
-    return view('web/faq');
-});
+Route::get('/useful-info', array("as" => "aboutus", "uses" => "WebController@aboutus"));
 
-Route::get('/useful-info', function () {
-    return view('web/useful-info');
-});
-
-Route::get('/partners', function () {
-    return view('web/partners');
-});
+Route::get('/partners', array("as" => "partners", "uses" => "WebController@partners"));
 
 Route::get("accommodation", array("as" => "accommodation", "uses" => "WebController@accommodation"));
 Route::get("accommodation/{id}", array("as" => "accommodation-post", "uses" => "WebController@accommodationPost"));
 Route::get("accommodationJson", array("as" => "accommodationJson", "uses" => "WebController@accommodationJson"));
 
-Route::get('/accommodation2', function () {
-    return view('web/accommodation2');
-});
+Route::get("attractionJson", array("as" => "attractionJson", "uses" => "WebController@attractionJson"));
 
-Route::get('/trips', function () {
-	return view('web/trips');
-});
+Route::get('/trips',array("as" => "trips" , "uses" => "WebController@trips"));
 
-Route::get('/trip', function () {
-	return view('web/trip');
-});
-Route::get('/one-day-trip', function () {
-	return view('web/one-day-trip');
-});
+Route::get('/trip',array("as" => "trip" , "uses" => "WebController@trip"));
+
+Route::get('/one-day-trip',array("as" => "oneDayTrip" , "uses" => "WebController@oneDayTrip"));
 
 Route::group(array('middleware' => 'auth.staff.already', 'prefix' => 'admin'), function(){
 	Route::get("login", array("as" => "admin-login", "uses" => "AdminAuthController@login"));

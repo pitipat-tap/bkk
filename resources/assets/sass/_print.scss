@@ -5,6 +5,9 @@
     a[href]:after {
         content: "";
     }
+    button {
+        display:none !important;
+    }
     .category-description {
         position:relative !important;
     }

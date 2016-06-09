@@ -17,13 +17,13 @@
 
 <section>
 	<div class="banner-containers show-for-large">
-		{!! HTML::image("http://placehold.it/1500x500","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
+		{!! HTML::image("uploads/normal/banner/attraction_large.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
 	</div>
 	<div class="banner-containers show-for-medium-only">
-		{!! HTML::image("http://placehold.it/400x300","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
+		{!! HTML::image("uploads/normal/banner/attraction_medium.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
 	</div>
 	<div class="banner-containers show-for-small-only">
-		{!! HTML::image("http://placehold.it/300x400","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
+		{!! HTML::image("uploads/normal/banner/attraction_small.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
 	</div>
 </section>
 
@@ -35,12 +35,12 @@
        <span lang="ch">Attraction</span>
     </div>
 	<div id="category-container-1" class="category-container">
-		<a href="#">
+		<a href="attraction-select/arts_and_culture">
 			<div class="category-picture show-for-large">
-				{!! HTML::image("http://placehold.it/1248x412","bkk-logo",array("class"=>"")) !!}
+				{!! HTML::image("uploads/normal/attraction_category/art_large.jpg","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="category-picture hide-for-large">
-				{!! HTML::image("http://placehold.it/400x300","bkk-logo",array("class"=>"")) !!}
+				{!! HTML::image("uploads/normal/attraction_category/art_medium.jpg","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="category-description">
 				<h3 lang="th">ARTS AND CULTURE</h3>
@@ -69,12 +69,12 @@
 	</div>
 	<div>
 		<div id="category-container-2" class="category-container">
-			<a href="#">
+			<a href="attraction-select/food_and_drink">
 				<div class="category-picture show-for-large">
-					{!! HTML::image("http://placehold.it/620x412","bkk-logo",array("class"=>"")) !!}
+					{!! HTML::image("uploads/normal/attraction_category/food_large.jpg","bkk-logo",array("class"=>"")) !!}
 				</div>
 				<div class="category-picture hide-for-large">
-					{!! HTML::image("http://placehold.it/300x400","bkk-logo",array("class"=>"")) !!}
+					{!! HTML::image("uploads/normal/attraction_category/food_large.jpg","bkk-logo",array("class"=>"")) !!}
 				</div>
 				<div class="category-description">
 					<h3 lang="th">FOOD AND DRINK</h3>
@@ -85,12 +85,12 @@
 			</a>
 		</div>
 		<div id="category-container-3" class="category-container">
-			<a href="">
+			<a href="attraction-select/parks_and_gardens">
 				<div class="category-picture show-for-large">
-					{!! HTML::image("http://placehold.it/620x412","bkk-logo",array("class"=>"")) !!}
+					{!! HTML::image("uploads/normal/attraction_category/park_large.jpg","bkk-logo",array("class"=>"")) !!}
 				</div>
 				<div class="category-picture hide-for-large">
-					{!! HTML::image("http://placehold.it/300x400","bkk-logo",array("class"=>"")) !!}
+					{!! HTML::image("uploads/normal/attraction_category/park_large.jpg","bkk-logo",array("class"=>"")) !!}
 				</div>
 				<div class="category-description">
 					<h3 lang="th">PARKS AND GARDENS</h3>
@@ -102,15 +102,19 @@
 		</div>
 	</div>
 	<div id="category-container-4" class="category-container">
-		<a href="#">
+		<a href="attraction-select/events">
 			<div class="category-picture show-for-large">
-				{!! HTML::image("http://placehold.it/1248x412","bkk-logo",array("class"=>"")) !!}
+				{!! HTML::image("uploads/normal/attraction_category/event_large.jpg","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="category-picture hide-for-large">
-				{!! HTML::image("http://placehold.it/400x300","bkk-logo",array("class"=>"")) !!}
+				{!! HTML::image("uploads/normal/attraction_category/event_large.jpg","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="category-description">
-				<h3>Events</h3>
+                <h3 lang="th">Events</h3>
+                <h3 lang="en">Events</h3>
+                <h3 lang="jp">Events</h3>
+                <h3 lang="ch">Events</h3>
+
 				<br class="show-for-large">
 				<h5 lang="th" class="show-for-large">
 					Vestibulum at sagittis risus. Donec iaculis enim ac faucibus pretium. Suspendisse molestie tellus ac ipsum 
@@ -132,12 +136,12 @@
 		</a>
 	</div>
 	<div id="category-container-5" class="category-container">
-		<a href="#">
+		<a href="attraction-select/shopping">
 			<div class="category-picture show-for-large">
-				{!! HTML::image("http://placehold.it/1248x412","bkk-logo",array("class"=>"")) !!}
+				{!! HTML::image("uploads/normal/attraction_category/shopping_large.jpg","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="category-picture hide-for-large">
-				{!! HTML::image("http://placehold.it/400x300","bkk-logo",array("class"=>"")) !!}
+				{!! HTML::image("uploads/normal/attraction_category/shopping_large.jpg","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="category-description">
 				<h3 lang="th">Shopping</h3>

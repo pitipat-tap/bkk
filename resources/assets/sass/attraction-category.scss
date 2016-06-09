@@ -121,6 +121,18 @@
 		margin-bottom: 1em;
     }
 	
+    img{
+    	@include breakpoint(medium down) {
+    		opacity: 0.8;
+    	}
+    	@include breakpoint(large) {
+    		opacity: 0.5;
+    	}
+    }
+    h3, h5{
+    	color: gray;
+    }
+
 	.category-picture{
 		position: relative;
 		top: 0;
@@ -132,8 +144,24 @@
 	.category-description{
 		position: absolute;
 		padding: 1em;
-		background-color: rgba(255,255,255,0.3);
 		color: gray;
 		overflow: auto;
+		@include breakpoint(medium down) {
+    		background-color: rgba(255,255,255,0.7);
+    	}
+    	@include breakpoint(large) {
+    		background-color: rgba(255,255,255,0.3);
+    	}
+	}
+}
+.category-container:hover, .category-container:active, .category-container:focus{
+	img{
+		opacity: 0.9;
+	}
+	h3, h5{
+		color: dimgray;
+	}
+	.category-description{
+		background-color: rgba(255,255,255,0.75);
 	}
 }

@@ -17,13 +17,13 @@
 
 <section>
 	<div class="banner-containers show-for-large">
-		{!! HTML::image("http://placehold.it/1500x500","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
+		{!! HTML::image("uploads/normal/banner/trip_large.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
 	</div>
 	<div class="banner-containers show-for-medium-only">
-		{!! HTML::image("http://placehold.it/400x300","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
+		{!! HTML::image("uploads/normal/banner/trip_medium.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
 	</div>
 	<div class="banner-containers show-for-small-only">
-		{!! HTML::image("http://placehold.it/300x400","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
+		{!! HTML::image("uploads/normal/banner/trip_small.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
 	</div>
 </section>
 
