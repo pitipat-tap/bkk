@@ -7,12 +7,12 @@
             {!! Html::image("images/logo/bkk-logo.png","bkk-logo",array("class"=>"bkk-logo")) !!}
         </li>
         <li class="hide-for-print">
-          <a class="logo" href="home">
+          <a class="logo" href="{!! URL::route('home') !!}">
             {!! Html::image("images/logo/bkk-logo.png","bkk-logo",array("class"=>"bkk-logo")) !!}
           </a>
         </li>
         <li class="hide-for-print">
-            <a href="attraction-category">
+            <a href="{!! URL::route('attractionCategory') !!}">
                <span lang="th">Attraction</span>
                <span lang="en">Attraction</span>
                <span lang="jp">Attraction</span>
@@ -20,7 +20,7 @@
             </a>
         </li>
         <li class="hide-for-print">
-            <a href="accommodation">
+            <a href="{!! URL::route('accommodation') !!}">
                 <span lang="th">Accommodation</span>
                 <span lang="en">Accommodation</span>
                 <span lang="jp">Accommodation</span>
@@ -28,7 +28,7 @@
             </a>
         </li>
         <li class="hide-for-print">
-            <a href="transportation">
+            <a href="{!! URL::route('transportation') !!}">
                 <span lang="th">Transportation</span>
                 <span lang="en">Transportation</span>
                 <span lang="jp">Transportation</span>
@@ -36,7 +36,7 @@
             </a>
         </li>
         <li class="hide-for-print">
-            <a href="gallery">
+            <a href="{!! URL::route('gallery') !!}">
                 <span lang="th">Gallery</span>
                 <span lang="en">Gallery</span>
                 <span lang="jp">Gallery</span>
@@ -44,7 +44,7 @@
             </a>
         </li>
         <li class="hide-for-print">
-            <a href="trips">
+            <a href="{!! URL::route('trips') !!}">
                 <span lang="th">Trips</span>
                 <span lang="en">Trips</span>
                 <span lang="jp">Trips</span>

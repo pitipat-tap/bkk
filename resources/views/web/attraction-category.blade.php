@@ -35,7 +35,7 @@
        <span lang="ch">Attraction</span>
     </div>
 	<div id="category-container-1" class="category-container">
-		<a href="#">
+		<a href="attraction-select/arts_and_culture">
 			<div class="category-picture show-for-large">
 				{!! HTML::image("http://placehold.it/1248x412","bkk-logo",array("class"=>"")) !!}
 			</div>
@@ -69,7 +69,7 @@
 	</div>
 	<div>
 		<div id="category-container-2" class="category-container">
-			<a href="#">
+			<a href="attraction-select/food_and_drink">
 				<div class="category-picture show-for-large">
 					{!! HTML::image("http://placehold.it/620x412","bkk-logo",array("class"=>"")) !!}
 				</div>
@@ -85,7 +85,7 @@
 			</a>
 		</div>
 		<div id="category-container-3" class="category-container">
-			<a href="">
+			<a href="attraction-select/parks_and_gardens">
 				<div class="category-picture show-for-large">
 					{!! HTML::image("http://placehold.it/620x412","bkk-logo",array("class"=>"")) !!}
 				</div>
@@ -102,7 +102,7 @@
 		</div>
 	</div>
 	<div id="category-container-4" class="category-container">
-		<a href="#">
+		<a href="attraction-select/events">
 			<div class="category-picture show-for-large">
 				{!! HTML::image("http://placehold.it/1248x412","bkk-logo",array("class"=>"")) !!}
 			</div>
@@ -110,7 +110,11 @@
 				{!! HTML::image("http://placehold.it/400x300","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="category-description">
-				<h3>Events</h3>
+                <h3 lang="th">Events</h3>
+                <h3 lang="en">Events</h3>
+                <h3 lang="jp">Events</h3>
+                <h3 lang="ch">Events</h3>
+
 				<br class="show-for-large">
 				<h5 lang="th" class="show-for-large">
 					Vestibulum at sagittis risus. Donec iaculis enim ac faucibus pretium. Suspendisse molestie tellus ac ipsum 
@@ -132,7 +136,7 @@
 		</a>
 	</div>
 	<div id="category-container-5" class="category-container">
-		<a href="#">
+		<a href="attraction-select/shopping">
 			<div class="category-picture show-for-large">
 				{!! HTML::image("http://placehold.it/1248x412","bkk-logo",array("class"=>"")) !!}
 			</div>

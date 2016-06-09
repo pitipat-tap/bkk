@@ -64,25 +64,20 @@
                 <p lang="ch">
                     {!! $attraction->description_china !!}
                 </p>
-                <button class="green-btn mg-t-1">
-                    <span lang="th">Read More...</span>
-                    <span lang="en">Read More...</span>
-                    <span lang="jp">Read More...</span>
-                    <span lang="ch">Read More...</span>
-                </button>
+                <a href="../attraction/{!! $attraction->id !!}">
+                    <button class="green-btn mg-t-1">
+                        <span lang="th">Read More...</span>
+                        <span lang="en">Read More...</span>
+                        <span lang="jp">Read More...</span>
+                        <span lang="ch">Read More...</span>
+                    </button>
+                </a>
             </div>
             <hr class="pd-t-1">
         </div>
 @endforeach
 
-        <div align="center">
-            <button class="green-btn mg-t-1 mg-b-2 medium-centered">
-                <span lang="th"> Load More...</span>
-                <span lang="en"> Load More...</span>
-                <span lang="jp"> Load More...</span>
-                <span lang="ch"> Load More...</span>
-            </button>
-        </div>
+        <div class="pagination">{!! $attractions->links() !!}</div>
     </div>
 </section>
 
