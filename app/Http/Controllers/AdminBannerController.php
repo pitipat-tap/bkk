@@ -20,11 +20,20 @@ class AdminBannerController extends Controller {
 	}
 
 	public function newBanner(){
+		if (Auth::user()->role != "admin") {
+			return Redirect::route("admin-banners");
+		}
+
 		return view("admin.banner-new");
 	}
 
 	public function createBanner()
 	{
+		// Check if not admin role
+		if (Auth::user()->role != "admin") {
+			return Redirect::route("admin-banners");
+		}
+
 		$validator = Validator::make(Request::all(), BannerOrbit::$save_rules, BannerOrbit::$custom_messages);
 		
 		if ($validator->passes()) {
@@ -51,14 +60,15 @@ class AdminBannerController extends Controller {
 
 	public function editBanner($id)
 	{
+		
+		// Check if not admin role
+		if (Auth::user()->role != "admin") {
+			return Redirect::route("admin-banners");
+		}
+
 		// Check is exist
 		$banner = BannerOrbit::find($id);
 		if (!$banner) return Redirect::route("admin-banners");
-		
-		// Check if not admin role, and not author's item
-		if (Auth::user()->role != "admin" || Auth::user()->id != $banner->author->id) {
-			return Redirect::route("admin-banners");
-		}
 		
 		return view("admin.banner-edit", 
 		    array(
@@ -73,9 +83,9 @@ class AdminBannerController extends Controller {
 		$banner = BannerOrbit::find($id);
 		if (!$banner) return Redirect::route("admin-attractions")->with('error', 'Cannot save data');
 		
-		// Check if not admin role, and not author's item
-		if (Auth::user()->role != "admin" && Auth::user()->id != $banner->author->id) {
-			return Redirect::route("admin-banners")->with('error', 'Cannot save data');
+		// Check if not admin role
+		if (Auth::user()->role != "admin") {
+			return Redirect::route("admin-banners");
 		}
 
 		$validator = Validator::make(Request::all(), BannerOrbit::$save_rules, BannerOrbit::$custom_messages);
@@ -101,6 +111,11 @@ class AdminBannerController extends Controller {
 
 	public function moveUpBanner($id){
 
+		// Check if not admin role
+		if (Auth::user()->role != "admin") {
+			return Redirect::route("admin-banners");
+		}
+
 		$banner1 = BannerOrbit::find($id);
 		$banner2 = BannerOrbit::where('sequence', '<' ,$banner1->sequence)->orderBy('sequence', 'DESC')->first();
 		if (!$banner1 || !$banner2)
@@ -116,6 +131,11 @@ class AdminBannerController extends Controller {
 	}
 
 	public function moveDownBanner($id){
+
+		// Check if not admin role
+		if (Auth::user()->role != "admin") {
+			return Redirect::route("admin-banners");
+		}
 
 		$banner1 = BannerOrbit::find($id);
 		$banner2 = BannerOrbit::where('sequence', '>' ,$banner1->sequence)->orderBy('sequence', 'ASC')->first();
@@ -133,14 +153,14 @@ class AdminBannerController extends Controller {
 
 	public function deleteBanner($id)
 	{
+		// Check if not admin role
+		if (Auth::user()->role != "admin") {
+			return Redirect::route("admin-banners");
+		}
+
 		// Check is exist
 		$banner = BannerOrbit::find($id);
 		if (!$banner) return Redirect::back()->with('error', 'Cannot delete data');
-		
-		// Check if not admin role, and not author's item
-		if (Auth::user()->role != "admin" || Auth::user()->id != $banner->author->id) {
-			return Redirect::back()->with('error', 'Cannot delete data');
-		}
 
 		$banners = BannerOrbit::where('sequence', '>' ,$banner->sequence)->get();
 		foreach ($banners as  $temp) {

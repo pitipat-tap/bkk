@@ -192,7 +192,7 @@ Edit Attractions |
 										{!! Form::text("opening_hours", null) !!}
 									</div>
 									<div class="small-12 large-6 columns" >
-										{!! Form::label("admission_free", "Admission Free") !!}
+										{!! Form::label("admission_free", "Admission Fee") !!}
 										{!! Form::text("admission_free", null) !!}
 									</div>
 									<div class="small-12 large-6 columns" >

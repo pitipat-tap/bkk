@@ -48,7 +48,7 @@ use Illuminate\Support\Facades\Input;
             <tr>
             	<th class="show-for-large-up" style="width: 5%">Index</th>
             	<th style="width: 40%">Image</th>
-                <th class="show-for-large-up"style="width: 30%">Name</th>
+                <th class="show-for-large-up" style="width: 30%">Name</th>
                 <th style="width: 25%">Option</th>
             </tr>
         </thead>

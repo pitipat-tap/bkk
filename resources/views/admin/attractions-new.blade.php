@@ -168,7 +168,7 @@ Add New Work Post |
 									<h6>China</h6>
 									<div class="small-12 large-6 columns" >
 										{!! Form::label("title_china", "Title") !!}
-												{!! Form::text("title_china", null) !!}
+										{!! Form::text("title_china", null) !!}
 									</div>
 									<div class="small-12 large-6 columns" >
 										{!! Form::label("opening_day_china", "Opening day") !!}

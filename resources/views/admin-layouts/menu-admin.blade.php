@@ -72,11 +72,6 @@
                 <span class="icon fa fa-flag"></span> Attractions
             </a>
         </li>
-         <li>
-            <a href="{!! URL::route('admin-attractions') !!}"  class="{!! isAdminNavLinkActive($link, 'workposts') !!}">
-                <span class="icon fa fa-cutlery "></span> Work post
-            </a>
-        </li>
         <li>
             <a href="{!! URL::route('admin-filemanager') !!}" class="{!! isAdminNavLinkActive($link, 'filemanager') !!}">
                 <span class="icon fa fa-folder"></span> File manager

@@ -13,10 +13,8 @@ class AdminAttractionsController extends Controller {
 	
 	// ----------------------------------------Image Posts----------------------------------------
 	public function attractions(){
-		// TODO search
-
+		
 		$q = Request::input("q");
-		$tag = Request::input("tag");
 
 		$attractions = Attractions::where(function ($query) {
 				if(trim(Request::input("attraction")) == 'true')
@@ -25,6 +23,8 @@ class AdminAttractionsController extends Controller {
 					$query->orWhere('is_accommodation', 1);
 				if(trim(Request::input("event")) == 'true')
 					$query->orWhere('is_event', 1);
+				if(trim(Request::input("author")))
+					$query->orWhere('author_id', trim(Request::input("author")));
 			});
 		if($q != null){
 			$attractions = $attractions->where(function ($query) {

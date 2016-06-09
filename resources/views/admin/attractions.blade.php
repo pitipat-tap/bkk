@@ -75,9 +75,7 @@ use Illuminate\Support\Facades\Input;
 	@include("admin.alert-box")
 	
 	@if (Input::get("q") != null || 
-		Input::get("status") != null || 
-		Input::get("author") != null || 
-		Input::get("tag") != null
+		Input::get("author") != null
 		)
 		<div class="hide-for-large-up">
 			@if (Input::get("status") != null)
@@ -86,10 +84,7 @@ use Illuminate\Support\Facades\Input;
 			@if (Input::get("q") != null)
 				<p>Search : "{!! Input::get("q") !!}"</p>
 			@endif
-			
-			@if (Input::get("author") != null)
-				<p>Author : {!! Input::get("author") !!}</p>
-			@elseif (Input::get("tag") != null)
+			@if (Input::get("tag") != null)
 				<p>Tag : {!! Input::get("tag") !!}</p>
 			@endif
 			
@@ -110,15 +105,11 @@ use Illuminate\Support\Facades\Input;
 
 			
 			@if (Input::get("q") != null || 
-				Input::get("status") != null || 
-				Input::get("author") != null || 
-				Input::get("tag") != null
+				 Input::get("author") != null
 				)
 				
 				@if (Input::get("author") != null)
-					<p>Author : {!! Input::get("author") !!}</p>
-				@elseif (Input::get("tag") != null)
-					<p>Tag : {!! Input::get("tag") !!}</p>
+					<p>Author </p>
 				@endif
 				
 				<p>({!! Html::linkRoute("admin-attractions", "View all data") !!})</p>

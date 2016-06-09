@@ -137,8 +137,8 @@ use Illuminate\Support\Facades\Input;
 	                        <br /><br />
 	                        <span>
 	                        	<b>Blog posts</b> : 
-	                        	{!! Html::linkRoute("admin-blog-posts", $user->blogPosts()->count()." blog posts", 
-	                        	array("user_id" => $user->id)) !!}
+	                        	{!! Html::linkRoute("admin-attractions", $user->attraction()->count()." attraction posts", 
+	                        	array("author" => $user->id)) !!}
 	                        	
 	                        	{!! Html::linkRoute("admin-image-posts", $user->imagePosts()->count()." image posts", 
 	                        	array("user_id" => $user->id)) !!}
@@ -179,8 +179,8 @@ use Illuminate\Support\Facades\Input;
 	                    <td class="show-for-large-up">{!! $user->email !!}</td>
 	                    <td class="show-for-medium-up">{!! $user->role !!}</td>
 	                    <td class="show-for-medium-up">
-	                    	{!! Html::linkRoute("admin-blog-posts", $user->blogPosts()->count()." blog posts", 
-	                    		array("user_id" => $user->id)
+	                    	{!! Html::linkRoute("admin-attractions", $user->attraction()->count()." attraction posts", 
+	                    		array("author" => $user->id)
 	                    	) !!}
 	                    	<br>
 	                    	{!! Html::linkRoute("admin-image-posts", $user->imagePosts()->count()." image posts", 
