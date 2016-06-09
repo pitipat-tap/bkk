@@ -11,6 +11,7 @@
 |
 */
 use App\Models\BannerOrbit;
+use App\Models\Attractions;
 Route::get('/', function () {
 	$banners = BannerOrbit::orderBy('sequence', 'ASC')->get();
     return view('web/home',array(
@@ -26,15 +27,35 @@ Route::get('/home', function () {
 });
 
 Route::get('/attraction-category', function () {
-    return view('web/attraction-category');
+    $artAndCulture = Attractions::where("category","arts_and_culture")->first();
+    $foodAndDrink= Attractions::where("category","food_and_drink")->first();
+    $parkAndGardens= Attractions::where("category","parks_and_gardens")->first();
+    $events= Attractions::where("category","events")->first();
+    $shopping= Attractions::where("category","shopping")->first();
+    return view('web/attraction-category',array(
+                "artAndCulture" => $artAndCulture,
+                "foodAndDrink" => $foodAndDrink,
+                "parkAndGardens" => $parkAndGardens,
+                "events" => $events,
+                "shopping" => $shopping,
+    ));
 });
 
-Route::get('/attraction-select', function () {
-    return view('web/attraction-select');
+Route::get('/attraction-select/{category}', function ($category) {
+    $attractions = Attractions::where("category",$category)->paginate(5);
+    return view('web/attraction-select',array(
+        "attractions" => $attractions,
+    ));
 });
 
-Route::get('/attraction', function () {
-    return view('web/attraction');
+Route::get('/attraction/{id}', function ($id) {
+    $attraction = Attractions::find($id);
+    if(!$attraction){
+        return redirect("/attraction-category");
+    }
+    return view('web/attraction',array(
+        "attraction" => $attraction,
+    ));
 });
 
 Route::get('/transportation', function () {
@@ -64,6 +85,8 @@ Route::get('/partners', function () {
 Route::get("accommodation", array("as" => "accommodation", "uses" => "WebController@accommodation"));
 Route::get("accommodation/{id}", array("as" => "accommodation-post", "uses" => "WebController@accommodationPost"));
 Route::get("accommodationJson", array("as" => "accommodationJson", "uses" => "WebController@accommodationJson"));
+
+Route::get("attractionJson", array("as" => "attractionJson", "uses" => "WebController@attractionJson"));
 
 Route::get('/accommodation2', function () {
     return view('web/accommodation2');

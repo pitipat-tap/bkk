@@ -36,4 +36,11 @@ class WebController extends Controller {
             paginate(5);
         return Response::json($arrayName = array('status' => 200, 'posts'=>$posts->toArray()));
     }
+
+    public function attractionJson() {
+        $posts = Attractions::where("is_attraction", "1")->
+            orderBy('created_at', 'DESC')->
+            paginate(5);
+        return Response::json($arrayName = array('status' => 200, 'posts'=>$posts->toArray()));
+    }
 }

@@ -16,6 +16,7 @@ $(document).ready(function() {
       var selectedLanguage = $(this).attr('data-lan');
       document.body.className = selectedLanguage;
       localStorage.setItem('language', selectedLanguage);
+      $('body').addClass('loaded');
   });
 
 	// mobile menu
