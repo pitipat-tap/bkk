@@ -33,26 +33,38 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="http://www.atta.or.th/" target="_blank"><img class="partner-thumbnail" src="images/logo/footer/atta.png" alt=""></a>
+                                <a href="http://www.atta.or.th/" target="_blank">
+                                    {!! Html::image("images/logo/footer/atta.png","",array("class"=>"partner-thumbnail")) !!}
+                                </a>
                             </li>
                             <li>
-                                <a href="http://www.tourismthailand.org/" target="_blank"><img class="partner-thumbnail" src="images/logo/footer/amazing-thailand.png" alt=""></a>
+                                <a href="http://www.tourismthailand.org/" target="_blank">
+                                    {!! Html::image("images/logo/footer/amazing-thailand.png","",array("class"=>"partner-thumbnail")) !!}
+                                </a>
                             </li>
                             <li>
-                                <a href="http://lowermekong.org/" target="_blank"><img class="partner-thumbnail" src="images/logo/footer/lmi.png" alt=""></a>
+                                <a href="http://lowermekong.org/" target="_blank">
+                                    {!! Html::image("images/logo/footer/lmi.png","",array("class"=>"partner-thumbnail")) !!}
+                                </a>
                             </li>
                         </ul>
                     </li>
                     <li class="orbit-slide">
                         <ul class="thumbnail-banner">
                             <li>
-                                <a href="http://www.bangkok.go.th/" target="_blank"><img class="partner-thumbnail" src="images/logo/footer/bangkok-metro.png" alt=""></a>
+                                <a href="http://www.bangkok.go.th/" target="_blank">
+                                    {!! Html::image("images/logo/footer/bangkok-metro.png","",array("class"=>"partner-thumbnail")) !!}
+                                    </a>
                             </li>
                             <li>
-                                <a href="http://www.touristpolice.go.th/" target="_blank"><img class="partner-thumbnail" src="images/logo/footer/police.png" alt=""></a>
+                                <a href="http://www.touristpolice.go.th/" target="_blank">
+                                    {!! Html::image("images/logo/footer/police.png","",array("class"=>"partner-thumbnail")) !!}
+                                </a>
                             </li>
                             <li>
-                                <a href="http://airportthai.co.th/" target="_blank"><img class="partner-thumbnail" src="images/logo/footer/aot.png" alt=""></a>
+                                <a href="http://airportthai.co.th/" target="_blank">
+                                    {!! Html::image("images/logo/footer/aot.png","",array("class"=>"partner-thumbnail")) !!}
+                                </a>
                             </li>
                         </ul>
                     </li>
