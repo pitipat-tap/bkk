@@ -41,6 +41,11 @@
     text-align: center;
     font-size: 3rem;
 }
+#trips-banner-page-title{
+    @include breakpoint(small only) {
+        font-size: 2.5em;
+    }
+}
 .attraction-accommodation-banner{
     height: auto;
     min-height: 300px;

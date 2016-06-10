@@ -26,9 +26,9 @@ Route::get('/gallery',array("as" => "gallery" ,"uses" => "WebController@gallery"
 
 Route::get('/aboutus',array("as" => "aboutus" ,"uses" => "WebController@aboutus"));
 
-Route::get('/faq', array("as" => "WebController@faq"));
+Route::get('/faq', array("as" => "faq" ,"uses" => "WebController@faq"));
 
-Route::get('/useful-info', array("as" => "aboutus", "uses" => "WebController@aboutus"));
+Route::get('/useful-info', array("as" => "useful-info", "uses" => "WebController@usefulInfo"));
 
 Route::get('/partners', array("as" => "partners", "uses" => "WebController@partners"));
 

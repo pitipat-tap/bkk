@@ -135,10 +135,10 @@
             </div>
             <div id="footer-link">
                 <ul class="vertical large-horizontal menu">
-                    <li><a href="aboutus">About Us</a></li>
-                    <li><a href="partners">Our partners</a></li>
-                    <li><a href="faq">FAQ</a></li>
-                    <li><a href="useful-info">Useful Info</a></li>
+                    <li><a href="{!! URL::route('aboutus') !!}">About Us</a></li>
+                    <li><a href="{!! URL::route('partners') !!}">Our partners</a></li>
+                    <li><a href="{!! URL::route('faq') !!}">FAQ</a></li>
+                    <li><a href="{!! URL::route('useful-info') !!}">Useful Info</a></li>
                     <li><a href="https://www.youtube.com/user/bangkoktourism" target="_blank">Video</a></li>
                     <li><a href="#">Sitemap</a></li>
                 </ul>

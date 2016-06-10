@@ -47,7 +47,7 @@
 
     .orbit-image{
         @include breakpoint(small only) {
-            height: 75vh;
+            height: 85vh;
             width: auto;
             max-width: none;
             overflow-x: hidden;

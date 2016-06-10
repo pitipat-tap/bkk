@@ -28,7 +28,7 @@
 </section>
 
 <div class="body-section">
-    <div class="banner-page-title mg-b-1">
+    <div id="trips-banner-page-title" class="banner-page-title mg-b-1">
        <span lang="th">Recommendation Trips</span>
        <span lang="en">Recommendation Trips</span>
        <span lang="jp">Recommendation Trips</span>
