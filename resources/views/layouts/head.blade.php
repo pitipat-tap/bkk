@@ -42,7 +42,6 @@
         {!! HTML::script("js/angular.min.js") !!}
         {!! HTML::script("js/isMobile.min.js") !!}
         {!! HTML::script("js/verge.min.js") !!}
-	    {!! Html::script("js/app.js") !!}     
         {!! HTML::script("js/main.js") !!}
        
 
@@ -59,7 +58,7 @@
 
         </script>
     </head>
-    <body id="body" class="th" draggable="false" ng-app="bkkApp">  
+    <body id="body" class="th" draggable="false">  
         @yield("body")
 
         <div id="loader-wrapper">
