@@ -13,46 +13,51 @@
         </li>
         <li class="hide-for-print">
             <a href="{!! URL::route('attractionCategory') !!}">
-               <span lang="th">Attraction</span>
+               <span lang="th">เสน่ห์กรุงเทพฯ</span>
                <span lang="en">Attraction</span>
-               <span lang="jp">Attraction</span>
-               <span lang="ch">Attraction</span>
+               <span lang="jp">アトラクション</span>
+               <span lang="ch">抵力</span>
             </a>
         </li>
         <li class="hide-for-print">
             <a href="{!! URL::route('accommodation') !!}">
-                <span lang="th">Accommodation</span>
+                <span lang="th">ที่พัก</span>
                 <span lang="en">Accommodation</span>
-                <span lang="jp">Accommodation</span>
-                <span lang="ch">Accommodation</span>
+                <span lang="jp">アコモデーション</span>
+                <span lang="ch">住宿的</span>
             </a>
         </li>
         <li class="hide-for-print">
             <a href="{!! URL::route('transportation') !!}">
-                <span lang="th">Transportation</span>
+                <span lang="th">การคมนาคม</span>
                 <span lang="en">Transportation</span>
-                <span lang="jp">Transportation</span>
-                <span lang="ch">Transportation</span>
+                <span lang="jp">交通手段</span>
+                <span lang="ch">交通運輸</span>
             </a>
         </li>
         <li class="hide-for-print">
             <a href="{!! URL::route('gallery') !!}">
-                <span lang="th">Gallery</span>
+                <span lang="th">แกลเลอรี</span>
                 <span lang="en">Gallery</span>
-                <span lang="jp">Gallery</span>
-                <span lang="ch">Gallery</span>
+                <span lang="jp">ギャラリー</span>
+                <span lang="ch">畫廊</span>
             </a>
         </li>
         <li class="hide-for-print">
             <a href="{!! URL::route('trips') !!}">
-                <span lang="th">Trips</span>
+                <span lang="th">แนะนำการท่องเที่ยว</span>
                 <span lang="en">Trips</span>
-                <span lang="jp">Trips</span>
-                <span lang="ch">Trips</span>
+                <span lang="jp">トリップ</span>
+                <span lang="ch">跳閘</span>
             </a>
         </li>
         <li class="hide-for-print">
-            <a href="#">language</a>
+            <a href="#">
+                <span lang="th">{!! Html::image("images/flag/Thailand.png","Thai",array("class"=>"lang-logo")) !!} ไทย</span>
+                <span lang="en">{!! Html::image("images/flag/uk.png","Thai",array("class"=>"lang-logo")) !!} English</span>
+                <span lang="jp">{!! Html::image("images/flag/japan.png","Thai",array("class"=>"lang-logo")) !!} 日本</span>
+                <span lang="ch">{!! Html::image("images/flag/China.png","Thai",array("class"=>"lang-logo")) !!} 中国</span>
+            </a>
              <ul class="menu">
                   <li>
                     <a href="#" class="change-language" data-lan="th">
@@ -63,19 +68,19 @@
                   <li>
                     <a href="#" class="change-language" data-lan="en">
                     <span>{!! Html::image("images/flag/uk.png","Thai",array("class"=>"lang-logo")) !!}</span>
-                        ไทย
+                        English
                     </a>
                   </li>
                   <li>
                     <a href="#" class="change-language" data-lan="jp">
                     <span>{!! Html::image("images/flag/japan.png","Thai",array("class"=>"lang-logo")) !!}</span>
-                        ไทย
+                        日本
                     </a>
                   </li>
                   <li>
                     <a href="#" class="change-language" data-lan="ch">
                     <span>{!! Html::image("images/flag/China.png","Thai",array("class"=>"lang-logo")) !!}</span>
-                        ไทย
+                        中国
                     </a>
                   </li>
             </ul>
@@ -117,53 +122,58 @@
                 <ul id="menu-mobile" class="vertical menu">
                     <li id="attraction">
                         <a href="attraction-category">
-                           <span lang="th">Attraction</span>
+                           <span lang="th">เสน่ห์กรุงเทพฯ</span>
                            <span lang="en">Attraction</span>
-                           <span lang="jp">Attraction</span>
-                           <span lang="ch">Attraction</span>
+                           <span lang="jp">アトラクション</span>
+                           <span lang="ch">抵力</span>
                         </a>
                     </li>
                     <li id="accommodation">
                         <a href="accommodation">
-                            <span lang="th">Accommodation</span>
+                            <span lang="th">ที่พัก</span>
                             <span lang="en">Accommodation</span>
-                            <span lang="jp">Accommodation</span>
-                            <span lang="ch">Accommodation</span>
+                            <span lang="jp">アコモデーション</span>
+                            <span lang="ch">住宿的</span>
                         </a>
                     </li>
                     <li id="transportation">
                         <a href="transportation">
-                            <span lang="th">Transportation</span>
+                            <span lang="th">การคมนาคม</span>
                             <span lang="en">Transportation</span>
-                            <span lang="jp">Transportation</span>
-                            <span lang="ch">Transportation</span>
+                            <span lang="jp">交通手段</span>
+                            <span lang="ch">交通運輸</span>
                         </a>
                     </li>
                     <li id="gallery">
                         <a href="gallery">
-                            <span lang="th">Gallery</span>
+                            <span lang="th">แกลเลอรี</span>
                             <span lang="en">Gallery</span>
-                            <span lang="jp">Gallery</span>
-                            <span lang="ch">Gallery</span>
+                            <span lang="jp">ギャラリー</span>
+                            <span lang="ch">畫廊</span>
                         </a>
                     </li>
                     <li id="trips">
                         <a href="trips">
-                            <span lang="th">Trips</span>
+                            <span lang="th">แนะนำการท่องเที่ยว</span>
                             <span lang="en">Trips</span>
-                            <span lang="jp">Trips</span>
-                            <span lang="ch">Trips</span>
+                            <span lang="jp">トリップ</span>
+                            <span lang="ch">跳閘</span>
                         </a>
                     </li>
                 </ul>
                 <ul id="language-change-mobile" class="vertical menu" data-accordion-menu>
                   <li>
-                    <a href="#">Language</a>
+                    <a href="#">
+                        <span lang="th">{!! Html::image("images/flag/Thailand.png","Thai",array("class"=>"lang-logo")) !!} ไทย</span>
+                        <span lang="en">{!! Html::image("images/flag/uk.png","Thai",array("class"=>"lang-logo")) !!} English</span>
+                        <span lang="jp">{!! Html::image("images/flag/japan.png","Thai",array("class"=>"lang-logo")) !!} 日本</span>
+                        <span lang="ch">{!! Html::image("images/flag/China.png","Thai",array("class"=>"lang-logo")) !!} 中国</span>
+                    </a>
                     <ul class="menu vertical nested">
                       <li><a class="change-language" data-lan="th" href="#">ไทย</a></li>
-                      <li><a class="change-language" data-lan="en" href="#">ไทย</a></li>
-                      <li><a class="change-language" data-lan="jp" href="#">ไทย</a></li>
-                      <li><a class="change-language" data-lan="ch" href="#">ไทย</a></li>
+                      <li><a class="change-language" data-lan="en" href="#">English</a></li>
+                      <li><a class="change-language" data-lan="jp" href="#">日本</a></li>
+                      <li><a class="change-language" data-lan="ch" href="#">中国</a></li>
                     </ul>
                   </li>
                 </ul>

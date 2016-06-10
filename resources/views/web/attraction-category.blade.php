@@ -49,16 +49,16 @@
 				<h3 lang="ch">ARTS AND CULTURE</h3>
 				<br class="show-for-large">
 				<h5 lang="th" class="show-for-large">
-					As Thailand's capital for over 200 years, the city is a melting pot of invaluable cultural heritages, dotted with spectacle and unique historical sites tourists have always dream of!
+					View Bangkok in an exquisite ways. Antique arts and heart-warming culture that will redefine your experiences in Bangkok.
 				</h5>
 				<h5 lang="en" class="show-for-large">
-					As Thailand's capital for over 200 years, the city is a melting pot of invaluable cultural heritages, dotted with spectacle and unique historical sites tourists have always dream of!
+					View Bangkok in an exquisite ways. Antique arts and heart-warming culture that will redefine your experiences in Bangkok.
 				</h5>
 				<h5 lang="jp" class="show-for-large">
-					As Thailand's capital for over 200 years, the city is a melting pot of invaluable cultural heritages, dotted with spectacle and unique historical sites tourists have always dream of!
+					View Bangkok in an exquisite ways. Antique arts and heart-warming culture that will redefine your experiences in Bangkok.
 				</h5>
 				<h5 lang="ch" class="show-for-large">
-					As Thailand's capital for over 200 years, the city is a melting pot of invaluable cultural heritages, dotted with spectacle and unique historical sites tourists have always dream of!
+					View Bangkok in an exquisite ways. Antique arts and heart-warming culture that will redefine your experiences in Bangkok.
 				</h5>
 			</div>
 		</a>
@@ -114,20 +114,16 @@
 
 				<br class="show-for-large">
 				<h5 lang="th" class="show-for-large">
-					Vestibulum at sagittis risus. Donec iaculis enim ac faucibus pretium. Suspendisse molestie tellus ac ipsum 
-					eleifend fermentum. Curabitur consequat venenatis dui, et auctor metus semper nec.
+					Don't miss our dazzling event hosted in Bangkok. Save the date, and be ready for the upcoming event that you won't forget.
 				</h5>
 				<h5 lang="en" class="show-for-large">
-					Vestibulum at sagittis risus. Donec iaculis enim ac faucibus pretium. Suspendisse molestie tellus ac ipsum 
-					eleifend fermentum. Curabitur consequat venenatis dui, et auctor metus semper nec.
+					Don't miss our dazzling event hosted in Bangkok. Save the date, and be ready for the upcoming event that you won't forget.
 				</h5>
 				<h5 lang="jp" class="show-for-large">
-					Vestibulum at sagittis risus. Donec iaculis enim ac faucibus pretium. Suspendisse molestie tellus ac ipsum 
-					eleifend fermentum. Curabitur consequat venenatis dui, et auctor metus semper nec.
+					Don't miss our dazzling event hosted in Bangkok. Save the date, and be ready for the upcoming event that you won't forget.
 				</h5>
 				<h5 lang="ch" class="show-for-large">
-					Vestibulum at sagittis risus. Donec iaculis enim ac faucibus pretium. Suspendisse molestie tellus ac ipsum 
-					eleifend fermentum. Curabitur consequat venenatis dui, et auctor metus semper nec.
+					Don't miss our dazzling event hosted in Bangkok. Save the date, and be ready for the upcoming event that you won't forget.
 				</h5>
 			</div>
 		</a>
@@ -146,20 +142,16 @@
 				<h3 lang="jp">Shopping</h3>
 				<h3 lang="ch">Shopping</h3>
 				<h5 lang="th" class="show-for-large">
-					Vestibulum at sagittis risus. Donec iaculis enim ac faucibus pretium. Suspendisse molestie tellus ac ipsum 
-					eleifend fermentum. Curabitur consequat venenatis dui, et auctor metus semper nec.
+					Enjoy Bangkok's most recommended shopping place, or try our street foods that we're very proud of.
 				</h5>
 				<h5 lang="en" class="show-for-large">
-					Vestibulum at sagittis risus. Donec iaculis enim ac faucibus pretium. Suspendisse molestie tellus ac ipsum 
-					eleifend fermentum. Curabitur consequat venenatis dui, et auctor metus semper nec.
+					Enjoy Bangkok's most recommended shopping place, or try our street foods that we're very proud of.
 				</h5>
 				<h5 lang="jp" class="show-for-large">
-					Vestibulum at sagittis risus. Donec iaculis enim ac faucibus pretium. Suspendisse molestie tellus ac ipsum 
-					eleifend fermentum. Curabitur consequat venenatis dui, et auctor metus semper nec.
+					Enjoy Bangkok's most recommended shopping place, or try our street foods that we're very proud of.
 				</h5>
 				<h5 lang="ch" class="show-for-large">
-					Vestibulum at sagittis risus. Donec iaculis enim ac faucibus pretium. Suspendisse molestie tellus ac ipsum 
-					eleifend fermentum. Curabitur consequat venenatis dui, et auctor metus semper nec.
+					Enjoy Bangkok's most recommended shopping place, or try our street foods that we're very proud of.
 				</h5>
 			</div>
 		</a>
