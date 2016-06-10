@@ -37,7 +37,7 @@
 
 	<div class="">
 		<div class="transportation-container">
-			{!! HTML::image("http://placehold.it/1248x416","bkk-logo",array("class"=>"mg-b-1")) !!}
+			{!! HTML::image("uploads/normal/trips/trip1/trip1-banner-large.jpg","bkk-logo",array("class"=>"mg-b-1")) !!}
 
 			<div class="row">
 				<!-- <div class="transportation-label large-1 show-for-large column">
