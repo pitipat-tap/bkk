@@ -13,6 +13,17 @@
 
 @section("body")
 
+<script>
+$(document).ready(function(){
+    $('.attraction-img-frame').click(function(){
+        $('.selected-img').css({'display':'block','opacity':'1'});
+        $('#selected')[0].src = ($(this).children(":first")[0].src);
+    });
+    $('.selected-img').click(function(){
+        $('.selected-img').css({'display':'none','opacity':'0'});
+    });
+});
+</script>
 @include("web.top-menu")
 
 <section>
@@ -22,6 +33,11 @@
 </section>
 
 <section id="attraction">
+    <div class="selected-img">
+        <div class="selected-frame" align="center">
+            <img id="selected" src="">
+        </div>
+    </div>
     <div class="body-section">
         <div class="banner-page-title hide-for-small-only">
            <span lang="th">Attraction</span>
@@ -89,16 +105,16 @@
                         @endif
                     </div>
                     <div class="attraction-img-container row small-up-2 mg-t-1">
-                        <div class="column">
+                        <div class="column attraction-img-frame">
                             {!! HTML::image($attraction->image_url_2,"",array("class"=>"attraction-tag-img")) !!}
                         </div>
-                        <div class="column">
+                        <div class="column attraction-img-frame">
                             {!! HTML::image($attraction->image_url_3,"",array("class"=>"attraction-tag-img")) !!}
                         </div>
-                        <div class="column">
+                        <div class="column attraction-img-frame">
                             {!! HTML::image($attraction->image_url_4,"",array("class"=>"attraction-tag-img")) !!}
                         </div>
-                        <div class="column">
+                        <div class="column attraction-img-frame">
                             {!! HTML::image($attraction->image_url_5,"",array("class"=>"attraction-tag-img")) !!}
                         </div>
                     </div>
