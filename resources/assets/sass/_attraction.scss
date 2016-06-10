@@ -92,7 +92,7 @@
         cursor:pointer;
     }
     .selected-frame {
-        margin: 0 auto;
+        margin: 0 auto 3em auto;
         position: relative;
         top: 100px;
         @include breakpoint(xxlarge){

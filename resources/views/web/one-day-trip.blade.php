@@ -98,7 +98,7 @@
 							Initiated this holy temple as “Public University” in the reign of King Rama III. Contain fine collection arts for example, Poetry, Temple history, Medical text, Thai literature, and Buddhism
 						</p>
 						<div class="row readmore">
-							<a href="http://128.199.92.74/attraction/38" target="_blank">
+							<a href="http://128.199.92.74/attraction/73" target="_blank">
 								<div>Read more..</div>
 							</a>
 						</div>
