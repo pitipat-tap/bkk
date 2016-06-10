@@ -7,7 +7,7 @@ use Response;
 
 use App\Models\Attractions;
 use App\Models\BannerOrbit;
-
+use App\Models\ImagePost;
 
 class WebController extends Controller {
 
@@ -81,7 +81,22 @@ class WebController extends Controller {
     }
 
     public function gallery(){
-        return view('web/gallery');
+        $images = ImagePost::paginate(10);
+        return view('web/gallery',
+                array(
+                    "images" => $images
+                )
+        );
+    }
+
+    public function galleryLoadMore() {
+        $images = ImagePost::paginate(10);
+        return Response::json(
+            array(
+                'status' => 200,
+                'moreImages' => $images->toArray()
+            )
+        );
     }
 
     public function aboutUs(){

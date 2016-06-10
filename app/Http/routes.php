@@ -23,6 +23,7 @@ Route::get('/attraction/{id}',array("as" => "attraction" ,"uses" => "WebControll
 Route::get('/transportation',array("as" => "transportation" ,"uses" => "WebController@transportation"));
 
 Route::get('/gallery',array("as" => "gallery" ,"uses" => "WebController@gallery"));
+Route::get('/galleryLoadMore',array("as" => "galleryLoadMore" ,"uses" => "WebController@galleryLoadMore"));
 
 Route::get('/aboutus',array("as" => "aboutus" ,"uses" => "WebController@aboutus"));
 

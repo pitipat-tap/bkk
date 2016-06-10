@@ -1,3 +1,10 @@
+var currentHostName = "";
+var currentPage = 1;
+if(window.location.origin.indexOf("local") > 0) {
+        currentHostName = window.location.origin + '/bkk/public';
+} else {
+        currentHostName = window.location.origin ;
+}
 Array.prototype.min = function() {
     return Math.min.apply(null, this);
 };
@@ -7,6 +14,9 @@ Array.prototype.max = function() {
 };
 $(window).load(function(){
 
+  $('#load-more').click(function(){
+    loadMore();
+  });
   var currentImg = $('.gallery-img:first-child');
 
   if(isMobile.tablet && (verge.viewportH() > verge.viewportW())){
@@ -33,7 +43,7 @@ $(window).load(function(){
         $('.selected-img').css({'display':'none','opacity':'0'});
     });
     for(var index = 0 ; currentImg.length > 0 ; index++){
-        loadImg();
+        loadImg(currentImg);
         currentImg = currentImg.next();
     }
     $('.gallery-wrapper').css('height',colHight.max()+100);
@@ -53,11 +63,49 @@ $(window).load(function(){
     }
   }
 
-  function loadImg(){
+  function loadImg(currentImg){
      currentCol = findMinCol(colHight);
      left = currentCol * 300;
      currentImg.css({'left':left,'top':colHight[currentCol]});
      colHight[currentCol] += currentImg.outerHeight();
      currentImg.css('opacity',1);
+  }
+  
+  function loadImgMore(data){
+     for(var index = 0; index < data.moreImages.data.length;index++){
+
+        var temp =  $( ".gallery-wrapper" ).append( 
+             $( 
+               "<div class='gallery-img'>"+
+                 "<img src=" + data.moreImages.data[index].image_url +">"+
+               "</div>"
+             ) 
+         );
+         console.log(colHight);
+         currentCol = findMinCol(colHight);
+
+         console.log(currentCol +" "+left+" "+colHight[currentCol]);
+         
+        //left = currentCol * 300;
+        //temp.css({'left':left,'top':colHight[currentCol]});
+        //colHight[currentCol] += currentImg.outerHeight();
+        //temp.css('opacity',1);
+
+     }
+  }
+
+  function loadMore(){
+      $.ajax({
+               url: currentHostName + '/galleryLoadMore' + '?page=' + currentPage,
+               type: 'GET',
+               dataType: 'json',
+               success: function(data, status, xhr) {
+                 loadImgMore(data);
+               },
+               error: function(xhr, status, error) {
+                              console.log(xhr);
+               }
+      });
+      currentPage++;
   }
 });

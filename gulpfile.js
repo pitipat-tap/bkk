@@ -81,5 +81,5 @@ gulp.task('watch',function() {
 });
 
 gulp.task('watch-js',function() {
-    gulp.watch('resources/assets/sass/*.scss',['compile','minify-js']);
+    gulp.watch('resources/assets/js/*.js',['minify-js']);
 });

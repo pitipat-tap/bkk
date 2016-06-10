@@ -26,103 +26,15 @@
             </div>
         </div>
         <div class="gallery-wrapper">
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/1500x500","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/300x400","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/400x300","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/500x500","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/50x50","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/150x500","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/500x50","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/1600x900","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/450x800","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/400x300","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/400x300","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/400x300","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/400x300","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/400x300","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/400x800","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/800x400","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/1500x500","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/400x200","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/200x300","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/400x400","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/400x400","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/400x400","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/400x400","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/400x400","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/500x1500","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/500x1500","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/500x1500","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/500x1500","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/500x1500","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/400x300","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/400x300","bkk-gallery",array("class"=>"")) !!}
-            </div>
-            <div class="gallery-img">
-                {!! HTML::image("http://placehold.it/400x300g","bkk-gallery",array("class"=>"")) !!}
-            </div>
+            @foreach ($images as $image)
+                <div class="gallery-img">
+                    {!! HTML::image($image->image_url,"bkk-gallery",array("class"=>"")) !!}
+                </div>
+            @endforeach
         </div>
+        <a id="load-more">
+            load moreeeeeeeeeeeeee
+        </a>
 	</div>
 </div>
 @include("web.footer")
