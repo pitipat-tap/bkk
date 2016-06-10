@@ -55,8 +55,8 @@
             <a href="#">
                 <span lang="th">{!! Html::image("images/flag/Thailand.png","Thai",array("class"=>"lang-logo")) !!} ไทย</span>
                 <span lang="en">{!! Html::image("images/flag/uk.png","Thai",array("class"=>"lang-logo")) !!} English</span>
-                <span lang="jp">{!! Html::image("images/flag/japan.png","Thai",array("class"=>"lang-logo")) !!} 日本</span>
-                <span lang="ch">{!! Html::image("images/flag/China.png","Thai",array("class"=>"lang-logo")) !!} 中国</span>
+                <span lang="jp">{!! Html::image("images/flag/japan.png","Thai",array("class"=>"lang-logo")) !!} 日本語</span>
+                <span lang="ch">{!! Html::image("images/flag/China.png","Thai",array("class"=>"lang-logo")) !!} 中文</span>
             </a>
              <ul class="menu">
                   <li>
@@ -74,13 +74,13 @@
                   <li>
                     <a href="#" class="change-language" data-lan="jp">
                     <span>{!! Html::image("images/flag/japan.png","Thai",array("class"=>"lang-logo")) !!}</span>
-                        日本
+                        日本語
                     </a>
                   </li>
                   <li>
                     <a href="#" class="change-language" data-lan="ch">
                     <span>{!! Html::image("images/flag/China.png","Thai",array("class"=>"lang-logo")) !!}</span>
-                        中国
+                        中文
                     </a>
                   </li>
             </ul>
@@ -166,14 +166,14 @@
                     <a href="#">
                         <span lang="th">{!! Html::image("images/flag/Thailand.png","Thai",array("class"=>"lang-logo")) !!} ไทย</span>
                         <span lang="en">{!! Html::image("images/flag/uk.png","Thai",array("class"=>"lang-logo")) !!} English</span>
-                        <span lang="jp">{!! Html::image("images/flag/japan.png","Thai",array("class"=>"lang-logo")) !!} 日本</span>
-                        <span lang="ch">{!! Html::image("images/flag/China.png","Thai",array("class"=>"lang-logo")) !!} 中国</span>
+                        <span lang="jp">{!! Html::image("images/flag/japan.png","Thai",array("class"=>"lang-logo")) !!} 日本語</span>
+                        <span lang="ch">{!! Html::image("images/flag/China.png","Thai",array("class"=>"lang-logo")) !!} 中文</span>
                     </a>
                     <ul class="menu vertical nested">
                       <li><a class="change-language" data-lan="th" href="#">ไทย</a></li>
                       <li><a class="change-language" data-lan="en" href="#">English</a></li>
-                      <li><a class="change-language" data-lan="jp" href="#">日本</a></li>
-                      <li><a class="change-language" data-lan="ch" href="#">中国</a></li>
+                      <li><a class="change-language" data-lan="jp" href="#">日本語</a></li>
+                      <li><a class="change-language" data-lan="ch" href="#">中文</a></li>
                     </ul>
                   </li>
                 </ul>
