@@ -140,6 +140,24 @@
                 border-bottom: 0;
             }
         }
+        img{
+            @include breakpoint(small) {
+                opacity: 0.9;
+            }
+            @include breakpoint(large) {
+                opacity: 0.75;
+            }
+        }
+        a:hover{
+            img{
+                @include breakpoint(small) {
+                    opacity: 0.9;
+                }
+                @include breakpoint(large) {
+                    opacity: 0.9;
+                }
+            }
+        }
     }
 
     #accommodation-events{
@@ -196,6 +214,26 @@
                 @include breakpoint(large) {
                     width: 30%;
                     font-size: inherit;
+                }
+            }
+        }
+    }
+    #accommodation{
+        img{
+            @include breakpoint(small) {
+                opacity: 0.95;
+            }
+            @include breakpoint(large) {
+                opacity: 0.85;
+            }
+        }
+        a:hover{
+            img{
+                @include breakpoint(small) {
+                    opacity: 1;
+                }
+                @include breakpoint(large) {
+                    opacity: 1;
                 }
             }
         }

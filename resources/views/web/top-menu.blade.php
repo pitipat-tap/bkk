@@ -108,7 +108,7 @@
             <div class="off-canvas position-right hide-for-large" id="offCanvas" data-off-canvas data-position="right">
 
                 <div id="menu-logo-mobile" class="vertical menu">
-                    <a class="logo" href="home">
+                    <a class="logo" href="{!! URL::route('home') !!}">
                         {!! Html::image("images/logo/bkk-logo.png","bkk-logo",array("class"=>"bkk-logo")) !!}
                     </a>
                 </div>

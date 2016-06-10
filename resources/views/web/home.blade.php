@@ -103,58 +103,64 @@
 
         <section id="campaign-attractions" >
             <div class="row">
-                <div class=" large-4 columns">
-                    <div class="tag-highlight">
-                        <h2 lang="th"> Campaign </h2>
-                        <h2 lang="en"> Campaign </h2>
-                        <h2 lang="jp"> Campaign </h2>
-                        <h2 lang="ch"> Campaign </h2>
-                        <h1> ___ </h1>
+                <a href="{!! URL::route('transportation') !!}">
+                    <div class=" large-4 columns">
+                        <div class="tag-highlight">
+                            <h2 lang="th"> Transportation </h2>
+                            <h2 lang="en"> Transportation </h2>
+                            <h2 lang="jp"> Transportation </h2>
+                            <h2 lang="ch"> Transportation </h2>
+                            <h1> ___ </h1>
+                        </div>
                     </div>
-                </div>
-                <div class="large-8 columns show-for-large">
-                    {!! HTML::image("http://placehold.it/832x300","",array("class"=>"")) !!}
-                </div>
-                <div class="small-12 columns hide-for-large">
-                    {!! HTML::image("http://placehold.it/400x300","",array("class"=>"")) !!}
-                </div>
+                    <div class="large-8 columns show-for-large">
+                        {!! HTML::image("uploads/normal/home/transportation_large.jpg","",array("class"=>"")) !!}
+                    </div>
+                    <div class="small-12 columns hide-for-large">
+                        {!! HTML::image("uploads/normal/home/transportation_medium.jpg","",array("class"=>"")) !!}
+                    </div>
+                </a>
             </div>
             <div class="row">
-                <div class="large-8 columns show-for-large">
-                    {!! HTML::image("http://placehold.it/832x300","",array("class"=>"")) !!}
-                </div>
-                <div class="small-12 columns hide-for-large">
-                    {!! HTML::image("http://placehold.it/400x300","",array("class"=>"")) !!}
-                </div>
-                <div class=" large-4 columns">
-                    <div class="tag-highlight">
-                        <h2 lang="th"> Attractions</h2>
-                        <h2 lang="en"> Attractions</h2>
-                        <h2 lang="jp"> Attractions</h2>
-                        <h2 lang="ch"> Attractions</h2>
-                        <h1> ___ </h1>
+                <a href="{!! URL::route('attractionCategory') !!}">
+                    <div class="large-8 columns show-for-large">
+                        {!! HTML::image("uploads/normal/home/attraction_large.jpg","",array("class"=>"")) !!}
                     </div>
-                </div>
+                    <div class="small-12 columns hide-for-large">
+                        {!! HTML::image("uploads/normal/home/attraction_medium.jpg","",array("class"=>"")) !!}
+                    </div>
+                    <div class=" large-4 columns">
+                        <div class="tag-highlight">
+                            <h2 lang="th"> Attractions</h2>
+                            <h2 lang="en"> Attractions</h2>
+                            <h2 lang="jp"> Attractions</h2>
+                            <h2 lang="ch"> Attractions</h2>
+                            <h1> ___ </h1>
+                        </div>
+                    </div>
+                </a>
             </div>
         </section>
 
         <section id="accommodation-events">
-            <div class="row">
-                <div class=" large-4 columns">
-                    <div class="tag-highlight">
-                        <h2 lang="th"> Accommodation </h2>
-                        <h2 lang="en"> Accommodation </h2>
-                        <h2 lang="jp"> Accommodation </h2>
-                        <h2 lang="ch"> Accommodation </h2>
-                        <h1> ___ </h1>
+            <div id="accommodation" class="row">
+                <a href="{!! URL::route('accommodation') !!}">
+                    <div class=" large-4 columns">
+                        <div class="tag-highlight">
+                            <h2 lang="th"> Accommodation </h2>
+                            <h2 lang="en"> Accommodation </h2>
+                            <h2 lang="jp"> Accommodation </h2>
+                            <h2 lang="ch"> Accommodation </h2>
+                            <h1> ___ </h1>
+                        </div>
                     </div>
-                </div>
-                <div class="large-8 columns show-for-large">
-                    {!! HTML::image("http://placehold.it/832x300","",array("class"=>"")) !!}
-                </div>
-                <div class="small-12 columns hide-for-large">
-                    {!! HTML::image("http://placehold.it/400x300","",array("class"=>"")) !!}
-                </div>
+                    <div class="large-8 columns show-for-large">
+                        {!! HTML::image("uploads/normal/home/accommodation_large.jpg","",array("class"=>"")) !!}
+                    </div>
+                    <div class="small-12 columns hide-for-large">
+                        {!! HTML::image("uploads/normal/home/accommodation_medium.jpg","",array("class"=>"")) !!}
+                    </div>
+                </a>
             </div>
             <div class="row">
                 <div class="events">
