@@ -41,3 +41,14 @@
     text-align: center;
     font-size: 3rem;
 }
+.attraction-accommodation-banner{
+    height: auto;
+    min-height: 300px;
+    max-height: 640px;
+    background-color: black;
+
+    img{
+        height: auto !important;
+        width: auto !important;
+    }
+}

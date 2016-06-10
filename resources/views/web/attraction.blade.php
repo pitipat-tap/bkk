@@ -27,7 +27,7 @@ $(document).ready(function(){
 @include("web.top-menu")
 
 <section>
-	<div class="banner-containers">
+	<div class="banner-containers attraction-accommodation-banner">
 		{!! HTML::image($attraction->image_url_1,"bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
 	</div>
 </section>
