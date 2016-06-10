@@ -107,17 +107,17 @@
         <div class="footer-container">
             <div class="small-4 column">
                 <a href="https://www.google.com/maps?ll=13.760744,100.49152&z=14&t=m&hl=en&gl=TH&mapclient=embed&cid=15374262391054429798" target="_blank">
-                    {!! HTML::image("http://placehold.it/120x60","",array("class"=>"")) !!}
+                    {!! HTML::image("uploads/normal/footer/maps.png","",array("class"=>"")) !!}
                 </a>
             </div>
             <div class="small-4 column">
                 <a href="http://203.155.220.167/" target="_blank">
-                    {!! HTML::image("http://placehold.it/120x60","",array("class"=>"")) !!}
+                    {!! HTML::image("uploads/normal/footer/gis.png","",array("class"=>"")) !!}
                 </a>
             </div>
             <div class="small-4 column">
                 <a href="https://m.facebook.com/tourismdivision/" target="_blank">
-                    {!! HTML::image("http://placehold.it/120x60","",array("class"=>"")) !!}
+                    {!! HTML::image("uploads/normal/footer/facebook.png","",array("class"=>"")) !!}
                 </a>
             </div>
         </div>
