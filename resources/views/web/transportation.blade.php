@@ -37,11 +37,11 @@
 
 	<div class="">
 		<div class="transportation-container">
-			{!! HTML::image("http://placehold.it/1248x416","bkk-logo",array("class"=>"mg-b-1")) !!}
+			{!! HTML::image("uploads/normal/transportation/bts.jpg","bkk-logo",array("class"=>"mg-b-1")) !!}
 
 			<div class="row">
 				<div class="transportation-label large-1 show-for-large column">
-					{!! HTML::image("http://placehold.it/120x120","bkk-logo",array("class"=>"")) !!}
+					{!! HTML::image("uploads/normal/transportation/bts-logo.png","bkk-logo",array("class"=>"")) !!}
 				</div>
 				<div class="transportation-content small-12 large-11 columns">
 					<div class="row">
@@ -51,16 +51,16 @@
 					<div class="row">
 						<div class="small-12 large-10 columns">
 							<p lang="th">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+								บริษัท ระบบขนส่งมวลชนกรุงเทพ จำกัด (มหาชน)
 							</p>
 							<p lang="en">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+								Bangkok mass transit system public company limited.
 							</p>
 							<p lang="jp">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+								Bangkok mass transit system public company limited.
 							</p>
 							<p lang="ch">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+								Bangkok mass transit system public company limited.
 							</p>
 						</div>
 						<div class="row">
@@ -79,11 +79,11 @@
 		</div>
 		<hr class="mg-b-3 mg-t-1">
 		<div class="transportation-container">
-			{!! HTML::image("http://placehold.it/1248x416","bkk-logo",array("class"=>"mg-b-1")) !!}
+			{!! HTML::image("uploads/normal/transportation/mrt.jpg","bkk-logo",array("class"=>"mg-b-1")) !!}
 
 			<div class="row">
 				<div class="transportation-label large-1 show-for-large column">
-					{!! HTML::image("http://placehold.it/120x120","bkk-logo",array("class"=>"")) !!}
+					{!! HTML::image("uploads/normal/transportation/mrt-logo.png","bkk-logo",array("class"=>"")) !!}
 				</div>
 				<div class="transportation-content small-12 large-11 columns">
 					<div class="row">
@@ -93,16 +93,16 @@
 					<div class="row">
 						<div class="small-12 large-10 columns">
 							<p lang="th">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+								บริษัท ทางด่วนและรถไฟฟ้ากรุงเทพ จำกัด (มหาชน)
 							</p>
 							<p lang="en">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+								Bangkok expressway and metro public company limited.
 							</p>
 							<p lang="jp">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+								Bangkok expressway and metro public company limited.
 							</p>
 							<p lang="ch">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+								Bangkok expressway and metro public company limited.
 							</p>
 						</div>
 						<div class="row">
@@ -121,11 +121,11 @@
 		</div>
 		<hr class="mg-b-3 mg-t-1">
 		<div class="transportation-container">
-			{!! HTML::image("http://placehold.it/1248x416","bkk-logo",array("class"=>"mg-b-1")) !!}
+			{!! HTML::image("uploads/normal/transportation/bmta.jpg","bkk-logo",array("class"=>"mg-b-1")) !!}
 
 			<div class="row">
 				<div class="transportation-label large-1 show-for-large columns">
-					{!! HTML::image("http://placehold.it/120x120","bkk-logo",array("class"=>"")) !!}
+					{!! HTML::image("uploads/normal/transportation/bmta-logo.png","bkk-logo",array("class"=>"")) !!}
 				</div>
 				<div class="transportation-content small-12 large-11 columns">
 					<div class="row">
@@ -135,21 +135,63 @@
 					<div class="row">
 						<div class="small-12 large-10 columns">
 							<p lang="th">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+								องค์การขนส่งมวลชนกรุงเทพ
 							</p>
 							<p lang="en">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+								Bangkok Mass Transit Authority.
 							</p>
 							<p lang="jp">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+								Bangkok Mass Transit Authority.
 							</p>
 							<p lang="ch">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+								Bangkok Mass Transit Authority.
 							</p>
 						</div>
 						<div class="row">
 							<div class="small-12 small-centered large-2 large-uncentered columns">
 								<a class="button small-12 columns hide-for-print" href="http://www.bmta.co.th/?q=th/home" target="_blank">
+	                                <span lang="th">More Info</span>
+	                                <span lang="en">More Info</span>
+	                                <span lang="jp">More Info</span>
+	                                <span lang="ch">More Info</span>
+	                            </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="mg-b-3 mg-t-1">
+		<div class="transportation-container">
+			{!! HTML::image("uploads/normal/transportation/rft.jpg","bkk-logo",array("class"=>"mg-b-1")) !!}
+
+			<div class="row">
+				<div class="transportation-label large-1 show-for-large columns">
+					{!! HTML::image("uploads/normal/transportation/rft-logo.jpg","bkk-logo",array("class"=>"")) !!}
+				</div>
+				<div class="transportation-content small-12 large-11 columns">
+					<div class="row">
+						<h5>Rotfaithai</h5>
+					</div>
+					<hr class="mg-1 show-for-large">
+					<div class="row">
+						<div class="small-12 large-10 columns">
+							<p lang="th">
+								เว็บไซต์สำหรับแฟนรถไฟไทยและการขนส่งระบบรางในประเทศไทย
+							</p>
+							<p lang="en">
+								The Best & Biggest Online Community for Rail Transportation Fans in Thailand.
+							</p>
+							<p lang="jp">
+								The Best & Biggest Online Community for Rail Transportation Fans in Thailand.
+							</p>
+							<p lang="ch">
+								The Best & Biggest Online Community for Rail Transportation Fans in Thailand.
+							</p>
+						</div>
+						<div class="row">
+							<div class="small-12 small-centered large-2 large-uncentered columns">
+								<a class="button small-12 columns hide-for-print" href="http://www.rotfaithai.com/" target="_blank">
 	                                <span lang="th">More Info</span>
 	                                <span lang="en">More Info</span>
 	                                <span lang="jp">More Info</span>
