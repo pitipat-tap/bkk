@@ -25,6 +25,10 @@
             padding:1em;
         }
     }
+    .description-container{
+        max-height: 100px;
+        overflow: hidden;
+    }
 }
 
 #attraction {

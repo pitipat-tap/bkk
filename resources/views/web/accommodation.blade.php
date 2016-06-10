@@ -52,18 +52,20 @@
                          <i class="fa fa-money mg-l-1 mg-r-05" aria-hidden="true"></i> {!! $accommodation->admission_free !!}
                      </span>
                 </p>
-                <p lang="th">
-                    {!! $accommodation->description_thai !!}
-                </p>
-                <p lang="en">
-                    {!! $accommodation->description_english !!}
-                </p>
-                <p lang="jp">
-                    {!! $accommodation->description_japan !!}
-                </p>
-                <p lang="ch">
-                    {!! $accommodation->description_china !!}
-                </p>
+                <div class="description-container">
+                    <p lang="th">
+                        {!! $accommodation->description_thai !!}
+                    </p>
+                    <p lang="en">
+                        {!! $accommodation->description_english !!}
+                    </p>
+                    <p lang="jp">
+                        {!! $accommodation->description_japan !!}
+                    </p>
+                    <p lang="ch">
+                        {!! $accommodation->description_china !!}
+                    </p>
+                </div>
                 <a href="{!! URL::route('accommodation-post',array($accommodation->id)) !!}">
                     <button class="green-btn mg-t-1">
                         <span lang="th">Read More...</span>

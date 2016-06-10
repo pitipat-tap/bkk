@@ -52,18 +52,20 @@
                          <i class="fa fa-money mg-l-1 mg-r-05" aria-hidden="true"></i> {!! $attraction->admission_free !!}
                      </span>
                 </p>
-                <p lang="th">
-                    {!! $attraction->description_thai !!}
-                </p>
-                <p lang="en">
-                    {!! $attraction->description_english !!}
-                </p>
-                <p lang="jp">
-                    {!! $attraction->description_japan !!}
-                </p>
-                <p lang="ch">
-                    {!! $attraction->description_china !!}
-                </p>
+                <div class="description-container">
+                    <p lang="th">
+                        {!! $attraction->description_thai !!}
+                    </p>
+                    <p lang="en">
+                        {!! $attraction->description_english !!}
+                    </p>
+                    <p lang="jp">
+                        {!! $attraction->description_japan !!}
+                    </p>
+                    <p lang="ch">
+                        {!! $attraction->description_china !!}
+                    </p>
+                </div>
                 <a href="../attraction/{!! $attraction->id !!}">
                     <button class="green-btn mg-t-1">
                         <span lang="th">Read More...</span>
