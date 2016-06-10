@@ -72,26 +72,26 @@ $(window).load(function(){
   }
   
   function loadImgMore(data){
+
      for(var index = 0; index < data.moreImages.data.length;index++){
 
-        var temp =  $( ".gallery-wrapper" ).append( 
+        currentCol = findMinCol(colHight);
+          temp =
              $( 
-               "<div class='gallery-img'>"+
-                 "<img src=" + data.moreImages.data[index].image_url +">"+
-               "</div>"
-             ) 
-         );
-         console.log(colHight);
-         currentCol = findMinCol(colHight);
+               '<div class="gallery-img" style="left:'+ currentCol*300 +'px; top:'+colHight[currentCol] + 'px; ">'+
+                 '<img src=' + data.moreImages.data[index].image_url +'>'+
+               '</div>'
+             ); 
 
-         console.log(currentCol +" "+left+" "+colHight[currentCol]);
-         
-        //left = currentCol * 300;
-        //temp.css({'left':left,'top':colHight[currentCol]});
-        //colHight[currentCol] += currentImg.outerHeight();
-        //temp.css('opacity',1);
+        $('.gallery-wrapper').css('height',colHight.max()+100);
+
+         $( ".gallery-wrapper" ).append(temp.load(function(){
+            colHight[currentCol] += temp.outerHeight();
+         }));
+
 
      }
+    console.log($(window).load());
   }
 
   function loadMore(){
