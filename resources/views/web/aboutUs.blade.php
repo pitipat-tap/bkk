@@ -16,11 +16,20 @@
 @include("web.top-menu")
 
 <div class="banner-page-title">About Us</div>
-<div class="body-section">
+<div id="aboutus" class="body-section">
 	<h3 class="align-center mg-t-1"> กองการท่องเที่ยวกรุงเทพมหานคร </h3>
 	<div class="align-center">
-		<a>
-			{!! HTML::image("http://placehold.it/800x600","bkk-logo",array("class"=>"mg-b-1")) !!}
+		<a lang="th">
+			{!! HTML::image("uploads/normal/aboutus/aboutus-th.jpg","bkk-logo",array("class"=>"aboutus-picture")) !!}
+		</a>
+		<a lang="en">
+			{!! HTML::image("uploads/normal/aboutus/aboutus-en.jpg","bkk-logo",array("class"=>"aboutus-picture")) !!}
+		</a>
+		<a lang="jp">
+			{!! HTML::image("uploads/normal/aboutus/aboutus-en.jpg","bkk-logo",array("class"=>"aboutus-picture")) !!}
+		</a>
+		<a lang="ch">
+			{!! HTML::image("uploads/normal/aboutus/aboutus-en.jpg","bkk-logo",array("class"=>"aboutus-picture")) !!}
 		</a>
 	</div>
 	<div class="content-box mg-b-1">

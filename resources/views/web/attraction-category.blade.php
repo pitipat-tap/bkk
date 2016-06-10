@@ -49,20 +49,16 @@
 				<h3 lang="ch">ARTS AND CULTURE</h3>
 				<br class="show-for-large">
 				<h5 lang="th" class="show-for-large">
-					Vestibulum at sagittis risus. Donec iaculis enim ac faucibus pretium. Suspendisse molestie tellus ac ipsum 
-					eleifend fermentum. Curabitur consequat venenatis dui, et auctor metus semper nec.
+					As Thailand's capital for over 200 years, the city is a melting pot of invaluable cultural heritages, dotted with spectacle and unique historical sites tourists have always dream of!
 				</h5>
 				<h5 lang="en" class="show-for-large">
-					Vestibulum at sagittis risus. Donec iaculis enim ac faucibus pretium. Suspendisse molestie tellus ac ipsum 
-					eleifend fermentum. Curabitur consequat venenatis dui, et auctor metus semper nec.
+					As Thailand's capital for over 200 years, the city is a melting pot of invaluable cultural heritages, dotted with spectacle and unique historical sites tourists have always dream of!
 				</h5>
 				<h5 lang="jp" class="show-for-large">
-					Vestibulum at sagittis risus. Donec iaculis enim ac faucibus pretium. Suspendisse molestie tellus ac ipsum 
-					eleifend fermentum. Curabitur consequat venenatis dui, et auctor metus semper nec.
+					As Thailand's capital for over 200 years, the city is a melting pot of invaluable cultural heritages, dotted with spectacle and unique historical sites tourists have always dream of!
 				</h5>
 				<h5 lang="ch" class="show-for-large">
-					Vestibulum at sagittis risus. Donec iaculis enim ac faucibus pretium. Suspendisse molestie tellus ac ipsum 
-					eleifend fermentum. Curabitur consequat venenatis dui, et auctor metus semper nec.
+					As Thailand's capital for over 200 years, the city is a melting pot of invaluable cultural heritages, dotted with spectacle and unique historical sites tourists have always dream of!
 				</h5>
 			</div>
 		</a>
@@ -74,7 +70,7 @@
 					{!! HTML::image("uploads/normal/attraction_category/food_large.jpg","bkk-logo",array("class"=>"")) !!}
 				</div>
 				<div class="category-picture hide-for-large">
-					{!! HTML::image("uploads/normal/attraction_category/food_large.jpg","bkk-logo",array("class"=>"")) !!}
+					{!! HTML::image("uploads/normal/attraction_category/food_medium.jpg","bkk-logo",array("class"=>"")) !!}
 				</div>
 				<div class="category-description">
 					<h3 lang="th">FOOD AND DRINK</h3>
@@ -90,7 +86,7 @@
 					{!! HTML::image("uploads/normal/attraction_category/park_large.jpg","bkk-logo",array("class"=>"")) !!}
 				</div>
 				<div class="category-picture hide-for-large">
-					{!! HTML::image("uploads/normal/attraction_category/park_large.jpg","bkk-logo",array("class"=>"")) !!}
+					{!! HTML::image("uploads/normal/attraction_category/park_medium.jpg","bkk-logo",array("class"=>"")) !!}
 				</div>
 				<div class="category-description">
 					<h3 lang="th">PARKS AND GARDENS</h3>
@@ -107,7 +103,7 @@
 				{!! HTML::image("uploads/normal/attraction_category/event_large.jpg","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="category-picture hide-for-large">
-				{!! HTML::image("uploads/normal/attraction_category/event_large.jpg","bkk-logo",array("class"=>"")) !!}
+				{!! HTML::image("uploads/normal/attraction_category/event_medium.jpg","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="category-description">
                 <h3 lang="th">Events</h3>
@@ -141,7 +137,7 @@
 				{!! HTML::image("uploads/normal/attraction_category/shopping_large.jpg","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="category-picture hide-for-large">
-				{!! HTML::image("uploads/normal/attraction_category/shopping_large.jpg","bkk-logo",array("class"=>"")) !!}
+				{!! HTML::image("uploads/normal/attraction_category/shopping_medium.jpg","bkk-logo",array("class"=>"")) !!}
 			</div>
 			<div class="category-description">
 				<h3 lang="th">Shopping</h3>

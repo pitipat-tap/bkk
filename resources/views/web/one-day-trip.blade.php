@@ -47,20 +47,20 @@
 
 <section>
 	<div class="banner-containers show-for-large">
-		{!! HTML::image("http://placehold.it/1500x500","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
+		{!! HTML::image("uploads/normal/trips/trip1/trip1-banner-large.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
 	</div>
 	<div class="banner-containers show-for-medium-only">
-		{!! HTML::image("http://placehold.it/400x300","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
+		{!! HTML::image("uploads/normal/trips/trip1/trip1-banner-medium.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
 	</div>
 	<div class="banner-containers show-for-small-only">
-		{!! HTML::image("http://placehold.it/300x400","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
+		{!! HTML::image("uploads/normal/trips/trip1/trip1-banner-small.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
 	</div>
 </section>
 
 <div class="body-section">
 	<div class="banner-page-title">Recommend Trips</div>
 	<div class="timeline-container">
-		<h2>One day trip</h2>
+		<h2>One day historical trip</h2>
 		<div class="row">
 			<div class="label-start">
 				<h3>Start</h3>
@@ -71,14 +71,12 @@
 				<div class="timeline-badge"></div>
 					<div class="timeline-panel">
 						<div class="timeline-heading">
-							<h4 class="timeline-title">The Grand Palace</h4>
+							<h4 class="timeline-title">Wat Pra Kaew</h4>
 						</div>
 					<div class="timeline-body">
-						{!! HTML::image("http://placehold.it/400x300","bkk-logo",array("class"=>"")) !!}
+						{!! HTML::image("uploads/normal/trips/trip1/trip1.jpg","bkk-logo",array("class"=>"")) !!}
 						<p>
-							Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. 
-							Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é 
-							amistosis quis leo. Manduma pindureta quium dia nois paga.
+							Built in 1782 during the reign of King Rama I. It’s divided into 3 main zones; The Outer Court which hosts the Temple of Emerald Buddha and other buildings, the Middle Court which hosts Throne hall, and the Inner Court hosts king’s exclusive throne.
 						</p>
 						<div class="row readmore">
 							<a href="#">
@@ -92,12 +90,12 @@
 				<div class="timeline-badge"></div>
 					<div class="timeline-panel">
 						<div class="timeline-heading">
-							<h4 class="timeline-title">National Museum</h4>
+							<h4 class="timeline-title">Wat Pho</h4>
 						</div>
 					<div class="timeline-body">
-						{!! HTML::image("http://placehold.it/400x300","bkk-logo",array("class"=>"")) !!}
+						{!! HTML::image("uploads/normal/trips/trip1/trip2.jpg","bkk-logo",array("class"=>"")) !!}
 						<p>
-							"Originally was the personal museum of King Rama 4 with a collection of antiques and royal gifts, King Rama 5 subsequently opened the Sahathai Samakhom pavilion (Concordia tower) in the grand palace grounds as a public museum. It was then moved to the three palace buildings in the front palace (Wang Na). King Rama 7 then gave over all buildings in the front palace to be the Bangkok museum.
+							Initiated this holy temple as “Public University” in the reign of King Rama III. Contain fine collection arts for example, Poetry, Temple history, Medical text, Thai literature, and Buddhism
 						</p>
 						<div class="row readmore">
 							<a href="#">
@@ -111,12 +109,12 @@
 	          	<div class="timeline-badge"></div>
 				<div class="timeline-panel">
 					<div class="timeline-heading">
-						<h4 class="timeline-title">Santi Chai Prakan Park</h4>
+						<h4 class="timeline-title">Phra Sumen Fort</h4>
 					</div>
 					<div class="timeline-body">
-						{!! HTML::image("http://placehold.it/400x300","bkk-logo",array("class"=>"")) !!}
+						{!! HTML::image("uploads/normal/trips/trip1/trip3.jpg","bkk-logo",array("class"=>"")) !!}
 						<p>
-							This area used to be the situation of sugar factory and a godown of Sri Maharacha Co.,ltd. Later, it was renovated and landscape adjustment in the area about 3.2 acres was done, it was completed in 1999, H.M.King Rama IX graciously named Santi Chai Prakarn Park, meaning the park with a fort that synbolized the victory of peacefulness.
+							Also built in the reign of King Rama 1. The height is 10.50 meters, and made from bricks then coated with cement in octagon shaped. It has earthwork and shelter that protects the  ammunition.
 						</p>
 						<div class="row readmore">
 							<a href="#">
@@ -130,12 +128,12 @@
 				<div class="timeline-badge"></div>
 					<div class="timeline-panel">
 						<div class="timeline-heading">
-							<h4 class="timeline-title">Khao San Road</h4>
+							<h4 class="timeline-title">Golden Mount</h4>
 						</div>
 					<div class="timeline-body">
-						{!! HTML::image("http://placehold.it/400x300","bkk-logo",array("class"=>"")) !!}
+						{!! HTML::image("uploads/normal/trips/trip1/trip4.jpg","bkk-logo",array("class"=>"")) !!}
 						<p>
-							This road used to be a rice trading place. These days it has become one of the most economical tourist attractions for foreigners because of moderately priced accommodation and nightlife entertainment.
+							This ancient temple has existed since the Ayutthaya period. Formerly known as Wat Saket, it was reestablished by king Rama I and was then royally titled “Wat Saket”. As for the Golden Mount, it was first constructed in the reign of King Rama III by emulating the pattern of the Golden Mount of the Ayutthaya period.
 						</p>
 						<div class="row readmore">
 							<a href="#">
@@ -149,14 +147,12 @@
 				<div class="timeline-badge"></div>
 					<div class="timeline-panel">
 						<div class="timeline-heading">
-							<h4 class="timeline-title">Ratchadamnoen Klang Road</h4>
+							<h4 class="timeline-title">The National Gallery</h4>
 						</div>
 					<div class="timeline-body">
-						{!! HTML::image("http://placehold.it/400x300","bkk-logo",array("class"=>"")) !!}
+						{!! HTML::image("uploads/normal/trips/trip1/trip5.jpg","bkk-logo",array("class"=>"")) !!}
 						<p>
-							Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. 
-							Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é 
-							amistosis quis leo. Manduma pindureta quium dia nois paga.
+							Was originally called “Rong Kasap Sitthikan” which is Thailand’s Mint. Consequently, the building was renovated and it was used for various fine art exhibitions and is called The National Gallery
 						</p>
 						<div class="row readmore">
 							<a href="#">
@@ -170,14 +166,12 @@
 	          	<div class="timeline-badge"></div>
 				<div class="timeline-panel">
 					<div class="timeline-heading">
-						<h4 class="timeline-title">The Golden Mount</h4>
+						<h4 class="timeline-title">Khao san road</h4>
 					</div>
 					<div class="timeline-body">
-						{!! HTML::image("http://placehold.it/400x300","bkk-logo",array("class"=>"")) !!}
+						{!! HTML::image("uploads/normal/trips/trip1/trip6.jpg","bkk-logo",array("class"=>"")) !!}
 						<p>
-							Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. 
-							Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é 
-							amistosis quis leo. Manduma pindureta quium dia nois paga.
+							Was used to be rice trading place. Nowaday it has become one of the most economical tourist attractions for foreign due to its nightlife entertainment.
 						</p>
 						<div class="row readmore">
 							<a href="#">

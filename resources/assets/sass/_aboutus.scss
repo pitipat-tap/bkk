@@ -1,0 +1,13 @@
+#aboutus{
+	.aboutus-picture{
+		height: auto;
+		margin-bottom: 1em;
+
+		@include breakpoint(medium down) {
+			width: 95vw;
+		}
+		@include breakpoint(large) {
+			width: 50vw;
+		}
+	}
+}
