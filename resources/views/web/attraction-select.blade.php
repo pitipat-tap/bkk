@@ -46,12 +46,24 @@
                 <h4 lang="en"> {!! $attraction->title_english !!} </h4>
                 <h4 lang="jp"> {!! $attraction->title_japan !!} </h4>
                 <h4 lang="ch"> {!! $attraction->title_china !!} </h4>
-                <p>
-                     <span class="mg-r-1">
-                         <i class="fa fa-clock-o mg-r-05" aria-hidden="true"></i> {!! $attraction->opening_hours !!}
-                         <i class="fa fa-money mg-l-1 mg-r-05" aria-hidden="true"></i> {!! $attraction->admission_free !!}
-                     </span>
-                </p>
+                <table class="info-detail">
+                    <tbody>
+                        <tr>
+                            <td><i class="fa fa-clock-o mg-r-05" aria-hidden="true"></i></td>
+                            <td>{!! $attraction->opening_hours !!}</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-money mg-r-05" aria-hidden="true"></i></td>
+                            <td>{!! $attraction->admission_free !!}</td>
+                        </tr>
+                        @if ($attraction->remark != null && $attraction->remark != "")
+                            <tr>
+                                <td><i class="fa fa-user mg-r-05" aria-hidden="true"></i></td>
+                                <td>{!! $attraction->remark !!}</td>
+                            </tr>
+                        @endif
+                    </tbody>
+                </table>
                 <div class="description-container">
                     <p lang="th">
                         {!! $attraction->description_thai !!}

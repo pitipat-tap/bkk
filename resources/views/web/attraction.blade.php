@@ -68,7 +68,7 @@ $(document).ready(function(){
                                 </tr>
                                 @if ($attraction->remark != null && $attraction->remark != "")
                                     <tr>
-                                        <td><i class="fa fa-clock-o mg-r-05" aria-hidden="true"></i></td>
+                                        <td><i class="fa fa-user mg-r-05" aria-hidden="true"></i></td>
                                         <td>{!! $attraction->remark !!}</td>
                                     </tr>
                                 @endif
@@ -111,7 +111,7 @@ $(document).ready(function(){
                                 </tr>
                                 @if ($attraction->remark != null && $attraction->remark != "")
                                     <tr>
-                                        <td><i class="fa fa-clock-o mg-r-05" aria-hidden="true"></i></td>
+                                        <td><i class="fa fa-user mg-r-05" aria-hidden="true"></i></td>
                                         <td>{!! $attraction->remark !!}</td>
                                     </tr>
                                 @endif

@@ -29,6 +29,17 @@
         max-height: 100px;
         overflow: hidden;
     }
+    .info-detail{
+        tbody{
+            border: 0px;
+        }
+        tr{
+            background-color: white;
+        }
+        td:first-child{
+            width:10%;
+        }
+    }
 }
 
 #attraction {
@@ -105,8 +116,6 @@
             }
         }
     }
-
-
 
     .attraction-img-frame {
         cursor:pointer;
