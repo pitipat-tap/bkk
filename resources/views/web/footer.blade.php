@@ -28,7 +28,9 @@
                     <li class="is-active orbit-slide">
                         <ul class="thumbnail-banner">
                             <li>
-                                <a href="http://vrtweb.rd.go.th/" target="_blank"><img class="partner-thumbnail" src="images/logo/footer/vat.png" alt=""></a>
+                                <a href="http://vrtweb.rd.go.th/" target="_blank">
+                                    {!! Html::image("images/logo/footer/vat.png","",array("class"=>"partner-thumbnail")) !!}
+                                </a>
                             </li>
                             <li>
                                 <a href="http://www.atta.or.th/" target="_blank"><img class="partner-thumbnail" src="images/logo/footer/atta.png" alt=""></a>
