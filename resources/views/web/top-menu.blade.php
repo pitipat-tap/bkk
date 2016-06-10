@@ -121,7 +121,7 @@
             <!-- Menu -->
                 <ul id="menu-mobile" class="vertical menu">
                     <li id="attraction">
-                        <a href="attraction-category">
+                        <a href="{!! URL::route('attractionCategory') !!}">
                            <span lang="th">เสน่ห์กรุงเทพฯ</span>
                            <span lang="en">Attraction</span>
                            <span lang="jp">アトラクション</span>
@@ -129,7 +129,7 @@
                         </a>
                     </li>
                     <li id="accommodation">
-                        <a href="accommodation">
+                        <a href="{!! URL::route('accommodation') !!}">
                             <span lang="th">ที่พัก</span>
                             <span lang="en">Accommodation</span>
                             <span lang="jp">アコモデーション</span>
@@ -137,7 +137,7 @@
                         </a>
                     </li>
                     <li id="transportation">
-                        <a href="transportation">
+                        <a href="{!! URL::route('transportation') !!}">
                             <span lang="th">การคมนาคม</span>
                             <span lang="en">Transportation</span>
                             <span lang="jp">交通手段</span>
@@ -145,7 +145,7 @@
                         </a>
                     </li>
                     <li id="gallery">
-                        <a href="gallery">
+                        <a href="{!! URL::route('gallery') !!}">
                             <span lang="th">แกลเลอรี</span>
                             <span lang="en">Gallery</span>
                             <span lang="jp">ギャラリー</span>
@@ -153,7 +153,7 @@
                         </a>
                     </li>
                     <li id="trips">
-                        <a href="trips">
+                        <a href="{!! URL::route('trips') !!}">
                             <span lang="th">แนะนำการท่องเที่ยว</span>
                             <span lang="en">Trips</span>
                             <span lang="jp">トリップ</span>
