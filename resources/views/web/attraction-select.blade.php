@@ -38,7 +38,7 @@
 
 @foreach ($attractions as $attraction)
         <div class="row mg-t-1">
-            <div class="columns medium-5 small-12 pd-l-0">
+            <div class="attraction-select-img-container columns medium-5 small-12 pd-l-0">
                 {!! HTML::image($attraction->image_url_1,"$attraction->title_english",array("class"=>"attraction-select-img")) !!}
             </div>
             <div class="columns medium-7 small-12">

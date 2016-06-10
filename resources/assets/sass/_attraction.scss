@@ -1,4 +1,8 @@
 #attraction-select {
+    .attraction-select-img-container{
+        max-height: 300px;
+        overflow: hidden;
+    }
     .attraction-select-img {
         width:100%;
     }
