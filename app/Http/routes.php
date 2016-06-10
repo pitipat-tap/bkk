@@ -16,12 +16,7 @@ Route::get('/',array("as" => "home", "uses" => "WebController@home"));
 
 Route::get('/attraction-category', array("as" => "attractionCategory" ,"uses" => "WebController@attractionCategory"));
 
-Route::get('/attraction-select/{category}', function ($category) {
-    $attractions = Attractions::where("category",$category)->paginate(5);
-    return view('web/attraction-select',array(
-        "attractions" => $attractions,
-    ));
-});
+Route::get('/attraction-select/{category}',array("as" => "attractionSelect" , "uses" => "WebController@attractionSelect"));
 
 Route::get('/attraction/{id}',array("as" => "attraction" ,"uses" => "WebController@attraction"));
 

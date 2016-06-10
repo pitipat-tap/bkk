@@ -18,6 +18,12 @@ class WebController extends Controller {
                 ));
     }
 
+    public function attractionSelect($category){
+        $attractions = Attractions::where("category",$category)->paginate(5);
+        return view('web/attraction-select',array(
+            "attractions" => $attractions,
+        ));
+    }
     public function attractionCategory() {
         $artAndCulture = Attractions::where("category","arts_and_culture")->first();
         $foodAndDrink= Attractions::where("category","food_and_drink")->first();
@@ -40,6 +46,34 @@ class WebController extends Controller {
         return view('web/attraction',array(
             "attraction" => $attraction,
         ));
+    }
+
+    public function accommodation() {
+        $accommodations = Attractions::where("is_accommodation","1")->
+            orderBy('priority', 'ASC')->orderBy('created_at','ASC')->
+            paginate(5);
+        
+        return view('web.accommodation', array("accommodations" => $accommodations));
+    }
+
+    public function accommodationPost($id) {
+
+        $accommodations= Attractions::where('id',$id)->where('is_accommodation',1)->first();
+        if($accommodations){
+            return view("web.accommodation-post", 
+                array(
+                    "accommodation" => $accommodations
+                )
+            );
+        }
+        return Redirect::route("accommodation");
+    }
+
+    public function accommodationJson() {
+        $posts = Attractions::where("is_accommodation", "=", "1")->
+            orderBy('created_at', 'DESC')->
+            paginate(5);
+        return Response::json($arrayName = array('status' => 200, 'posts'=>$posts->toArray()));
     }
 
     public function transportation (){
@@ -78,33 +112,6 @@ class WebController extends Controller {
         return view('web/one-day-trip');
     }
 
-    public function accommodation() {
-        $posts = Attractions::where("is_accommodation", "=", "1")->
-            orderBy('created_at', 'DESC')->
-            paginate(5);
-        
-        return view('web.accommodation', array("posts" => $posts));
-    }
-
-    public function accommodationPost($id) {
-
-        $post = Attractions::find($id);
-        if($post){
-            return view("web.accommodation-post", 
-                array(
-                    "post" => $post
-                )
-            );
-        }
-        return Redirect::route("accommodation");
-    }
-
-    public function accommodationJson() {
-        $posts = Attractions::where("is_accommodation", "=", "1")->
-            orderBy('created_at', 'DESC')->
-            paginate(5);
-        return Response::json($arrayName = array('status' => 200, 'posts'=>$posts->toArray()));
-    }
 
     public function attractionJson() {
         $posts = Attractions::where("is_attraction", "1")->
