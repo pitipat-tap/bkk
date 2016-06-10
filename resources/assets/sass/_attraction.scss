@@ -92,6 +92,18 @@
     }
     .attraction-border {
         border:solid lightgray 2px;
+
+        .info-detail{
+            tbody{
+                border: 0px;
+            }
+            tr{
+                background-color: white;
+            }
+            td:first-child{
+                width:20%;
+            }
+        }
     }
 
 
