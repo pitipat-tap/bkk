@@ -27,7 +27,7 @@ $(document).ready(function(){
 @include("web.top-menu")
 
 <section>
-	<div class="banner-containers attraction-accommodation-banner">
+	<div class="banner-containers attraction-accommodation-banner attraction-img-frame">
 		{!! HTML::image($accommodation->image_url_1,"bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
 	</div>
 </section>
@@ -56,17 +56,24 @@ $(document).ready(function(){
                     <div class="attraction-tag-container show-for-small-only">
                         <h5>Info</h5>
                         <hr>
-                        <p>
-                            <i class="fa fa-clock-o mg-r-05" aria-hidden="true"></i> {!! $accommodation->opening_hours !!}
-                        </p>
-                        <p>
-                            <i class="fa fa-money mg-r-05" aria-hidden="true"></i> {!! $accommodation->admission_free !!}
-                        </p>
-                        @if ($accommodation->remark != null && $accommodation->remark != "")
-                            <p>
-                                <i class="fa fa-clock-o mg-r-05" aria-hidden="true"></i> {!! $accommodation->remark !!}
-                            </p>
-                        @endif
+                        <table class="info-detail">
+                            <tbody>
+                                <tr>
+                                    <td><i class="fa fa-clock-o mg-r-05" aria-hidden="true"></i></td>
+                                    <td>{!! $accommodation->opening_hours !!}</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-money mg-r-05" aria-hidden="true"></i></td>
+                                    <td>{!! $accommodation->admission_free !!}</td>
+                                </tr>
+                                @if ($accommodation->remark != null && $accommodation->remark != "")
+                                    <tr>
+                                        <td><i class="fa fa-user mg-r-05" aria-hidden="true"></i></td>
+                                        <td>{!! $accommodation->remark !!}</td>
+                                    </tr>
+                                @endif
+                            </tbody>
+                        </table>
                     </div>
                     <h5 class="description mg-t-1 pd-l-1 show-for-small-only">Description</h5>
                     <p lang="th">
@@ -92,17 +99,24 @@ $(document).ready(function(){
                         <h5 lang="jp"> {!! $accommodation->title_japan !!} </h5>
                         <h5 lang="ch"> {!! $accommodation->title_china !!} </h5>
                         <hr>
-                        <p>
-                            <i class="fa fa-clock-o mg-r-05" aria-hidden="true"></i> {!! $accommodation->opening_hours !!}
-                        </p>
-                        <p>
-                            <i class="fa fa-money mg-r-05" aria-hidden="true"></i> {!! $accommodation->admission_free !!}
-                        </p>
-                        @if ($accommodation->remark != null && $accommodation->remark != "")
-                            <p>
-                                <i class="fa fa-clock-o mg-r-05" aria-hidden="true"></i> {!! $accommodation->remark !!}
-                            </p>
-                        @endif
+                        <table class="info-detail">
+                            <tbody>
+                                <tr>
+                                    <td><i class="fa fa-clock-o mg-r-05" aria-hidden="true"></i></td>
+                                    <td>{!! $accommodation->opening_hours !!}</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-money mg-r-05" aria-hidden="true"></i></td>
+                                    <td>{!! $accommodation->admission_free !!}</td>
+                                </tr>
+                                @if ($accommodation->remark != null && $accommodation->remark != "")
+                                    <tr>
+                                        <td><i class="fa fa-user mg-r-05" aria-hidden="true"></i></td>
+                                        <td>{!! $accommodation->remark !!}</td>
+                                    </tr>
+                                @endif
+                            </tbody>
+                        </table>
                     </div>
                     <div class="attraction-img-container row small-up-2 mg-t-1">
                         <div class="column attraction-img-frame">

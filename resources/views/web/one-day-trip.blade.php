@@ -79,7 +79,7 @@
 							Built in 1782 during the reign of King Rama I. It’s divided into 3 main zones; The Outer Court which hosts the Temple of Emerald Buddha and other buildings, the Middle Court which hosts Throne hall, and the Inner Court hosts king’s exclusive throne.
 						</p>
 						<div class="row readmore">
-							<a href="#">
+							<a href="http://128.199.92.74/attraction/1" target="_blank">
 								<div>Read more..</div>
 							</a>
 						</div>
@@ -98,7 +98,7 @@
 							Initiated this holy temple as “Public University” in the reign of King Rama III. Contain fine collection arts for example, Poetry, Temple history, Medical text, Thai literature, and Buddhism
 						</p>
 						<div class="row readmore">
-							<a href="#">
+							<a href="http://128.199.92.74/attraction/73" target="_blank">
 								<div>Read more..</div>
 							</a>
 						</div>
@@ -117,7 +117,7 @@
 							Also built in the reign of King Rama 1. The height is 10.50 meters, and made from bricks then coated with cement in octagon shaped. It has earthwork and shelter that protects the  ammunition.
 						</p>
 						<div class="row readmore">
-							<a href="#">
+							<a href="http://128.199.92.74/attraction/60" target="_blank">
 								<div>Read more..</div>
 							</a>
 						</div>
@@ -136,7 +136,7 @@
 							This ancient temple has existed since the Ayutthaya period. Formerly known as Wat Saket, it was reestablished by king Rama I and was then royally titled “Wat Saket”. As for the Golden Mount, it was first constructed in the reign of King Rama III by emulating the pattern of the Golden Mount of the Ayutthaya period.
 						</p>
 						<div class="row readmore">
-							<a href="#">
+							<a href="http://128.199.92.74/attraction/37" target="_blank">
 								<div>Read more..</div>
 							</a>
 						</div>
@@ -155,7 +155,7 @@
 							Was originally called “Rong Kasap Sitthikan” which is Thailand’s Mint. Consequently, the building was renovated and it was used for various fine art exhibitions and is called The National Gallery
 						</p>
 						<div class="row readmore">
-							<a href="#">
+							<a href="http://128.199.92.74/attraction/61" target="_blank">
 								<div>Read more..</div>
 							</a>
 						</div>
@@ -174,7 +174,7 @@
 							Was used to be rice trading place. Nowaday it has become one of the most economical tourist attractions for foreign due to its nightlife entertainment.
 						</p>
 						<div class="row readmore">
-							<a href="#">
+							<a href="http://128.199.92.74/attraction/35" target="_blank">
 								<div>Read more..</div>
 							</a>
 						</div>

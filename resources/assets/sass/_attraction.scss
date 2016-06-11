@@ -1,8 +1,13 @@
 #attraction-select {
+    .attraction-select-img-container{
+        max-height: 300px;
+        overflow: hidden;
+    }
     .attraction-select-img {
         width:100%;
     }
     h4 {
+        color: $primary-color;
         @include breakpoint(small only){
             margin-top:1em;
         }
@@ -19,6 +24,21 @@
         }
         @include breakpoint(medium down){
             padding:1em;
+        }
+    }
+    .description-container{
+        max-height: 100px;
+        overflow: hidden;
+    }
+    .info-detail{
+        tbody{
+            border: 0px;
+        }
+        tr{
+            background-color: white;
+        }
+        td:first-child{
+            width:10%;
         }
     }
 }
@@ -84,15 +104,25 @@
     }
     .attraction-border {
         border:solid lightgray 2px;
+
+        .info-detail{
+            tbody{
+                border: 0px;
+            }
+            tr{
+                background-color: white;
+            }
+            td:first-child{
+                width:20%;
+            }
+        }
     }
-
-
 
     .attraction-img-frame {
         cursor:pointer;
     }
     .selected-frame {
-        margin: 0 auto;
+        margin: 0 auto 3em auto;
         position: relative;
         top: 100px;
         @include breakpoint(xxlarge){

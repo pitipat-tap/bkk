@@ -63,6 +63,7 @@
     z-index: 9;
     display:none;
     opacity:0;
+    overflow-y: scroll;
 }
 .selected-frame {
     margin: 0 auto;

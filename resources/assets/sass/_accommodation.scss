@@ -60,10 +60,15 @@
    	-webkit-box-orient: vertical;
 }
 .green-btn{
-	width: 150px;
-	height: 50px;
 	color: white;
 	background-color: green;
+	height: 2em;
+	@include breakpoint(medium down) {
+		width: 100%;
+	}
+	@include breakpoint(large) {
+		width: 8em;
+	}
 }
 
 .white-btn{

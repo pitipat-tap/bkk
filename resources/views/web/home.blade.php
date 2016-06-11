@@ -21,10 +21,10 @@
 <section id="home-body">
     <div class="body-section">
         <div class="banner-page-title show-for-large columns">
-           <span lang="th" >Destination TH</span>
-           <span lang="en" >Destination EN</span>
-           <span lang="jp" >Destination JP</span>
-           <span lang="ch" >Destination CH</span>
+           <span lang="th" >Destination</span>
+           <span lang="en" >Destination</span>
+           <span lang="jp" >Destination</span>
+           <span lang="ch" >Destination</span>
         </div>
 
         <section class="mg-b-1">
@@ -35,10 +35,10 @@
                 </div>
                 <div class="large-4 columns">
                     <div class="destination-highlight">
-                        <h4 lang="th"> Wat Phra Kaew TH</h4>
-                        <h4 lang="en"> Wat Phra Kaew EN</h4>
-                        <h4 lang="jp"> Wat Phra Kaew JP</h4>
-                        <h4 lang="ch"> Wat Phra Kaew CH</h4>
+                        <h4 lang="th"> Wat Phra Kaew</h4>
+                        <h4 lang="en"> Wat Phra Kaew</h4>
+                        <h4 lang="jp"> Wat Phra Kaew</h4>
+                        <h4 lang="ch"> Wat Phra Kaew</h4>
                         {!! HTML::image("http://placehold.it/350x150","",array("class"=>"")) !!}
                         <p lang="th">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
