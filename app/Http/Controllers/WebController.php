@@ -81,7 +81,7 @@ class WebController extends Controller {
     }
 
     public function gallery(){
-        $images = ImagePost::paginate(12);
+        $images = ImagePost::paginate(20);
         return view('web/gallery',
                 array(
                     "images" => $images

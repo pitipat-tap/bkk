@@ -32,9 +32,7 @@
                 </div>
             @endforeach
         </div>
-        <a id="load-more">
-            load moreeeeeeeeeeeeee
-        </a>
+        <div class="pagination">{!! $images->links() !!}</div>
 	</div>
 </div>
 @include("web.footer")
