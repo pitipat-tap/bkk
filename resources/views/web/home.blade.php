@@ -14,6 +14,50 @@
 
 @section("body")
 
+<script>
+$(document).ready(function(){
+    $('#area-1').hover(
+        function(){
+            $('#zone-1').css("z-index",3);
+        },
+        function(){
+            $('#zone-1').css("z-index",1);
+        }
+    );
+    $('#area-2').hover(
+        function(){
+            $('#zone-2').css("z-index",3);
+        },
+        function(){
+            $('#zone-2').css("z-index",1);
+        }
+    );
+    $('#area-3').hover(
+        function(){
+            $('#zone-3').css("z-index",3);
+        },
+        function(){
+            $('#zone-3').css("z-index",1);
+        }
+    );
+    $('#area-4').hover(
+        function(){
+            $('#zone-4').css("z-index",3);
+        },
+        function(){
+            $('#zone-4').css("z-index",1);
+        }
+    );
+    $('#area-5').hover(
+        function(){
+            $('#zone-5').css("z-index",3);
+        },
+        function(){
+            $('#zone-5').css("z-index",1);
+        }
+    );
+});
+</script>
 @include("web.top-menu")
 
 @include("web.banner-orbit")
@@ -30,8 +74,21 @@
         <section class="mg-b-1">
             <!-- desktop -->
             <div class="row show-for-large">
-                <div class="large-8 columns">
-                      {!! HTML::image("http://placehold.it/800x600","",array("class"=>"")) !!}
+                <div class="large-8 columns maps-container">
+                        
+                      <div class="map-group">
+                          <div id="area-1"></div>
+                          <div id="area-2"></div>
+                          <div id="area-3"></div>
+                          <div id="area-4"></div>
+                          <div id="area-5"></div>
+                          {!! HTML::image("images/maps/map-0.png","",array("style"=>"z-index:2")) !!}
+                          {!! HTML::image("images/maps/map-01.png","",array("id"=>"zone-1")) !!}
+                          {!! HTML::image("images/maps/map-02.png","",array("id"=>"zone-2")) !!}
+                          {!! HTML::image("images/maps/map-03.png","",array("id"=>"zone-3")) !!}
+                          {!! HTML::image("images/maps/map-04.png","",array("id"=>"zone-4")) !!}
+                          {!! HTML::image("images/maps/map-05.png","",array("id"=>"zone-5")) !!}
+                      </div>
                 </div>
                 <div class="large-4 columns">
                     <div class="destination-highlight">
