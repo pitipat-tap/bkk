@@ -251,7 +251,12 @@
             border-width: 2px;
             border-color: lightgray;
             position: relative;
-            height: 505px;
+            @include breakpoint(large) {
+                height: 505px;
+            }
+            @include breakpoint(medium down) {
+                height: 950px;
+            }
 
             .row{
                 background-color:white;
