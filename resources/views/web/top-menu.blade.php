@@ -176,6 +176,7 @@
                       <li><a class="change-language" data-lan="ch" href="#">中文</a></li>
                     </ul>
                   </li>
+                  <!--<li><a href="#" onclick="window.print();"><i class="fa fa-print" aria-hidden="true"></i>Print</a></li>-->
                 </ul>
 
                 <div id="copyright-mobile">

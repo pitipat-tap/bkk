@@ -137,6 +137,7 @@
             </div>
             <div id="footer-link">
                 <ul class="vertical large-horizontal menu">
+                    <li class="show-for-medium"><a href="#" onclick="window.print();"><i class="fa fa-print" aria-hidden="true"></i>Print</a></li>
                     <li><a href="{!! URL::route('aboutus') !!}">About Us</a></li>
                     <li><a href="{!! URL::route('partners') !!}">Our partners</a></li>
                     <li><a href="{!! URL::route('faq') !!}">FAQ</a></li>
