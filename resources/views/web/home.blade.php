@@ -14,50 +14,6 @@
 
 @section("body")
 
-<script>
-$(document).ready(function(){
-    $('#area-1').hover(
-        function(){
-            $('#zone-1').css("z-index",3);
-        },
-        function(){
-            $('#zone-1').css("z-index",1);
-        }
-    );
-    $('#area-2').hover(
-        function(){
-            $('#zone-2').css("z-index",3);
-        },
-        function(){
-            $('#zone-2').css("z-index",1);
-        }
-    );
-    $('#area-3').hover(
-        function(){
-            $('#zone-3').css("z-index",3);
-        },
-        function(){
-            $('#zone-3').css("z-index",1);
-        }
-    );
-    $('#area-4').hover(
-        function(){
-            $('#zone-4').css("z-index",3);
-        },
-        function(){
-            $('#zone-4').css("z-index",1);
-        }
-    );
-    $('#area-5').hover(
-        function(){
-            $('#zone-5').css("z-index",3);
-        },
-        function(){
-            $('#zone-5').css("z-index",1);
-        }
-    );
-});
-</script>
 @include("web.top-menu")
 
 @include("web.banner-orbit")
@@ -234,65 +190,65 @@ $(document).ready(function(){
 
                     <div class="frame" style="overflow: hidden;">
                         <ul>
-                            <li lang="th" class="active">January</li>
-                            <li lang="en" class="active">January</li>
-                            <li lang="jp" class="active">January</li>
-                            <li lang="ch" class="active">January</li>
+                            <li id="1" lang="th" class="active clickable">January</li>
+                            <li id="1" lang="en" class="active clickable">January</li>
+                            <li id="1" lang="jp" class="active clickable">January</li>
+                            <li id="1" lang="ch" class="active clickable">January</li>
 
-                            <li lang="th" >February</li>
-                            <li lang="en" >February</li>
-                            <li lang="jp" >February</li>
-                            <li lang="ch" >February</li>
+                            <li id="2" lang="th" class="clickable">February</li>
+                            <li id="2" lang="en" class="clickable">February</li>
+                            <li id="2" lang="jp" class="clickable">February</li>
+                            <li id="2" lang="ch" class="clickable">February</li>
 
-                            <li lang="th" >March</li>
-                            <li lang="en" >March</li>
-                            <li lang="jp" >March</li>
-                            <li lang="ch" >March</li>
+                            <li id="3" lang="th" class="clickable">March</li>
+                            <li id="3" lang="en" class="clickable">March</li>
+                            <li id="3" lang="jp" class="clickable">March</li>
+                            <li id="3" lang="ch" class="clickable">March</li>
 
-                            <li lang="th" >April</li>
-                            <li lang="en" >April</li>
-                            <li lang="jp" >April</li>
-                            <li lang="ch" >April</li>
+                            <li id="4" lang="th" class="clickable">April</li>
+                            <li id="4" lang="en" class="clickable">April</li>
+                            <li id="4" lang="jp" class="clickable">April</li>
+                            <li id="4" lang="ch" class="clickable">April</li>
 
-                            <li lang="th" >May</li>
-                            <li lang="en" >May</li>
-                            <li lang="jp" >May</li>
-                            <li lang="ch" >May</li>
+                            <li id="5" lang="th" class="clickable">May</li>
+                            <li id="5" lang="en" class="clickable">May</li>
+                            <li id="5" lang="jp" class="clickable">May</li>
+                            <li id="5" lang="ch" class="clickable">May</li>
 
-                            <li lang="th" >June</li>
-                            <li lang="en" >June</li>
-                            <li lang="jp" >June</li>
-                            <li lang="ch" >June</li>
+                            <li id="6" lang="th" class="clickable">June</li>
+                            <li id="6" lang="en" class="clickable">June</li>
+                            <li id="6" lang="jp" class="clickable">June</li>
+                            <li id="6" lang="ch" class="clickable">June</li>
 
-                            <li lang="th" >July</li>
-                            <li lang="en" >July</li>
-                            <li lang="jp" >July</li>
-                            <li lang="ch" >July</li>
+                            <li id="7" lang="th" class="clickable">July</li>
+                            <li id="7" lang="en" class="clickable">July</li>
+                            <li id="7" lang="jp" class="clickable">July</li>
+                            <li id="7" lang="ch" class="clickable">July</li>
 
-                            <li lang="th" >August</li>
-                            <li lang="en" >August</li>
-                            <li lang="jp" >August</li>
-                            <li lang="ch" >August</li>
+                            <li id="8" lang="th" class="clickable">August</li>
+                            <li id="8" lang="en" class="clickable">August</li>
+                            <li id="8" lang="jp" class="clickable">August</li>
+                            <li id="8" lang="ch" class="clickable">August</li>
 
-                            <li lang="th" >September</li>
-                            <li lang="en" >September</li>
-                            <li lang="jp" >September</li>
-                            <li lang="ch" >September</li>
+                            <li id="9" lang="th" class="clickable">September</li>
+                            <li id="9" lang="en" class="clickable">September</li>
+                            <li id="9" lang="jp" class="clickable">September</li>
+                            <li id="9" lang="ch" class="clickable">September</li>
 
-                            <li lang="th" >October</li>
-                            <li lang="en" >October</li>
-                            <li lang="jp" >October</li>
-                            <li lang="ch" >October</li>
+                            <li id="10" lang="th" class="clickable">October</li>
+                            <li id="10" lang="en" class="clickable">October</li>
+                            <li id="10" lang="jp" class="clickable">October</li>
+                            <li id="10" lang="ch" class="clickable">October</li>
 
-                            <li lang="th" >November</li>
-                            <li lang="en" >November</li>
-                            <li lang="jp" >November</li>
-                            <li lang="ch" >November</li>
+                            <li id="11" lang="th" class="clickable">November</li>
+                            <li id="11" lang="en" class="clickable">November</li>
+                            <li id="11" lang="jp" class="clickable">November</li>
+                            <li id="11" lang="ch" class="clickable">November</li>
 
-                            <li lang="th" >December</li>
-                            <li lang="en" >December</li>
-                            <li lang="jp" >December</li>
-                            <li lang="ch" >December</li>
+                            <li id="12" lang="th" class="clickable">December</li>
+                            <li id="12" lang="en" class="clickable">December</li>
+                            <li id="12" lang="jp" class="clickable">December</li>
+                            <li id="12" lang="ch" class="clickable">December</li>
                         </ul>
                     </div>
                 </div>
@@ -305,12 +261,16 @@ $(document).ready(function(){
                                 {!! HTML::image("http://placehold.it/550x450","",array("class"=>"")) !!}
                             </div>
                         </div>
-                        <div class=" large-6 columns">
+
+                        @foreach($events as $index=>$event)
+                        @if($event->title_thai != null)
+                        <div id="detail{!! $index !!}" class="zindex1 large-6 columns">
                             <div class="event-content">
-                                <h3 lang="th"> Songkarn </h3>
-                                <h3 lang="en"> Songkarn </h3>
-                                <h3 lang="jp"> Songkarn </h3>
-                                <h3 lang="ch"> Songkarn </h3>
+                                <h3 lang="th"> {!! $event->title_thai !!} </h3>
+                                <h3 lang="en"> {!! $event->title_english !!} </h3>
+                                <h3 lang="jp"> {!! $event->title_japan !!} </h3>
+                                <h3 lang="ch"> {!! $event->title_china !!} </h3>
+                                
                                 <p lang="th">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Nam dapibus lectus eget mi aliquam, ac bibendum orci dictum.
@@ -360,6 +320,12 @@ $(document).ready(function(){
                                 </div>
                             </div>
                         </div>
+                        @else
+                            <div id="{!! $event->month !!}" class="zindex1 large-6 columns">
+                                Not Found
+                            </div>
+                        @endif
+                        @endforeach
                     </div>
                 </div>
             </div>

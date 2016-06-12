@@ -36,7 +36,8 @@ class AdminAttractionsController extends Controller {
 			          ->orWhere('description_thai', 'LIKE', "%".$q."%")
 			          ->orWhere('description_english', 'LIKE', "%".$q."%")
 			          ->orWhere('description_japan', 'LIKE', "%".$q."%")
-			          ->orWhere('description_china', 'LIKE', "%".$q."%");
+			          ->orWhere('description_china', 'LIKE', "%".$q."%")
+			          ->orWhere('opening_hours', 'LIKE', "%".$q."%");
 			});
 		}
 
