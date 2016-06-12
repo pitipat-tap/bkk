@@ -49,12 +49,12 @@
                 </div>
                 <div class="map-content large-4 columns">
 
-                    <div id="map-content-1" class="map-content-select destination-highlight">
+                    <div id="map-content-1" class="opa-1 map-content-select destination-highlight">
                         <h4 id="des-h-1" lang="th"> วัดกัลยาณมิตรวรมหาวิหาร </h4>
                         <h4 id="des-h-2" lang="en"> Wat Kalayanamit</h4>
                         <h4 id="des-h-3" lang="jp"> Wat Phra Kaew</h4>
                         <h4 id="des-h-4" lang="ch"> Wat Phra Kaew</h4>
-                        {!! HTML::image("http://placehold.it/350x150","",array("id"=>"des-img")) !!}
+                        {!! HTML::image("images/uploads/normal/Attractions/62_Wat_Kanlaya/shutterstock_258300206-1.jpg","",array("id"=>"des-img")) !!}
                         <p id="des-c-1" lang="th">
                            		เป็นพระอารามหลวงชั้นโท ชนิดวรมหาวิหาร เจ้าพระยานิกรบดินทร์ (โต กัลยาณมิตร) บุตรพระวิชัยวารี (ทัน แซ่อึ่ง) เมื่อครั้งมีบรรดาศักดิ์เป็น พระยาราชสุภาวดี เจ้ากรมพระสุรัสวดีกลาง ได้อุทิศบ้านพร้อมที่ดินและได้ซื้อที่ดินบริเวณใกล้เคียงซึ่งเดิมเรียกว่า หมู่บ้านกฏิจีน เพิ่มเติมสร้างเป็นวัดเมื่อปี พ.ศ. 2368 ในสมัยรัชกาลที่ 3 แล้วถวายเป็นพระอารามหลวง ได้รับพระราชทานนามว่า วัดกัลยาณมิตร กรมศิลปากรได้ขึ้นทะเบียนวัดเป็นโบราณสถานสำคัญของชาติเมื่อปี พ.ศ. 2492
                         </p>
@@ -79,7 +79,7 @@
                         <h4 id="des-h-2" lang="en"> Temple of the Emerald Buddha</h4>
                         <h4 id="des-h-3" lang="jp"> Temple of the Emerald Buddha</h4>
                         <h4 id="des-h-4" lang="ch"> Temple of the Emerald Buddha</h4>
-                        {!! HTML::image("http://placehold.it/350x150","",array("id"=>"des-img")) !!}
+                        {!! HTML::image("images/uploads/normal/Attractions/02_Wat_Pra_Kaew/02_Temple of the Emerald Buddha_1.jpg","",array("id"=>"des-img")) !!}
                         <p id="des-c-1" lang="th">
                             เป็นวัดที่ประดิษฐานพระแก้วมรกต ภายในมีอาณาบริเวณกว้างขวาง ประกอบด้วย 3 ส่วน คือส่วนแรกเป็นวัดพระแก้วมรกต ระเบียงที่ลดหลั่นกันลงไป และส่วนของหมู่ตึกทางทิศเหนือ และระเบียงด้านหน้าของประสาทพระเทพบิดร
 วัดพระศรีรัตนศาสดารามตั้งอยู่ในเขตพระราชฐานชั้นนอกทางทิศตะวันออกของพระบรมมหาราชวัง ภายในไม่มีพระภิกษุสงฆ์อยู่จำพรรษา รัชกาลที่ 1 โปรดเกล้าฯ ให้สร้างขึ้นพร้อมกับพระบรมมหาราชวังและกรุงรัตนโกสินทร์ซึ่งเป็นการสร้างวัดในพระราชวังตามอย่างวัดพระศรีสรรเพชญ์ของกรุงศรีอยุธยา
@@ -107,7 +107,7 @@ The most famous in Wat Phra Kaew are: The Emerald Buddha, Model of Angkor Wat, P
                         <h4 id="des-h-2" lang="en">Terminal 21</h4>
                         <h4 id="des-h-3" lang="jp">Terminal 21</h4>
                         <h4 id="des-h-4" lang="ch">Terminal 21</h4>
-                        {!! HTML::image("http://placehold.it/350x150","",array("id"=>"des-img")) !!}
+                        {!! HTML::image("images/uploads/normal/Attractions/108_Terminal_21/shutterstock_202913998.jpg","",array("id"=>"des-img")) !!}
                         <p id="des-c-1" lang="th">
                             เทอร์มินัล 21 เป็นศูนย์การค้าแห่งหนึ่งในกรุงเทพมหานครที่รวบรวมบรรยากาศทั่วทุกมุมโลกมาไว้ใน ที่เดียวใจกลาง อโศก ทั้งแคริบเบียน โรม, ปารีส, โตเกียว, ลอนดอน, อิสตันบูล,ซานฟรานซิสโก และฮอลลีวู้ด ด้วยแนวคิดและสโลแกน "Terminal 21 คือ ท่าอากาศยานแห่งความบันเทิง ที่ยกทั้งโลก มาไว้ที่สุขุมวิท" 
                         </p>
@@ -132,7 +132,7 @@ The most famous in Wat Phra Kaew are: The Emerald Buddha, Model of Angkor Wat, P
                         <h4 id="des-h-2" lang="en">Lumpini Boxing Stadium and Ratchadamneon Boxing Stadium</h4>
                         <h4 id="des-h-3" lang="jp">Lumpini Boxing Stadium and Ratchadamneon Boxing Stadium</h4>
                         <h4 id="des-h-4" lang="ch">Lumpini Boxing Stadium and Ratchadamneon Boxing Stadium</h4>
-                        {!! HTML::image("http://placehold.it/350x150","",array("id"=>"des-img")) !!}
+                        {!! HTML::image("images/uploads/normal/Attractions/32_Lumpini_Boxing/shutterstock_285506159.jpg","",array("id"=>"des-img")) !!}
                         <p id="des-c-1" lang="th">
                             "สนามมวยเวทีลุมพินี เป็นสนามมวยที่มีตำนานมาอย่างยาวนาน เริ่มต้นตั้งอยู่บริเวณด้านหลังพระบรมรูปรัชกาลที่ 6 และย้ายวิกมาตั้งอยู่แถวบริเวณบ่อนไก่ แต่ยังคงใช้ชื่อเดิมเพราะถือเป็นมงคลนาม โดย พลตรีประภาส จารุเสถียร ขณะนั้นดำรงตำแหน่งผู้บัญชาการกองพลที่ 1 รักษาพระองค์ โดยมีการชกมวยนัดแรกเมื่อ 15 มีนาคม และพิธีเปิดอย่างเป็นทางการเมื่อวันที่ 8 ธันวาคม พ.ศ. 2499
 และจากการที่สำนักงานทรัพย์สินส่วนพระมหากษัตริย์ ซึ่งเป็นเจ้าของที่ดินมีแผนงานการพัฒนาที่ดินบริเวณถนนพระราม 4 ให้สามารถใช้ประโยชน์ในเชิงธุรกิจอย่างเต็มขีดความสามารถของพื้นที่ จึงขอให้สนามมวยย้ายไปยังสนามแห่งใหม่ สนามสวยจึงพิจารณาพื้นที่แห่งใหม่
@@ -169,7 +169,7 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                         <h4 id="des-h-2" lang="en"> Wat Phra Kaew</h4>
                         <h4 id="des-h-3" lang="jp"> Wat Phra Kaew</h4>
                         <h4 id="des-h-4" lang="ch"> Wat Phra Kaew</h4>
-                        {!! HTML::image("http://placehold.it/350x150","",array("id"=>"des-img")) !!}
+                        {!! HTML::image("images/uploads/normal/Attractions/51_Safari/shutterstock_287322869.jpg","",array("id"=>"des-img")) !!}
                         <p id="des-c-1" lang="th">
                             ซาฟารีเวิลด์ตั้งอยู่บน ถนนรามอินทรา บริเวณกิโลเมตรที่ 9 เขตมีนบุรี มีเนื้อที่ประมาณ 430 ไร่ แบ่งพื้นที่ออกเป็น 2 ส่วน ได้แก่ ส่วนที่หนึ่ง คือ ซาฟารีปาร์ค ซึ่งเป็นสวนสัตว์เปิด มีสัตว์ต่างๆ เช่น ม้าลาย กวาง ยีราฟ นก เสือ สิงโต หมี ฯลฯ ให้นักท่องเที่ยวได้นั่งรถชมชีวิตความเป็นอยู่ของสัตว์ตามธรรมชาติโดยรถส่วน ตัว หรือรถบริการพร้อมผู้บรรยายของซาฟารีเวิลด์ ส่วนที่สอง คือ มารีนปาร์ค หรือสวนน้ำ มีสัตว์น้ำ และสัตว์ชนิดต่างๆ ที่หาดูให้ชมยาก รวมทั้งการแสดงต่างๆ เช่น การแสดงของปลาโลมา, นก, แมวน้ำ และลิง เป็นต้น
 นอก จากนี้ยังมีร้านอาหารและเกมส์ต่างๆ เช่น เกมส์ปาเป้า ยิงปืน โยนบ่วง ฯลฯ ไว้บริการ 

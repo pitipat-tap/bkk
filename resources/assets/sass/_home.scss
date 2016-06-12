@@ -107,14 +107,15 @@
             }
             #area-2 {
                 width: 60px;
-                left:210px;
-                height:285px;
+                left: 210px;
+                height: 143px;
+                top: 145px;
             }
             #area-3 {
                 width: 205px;
                 left: 210px;
                 top: 285px;
-                height: 200px;
+                height: 110px;
             }
             #area-4 {
                 width: 160px;
@@ -153,9 +154,14 @@
             }
         }
     }
+    .opa-1 {
+        opacity:1 !important;
+        z-index:1 !important;
+    }
     .map-content-select {
         position:absolute;
         opacity:0;
+        z-index:-1;
     }
     .destination-highlight{
         padding: 20px 30px;
