@@ -96,7 +96,7 @@
                 </div>
             </div>
             <!-- mobile -->
-            <div id="destination-mobile" class="row hide-for-large hide-for-print">
+            <!-- <div id="destination-mobile" class="row hide-for-large hide-for-print">
                 <h2 lang="th">Destination</h2>
                 <h2 lang="en">Destination</h2>
                 <h2 lang="jp">Destination</h2>
@@ -112,7 +112,7 @@
                     </div>
                 </form>
                 <hr>
-            </div>
+            </div> -->
         </section>
 
         <section id="campaign-attractions" >
