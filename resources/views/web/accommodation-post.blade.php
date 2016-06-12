@@ -170,18 +170,26 @@ $(document).ready(function(){
                         </table>
                     </div>
                     <div class="attraction-img-container row small-up-2 mg-t-1">
+                        @if ($accommodation->image_url_2 != null && $accommodation->image_url_2 != "")
                         <div class="column attraction-img-frame">
                             {!! HTML::image($accommodation->image_url_2,"",array("class"=>"attraction-tag-img")) !!}
                         </div>
+                        @endif
+                        @if ($accommodation->image_url_3 != null && $accommodation->image_url_3 != "")
                         <div class="column attraction-img-frame">
                             {!! HTML::image($accommodation->image_url_3,"",array("class"=>"attraction-tag-img")) !!}
                         </div>
+                        @endif
+                        @if ($accommodation->image_url_4 != null && $accommodation->image_url_4 != "")
                         <div class="column attraction-img-frame">
                             {!! HTML::image($accommodation->image_url_4,"",array("class"=>"attraction-tag-img")) !!}
                         </div>
+                        @endif
+                        @if ($accommodation->image_url_5 != null && $accommodation->image_url_5 != "")
                         <div class="column attraction-img-frame">
                             {!! HTML::image($accommodation->image_url_5,"",array("class"=>"attraction-tag-img")) !!}
                         </div>
+                        @endif
                     </div>
                     <h3 class="show-for-small-only map"> Map </h3>
                     <div align="center" class="show-for-small-only">

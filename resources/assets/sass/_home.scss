@@ -140,6 +140,23 @@
 
         }
     }
+    .map-content {
+        position:relative;
+        @include breakpoint(large up){
+            height:560px;
+        }
+        p {
+            padding: 10px 0;
+            overflow: hidden;
+            @include breakpoint(large up){
+                max-height: 200px;
+            }
+        }
+    }
+    .map-content-select {
+        position:absolute;
+        opacity:0;
+    }
     .destination-highlight{
         padding: 20px 30px;
         background-color: $secondary-color;
