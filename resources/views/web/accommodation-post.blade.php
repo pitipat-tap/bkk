@@ -151,7 +151,7 @@ $(document).ready(function(){
                                 @if ($accommodation->address!= null && $accommodation->address!= "")
                                     <tr>
                                         <td><i class="fa fa-map-marker mg-r-05" aria-hidden="true"></i></td>
-                                        <td>{!! $accommodation->address!!}</td>
+                                        <td><p>{!! $accommodation->address!!}</p></td>
                                     </tr>
                                 @endif
                                 @if ($accommodation->commute!= null && $accommodation->commute!= "")
