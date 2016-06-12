@@ -22,7 +22,7 @@ gulp.task('default',['clean'], function() {
 
 });
 
-gulp.task('all',['clean', 'minify-js', 'compile'], function () {
+gulp.task('all',['clean', 'minify-js', 'minify-css', 'compile', 'images', 'images-upload'], function () {
 
 });
 
