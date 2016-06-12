@@ -272,6 +272,11 @@
                                 <h3 lang="jp"> {!! $event->title_japan !!} </h3>
                                 <h3 lang="ch"> {!! $event->title_china !!} </h3>
                                 
+                                <p>
+                                    <div class="large-4 columns end">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i> {!! $event->opening_hours !!} 
+                                    </div>
+                                </p>
                                 <p lang="th">
                                     {!! $event->description_thai !!}
                                 </p>
@@ -283,11 +288,6 @@
                                 </p>
                                 <p lang="ch">
                                     {!! $event->description_china !!}
-                                </p>
-                                <p>
-                                    <div class="large-4 columns end">
-                                        <i class="fa fa-calendar" aria-hidden="true"></i> {!! $event->opening_hours !!} 
-                                    </div>
                                 </p>
                                 <hr>
                                 <div class="">

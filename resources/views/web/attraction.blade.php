@@ -69,9 +69,33 @@ $(document).ready(function(){
                                     <td><i class="fa fa-money mg-r-05" aria-hidden="true"></i></td>
                                     <td>{!! $attraction->admission_free !!}</td>
                                 </tr>
+                                @if ($attraction->telephone_number!= null && $attraction->telephone_number!= "")
+                                    <tr>
+                                        <td><i class="fa fa-phone mg-r-05" aria-hidden="true"></i></td>
+                                        <td>{!! $attraction->telephone_number!!}</td>
+                                    </tr>
+                                @endif
+                                @if ($attraction->website!= null && $attraction->website!= "")
+                                    <tr>
+                                        <td><i class="fa fa-globe mg-r-05" aria-hidden="true"></i></td>
+                                        <td>{!! $attraction->website!!}</td>
+                                    </tr>
+                                @endif
+                                @if ($attraction->address!= null && $attraction->address!= "")
+                                    <tr>
+                                        <td><i class="fa fa-map-marker mg-r-05" aria-hidden="true"></i></td>
+                                        <td>{!! $attraction->address!!}</td>
+                                    </tr>
+                                @endif
+                                @if ($attraction->commute!= null && $attraction->commute!= "")
+                                    <tr>
+                                        <td><i class="fa fa-bus mg-r-05" aria-hidden="true"></i></td>
+                                        <td>{!! $attraction->commute!!}</td>
+                                    </tr>
+                                @endif
                                 @if ($attraction->remark != null && $attraction->remark != "")
                                     <tr>
-                                        <td><i class="fa fa-user mg-r-05" aria-hidden="true"></i></td>
+                                        <td><i class="fa fa-commenting-o mg-r-05" aria-hidden="true"></i></td>
                                         <td>{!! $attraction->remark !!}</td>
                                     </tr>
                                 @endif
@@ -112,9 +136,33 @@ $(document).ready(function(){
                                     <td><i class="fa fa-money mg-r-05" aria-hidden="true"></i></td>
                                     <td>{!! $attraction->admission_free !!}</td>
                                 </tr>
+                                @if ($attraction->telephone_number!= null && $attraction->telephone_number!= "")
+                                    <tr>
+                                        <td><i class="fa fa-phone mg-r-05" aria-hidden="true"></i></td>
+                                        <td>{!! $attraction->telephone_number!!}</td>
+                                    </tr>
+                                @endif
+                                @if ($attraction->website!= null && $attraction->website!= "")
+                                    <tr>
+                                        <td><i class="fa fa-globe mg-r-05" aria-hidden="true"></i></td>
+                                        <td>{!! $attraction->website!!}</td>
+                                    </tr>
+                                @endif
+                                @if ($attraction->address!= null && $attraction->address!= "")
+                                    <tr>
+                                        <td><i class="fa fa-map-marker mg-r-05" aria-hidden="true"></i></td>
+                                        <td>{!! $attraction->address!!}</td>
+                                    </tr>
+                                @endif
+                                @if ($attraction->commute!= null && $attraction->commute!= "")
+                                    <tr>
+                                        <td><i class="fa fa-bus mg-r-05" aria-hidden="true"></i></td>
+                                        <td>{!! $attraction->commute!!}</td>
+                                    </tr>
+                                @endif
                                 @if ($attraction->remark != null && $attraction->remark != "")
                                     <tr>
-                                        <td><i class="fa fa-user mg-r-05" aria-hidden="true"></i></td>
+                                        <td><i class="fa fa-commenting-o mg-r-05" aria-hidden="true"></i></td>
                                         <td>{!! $attraction->remark !!}</td>
                                     </tr>
                                 @endif

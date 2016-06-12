@@ -93,7 +93,9 @@
                 </div>
                 <div class="column">
                     <p>
-                        <a href="http://203.155.220.167/" target="_blank"><img src="http://www.bangkoktourist.com/site//wp-content/themes/3clicks-child-theme/images/02-Banner252x238.png" width="133" height="130"></a>
+                        <a href="http://203.155.220.167/" target="_blank">
+                            {!! HTML::image("images/logo/gis-banner.png","",array("width"=>"133","height"=>"130")) !!}
+                        </a>
                     </p>
                 </div>
                 <div class="column">
