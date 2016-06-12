@@ -1,7 +1,7 @@
 @extends("..layouts.head")
 
 @section("specific_title")
-: Accommodation
+: Accommodation : {!! $accommodations->currentPage() !!}
 @stop
 
 @section("specific_css")
