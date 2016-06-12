@@ -20,8 +20,21 @@ class WebController extends Controller {
 
     public function attractionSelect($category){
         $attractions = Attractions::where("category",$category)->paginate(5);
+        $title = "";
+        if($category == 'arts_and_culture'){
+            $title = 'Art And Culture';
+        }else if($category == 'food_and_drink'){
+            $title = 'Food And Drink';
+        }else if($category == 'parks_and_gardens'){
+            $title = 'Parks And Gardens';
+        }else if($category == 'events'){
+            $title = 'Events';
+        }else if($category == 'shopping'){
+            $title = 'Shopping';
+        }
         return view('web/attraction-select',array(
             "attractions" => $attractions,
+            "title" => $title,
         ));
     }
     public function attractionCategory() {

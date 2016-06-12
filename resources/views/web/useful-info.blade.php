@@ -1,5 +1,8 @@
 @extends("..layouts.head")
 
+@section("specific_title")
+ : Useful Info
+@stop
 
 @section("specific_css")
 {!! Html::style("css/useful-info.css") !!}

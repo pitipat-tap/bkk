@@ -1,5 +1,8 @@
 @extends("..layouts.head")
 
+@section("specific_title")
+ : One Day Trip
+@stop
 
 @section("specific_css")
 

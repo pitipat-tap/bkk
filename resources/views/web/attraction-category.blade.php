@@ -1,5 +1,8 @@
 @extends("..layouts.head")
 
+@section("specific_title")
+ : Attraction Category
+@stop
 
 @section("specific_css")
 {!! Html::style("css/attraction-category.css") !!}

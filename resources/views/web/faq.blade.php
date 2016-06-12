@@ -1,5 +1,8 @@
 @extends("..layouts.head")
 
+@section("specific_title")
+ : FAQ
+@stop
 
 @section("specific_css")
 
