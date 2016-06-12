@@ -140,7 +140,7 @@
                     <li><a href="{!! URL::route('faq') !!}">FAQ</a></li>
                     <li><a href="{!! URL::route('useful-info') !!}">Useful Info</a></li>
                     <li><a href="https://www.youtube.com/user/bangkoktourism" target="_blank">Video</a></li>
-                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="{!! URL::route('sitemap') !!}">Sitemap</a></li>
                 </ul>
             </div>
         </div>

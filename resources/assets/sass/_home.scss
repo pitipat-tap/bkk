@@ -99,28 +99,38 @@
             div {
                 position:absolute;
                 z-index:5;
-                @include breakpoint(xlarge up){
-                    height: 600px;
-                }
             }
             #area-1 {
-                width: 180px;
+                width: 210px;
+                height: 390px;
+                top: 200px;
             }
             #area-2 {
                 width: 60px;
-                left:170px;
+                left:210px;
+                height:285px;
             }
             #area-3 {
-                width: 60px;
-                left:230px;
+                width: 205px;
+                left: 210px;
+                top: 285px;
+                height: 200px;
             }
             #area-4 {
-                width: 150px;
-                left:290px;
+                width: 160px;
+                left: 270px;
+                height: 165px;
+                top: 140px;
             }
             #area-5 {
-                width: 315px;
-                left:440px;
+                width: 330px;
+                left:427px;
+                height:385px;
+            }
+            #area-6 {
+                width: 160px;
+                left: 270px;
+                height: 135px;
             }
         }
         img {
@@ -207,6 +217,9 @@
         .row{
             background-color: $secondary-color;
         }
+        .pos-r{
+            position:relative;
+        }
         .events-container{
             width: 96%;
             margin: 2% 2% 4% 2%;
@@ -214,6 +227,8 @@
             border: solid;
             border-width: 2px;
             border-color: lightgray;
+            position: relative;
+            height: 505px;
 
             .row{
                 background-color:white;
@@ -221,6 +236,18 @@
 
             .event-item{
                 margin:30px;
+                max-height:440px;
+                overflow:hidden;
+            }
+            .event-item-list-select {
+                z-index:2 !important;
+            }
+            .event-item-list {
+                z-index:1;
+                background-color:white;
+                position:absolute;
+                width:100%;
+                height:100%;
             }
             .event-content{
                 padding:30px 0;

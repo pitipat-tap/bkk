@@ -32,7 +32,7 @@ class WebController extends Controller {
         }
         if($febEvent){    
             $febEvent->month = "febuary";
-            array_push($events, $febvent);
+            array_push($events, $febEvent);
         }
         if($marEvent){
             $marEvent->month = "march";
@@ -202,6 +202,9 @@ class WebController extends Controller {
         return view('web/one-day-trip');
     }
 
+    public function sitemap(){
+        return view('web/sitemap');
+    }
 
     public function attractionJson() {
         $posts = Attractions::where("is_attraction", "1")->
