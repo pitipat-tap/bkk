@@ -69,6 +69,30 @@ $(document).ready(function(){
                                     <td><i class="fa fa-money mg-r-05" aria-hidden="true"></i></td>
                                     <td>{!! $accommodation->admission_free !!}</td>
                                 </tr>
+                                @if ($accommodation->telephone_number!= null && $accommodation->telephone_number!= "")
+                                    <tr>
+                                        <td><i class="fa fa-phone mg-r-05" aria-hidden="true"></i></td>
+                                        <td>{!! $accommodation->telephone_number!!}</td>
+                                    </tr>
+                                @endif
+                                @if ($accommodation->website!= null && $accommodation->website!= "")
+                                    <tr>
+                                        <td><i class="fa fa-globe mg-r-05" aria-hidden="true"></i></td>
+                                        <td>{!! $accommodation->website!!}</td>
+                                    </tr>
+                                @endif
+                                @if ($accommodation->address!= null && $accommodation->address!= "")
+                                    <tr>
+                                        <td><i class="fa fa-map-marker mg-r-05" aria-hidden="true"></i></td>
+                                        <td>{!! $accommodation->address!!}</td>
+                                    </tr>
+                                @endif
+                                @if ($accommodation->commute!= null && $accommodation->commute!= "")
+                                    <tr>
+                                        <td><i class="fa fa-bus mg-r-05" aria-hidden="true"></i></td>
+                                        <td>{!! $accommodation->commute!!}</td>
+                                    </tr>
+                                @endif
                                 @if ($accommodation->remark != null && $accommodation->remark != "")
                                     <tr>
                                         <td><i class="fa fa-user mg-r-05" aria-hidden="true"></i></td>
@@ -112,6 +136,30 @@ $(document).ready(function(){
                                     <td><i class="fa fa-money mg-r-05" aria-hidden="true"></i></td>
                                     <td>{!! $accommodation->admission_free !!}</td>
                                 </tr>
+                                @if ($accommodation->telephone_number!= null && $accommodation->telephone_number!= "")
+                                    <tr>
+                                        <td><i class="fa fa-phone mg-r-05" aria-hidden="true"></i></td>
+                                        <td>{!! $accommodation->telephone_number!!}</td>
+                                    </tr>
+                                @endif
+                                @if ($accommodation->website!= null && $accommodation->website!= "")
+                                    <tr>
+                                        <td><i class="fa fa-globe mg-r-05" aria-hidden="true"></i></td>
+                                        <td>{!! $accommodation->website!!}</td>
+                                    </tr>
+                                @endif
+                                @if ($accommodation->address!= null && $accommodation->address!= "")
+                                    <tr>
+                                        <td><i class="fa fa-map-marker mg-r-05" aria-hidden="true"></i></td>
+                                        <td>{!! $accommodation->address!!}</td>
+                                    </tr>
+                                @endif
+                                @if ($accommodation->commute!= null && $accommodation->commute!= "")
+                                    <tr>
+                                        <td><i class="fa fa-bus mg-r-05" aria-hidden="true"></i></td>
+                                        <td>{!! $accommodation->commute!!}</td>
+                                    </tr>
+                                @endif
                                 @if ($accommodation->remark != null && $accommodation->remark != "")
                                     <tr>
                                         <td><i class="fa fa-user mg-r-05" aria-hidden="true"></i></td>
