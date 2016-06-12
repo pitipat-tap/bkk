@@ -81,7 +81,7 @@
                         {!! $attraction->description_china !!}
                     </p>
                 </div>
-                <a href="../attraction/{!! $attraction->id !!}">
+                <a href="{!! URL::route('attraction',array($attraction->id)) !!}">
                     <button class="green-btn mg-t-1">
                         <span lang="th">Read More...</span>
                         <span lang="en">Read More...</span>

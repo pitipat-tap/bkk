@@ -14,58 +14,6 @@
 
 @section("body")
 
-<script>
-$(document).ready(function(){
-    $('#area-1').hover(
-        function(){
-            $('#zone-1').css("z-index",3);
-        },
-        function(){
-            $('#zone-1').css("z-index",1);
-        }
-    );
-    $('#area-2').hover(
-        function(){
-            $('#zone-2').css("z-index",3);
-        },
-        function(){
-            $('#zone-2').css("z-index",1);
-        }
-    );
-    $('#area-3').hover(
-        function(){
-            $('#zone-3').css("z-index",3);
-        },
-        function(){
-            $('#zone-3').css("z-index",1);
-        }
-    );
-    $('#area-4').hover(
-        function(){
-            $('#zone-4').css("z-index",3);
-        },
-        function(){
-            $('#zone-4').css("z-index",1);
-        }
-    );
-    $('#area-5').hover(
-        function(){
-            $('#zone-5').css("z-index",3);
-        },
-        function(){
-            $('#zone-5').css("z-index",1);
-        }
-    );
-    $('#area-6').hover(
-        function(){
-            $('#zone-5').css("z-index",3);
-        },
-        function(){
-            $('#zone-5').css("z-index",1);
-        }
-    );
-});
-</script>
 @include("web.top-menu")
 
 @include("web.banner-orbit")
@@ -243,122 +191,107 @@ $(document).ready(function(){
 
                     <div class="frame" style="overflow: hidden;">
                         <ul>
-                            <li lang="th" class="active">January</li>
-                            <li lang="en" class="active">January</li>
-                            <li lang="jp" class="active">January</li>
-                            <li lang="ch" class="active">January</li>
+                            <li lang="th" data-month="january" class="month">January</li>
+                            <li lang="en" data-month="january" class="month">January</li>
+                            <li lang="jp" data-month="january" class="month">January</li>
+                            <li lang="ch" data-month="january" class="month">January</li>
 
-                            <li lang="th" >February</li>
-                            <li lang="en" >February</li>
-                            <li lang="jp" >February</li>
-                            <li lang="ch" >February</li>
+                            <li lang="th" data-month="febuary" class="month">February</li>
+                            <li lang="en" data-month="febuary" class="month">February</li>
+                            <li lang="jp" data-month="febuary" class="month">February</li>
+                            <li lang="ch" data-month="febuary" class="month">February</li>
 
-                            <li lang="th" >March</li>
-                            <li lang="en" >March</li>
-                            <li lang="jp" >March</li>
-                            <li lang="ch" >March</li>
+                            <li lang="th" data-month="march" class="month">March</li>
+                            <li lang="en" data-month="march" class="month">March</li>
+                            <li lang="jp" data-month="march" class="month">March</li>
+                            <li lang="ch" data-month="march" class="month">March</li>
 
-                            <li lang="th" >April</li>
-                            <li lang="en" >April</li>
-                            <li lang="jp" >April</li>
-                            <li lang="ch" >April</li>
+                            <li lang="th" data-month="april" class="month">April</li>
+                            <li lang="en" data-month="april" class="month">April</li>
+                            <li lang="jp" data-month="april" class="month">April</li>
+                            <li lang="ch" data-month="april" class="month">April</li>
 
-                            <li lang="th" >May</li>
-                            <li lang="en" >May</li>
-                            <li lang="jp" >May</li>
-                            <li lang="ch" >May</li>
+                            <li lang="th" data-month="may" class="month">May</li>
+                            <li lang="en" data-month="may" class="month">May</li>
+                            <li lang="jp" data-month="may" class="month">May</li>
+                            <li lang="ch" data-month="may" class="month">May</li>
 
-                            <li lang="th" >June</li>
-                            <li lang="en" >June</li>
-                            <li lang="jp" >June</li>
-                            <li lang="ch" >June</li>
+                            <li lang="th" data-month="june" class="month">June</li>
+                            <li lang="en" data-month="june" class="month">June</li>
+                            <li lang="jp" data-month="june" class="month">June</li>
+                            <li lang="ch" data-month="june" class="month">June</li>
 
-                            <li lang="th" >July</li>
-                            <li lang="en" >July</li>
-                            <li lang="jp" >July</li>
-                            <li lang="ch" >July</li>
+                            <li lang="th" data-month="july" class="month">July</li>
+                            <li lang="en" data-month="july" class="month">July</li>
+                            <li lang="jp" data-month="july" class="month">July</li>
+                            <li lang="ch" data-month="july" class="month">July</li>
 
-                            <li lang="th" >August</li>
-                            <li lang="en" >August</li>
-                            <li lang="jp" >August</li>
-                            <li lang="ch" >August</li>
+                            <li lang="th" data-month="august" class="month">August</li>
+                            <li lang="en" data-month="august" class="month">August</li>
+                            <li lang="jp" data-month="august" class="month">August</li>
+                            <li lang="ch" data-month="august" class="month">August</li>
 
-                            <li lang="th" >September</li>
-                            <li lang="en" >September</li>
-                            <li lang="jp" >September</li>
-                            <li lang="ch" >September</li>
+                            <li lang="th" data-month="september" class="month">September</li>
+                            <li lang="en" data-month="september" class="month">September</li>
+                            <li lang="jp" data-month="september" class="month">September</li>
+                            <li lang="ch" data-month="september" class="month">September</li>
 
-                            <li lang="th" >October</li>
-                            <li lang="en" >October</li>
-                            <li lang="jp" >October</li>
-                            <li lang="ch" >October</li>
+                            <li lang="th" data-month="october" class="month">October</li>
+                            <li lang="en" data-month="october" class="month">October</li>
+                            <li lang="jp" data-month="october" class="month">October</li>
+                            <li lang="ch" data-month="october" class="month">October</li>
 
-                            <li lang="th" >November</li>
-                            <li lang="en" >November</li>
-                            <li lang="jp" >November</li>
-                            <li lang="ch" >November</li>
+                            <li lang="th" data-month="november" class="month">November</li>
+                            <li lang="en" data-month="november" class="month">November</li>
+                            <li lang="jp" data-month="november" class="month">November</li>
+                            <li lang="ch" data-month="november" class="month">November</li>
 
-                            <li lang="th" >December</li>
-                            <li lang="en" >December</li>
-                            <li lang="jp" >December</li>
-                            <li lang="ch" >December</li>
+                            <li lang="th" data-month="december" class="month">December</li>
+                            <li lang="en" data-month="december" class="month">December</li>
+                            <li lang="jp" data-month="december" class="month">December</li>
+                            <li lang="ch" data-month="december" class="month">December</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="events-container">
-                    <div class="row">
+                    @foreach($events as $index=>$event)
+                    @if($event->title_thai != null)
+                    <div id="{!! $event->month !!}" class="event-item-list row">
                         <div class=" large-6 columns">
                             <div class="event-item">
-                                {!! HTML::image("http://placehold.it/550x450","",array("class"=>"")) !!}
+                                {!! HTML::image($event->image_url_1,"",array("class"=>"")) !!}
                             </div>
                         </div>
-                        <div class=" large-6 columns">
+
+                        <div  class="pos-r large-6 columns">
                             <div class="event-content">
-                                <h3 lang="th"> Songkarn </h3>
-                                <h3 lang="en"> Songkarn </h3>
-                                <h3 lang="jp"> Songkarn </h3>
-                                <h3 lang="ch"> Songkarn </h3>
+                                <h3 lang="th"> {!! $event->title_thai !!} </h3>
+                                <h3 lang="en"> {!! $event->title_english !!} </h3>
+                                <h3 lang="jp"> {!! $event->title_japan !!} </h3>
+                                <h3 lang="ch"> {!! $event->title_china !!} </h3>
+                                
                                 <p lang="th">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Nam dapibus lectus eget mi aliquam, ac bibendum orci dictum.
-                                    Ut malesuada molestie enim, et mattis libero vestibulum id.
-                                    Aenean eu pulvinar justo, quis mollis ligula. Nullam commodo odio a luctus blandit.
+                                    {!! $event->description_thai !!}
                                 </p>
                                 <p lang="en">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Nam dapibus lectus eget mi aliquam, ac bibendum orci dictum.
-                                    Ut malesuada molestie enim, et mattis libero vestibulum id.
-                                    Aenean eu pulvinar justo, quis mollis ligula. Nullam commodo odio a luctus blandit.
+                                    {!! $event->description_english !!}
                                 </p>
                                 <p lang="jp">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Nam dapibus lectus eget mi aliquam, ac bibendum orci dictum.
-                                    Ut malesuada molestie enim, et mattis libero vestibulum id.
-                                    Aenean eu pulvinar justo, quis mollis ligula. Nullam commodo odio a luctus blandit.
+                                    {!! $event->description_japan !!}
                                 </p>
                                 <p lang="ch">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Nam dapibus lectus eget mi aliquam, ac bibendum orci dictum.
-                                    Ut malesuada molestie enim, et mattis libero vestibulum id.
-                                    Aenean eu pulvinar justo, quis mollis ligula. Nullam commodo odio a luctus blandit.
+                                    {!! $event->description_china !!}
                                 </p>
                                 <p>
-                                    <div class="large-4 columns">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                            <span lang="th">Bangkok</span>
-                                            <span lang="en">Bangkok</span>
-                                            <span lang="jp">Bangkok</span>
-                                            <span lang="ch">Bangkok</span>
-                                    </div>
                                     <div class="large-4 columns end">
-                                        <i class="fa fa-calendar" aria-hidden="true"></i> 13th - 15th April 
+                                        <i class="fa fa-calendar" aria-hidden="true"></i> {!! $event->opening_hours !!} 
                                     </div>
                                 </p>
                                 <hr>
                                 <div class="">
-                                    <a class="hide-for-print">
+                                    <a class="hide-for-print" href="{!! URL::route('attraction',array($event->id)) !!}">
                                         <div class="see-more"> 
                                             <span lang="th">see more ...</span>
                                             <span lang="en">see more ...</span>
@@ -368,8 +301,14 @@ $(document).ready(function(){
                                     </a>
                                 </div>
                             </div>
+                        @else
+                            <div id="{!! $event->month !!}" class="large-6 columns">
+                                Not Found
+                            </div>
+                        @endif
                         </div>
                     </div>
+                    @endforeach
                 </div>
             </div>
         </section>

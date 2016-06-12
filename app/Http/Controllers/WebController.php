@@ -13,8 +13,70 @@ class WebController extends Controller {
 
     public function home() {
         $banners = BannerOrbit::orderBy('sequence', 'ASC')->get();
+        $events = [];
+        $janEvent = Attractions::where("opening_hours","LIKE","%jan%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
+        $febEvent = Attractions::where("opening_hours","LIKE","%feb%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
+        $marEvent = Attractions::where("opening_hours","LIKE","%march%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
+        $aprEvent = Attractions::where("opening_hours","LIKE","%april%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
+        $mayEvent = Attractions::where("opening_hours","LIKE","%may%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
+        $junEvent = Attractions::where("opening_hours","LIKE","%june%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
+        $julEvent = Attractions::where("opening_hours","LIKE","%jul%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
+        $augEvent = Attractions::where("opening_hours","LIKE","%aug%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
+        $sepEvent = Attractions::where("opening_hours","LIKE","%sep%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
+        $octEvent = Attractions::where("opening_hours","LIKE","%oct%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
+        $novEvent = Attractions::where("opening_hours","LIKE","%novem%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
+        $decEvent = Attractions::where("opening_hours","LIKE","%dec%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
+        if($janEvent){      
+            $janEvent->month = "january";
+            array_push($events, $janEvent);
+        }
+        if($febEvent){    
+            $febEvent->month = "febuary";
+            array_push($events, $febEvent);
+        }
+        if($marEvent){
+            $marEvent->month = "march";
+            array_push($events, $marEvent);
+        }
+        if($aprEvent){
+            $aprEvent->month = "april";
+            array_push($events, $aprEvent);
+        }
+        if($mayEvent){
+            $mayEvent->month = "may";
+            array_push($events, $mayEvent);
+        }
+        if($junEvent){
+            $junEvent->month = "june";
+            array_push($events, $junEvent);
+        }
+        if($julEvent){
+            $julEvent->month = "july";
+            array_push($events, $julEvent);
+        }
+        if($augEvent){
+            $augEvent->month = "august";
+            array_push($events, $augEvent);
+        }
+        if($sepEvent){
+            $sepEvent->month = "september";
+            array_push($events, $sepEvent);
+        }
+        if($octEvent){
+            $octEvent->month = "october";
+            array_push($events, $octEvent);
+        }
+        if($novEvent){
+            $novEvent->month = "november";
+            array_push($events, $novEvent);
+        }
+        if($decEvent){
+            $decEvent->month = "december";
+            array_push($events, $decEvent);
+        }
         return view('web/home',array(
-                    "banners" => $banners
+                    "banners" => $banners,
+                    "events" => $events,
                 ));
     }
 
