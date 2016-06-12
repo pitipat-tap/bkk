@@ -43,6 +43,9 @@
     width: 100%;
     height: auto;
 }
+.menu {
+    z-index:9;
+}
 .menu > li {
     padding: 0 2px;
     letter-spacing: 0.5px;
@@ -201,7 +204,7 @@
     }
 }
 #copyright-mobile{
-    position: absolute;
+    position: relative;
     bottom: 0%;
     width: 100%;
     padding: 1em;

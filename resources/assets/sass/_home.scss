@@ -98,7 +98,7 @@
             }
             div {
                 position:absolute;
-                z-index:999;
+                z-index:5;
                 @include breakpoint(xlarge up){
                     height: 600px;
                 }

@@ -11,12 +11,14 @@ $(document).ready(function() {
     document.body.className = localStorage.getItem('language');
   }
 
-
   $('.change-language').click(function(){
       var selectedLanguage = $(this).attr('data-lan');
       document.body.className = selectedLanguage;
+      console.log("lang" + selectedLanguage);
       localStorage.setItem('language', selectedLanguage);
-      $('body').addClass('loaded');
+      setTimeout(function(){
+        $('body').addClass('loaded');
+      },500);
   });
 
 	// mobile menu

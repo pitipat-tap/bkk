@@ -7,7 +7,9 @@
         <meta name="keywords" content="">
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bangkok Smiles</title>
+        <title>Bangkok Smiles @yield("specific_title")</title>
+
+        
     
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/favicon/apple-touch-icon-57x57.png') }}">
