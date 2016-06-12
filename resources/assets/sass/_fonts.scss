@@ -3,7 +3,7 @@
   font-family: 'Arvo';
   font-style: normal;
   font-weight: 400;
-  src: local('Arvo'), url('../../public/fonts/Arvo-Regular.ttf') format('truetype');
+  src: local('Arvo'), url('../../fonts/Arvo-Regular.ttf') format('truetype');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin */
@@ -11,7 +11,7 @@
   font-family: 'Arvo';
   font-style: normal;
   font-weight: 700;
-  src: local('Arvo Bold'), local('Arvo-Bold'), url('../../public/fonts/Arvo-Bold.ttf') format('truetype');
+  src: local('Arvo Bold'), local('Arvo-Bold'), url('../../fonts/Arvo-Bold.ttf') format('truetype');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin */
@@ -19,7 +19,7 @@
   font-family: 'Arvo';
   font-style: italic;
   font-weight: 400;
-  src: local('Arvo Italic'), local('Arvo-Italic'), url('../../public/fonts/Arvo-Italic.ttf') format('truetype');
+  src: local('Arvo Italic'), local('Arvo-Italic'), url('../../fonts/Arvo-Italic.ttf') format('truetype');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin */
@@ -27,7 +27,7 @@
   font-family: 'Arvo';
   font-style: italic;
   font-weight: 700;
-  src: local('Arvo Bold Italic'), local('Arvo-BoldItalic'), url('../../public/fonts/Arvo-BoldItalic.ttf') format('truetype');
+  src: local('Arvo Bold Italic'), local('Arvo-BoldItalic'), url('../../fonts/Arvo-BoldItalic.ttf') format('truetype');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
