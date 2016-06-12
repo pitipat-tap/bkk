@@ -140,6 +140,9 @@ class WebController extends Controller {
         return view('web/one-day-trip');
     }
 
+    public function sitemap(){
+        return view('web/sitemap');
+    }
 
     public function attractionJson() {
         $posts = Attractions::where("is_attraction", "1")->

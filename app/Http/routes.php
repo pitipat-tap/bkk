@@ -45,6 +45,8 @@ Route::get('/trip',array("as" => "trip" , "uses" => "WebController@trip"));
 
 Route::get('/one-day-trip',array("as" => "oneDayTrip" , "uses" => "WebController@oneDayTrip"));
 
+Route::get('/sitemap',array("as" => "sitemap" , "uses" => "WebController@sitemap"));
+
 Route::group(array('middleware' => 'auth.staff.already', 'prefix' => 'admin'), function(){
 	Route::get("login", array("as" => "admin-login", "uses" => "AdminAuthController@login"));
     Route::post("login", array("as" => "admin-auth", "uses" => "AdminAuthController@authenticate"));

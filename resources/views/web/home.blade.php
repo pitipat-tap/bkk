@@ -56,6 +56,14 @@ $(document).ready(function(){
             $('#zone-5').css("z-index",1);
         }
     );
+    $('#area-6').hover(
+        function(){
+            $('#zone-5').css("z-index",3);
+        },
+        function(){
+            $('#zone-5').css("z-index",1);
+        }
+    );
 });
 </script>
 @include("web.top-menu")
@@ -82,6 +90,7 @@ $(document).ready(function(){
                           <div id="area-3"></div>
                           <div id="area-4"></div>
                           <div id="area-5"></div>
+                          <div id="area-6"></div>
                           {!! HTML::image("images/maps/map-0.png","",array("style"=>"z-index:2")) !!}
                           {!! HTML::image("images/maps/map-01.png","",array("id"=>"zone-1")) !!}
                           {!! HTML::image("images/maps/map-02.png","",array("id"=>"zone-2")) !!}
@@ -92,12 +101,12 @@ $(document).ready(function(){
                 </div>
                 <div class="large-4 columns">
                     <div class="destination-highlight">
-                        <h4 lang="th"> Wat Phra Kaew</h4>
-                        <h4 lang="en"> Wat Phra Kaew</h4>
-                        <h4 lang="jp"> Wat Phra Kaew</h4>
-                        <h4 lang="ch"> Wat Phra Kaew</h4>
-                        {!! HTML::image("http://placehold.it/350x150","",array("class"=>"")) !!}
-                        <p lang="th">
+                        <h4 id="des-h-1" lang="th"> Wat Phra Kaew</h4>
+                        <h4 id="des-h-2" lang="en"> Wat Phra Kaew</h4>
+                        <h4 id="des-h-3" lang="jp"> Wat Phra Kaew</h4>
+                        <h4 id="des-h-4" lang="ch"> Wat Phra Kaew</h4>
+                        {!! HTML::image("http://placehold.it/350x150","",array("id"=>"des-img")) !!}
+                        <p id="des-c-1" lang="th">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Nam dapibus lectus eget mi aliquam, ac bibendum orci dictum.
                             Ut malesuada molestie enim, et mattis libero vestibulum id.
@@ -105,7 +114,7 @@ $(document).ready(function(){
                             Vestibulum at ex convallis, viverra tortor vitae, rutrum ipsum.
                              Sed quis purus eu velit pretium euismod. 
                         </p>
-                        <p lang="en">
+                        <p id="des-c-1" lang="en">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Nam dapibus lectus eget mi aliquam, ac bibendum orci dictum.
                             Ut malesuada molestie enim, et mattis libero vestibulum id.
@@ -113,7 +122,7 @@ $(document).ready(function(){
                             Vestibulum at ex convallis, viverra tortor vitae, rutrum ipsum.
                              Sed quis purus eu velit pretium euismod. 
                         </p>
-                        <p lang="jp">
+                        <p id="des-c-1" lang="jp">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Nam dapibus lectus eget mi aliquam, ac bibendum orci dictum.
                             Ut malesuada molestie enim, et mattis libero vestibulum id.
@@ -121,7 +130,7 @@ $(document).ready(function(){
                             Vestibulum at ex convallis, viverra tortor vitae, rutrum ipsum.
                              Sed quis purus eu velit pretium euismod. 
                         </p>
-                        <p lang="ch">
+                        <p id="des-c-1" lang="ch">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Nam dapibus lectus eget mi aliquam, ac bibendum orci dictum.
                             Ut malesuada molestie enim, et mattis libero vestibulum id.

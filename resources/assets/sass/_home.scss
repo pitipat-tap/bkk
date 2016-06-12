@@ -99,28 +99,38 @@
             div {
                 position:absolute;
                 z-index:5;
-                @include breakpoint(xlarge up){
-                    height: 600px;
-                }
             }
             #area-1 {
-                width: 180px;
+                width: 210px;
+                height: 390px;
+                top: 200px;
             }
             #area-2 {
                 width: 60px;
-                left:170px;
+                left:210px;
+                height:285px;
             }
             #area-3 {
-                width: 60px;
-                left:230px;
+                width: 205px;
+                left: 210px;
+                top: 285px;
+                height: 200px;
             }
             #area-4 {
-                width: 150px;
-                left:290px;
+                width: 160px;
+                left: 270px;
+                height: 165px;
+                top: 140px;
             }
             #area-5 {
-                width: 315px;
-                left:440px;
+                width: 330px;
+                left:427px;
+                height:385px;
+            }
+            #area-6 {
+                width: 160px;
+                left: 270px;
+                height: 135px;
             }
         }
         img {
