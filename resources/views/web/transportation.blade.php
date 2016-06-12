@@ -1,5 +1,8 @@
 @extends("..layouts.head")
 
+@section("specific_title")
+ : Transportation
+@stop
 
 @section("specific_css")
 

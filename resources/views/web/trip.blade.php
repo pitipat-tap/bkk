@@ -1,5 +1,8 @@
 @extends("..layouts.head")
 
+@section("specific_title")
+ : Trip
+@stop
 
 @section("specific_css")
 

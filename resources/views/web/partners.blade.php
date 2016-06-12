@@ -1,5 +1,8 @@
 @extends("..layouts.head")
 
+@section("specific_title")
+ : Partners
+@stop
 
 @section("specific_css")
 {!! Html::style("css/partners.css") !!}

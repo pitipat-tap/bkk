@@ -1,5 +1,8 @@
 @extends("..layouts.head")
 
+@section("specific_title")
+ : Gallery
+@stop
 
 @section("specific_css")
 @stop
