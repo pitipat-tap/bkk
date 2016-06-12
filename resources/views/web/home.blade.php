@@ -67,7 +67,7 @@
                         <p id="des-c-1" lang="ch">
                             这是woramahawihan皇家第二等级寺庙，昭披耶尼空卜丁（To Kanlayanamit ），皮钗瓦利之子（赛英先生）。当他被授予Phraya Ratsuphawadi头衔，Phra Suratsawadi Klang部门的将军时，不不仅捐赠了自己的房屋，同时也购买了一片土地兴建寺庙，于1825年，拉玛3世时期，寺庙被授予皇家寺庙，拉玛3世将其命名为Kanlayanamit寺。1949年，国家寺庙管理部授权此地为国家古代纪念馆。 
                         </p>
-                        <a class="hide-for-print">
+                        <a href="{!! URL::route('attraction',array(62)) !!}">
                             <div lang="th"> EXPLORE </div>
                             <div lang="en"> EXPLORE </div>
                             <div lang="jp"> EXPLORE </div>
@@ -95,7 +95,7 @@ The most famous in Wat Phra Kaew are: The Emerald Buddha, Model of Angkor Wat, P
                         <p id="des-c-1" lang="ch">
                             玉佛寺内主要分为三部分，泰国玉佛寺位于曼谷大王宫的东北角，是泰国最著名的佛寺，也是泰国三大国宝之一。建于1784年的玉佛寺是泰国大王宫的一部分，面积约占大王宫的1/4。玉佛寺是泰国王族供奉玉佛像和举行宗教仪式的场所，因寺内供奉着玉佛而得名。寺内有玉佛殿、先王殿、佛骨殿、藏经阁、钟楼和金塔。玉佛殿是玉佛寺的主体建筑，大殿正中的神龛里供奉着被泰国视为国宝的玉佛像。玉佛高66厘米，阔48厘米，是由一整块碧玉雕刻而成。 
                         </p>
-                        <a class="hide-for-print">
+                        <a href="{!! URL::route('attraction',array(1)) !!}">
                             <div lang="th"> EXPLORE </div>
                             <div lang="en"> EXPLORE </div>
                             <div lang="jp"> EXPLORE </div>
@@ -120,7 +120,7 @@ The most famous in Wat Phra Kaew are: The Emerald Buddha, Model of Angkor Wat, P
                         <p id="des-c-1" lang="ch">
                             Terminal 21购物中心是曼谷第一家综合全球购物氛围于一身的大型购物商场，包括加勒比、罗马、巴黎、东京、伦敦、伊斯坦布尔、旧金山和好莱坞，坐落在Asok中心，Terminal 21购物中心的理念和标语是“打造Sukhumvit全球娱乐航站”。 
                         </p>
-                        <a class="hide-for-print">
+                        <a href="{!! URL::route('attraction',array(108)) !!}">
                             <div lang="th"> EXPLORE </div>
                             <div lang="en"> EXPLORE </div>
                             <div lang="jp"> EXPLORE </div>
@@ -157,7 +157,7 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
 在考虑新场馆的地址时，考虑过林记舞台，以及帕哈呦厅舞台，但是地方都有一定的局限性，因此重新选择了地方。在拉明塔2号公路，在体育馆附近（高尔夫球场）的地方，找到6.2公顷的地方，觉得是最合适的地方，最终于2012年8月21日将拳击馆转移到此地，巴育总理来到此地参加了新拳击馆的开幕典礼。
 于是，2014年2月7日星期五告别了就的拳击馆，2015年2月11日转移到新场馆，2015年2月28日进行了开业典礼。" 
                         </p>
-                        <a class="hide-for-print">
+                        <a href="{!! URL::route('attraction',array(32)) !!}">
                             <div lang="th"> EXPLORE </div>
                             <div lang="en"> EXPLORE </div>
                             <div lang="jp"> EXPLORE </div>
@@ -183,7 +183,7 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                         <p id="des-c-1" lang="ch">
                             曼谷野生动物园位于民布理区东北南茵地路第9公里处，占地面积约为430莱，分为两个区域。第1区，Safari Park，主要是各种野生动物，包括斑马，长颈鹿，鸟，老虎，狮子，熊等，游客通常需要乘坐院内观赏车在园内观赏动物，体验热带雨林的自然风景。第2部分，Marin Park，主要为各种水生动物，如海豚，海鸟，海豹和猴子等。除此之外，还有各种美食。另外还有飞镖设计，投球等游戏 
                         </p>
-                        <a class="hide-for-print">
+                        <a href="{!! URL::route('attraction',array(51)) !!}">
                             <div lang="th"> EXPLORE </div>
                             <div lang="en"> EXPLORE </div>
                             <div lang="jp"> EXPLORE </div>
