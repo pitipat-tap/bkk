@@ -98,7 +98,7 @@
             }
             div {
                 position:absolute;
-                z-index:5;
+                z-index:9;
             }
             #area-1 {
                 width: 210px;
@@ -156,7 +156,7 @@
     }
     .opa-1 {
         opacity:1 !important;
-        z-index:1 !important;
+        z-index:3 !important;
     }
     .map-content-select {
         position:absolute;

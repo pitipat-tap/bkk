@@ -29,52 +29,88 @@ $( document ).ready(function() {
 //====================================== maps ===================================
 	$('#area-1').hover(
         function(){
-            $('#zone-1').css("z-index",3);
+            $('#zone-1').css("z-index",8);
         },
         function(){
             $('#zone-1').css("z-index",1);
         }
     );
+    $('#area-1').click(function(){
+          $('.zone').removeClass('opa-1');
+          $('.map-content-select').removeClass('opa-1');
+          $('#zone-1').addClass('opa-1');
+          $('#map-content-1').addClass('opa-1');
+    });
     $('#area-2').hover(
         function(){
-            $('#zone-2').css("z-index",3);
+            $('#zone-2').css("z-index",8);
         },
         function(){
             $('#zone-2').css("z-index",1);
         }
     );
+    $('#area-2').click(function(){
+          $('.zone').removeClass('opa-1');
+          $('.map-content-select').removeClass('opa-1');
+          $('#zone-2').addClass('opa-1');
+          $('#map-content-2').addClass('opa-1');
+    });
     $('#area-3').hover(
         function(){
-            $('#zone-3').css("z-index",3);
+            $('#zone-3').css("z-index",8);
         },
         function(){
             $('#zone-3').css("z-index",1);
         }
     );
+    $('#area-3').click(function(){
+          $('.zone').removeClass('opa-1');
+          $('.map-content-select').removeClass('opa-1');
+          $('#zone-3').addClass('opa-1');
+          $('#map-content-3').addClass('opa-1');
+    });
     $('#area-4').hover(
         function(){
-            $('#zone-4').css("z-index",3);
+            $('#zone-4').css("z-index",8);
         },
         function(){
             $('#zone-4').css("z-index",1);
         }
     );
+    $('#area-4').click(function(){
+          $('.zone').removeClass('opa-1');
+          $('.map-content-select').removeClass('opa-1');
+          $('#zone-4').addClass('opa-1');
+          $('#map-content-4').addClass('opa-1');
+    });
     $('#area-5').hover(
         function(){
-            $('#zone-5').css("z-index",3);
+            $('#zone-5').css("z-index",8);
         },
         function(){
             $('#zone-5').css("z-index",1);
         }
     );             
+    $('#area-5').click(function(){
+          $('.zone').removeClass('opa-1');
+          $('.map-content-select').removeClass('opa-1');
+          $('#zone-5').addClass('opa-1');
+          $('#map-content-5').addClass('opa-1');
+    });
     $('#area-6').hover(
         function(){
-            $('#zone-5').css("z-index",3);
+            $('#zone-5').css("z-index",8);
         },
         function(){
             $('#zone-5').css("z-index",1);
         }
     );             
+    $('#area-6').click(function(){
+          $('.zone').removeClass('opa-1');
+          $('.map-content-select').removeClass('opa-1');
+          $('#zone-5').addClass('opa-1');
+          $('#map-content-5').addClass('opa-1');
+    });
 
 //====================================== maps ===================================
 
