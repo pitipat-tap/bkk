@@ -1,7 +1,7 @@
 @extends("..layouts.head")
 
 @section("specific_title")
- : {!! $title !!}
+ : {!! $title !!} : {!! $attractions->currentPage() !!}
 @stop
 
 @section("specific_css")
@@ -33,10 +33,10 @@
 <section id="attraction-select">
     <div class="body-section">
         <div class="banner-page-title">
-           <span lang="th">Attraction</span>
-           <span lang="en">Attraction</span>
-           <span lang="jp">Attraction</span>
-           <span lang="ch">Attraction</span>
+           <span lang="th">{!! $title !!}</span>
+           <span lang="en">{!! $title !!}</span>
+           <span lang="jp">{!! $title !!}</span>
+           <span lang="ch">{!! $title !!}</span>
         </div>
 
 @foreach ($attractions as $attraction)
