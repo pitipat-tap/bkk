@@ -166,9 +166,9 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                     </div>
                     <div id="map-content-5" class="map-content-select destination-highlight">
                         <h4 id="des-h-1" lang="th">ซาฟารีเวิลด์</h4>
-                        <h4 id="des-h-2" lang="en"> Wat Phra Kaew</h4>
-                        <h4 id="des-h-3" lang="jp"> Wat Phra Kaew</h4>
-                        <h4 id="des-h-4" lang="ch"> Wat Phra Kaew</h4>
+                        <h4 id="des-h-2" lang="en">Safari World</h4>
+                        <h4 id="des-h-3" lang="jp">Safari World</h4>
+                        <h4 id="des-h-4" lang="ch">Safari World</h4>
                         {!! HTML::image("uploads/normal/Attractions/51_Safari/shutterstock_287322869.jpg","",array("id"=>"des-img")) !!}
                         <p id="des-c-1" lang="th">
                             ซาฟารีเวิลด์ตั้งอยู่บน ถนนรามอินทรา บริเวณกิโลเมตรที่ 9 เขตมีนบุรี มีเนื้อที่ประมาณ 430 ไร่ แบ่งพื้นที่ออกเป็น 2 ส่วน ได้แก่ ส่วนที่หนึ่ง คือ ซาฟารีปาร์ค ซึ่งเป็นสวนสัตว์เปิด มีสัตว์ต่างๆ เช่น ม้าลาย กวาง ยีราฟ นก เสือ สิงโต หมี ฯลฯ ให้นักท่องเที่ยวได้นั่งรถชมชีวิตความเป็นอยู่ของสัตว์ตามธรรมชาติโดยรถส่วน ตัว หรือรถบริการพร้อมผู้บรรยายของซาฟารีเวิลด์ ส่วนที่สอง คือ มารีนปาร์ค หรือสวนน้ำ มีสัตว์น้ำ และสัตว์ชนิดต่างๆ ที่หาดูให้ชมยาก รวมทั้งการแสดงต่างๆ เช่น การแสดงของปลาโลมา, นก, แมวน้ำ และลิง เป็นต้น
