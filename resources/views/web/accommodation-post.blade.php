@@ -43,10 +43,10 @@ $(document).ready(function(){
     </div>
     <div class="body-section">
         <div class="banner-page-title hide-for-small-only">
-           <span lang="th">Attraction</span>
-           <span lang="en">Attraction</span>
-           <span lang="jp">Attraction</span>
-           <span lang="ch">Attraction</span>
+           <span lang="th">Accommodation</span>
+           <span lang="en">Accommodation</span>
+           <span lang="jp">Accommodation</span>
+           <span lang="ch">Accommodation</span>
         </div>
 
         <div class="attraction-border mg-b-2 pd-b-2">
