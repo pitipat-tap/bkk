@@ -81,7 +81,7 @@ class WebController extends Controller {
     }
 
     public function attractionSelect($category){
-        $attractions = Attractions::where("category",$category)->paginate(5);
+        $attractions = Attractions::where("category",$category)->orderBy('priority','ASC')->paginate(5);
         $title = "";
         if($category == 'arts_and_culture'){
             $title = 'Art And Culture';
