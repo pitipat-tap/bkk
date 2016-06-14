@@ -40,7 +40,7 @@
                           <div id="area-5"></div>
                           <div id="area-6"></div>
                           {!! HTML::image("images/maps/map-0.png","",array("style"=>"z-index:2")) !!}
-                          {!! HTML::image("images/maps/map-01.png","",array("id"=>"zone-1","class"=>"zone")) !!}
+                          {!! HTML::image("images/maps/map-01.png","",array("id"=>"zone-1","class"=>"zone opa-1")) !!}
                           {!! HTML::image("images/maps/map-02.png","",array("id"=>"zone-2","class"=>"zone")) !!}
                           {!! HTML::image("images/maps/map-03.png","",array("id"=>"zone-3","class"=>"zone")) !!}
                           {!! HTML::image("images/maps/map-04.png","",array("id"=>"zone-4","class"=>"zone")) !!}
