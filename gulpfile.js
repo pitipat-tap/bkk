@@ -16,7 +16,7 @@ gulp.task('default',['clean'], function() {
     gulp.src('resources/assets/sass/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer('last 2 version'))
-        //.pipe(cssnano())
+        .pipe(cssnano())
         .pipe(gulp.dest('./public/css/'))
         .pipe(notify({ message: 'Bkk task complete', onLast: true}));
 
@@ -54,7 +54,7 @@ gulp.task('compile', function () {
     gulp.src('resources/assets/sass/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer('last 2 version'))
-        //.pipe(cssnano())
+        .pipe(cssnano())
         .pipe(gulp.dest('./public/css/'))
         .pipe(notify({ message: 'Compile scss task complete: <%= file.relative %>'}));
 });
@@ -73,6 +73,21 @@ gulp.task('images-upload', function(cb) {
         progressive: true,
         interlaced: true
     })).pipe(gulp.dest('public/uploads/normal')).on('end', cb).on('error', cb);
+});
+gulp.task('images-nonattraction',function(cb) {
+    gulp.src(['public/uploads/normal/**/*.png','public/uploads/normal/**/*.jpg','public/uploads/normal/**/*.gif','public/uploads/normal/**/*.jpeg',
+        '!public/uploads/normal/Attractions/**/*.png','!public/uploads/normal/Attractions/**/*.jpg','!public/uploads/normal/Attractions/**/*.gif','!public/uploads/normal/Attractions/**/*.jpeg']).pipe(imageop({
+        optimizationLevel: 9,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('public/uploads/normal')).on('end', cb).on('error', cb);
+});
+gulp.task('images-attraction', function(cb) {
+    gulp.src(['public/uploads/normal/Attractions/**/*.png','public/uploads/normal/Attractions/**/*.jpg','public/uploads/normal/Attractions/**/*.gif','public/uploads/normal/Attractions/**/*.jpeg']).pipe(imageop({
+        optimizationLevel: 9,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('public/uploads/normal/Attractions')).on('end', cb).on('error', cb);
 });
 
 //Watch task

@@ -202,6 +202,10 @@ class WebController extends Controller {
         return view('web/one-day-trip');
     }
 
+    public function oneDayTrip2(){
+        return view('web/one-day-trip-2');
+    }
+
     public function sitemap(){
         return view('web/sitemap');
     }
