@@ -16,7 +16,7 @@ gulp.task('default',['clean'], function() {
     gulp.src('resources/assets/sass/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer('last 2 version'))
-        //.pipe(cssnano())
+        .pipe(cssnano())
         .pipe(gulp.dest('./public/css/'))
         .pipe(notify({ message: 'Bkk task complete', onLast: true}));
 
@@ -54,7 +54,7 @@ gulp.task('compile', function () {
     gulp.src('resources/assets/sass/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer('last 2 version'))
-        //.pipe(cssnano())
+        .pipe(cssnano())
         .pipe(gulp.dest('./public/css/'))
         .pipe(notify({ message: 'Compile scss task complete: <%= file.relative %>'}));
 });
