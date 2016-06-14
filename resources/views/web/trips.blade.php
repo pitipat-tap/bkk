@@ -43,9 +43,6 @@
 			{!! HTML::image("uploads/normal/trips/trip1/trip1-banner-large.jpg","bkk-logo",array("class"=>"mg-b-1")) !!}
 
 			<div class="row">
-				<!-- <div class="transportation-label large-1 show-for-large column">
-					{!! HTML::image("http://placehold.it/120x120","bkk-logo",array("class"=>"")) !!}
-				</div> -->
 				<div class="transportation-content small-12 large-12 columns">
 					<div class="row mg-l-0">
                        <span lang="th"><h5>One day historical trip</h5></span>
@@ -83,40 +80,37 @@
 				</div>
 			</div>
 		</div>
-		<!-- <hr class="mg-b-3 mg-t-1">
+		<hr class="mg-b-3">
 		<div class="transportation-container">
-			{!! HTML::image("http://placehold.it/1248x416","bkk-logo",array("class"=>"mg-b-1")) !!}
+			{!! HTML::image("uploads/normal/trips/trip2/trip2-banner-large.jpg","bkk-logo",array("class"=>"mg-b-1")) !!}
 
 			<div class="row">
-				<div class="transportation-label large-1 show-for-large column">
-					{!! HTML::image("http://placehold.it/120x120","bkk-logo",array("class"=>"")) !!}
-				</div>
-				<div class="transportation-content small-12 large-11 columns">
-					<div class="row">
-                       <span lang="th"><h5>Two day trip</h5></span>
-                       <span lang="en"><h5>Two day trip</h5></span>
-                       <span lang="jp"><h5>Two day trip</h5></span>
-                       <span lang="ch"><h5>Two day trip</h5></span>
+				<div class="transportation-content small-12 large-12 columns">
+					<div class="row mg-l-0">
+                       <span lang="th"><h5>One day trip</h5></span>
+                       <span lang="en"><h5>One day trip</h5></span>
+                       <span lang="jp"><h5>One day trip</h5></span>
+                       <span lang="ch"><h5>One day trip</h5></span>
 					</div>
 					<hr class="mg-1 show-for-large">
-					<div class="row">
+					<div class="row mg-l-0">
 						<div class="small-12 large-10 columns">
 							<p lang="th">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+								Unforgettable memories in the heart of Bangkok by visiting art galleries and paying respect the shrine, and temple.
 							</p>
 							<p lang="en">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+								Unforgettable memories in the heart of Bangkok by visiting art galleries and paying respect the shrine, and temple.
 							</p>
 							<p lang="jp">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+								Unforgettable memories in the heart of Bangkok by visiting art galleries and paying respect the shrine, and temple.
 							</p>
 							<p lang="ch">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+								Unforgettable memories in the heart of Bangkok by visiting art galleries and paying respect the shrine, and temple.
 							</p>
 						</div>
 						<div class="row">
 							<div class="small-12 small-centered large-2 large-uncentered columns">
-	                            <a class="button small-12 columns hide-for-print" href="trip">
+	                            <a class="button small-12 columns hide-for-print" href="one-day-trip-2">
 	                               <span lang="th">More Info</span>
 	                               <span lang="en">More Info</span>
 	                               <span lang="jp">More Info</span>
@@ -128,231 +122,6 @@
 				</div>
 			</div>
 		</div>
-		<hr class="mg-b-3 mg-t-1">
-		<div class="transportation-container">
-			{!! HTML::image("http://placehold.it/1248x416","bkk-logo",array("class"=>"mg-b-1")) !!}
-
-			<div class="row">
-				<div class="transportation-label large-1 show-for-large column">
-					{!! HTML::image("http://placehold.it/120x120","bkk-logo",array("class"=>"")) !!}
-				</div>
-				<div class="transportation-content small-12 large-11 columns">
-					<div class="row">
-                       <span lang="th"><h5>Half day trip</h5></span>
-                       <span lang="en"><h5>Half day trip</h5></span>
-                       <span lang="jp"><h5>Half day trip</h5></span>
-                       <span lang="ch"><h5>Half day trip</h5></span>
-					</div>
-					<hr class="mg-1 show-for-large">
-					<div class="row">
-						<div class="small-12 large-10 columns">
-							<p lang="th">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</p>
-							<p lang="en">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</p>
-							<p lang="jp">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</p>
-							<p lang="ch">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</p>
-						</div>
-						<div class="row">
-							<div class="small-12 small-centered large-2 large-uncentered columns">
-	                            <a class="button small-12 columns hide-for-print" href="trip">
-	                               <span lang="th">More Info</span>
-	                               <span lang="en">More Info</span>
-	                               <span lang="jp">More Info</span>
-	                               <span lang="ch">More Info</span>
-	                            </a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<hr class="mg-b-3 mg-t-1">
-		<div class="transportation-container">
-			{!! HTML::image("http://placehold.it/1248x416","bkk-logo",array("class"=>"mg-b-1")) !!}
-
-			<div class="row">
-				<div class="transportation-label large-1 show-for-large column">
-					{!! HTML::image("http://placehold.it/120x120","bkk-logo",array("class"=>"")) !!}
-				</div>
-				<div class="transportation-content small-12 large-11 columns">
-					<div class="row">
-                       <span lang="th"><h5>Discover Thai civilization in the museum</h5></span>
-                       <span lang="en"><h5>Discover Thai civilization in the museum</h5></span>
-                       <span lang="jp"><h5>Discover Thai civilization in the museum</h5></span>
-                       <span lang="ch"><h5>Discover Thai civilization in the museum</h5></span>
-					</div>
-					<hr class="mg-1 show-for-large">
-					<div class="row">
-						<div class="small-12 large-10 columns">
-							<p lang="th">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</p>
-							<p lang="en">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</p>
-							<p lang="jp">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</p>
-							<p lang="ch">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</p>
-						</div>
-						<div class="row">
-							<div class="small-12 small-centered large-2 large-uncentered columns">
-	                            <a class="button small-12 columns hide-for-print" href="trip">
-	                               <span lang="th">More Info</span>
-	                               <span lang="en">More Info</span>
-	                               <span lang="jp">More Info</span>
-	                               <span lang="ch">More Info</span>
-	                            </a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<hr class="mg-b-3 mg-t-1">
-		<div class="transportation-container">
-			{!! HTML::image("http://placehold.it/1248x416","bkk-logo",array("class"=>"mg-b-1")) !!}
-
-			<div class="row">
-				<div class="transportation-label large-1 show-for-large column">
-					{!! HTML::image("http://placehold.it/120x120","bkk-logo",array("class"=>"")) !!}
-				</div>
-				<div class="transportation-content small-12 large-11 columns">
-					<div class="row">
-                       <span lang="th"><h5>Half day trip</h5></span>
-                       <span lang="en"><h5>Half day trip</h5></span>
-                       <span lang="jp"><h5>Half day trip</h5></span>
-                       <span lang="ch"><h5>Half day trip</h5></span>
-					</div>
-					<hr class="mg-1 show-for-large">
-					<div class="row">
-						<div class="small-12 large-10 columns">
-							<p lang="th">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</p>
-							<p lang="en">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</p>
-							<p lang="jp">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</p>
-							<p lang="ch">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</p>
-						</div>
-						<div class="row">
-							<div class="small-12 small-centered large-2 large-uncentered columns">
-	                            <a class="button small-12 columns hide-for-print" href="trip">
-	                               <span lang="th">More Info</span>
-	                               <span lang="en">More Info</span>
-	                               <span lang="jp">More Info</span>
-	                               <span lang="ch">More Info</span>
-	                            </a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<hr class="mg-b-3 mg-t-1">
-		<div class="transportation-container">
-			{!! HTML::image("http://placehold.it/1248x416","bkk-logo",array("class"=>"mg-b-1")) !!}
-
-			<div class="row">
-				<div class="transportation-label large-1 show-for-large column">
-					{!! HTML::image("http://placehold.it/120x120","bkk-logo",array("class"=>"")) !!}
-				</div>
-				<div class="transportation-content small-12 large-11 columns">
-					<div class="row">
-                       <span lang="th"><h5>Half day trip</h5></span>
-                       <span lang="en"><h5>Half day trip</h5></span>
-                       <span lang="jp"><h5>Half day trip</h5></span>
-                       <span lang="ch"><h5>Half day trip</h5></span>
-					</div>
-					<hr class="mg-1 show-for-large">
-					<div class="row">
-						<div class="small-12 large-10 columns">
-							<p lang="th">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</p>
-							<p lang="en">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</p>
-							<p lang="jp">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</p>
-							<p lang="ch">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</p>
-						</div>
-						<div class="row">
-							<div class="small-12 small-centered large-2 large-uncentered columns">
-	                            <a class="button small-12 columns hide-for-print" href="trip">
-	                               <span lang="th">More Info</span>
-	                               <span lang="en">More Info</span>
-	                               <span lang="jp">More Info</span>
-	                               <span lang="ch">More Info</span>
-	                            </a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<hr class="mg-b-3 mg-t-1">
-		<div class="transportation-container">
-			{!! HTML::image("http://placehold.it/1248x416","bkk-logo",array("class"=>"mg-b-1")) !!}
-
-			<div class="row">
-				<div class="transportation-label large-1 show-for-large column">
-					{!! HTML::image("http://placehold.it/120x120","bkk-logo",array("class"=>"")) !!}
-				</div>
-				<div class="transportation-content small-12 large-11 columns">
-					<div class="row">
-                       <span lang="th"><h5>Half day trip</h5></span>
-                       <span lang="en"><h5>Half day trip</h5></span>
-                       <span lang="jp"><h5>Half day trip</h5></span>
-                       <span lang="ch"><h5>Half day trip</h5></span>
-					</div>
-					<hr class="mg-1 show-for-large">
-					<div class="row">
-						<div class="small-12 large-10 columns">
-							<p lang="th">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</p>
-							<p lang="en">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</p>
-							<p lang="jp">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</p>
-							<p lang="ch">
-								Donec non semper lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</p>
-						</div>
-						<div class="row">
-							<div class="small-12 small-centered large-2 large-uncentered columns">
-	                            <a class="button small-12 columns hide-for-print" href="trip">
-	                               <span lang="th">More Info</span>
-	                               <span lang="en">More Info</span>
-	                               <span lang="jp">More Info</span>
-	                               <span lang="ch">More Info</span>
-	                            </a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
 		<hr class="mg-b-3 mg-t-1">
 	</div>
 </div>

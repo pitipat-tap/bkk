@@ -85,7 +85,7 @@
 		</div>
 		<div id="category-container-3" class="category-container">
 			<a href="attraction-select/parks_and_gardens">
-        <a href="{!! URL::route('attractionSelect',array('arts_and_culture')) !!}">
+        <a href="{!! URL::route('attractionSelect',array('parks_and_gardens')) !!}">
 				<div class="category-picture show-for-large">
 					{!! HTML::image("uploads/normal/attraction_category/park_large.jpg","bkk-logo",array("class"=>"")) !!}
 				</div>
