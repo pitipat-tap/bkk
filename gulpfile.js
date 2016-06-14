@@ -74,26 +74,68 @@ gulp.task('images-upload', function(cb) {
         interlaced: true
     })).pipe(gulp.dest('public/uploads/normal')).on('end', cb).on('error', cb);
 });
-gulp.task('images-other', function(cb) {
-    gulp.src(['public/uploads/normal/aboutus/**/*.png','public/uploads/normal/aboutus/**/*.jpg','public/uploads/normal/aboutus/**/*.gif','public/uploads/normal/aboutus/**/*.jpeg',
-        'public/uploads/normal/attraction_category/**/*.png','public/uploads/normal/attraction_category/**/*.jpg','public/uploads/normal/attraction_category/**/*.gif','public/uploads/normal/attraction_category/**/*.jpeg',
-        'public/uploads/normal/banner/**/*.png','public/uploads/normal/banner/**/*.jpg','public/uploads/normal/banner/**/*.gif','public/uploads/normal/banner/**/*.jpeg',
-        'public/uploads/normal/footer/**/*.png','public/uploads/normal/footer/**/*.jpg','public/uploads/normal/footer/**/*.gif','public/uploads/normal/footer/**/*.jpeg',
-        'public/uploads/normal/home/**/*.png','public/uploads/normal/home/**/*.jpg','public/uploads/normal/home/**/*.gif','public/uploads/normal/home/**/*.jpeg',
-        'public/uploads/normal/orbit/**/*.png','public/uploads/normal/orbit/**/*.jpg','public/uploads/normal/orbit/**/*.gif','public/uploads/normal/orbit/**/*.jpeg',
-        'public/uploads/normal/transportation/**/*.png','public/uploads/normal/transportation/**/*.jpg','public/uploads/normal/transportation/**/*.gif','public/uploads/normal/transportation/**/*.jpeg',
-        'public/uploads/normal/trips/**/*.png','public/uploads/normal/trips/**/*.jpg','public/uploads/normal/trips/**/*.gif','public/uploads/normal/trips/**/*.jpeg']).pipe(imageop({
+gulp.task('images-aboutus', function(cb) {
+    gulp.src(['public/uploads/normal/aboutus/**/*.png','public/uploads/normal/aboutus/**/*.jpg','public/uploads/normal/aboutus/**/*.gif','public/uploads/normal/aboutus/**/*.jpeg']).pipe(imageop({
         optimizationLevel: 9,
         progressive: true,
         interlaced: true
-    })).pipe(gulp.dest('public/uploads/normal')).on('end', cb).on('error', cb);
+    })).pipe(gulp.dest('public/uploads/normal/aboutus')).on('end', cb).on('error', cb);
+});
+gulp.task('images-attraction-category', function(cb) {
+    gulp.src(['public/uploads/normal/attraction_category/**/*.png','public/uploads/normal/attraction_category/**/*.jpg','public/uploads/normal/attraction_category/**/*.gif','public/uploads/normal/attraction_category/**/*.jpeg']).pipe(imageop({
+        optimizationLevel: 9,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('public/uploads/normal/attraction_category')).on('end', cb).on('error', cb);
+});
+gulp.task('images-banner', function(cb) {
+    gulp.src(['public/uploads/normal/banner/**/*.png','public/uploads/normal/banner/**/*.jpg','public/uploads/normal/banner/**/*.gif','public/uploads/normal/banner/**/*.jpeg']).pipe(imageop({
+        optimizationLevel: 9,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('public/uploads/normal/banner')).on('end', cb).on('error', cb);
+});
+gulp.task('images-footer', function(cb) {
+    gulp.src(['public/uploads/normal/footer/**/*.png','public/uploads/normal/footer/**/*.jpg','public/uploads/normal/footer/**/*.gif','public/uploads/normal/footer/**/*.jpeg']).pipe(imageop({
+        optimizationLevel: 9,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('public/uploads/normal/footer')).on('end', cb).on('error', cb);
+});
+gulp.task('images-home', function(cb) {
+    gulp.src(['public/uploads/normal/home/**/*.png','public/uploads/normal/home/**/*.jpg','public/uploads/normal/home/**/*.gif','public/uploads/normal/home/**/*.jpeg']).pipe(imageop({
+        optimizationLevel: 9,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('public/uploads/normal/home')).on('end', cb).on('error', cb);
+});
+gulp.task('images-orbit', function(cb) {
+    gulp.src(['public/uploads/normal/orbit/**/*.png','public/uploads/normal/orbit/**/*.jpg','public/uploads/normal/orbit/**/*.gif','public/uploads/normal/orbit/**/*.jpeg']).pipe(imageop({
+        optimizationLevel: 9,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('public/uploads/normal/orbit')).on('end', cb).on('error', cb);
+});
+gulp.task('images-transportation', function(cb) {
+    gulp.src(['public/uploads/normal/transportation/**/*.png','public/uploads/normal/transportation/**/*.jpg','public/uploads/normal/transportation/**/*.gif','public/uploads/normal/transportation/**/*.jpeg']).pipe(imageop({
+        optimizationLevel: 9,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('public/uploads/normal/transportation')).on('end', cb).on('error', cb);
+});
+gulp.task('images-trip', function(cb) {
+    gulp.src(['public/uploads/normal/trips/**/*.png','public/uploads/normal/trips/**/*.jpg','public/uploads/normal/trips/**/*.gif','public/uploads/normal/trips/**/*.jpeg']).pipe(imageop({
+        optimizationLevel: 9,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('public/uploads/normal/trips')).on('end', cb).on('error', cb);
 });
 gulp.task('images-attraction', function(cb) {
     gulp.src(['public/uploads/normal/Attractions/**/*.png','public/uploads/normal/Attractions/**/*.jpg','public/uploads/normal/Attractions/**/*.gif','public/uploads/normal/Attractions/**/*.jpeg']).pipe(imageop({
         optimizationLevel: 9,
         progressive: true,
         interlaced: true
-    })).pipe(gulp.dest('public/uploads/normal')).on('end', cb).on('error', cb);
+    })).pipe(gulp.dest('public/uploads/normal/Attractions')).on('end', cb).on('error', cb);
 });
 
 //Watch task
