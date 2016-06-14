@@ -76,7 +76,8 @@ gulp.task('images-upload', function(cb) {
 });
 gulp.task('images-nonattraction',function(cb) {
     gulp.src(['public/uploads/normal/**/*.png','public/uploads/normal/**/*.jpg','public/uploads/normal/**/*.gif','public/uploads/normal/**/*.jpeg',
-        '!public/uploads/normal/Attractions/**/*.png','!public/uploads/normal/Attractions/**/*.jpg','!public/uploads/normal/Attractions/**/*.gif','!public/uploads/normal/Attractions/**/*.jpeg']).pipe(imageop({
+        '!public/uploads/normal/Attractions/**/*.png','!public/uploads/normal/Attractions/**/*.jpg','!public/uploads/normal/Attractions/**/*.gif','!public/uploads/normal/Attractions/**/*.jpeg',
+        '!public/uploads/normal/New Folder/**/*.png','!public/uploads/normal/New Folder/**/*.jpg','!public/uploads/normal/New Folder/**/*.gif','!public/uploads/normal/New Folder/**/*.jpeg']).pipe(imageop({
         optimizationLevel: 9,
         progressive: true,
         interlaced: true
