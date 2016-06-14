@@ -74,6 +74,27 @@ gulp.task('images-upload', function(cb) {
         interlaced: true
     })).pipe(gulp.dest('public/uploads/normal')).on('end', cb).on('error', cb);
 });
+gulp.task('images-other', function(cb) {
+    gulp.src(['public/uploads/normal/aboutus/**/*.png','public/uploads/normal/aboutus/**/*.jpg','public/uploads/normal/aboutus/**/*.gif','public/uploads/normal/aboutus/**/*.jpeg',
+        'public/uploads/normal/attraction_category/**/*.png','public/uploads/normal/attraction_category/**/*.jpg','public/uploads/normal/attraction_category/**/*.gif','public/uploads/normal/attraction_category/**/*.jpeg',
+        'public/uploads/normal/banner/**/*.png','public/uploads/normal/banner/**/*.jpg','public/uploads/normal/banner/**/*.gif','public/uploads/normal/banner/**/*.jpeg',
+        'public/uploads/normal/footer/**/*.png','public/uploads/normal/footer/**/*.jpg','public/uploads/normal/footer/**/*.gif','public/uploads/normal/footer/**/*.jpeg',
+        'public/uploads/normal/home/**/*.png','public/uploads/normal/home/**/*.jpg','public/uploads/normal/home/**/*.gif','public/uploads/normal/home/**/*.jpeg',
+        'public/uploads/normal/orbit/**/*.png','public/uploads/normal/orbit/**/*.jpg','public/uploads/normal/orbit/**/*.gif','public/uploads/normal/orbit/**/*.jpeg',
+        'public/uploads/normal/transportation/**/*.png','public/uploads/normal/transportation/**/*.jpg','public/uploads/normal/transportation/**/*.gif','public/uploads/normal/transportation/**/*.jpeg',
+        'public/uploads/normal/trips/**/*.png','public/uploads/normal/trips/**/*.jpg','public/uploads/normal/trips/**/*.gif','public/uploads/normal/trips/**/*.jpeg']).pipe(imageop({
+        optimizationLevel: 9,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('public/uploads/normal')).on('end', cb).on('error', cb);
+});
+gulp.task('images-attraction', function(cb) {
+    gulp.src(['public/uploads/normal/Attractions/**/*.png','public/uploads/normal/Attractions/**/*.jpg','public/uploads/normal/Attractions/**/*.gif','public/uploads/normal/Attractions/**/*.jpeg']).pipe(imageop({
+        optimizationLevel: 9,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('public/uploads/normal')).on('end', cb).on('error', cb);
+});
 
 //Watch task
 gulp.task('watch',function() {
