@@ -192,7 +192,7 @@ $(document).ready(function(){
                         @endif
                     </div>
                     <h3 class="show-for-small-only map"> Map </h3>
-                    <div align="center" class="show-for-small-only">
+                    <div align="center" class="show-for-small-only hide-for-print">
                         <iframe src="{!! $attraction->map_url !!}" align=center" frameborder="0" class="iframe-size " style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
