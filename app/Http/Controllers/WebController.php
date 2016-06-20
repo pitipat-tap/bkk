@@ -26,7 +26,13 @@ class WebController extends Controller {
         $octEvent = Attractions::where("opening_hours","LIKE","%oct%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
         $novEvent = Attractions::where("opening_hours","LIKE","%novem%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
         $decEvent = Attractions::where("opening_hours","LIKE","%dec%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
-        if($janEvent){      
+     
+	if($janEvent){      
+            $janEvent->month = "january";
+            array_push($events, $janEvent);
+        }
+        else{
+            $janEvent = new Attractions;
             $janEvent->month = "january";
             array_push($events, $janEvent);
         }
@@ -34,7 +40,17 @@ class WebController extends Controller {
             $febEvent->month = "febuary";
             array_push($events, $febEvent);
         }
+        else{
+            $febEvent = new Attractions;
+            $febEvent->month = "febuary";
+            array_push($events, $febEvent);
+        }
         if($marEvent){
+            $marEvent->month = "march";
+            array_push($events, $marEvent);
+        }
+        else{
+            $marEvent = new Attractions;
             $marEvent->month = "march";
             array_push($events, $marEvent);
         }
@@ -42,7 +58,17 @@ class WebController extends Controller {
             $aprEvent->month = "april";
             array_push($events, $aprEvent);
         }
+        else{
+            $aprEvent = new Attractions;
+            $aprEvent->month = "april";
+            array_push($events, $aprEvent);
+        }
         if($mayEvent){
+            $mayEvent->month = "may";
+            array_push($events, $mayEvent);
+        }
+        else{
+            $mayEvent = new Attractions;
             $mayEvent->month = "may";
             array_push($events, $mayEvent);
         }
@@ -50,27 +76,68 @@ class WebController extends Controller {
             $junEvent->month = "june";
             array_push($events, $junEvent);
         }
+        else{
+            $junEvent = new Attractions;
+            $junEvent->month = "june";
+            array_push($events, $junEvent);
+        }
+        
         if($julEvent){
             $julEvent->month = "july";
             array_push($events, $julEvent);
         }
+        else{
+            $julEvent = new Attractions;
+            $julEvent->month = "july";
+            array_push($events, $julEvent);
+        }
+        
         if($augEvent){
             $augEvent->month = "august";
             array_push($events, $augEvent);
         }
+        else{
+            $augEvent = new Attractions;
+            $augEvent->month = "august";
+            array_push($events, $augEvent);
+        }
+        
         if($sepEvent){
             $sepEvent->month = "september";
             array_push($events, $sepEvent);
         }
+        else{
+            $sepEvent = new Attractions;
+            $sepEvent->month = "september";
+            array_push($events, $sepEvent);
+        }
+        
         if($octEvent){
             $octEvent->month = "october";
             array_push($events, $octEvent);
         }
+        else{
+            $octEvent = new Attractions;
+            $octEvent->month = "october";
+            array_push($events, $octEvent);
+        }
+        
         if($novEvent){
             $novEvent->month = "november";
             array_push($events, $novEvent);
         }
+        else{
+            $novEvent = new Attractions;
+            $novEvent->month = "november";
+            array_push($events, $novEvent);
+        }
+        
         if($decEvent){
+            $decEvent->month = "december";
+            array_push($events, $decEvent);
+        }
+        else{
+            $decEvent = new Attractions;
             $decEvent->month = "december";
             array_push($events, $decEvent);
         }

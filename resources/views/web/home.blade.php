@@ -398,13 +398,13 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                                    </div>
                              </div>
                         </div>
-                        @else
-                            <div id="{!! $event->month !!}" class="large-6 columns">
-                                Not Found
-                            </div>
-                        @endif
-                    @endforeach
                     </div>
+                    @else 
+                    <div id="{!! $event->month !!}" class="event-item-list row">
+                        No Event
+                    </div>
+                    @endif
+                    @endforeach
                 </div>
             </div>
         </section>
