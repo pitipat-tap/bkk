@@ -6,9 +6,7 @@
 
 
 @section("specific_js_head")
-{!! Html::script("js/verge.min.js") !!}
-{!! Html::script("js/sly.min.js") !!}
-{!! Html::script("js/home.js") !!}
+
 @stop
 
 

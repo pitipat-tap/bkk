@@ -10,7 +10,7 @@
 
 
 @section("specific_js_head")
-{!! Html::script("js/timeline.js") !!}
+
 @stop
 
 

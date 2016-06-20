@@ -5,7 +5,8 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     del = require('del'),
     uglify = require('gulp-uglify'),
-    imageop = require('gulp-image-optimization');
+    imageop = require('gulp-image-optimization'),
+    concat = require('gulp-concat');
 
 gulp.task('default',['clean'], function() {
 
@@ -22,12 +23,42 @@ gulp.task('default',['clean'], function() {
 
 });
 
-gulp.task('all',['clean', 'minify-js', 'minify-css', 'compile', 'images', 'images-upload'], function () {
+gulp.task('all',['clean', 'clean-js', 'scripts', 'minify-css', 'compile', 'images', 'images-upload'], function () {
 
 });
 
 gulp.task('clean', function() {
-  return del(['css']);
+    return del(['css']);
+});
+gulp.task('clean-js', function() {
+    return del(['./public/js/resource-all.js', './public/js/public-all.js', './public/js/all.js'])
+});
+
+// javascript
+gulp.task('merge-public-js', function() {
+    return gulp.src(['public/js/jquery.min.js','public/js/modernizr/modernizr.js','public/js/foundation.min.js','public/js/angular.min.js',
+        'public/js/isMobile.min.js','public/js/verge.min.js','public/js/sly.min.js','public/js/main.js'])
+        .pipe(concat('public-all.js'))
+        .pipe(gulp.dest('./public/js/'))
+        .pipe(notify({ message: 'merge js complete: <%= file.relative %>'}));
+});
+gulp.task('merge-resource-js',['merge-public-js'], function() {
+    return gulp.src(['resources/assets/js/*.js'])
+        .pipe(concat('resource-all.js'))
+        .pipe(gulp.dest('./public/js/'))
+        .pipe(notify({ message: 'merge js complete: <%= file.relative %>'}));
+});
+gulp.task('merge-backend-js',['merge-public-js'], function() {
+    return gulp.src(['resources/assets/js/backend/*.js'])
+        .pipe(concat('all-backend.js'))
+        .pipe(gulp.dest('./public/js/backend/'))
+        .pipe(notify({ message: 'merge js complete: <%= file.relative %>'}));
+});
+gulp.task('scripts', ['clean-js','merge-public-js','merge-resource-js','merge-backend-js'], function() {
+    return gulp.src(['./public/js/all-backend.js','./public/js/resource-all.js','./public/js/public-all.js'])
+        .pipe(uglify())
+        .pipe(gulp.dest('./public/js/'))
+        .pipe(notify({ message: 'Minify-js complete: <%= file.relative %>'}));
 });
 
 gulp.task('minify-js', function () {
