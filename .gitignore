@@ -15,7 +15,7 @@ public/uploads/*
 public/storage
 public/js/backend/
 
-.php~
+*.php~
 *.scss~
 *.js~
 *.scssc
