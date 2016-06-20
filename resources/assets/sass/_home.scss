@@ -252,7 +252,7 @@
             border-color: lightgray;
             position: relative;
             @include breakpoint(large) {
-                height: 505px;
+                height: 430px;
             }
             @include breakpoint(medium down) {
                 height: 950px;
@@ -293,6 +293,10 @@
                 }
                 span {
                     display: inline-block;
+                }
+                p{
+                    max-height: 130px;
+                    overflow: hidden;
                 }
             }
             .see-more{

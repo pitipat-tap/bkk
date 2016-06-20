@@ -354,57 +354,57 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                 <div class="events-container">
                     @foreach($events as $index=>$event)
                     @if($event->title_thai != null)
-                    <div id="{!! $event->month !!}" class="event-item-list row">
-                        <div class=" large-6 columns">
-                            <div class="event-item">
-                                {!! HTML::image($event->image_url_1,"",array("class"=>"")) !!}
-                            </div>
-                        </div>
-
-                        <div  class="pos-r large-6 columns">
-                            <div class="event-content">
-                                <h3 lang="th"> {!! $event->title_thai !!} </h3>
-                                <h3 lang="en"> {!! $event->title_english !!} </h3>
-                                <h3 lang="jp"> {!! $event->title_japan !!} </h3>
-                                <h3 lang="ch"> {!! $event->title_china !!} </h3>
-                                
-                                <p>
-                                    <div class="large-4 columns end">
-                                        <i class="fa fa-calendar" aria-hidden="true"></i> {!! $event->opening_hours !!} 
-                                    </div>
-                                </p>
-                                <p lang="th">
-                                    {!! $event->description_thai !!}
-                                </p>
-                                <p lang="en">
-                                    {!! $event->description_english !!}
-                                </p>
-                                <p lang="jp">
-                                    {!! $event->description_japan !!}
-                                </p>
-                                <p lang="ch">
-                                    {!! $event->description_china !!}
-                                </p>
-                                <hr>
-                                <div class="">
-                                    <a class="hide-for-print" href="{!! URL::route('attraction',array($event->id)) !!}">
-                                        <div class="see-more"> 
-                                            <span lang="th">see more ...</span>
-                                            <span lang="en">see more ...</span>
-                                            <span lang="jp">see more ...</span>
-                                            <span lang="ch">see more ...</span>
-                                        </div>
-                                    </a>
+                        <div id="{!! $event->month !!}" class="event-item-list row">
+                            <div class=" large-6 columns">
+                                <div class="event-item">
+                                    {!! HTML::image($event->image_url_1,"",array("class"=>"")) !!}
                                 </div>
                             </div>
+
+                            <div  class="pos-r large-6 columns">
+                                <div class="event-content">
+                                    <h3 lang="th"> {!! $event->title_thai !!} </h3>
+                                    <h3 lang="en"> {!! $event->title_english !!} </h3>
+                                    <h3 lang="jp"> {!! $event->title_japan !!} </h3>
+                                    <h3 lang="ch"> {!! $event->title_china !!} </h3>
+                                    
+                                    <p>
+                                        <div class="large-4 columns end">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i> {!! $event->opening_hours !!} 
+                                        </div>
+                                    </p>
+                                    <p lang="th">
+                                        {!! $event->description_thai !!}
+                                    </p>
+                                    <p lang="en">
+                                        {!! $event->description_english !!}
+                                    </p>
+                                    <p lang="jp">
+                                        {!! $event->description_japan !!}
+                                    </p>
+                                    <p lang="ch">
+                                        {!! $event->description_china !!}
+                                    </p>
+                                    <hr>
+                                    <div class="">
+                                        <a class="hide-for-print" href="{!! URL::route('attraction',array($event->id)) !!}">
+                                            <div class="see-more"> 
+                                                <span lang="th">see more ...</span>
+                                                <span lang="en">see more ...</span>
+                                                <span lang="jp">see more ...</span>
+                                                <span lang="ch">see more ...</span>
+                                            </div>
+                                        </a>
+                                   </div>
+                             </div>
+                        </div>
                         @else
                             <div id="{!! $event->month !!}" class="large-6 columns">
                                 Not Found
                             </div>
                         @endif
-                        </div>
-                    </div>
                     @endforeach
+                    </div>
                 </div>
             </div>
         </section>
