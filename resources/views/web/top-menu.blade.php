@@ -15,7 +15,7 @@
             <a href="{!! URL::route('attractionCategory') !!}">
                <span lang="th">เสน่ห์กรุงเทพฯ</span>
                <span lang="en">Attraction</span>
-               <span lang="jp">アトラクション</span>
+               <span lang="jp" style="margin:0">アトラクション</span>
                <span lang="ch">抵力</span>
             </a>
         </li>
@@ -23,7 +23,7 @@
             <a href="{!! URL::route('accommodation') !!}">
                 <span lang="th">ที่พัก</span>
                 <span lang="en">Accommodation</span>
-                <span lang="jp">アコモデーション</span>
+                <span lang="jp" style="margin:0">アコモデーション</span>
                 <span lang="ch">住宿的</span>
             </a>
         </li>
@@ -31,7 +31,7 @@
             <a href="{!! URL::route('transportation') !!}">
                 <span lang="th">การคมนาคม</span>
                 <span lang="en">Transportation</span>
-                <span lang="jp">交通手段</span>
+                <span lang="jp" style="margin:0">交通手段</span>
                 <span lang="ch">交通運輸</span>
             </a>
         </li>
@@ -39,7 +39,7 @@
             <a href="{!! URL::route('gallery') !!}">
                 <span lang="th">แกลเลอรี</span>
                 <span lang="en">Gallery</span>
-                <span lang="jp">ギャラリー</span>
+                <span lang="jp" style="margin:0">ギャラリー</span>
                 <span lang="ch">畫廊</span>
             </a>
         </li>
@@ -47,15 +47,15 @@
             <a href="{!! URL::route('trips') !!}">
                 <span lang="th">แนะนำการท่องเที่ยว</span>
                 <span lang="en">Trips</span>
-                <span lang="jp">トリップ</span>
+                <span lang="jp" style="margin:0">トリップ</span>
                 <span lang="ch">跳閘</span>
             </a>
         </li>
         <li class="hide-for-print">
-            <a href="{!! URL::route('trips') !!}">
+            <a href="{!! URL::route('news') !!}">
                 <span lang="th">ข่าว</span>
                 <span lang="en">News</span>
-                <span lang="jp">ニュース</span>
+                <span lang="jp" style="margin:0">ニュース</span>
                 <span lang="ch">消息</span>
             </a>
         </li>
@@ -166,6 +166,14 @@
                             <span lang="en">Trips</span>
                             <span lang="jp">トリップ</span>
                             <span lang="ch">跳閘</span>
+                        </a>
+                    </li>
+                    <li id="news">
+                        <a href="{!! URL::route('news') !!}">
+                            <span lang="th">ข่าว</span>
+                            <span lang="en">News</span>
+                            <span lang="jp">ニュース</span>
+                            <span lang="ch">消息</span>
                         </a>
                     </li>
                 </ul>

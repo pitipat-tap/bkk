@@ -103,7 +103,7 @@ class WebController extends Controller {
          $posts = EventPost::where("status", "=", "published")->
                   orderBy('is_featured', 'DESC')->
                   orderBy('created_at', 'DESC')->
-                  paginate(3);
+                  paginate(2);
 
         return view('web/home',array(
                     "banners" => $banners,
