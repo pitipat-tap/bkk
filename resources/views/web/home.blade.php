@@ -417,11 +417,33 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                     <h2 lang="ch"> News </h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="columns large-6 small-12">
-                </div>
-                <div class="columns large-6 small-12">
-                </div>
+            @foreach ($posts as $post)
+                <div class="row">
+                    <div class="columns large-6 small-12">
+                        <div class="news-thumbnail">
+                            {!! HTML::image($post->feature_image_url,"",array("class"=>"")) !!}
+                        </div>
+                    </div>
+                    <div class="columns large-6 small-12">
+                        <div class="news-content">
+                            <hr>
+                            <h3 lang="th"> {!! $post->title !!} </h3>
+                            
+                            <p >
+                                {!! $post->description !!}
+                            </p>
+                            <div class="">
+                                <a class="hide-for-print" href="{!! URL::route('blog-post',array($post->url)) !!}">
+                                    <div class="see-more"> 
+                                        <span lang="th">see more ...</span>
+                                        <span lang="en">see more ...</span>
+                                        <span lang="jp">see more ...</span>
+                                        <span lang="ch">see more ...</span>
+                                    </div>
+                                </a>
+                           </div>
+                    </div>
+            @endforeach
             </div>
         </section>
     </div>

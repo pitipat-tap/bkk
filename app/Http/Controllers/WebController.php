@@ -8,6 +8,7 @@ use Response;
 use App\Models\Attractions;
 use App\Models\BannerOrbit;
 use App\Models\ImagePost;
+use App\Models\EventPost;
 
 class WebController extends Controller {
 
@@ -99,10 +100,36 @@ class WebController extends Controller {
         $decEvent->month = "december";
         array_push($events, $decEvent);
 
+         $posts = EventPost::where("status", "=", "published")->
+                  orderBy('is_featured', 'DESC')->
+                  orderBy('created_at', 'DESC')->
+                  paginate(3);
+
         return view('web/home',array(
                     "banners" => $banners,
                     "events" => $events,
+                    "posts" => $posts,
                 ));
+    }
+    public function blogPost($url)
+    {
+        $post = EventPost::where("url", "=", $url)->first();
+        if (!$post) App::abort(404);
+
+            $post->hits += 1;
+            $post->timestamps = false;
+            $post->save();
+                                    
+            $prev_post = EventPost::where("status", "=", "published")->
+            where("created_at", "<", $post->created_at)->
+            orderBy("created_at", "DESC")->
+            take(3)->get();
+    
+            return view("web.news-post", array(
+                        "post" => $post,
+                        "prev_post" => $prev_post
+                    )
+            );
     }
 
     public function attractionSelect($category){
