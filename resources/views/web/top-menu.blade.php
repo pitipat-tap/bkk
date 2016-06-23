@@ -52,6 +52,14 @@
             </a>
         </li>
         <li class="hide-for-print">
+            <a href="{!! URL::route('trips') !!}">
+                <span lang="th">ข่าว</span>
+                <span lang="en">News</span>
+                <span lang="jp">ニュース</span>
+                <span lang="ch">消息</span>
+            </a>
+        </li>
+        <li class="hide-for-print">
             <a href="#">
                 <span lang="th">{!! Html::image("images/flag/Thailand.png","Thai",array("class"=>"lang-logo")) !!} ไทย</span>
                 <span lang="en">{!! Html::image("images/flag/uk.png","Thai",array("class"=>"lang-logo")) !!} English</span>

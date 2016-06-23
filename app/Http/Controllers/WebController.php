@@ -111,6 +111,11 @@ class WebController extends Controller {
                     "posts" => $posts,
                 ));
     }
+    public function news(){
+        $posts = EventPost::orderBy('created_at', 'DESC')->
+                 paginate(10);
+        return view('web.news', array("posts" => $posts));
+    }
     public function blogPost($url)
     {
         $post = EventPost::where("url", "=", $url)->first();

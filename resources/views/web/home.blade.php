@@ -411,10 +411,10 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
         <section id="news" class="mg-b-2">
             <div class="row">
                 <div class="news">
-                    <h2 lang="th"> News </h2>
+                    <h2 lang="th"> ข่าว </h2>
                     <h2 lang="en"> News </h2>
-                    <h2 lang="jp"> News </h2>
-                    <h2 lang="ch"> News </h2>
+                    <h2 lang="jp"> ニュース </h2>
+                    <h2 lang="ch"> 消息 </h2>
                 </div>
             </div>
             <div class="news-item-container">
@@ -427,7 +427,7 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                         </div>
                         <div class="columns large-6 small-12">
                             <div class="news-content">
-                                <h3 lang="th"> {!! $post->title !!} </h3>
+                                <h3> {!! $post->title !!} </h3>
                                 <hr>
                                 
                                 <p >
@@ -436,7 +436,7 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                                 <div class="">
                                     <a class="hide-for-print" href="{!! URL::route('blog-post',array($post->url)) !!}">
                                         <div class="see-more"> 
-                                            <span lang="th">read more ...</span>
+                                            <span>read more ...</span>
                                         </div>
                                     </a>
                                </div>

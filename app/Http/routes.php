@@ -51,6 +51,8 @@ Route::get('/sitemap',array("as" => "sitemap" , "uses" => "WebController@sitemap
 
 Route::get("blog/{url}", array("as" => "blog-post", "uses" => "WebController@blogPost"));
 
+Route::get("news", array("as" => "news", "uses" => "WebController@news"));
+
 Route::group(array('middleware' => 'auth.staff.already', 'prefix' => 'admin'), function(){
 	Route::get("login", array("as" => "admin-login", "uses" => "AdminAuthController@login"));
     Route::post("login", array("as" => "admin-auth", "uses" => "AdminAuthController@authenticate"));
