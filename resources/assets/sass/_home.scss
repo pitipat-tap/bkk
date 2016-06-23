@@ -453,3 +453,17 @@
 .zindex2{
     z-index: 2;
 }
+
+#news {
+    .row {
+        background-color: #d4f0e2;
+    }
+    .news{
+        text-align:center;
+        h2 {
+            color:black;
+            margin-top:2%;
+            margin-bottom:2%;
+        }
+    }
+}

@@ -17,11 +17,15 @@ $( document ).ready(function() {
   month[11] = "December";
 
   var n = month[d.getMonth()];
+  n = n.toLowerCase();
+  $('.event-item-list').removeClass('event-item-list-select');
+  console.log($('#' + n));
+  $('#'+ n).addClass('event-item-list-select');
 
-  console.log(n);
+  //console.log(n);
 
   $('.month').click(function(){
-      console.log( $(this).attr("data-month"));
+ //     console.log( $(this).attr("data-month"));
       $('.event-item-list').removeClass('event-item-list-select');
       $('#'+$(this).attr('data-month')).addClass('event-item-list-select');
   });
@@ -124,34 +128,34 @@ $( document ).ready(function() {
 
 //====================================== event ===================================
 
-  jQuery(function ($) {
+    jQuery(function ($) {
 
-	document.getElementsByTagName('html')[0].className += ' ' +
-		(~window.navigator.userAgent.indexOf('MSIE') ? 'ie' : 'no-ie');
+    document.getElementsByTagName('html')[0].className += ' ' +
+      (~window.navigator.userAgent.indexOf('MSIE') ? 'ie' : 'no-ie');
 
-	var $eventsSlider= $('#events-slider');
-	var $frame =$eventsSlider.find('.frame'); window.frr = $frame;
-	var sly = new Sly($frame, {
-		horizontal: 1,
-		itemNav: 'basic',
-		smart: 1,
-		activateOn: 'click',
-		mouseDragging: 1,
-		touchDragging: 1,
-		releaseSwing: 1,
-		scrollBy: 1,
-		pagesBar:$eventsSlider.find('.pages'),
-		activatePageOn: 'click',
-		speed: 200,
-		moveBy: 600,
-		elasticBounds: 1,
-		dragHandle: 1,
-		dynamicHandle: 1,
-		clickBar: 1,
+    var $eventsSlider= $('#events-slider');
+    var $frame =$eventsSlider.find('.frame'); window.frr = $frame;
+    var sly = new Sly($frame, {
+      horizontal: 1,
+      itemNav: 'basic',
+      smart: 1,
+      activateOn: 'click',
+      mouseDragging: 1,
+      touchDragging: 1,
+      releaseSwing: 1,
+      scrollBy: 1,
+      pagesBar:$eventsSlider.find('.pages'),
+      activatePageOn: 'click',
+      speed: 200,
+      moveBy: 600,
+      elasticBounds: 1,
+      dragHandle: 1,
+      dynamicHandle: 1,
+      clickBar: 1,
 
-		// Buttons
-		forward:$eventsSlider.find('.forward'),
-		backward:$eventsSlider.find('.backward'),
-	}).init();
-});
+      // Buttons
+      forward:$eventsSlider.find('.forward'),
+      backward:$eventsSlider.find('.backward'),
+    }).init();
+  });
 });

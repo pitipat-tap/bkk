@@ -274,10 +274,10 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
             </div>
             <div class="row">
                 <div class="events">
-                    <h2 lang="th"> Events </h2>
-                    <h2 lang="en"> Events </h2>
-                    <h2 lang="jp"> Events </h2>
-                    <h2 lang="ch"> Events </h2>
+                    <h2 lang="th"> Festival </h2>
+                    <h2 lang="en"> Festival </h2>
+                    <h2 lang="jp"> Festival </h2>
+                    <h2 lang="ch"> Festival </h2>
                 </div>
             </div>
             <div class="row">
@@ -405,6 +405,22 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                     </div>
                     @endif
                     @endforeach
+                </div>
+            </div>
+        </section>
+        <section id="news">
+            <div class="row">
+                <div class="news">
+                    <h2 lang="th"> News </h2>
+                    <h2 lang="en"> News </h2>
+                    <h2 lang="jp"> News </h2>
+                    <h2 lang="ch"> News </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="columns large-6 small-12">
+                </div>
+                <div class="columns large-6 small-12">
                 </div>
             </div>
         </section>
