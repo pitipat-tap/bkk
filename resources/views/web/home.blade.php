@@ -408,7 +408,7 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                 </div>
             </div>
         </section>
-        <section id="news">
+        <section id="news" class="mg-b-2">
             <div class="row">
                 <div class="news">
                     <h2 lang="th"> News </h2>
@@ -417,33 +417,33 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                     <h2 lang="ch"> News </h2>
                 </div>
             </div>
-            @foreach ($posts as $post)
-                <div class="row">
-                    <div class="columns large-6 small-12">
-                        <div class="news-thumbnail">
-                            {!! HTML::image($post->feature_image_url,"",array("class"=>"")) !!}
+            <div class="news-item-container">
+                @foreach ($posts as $post)
+                    <div class="row news-item">
+                        <div class="columns large-6 small-12">
+                            <div class="news-thumbnail">
+                                {!! HTML::image($post->feature_image_url,"",array("class"=>"")) !!}
+                            </div>
+                        </div>
+                        <div class="columns large-6 small-12">
+                            <div class="news-content">
+                                <h3 lang="th"> {!! $post->title !!} </h3>
+                                <hr>
+                                
+                                <p >
+                                    {!! $post->description !!}
+                                </p>
+                                <div class="">
+                                    <a class="hide-for-print" href="{!! URL::route('blog-post',array($post->url)) !!}">
+                                        <div class="see-more"> 
+                                            <span lang="th">read more ...</span>
+                                        </div>
+                                    </a>
+                               </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="columns large-6 small-12">
-                        <div class="news-content">
-                            <hr>
-                            <h3 lang="th"> {!! $post->title !!} </h3>
-                            
-                            <p >
-                                {!! $post->description !!}
-                            </p>
-                            <div class="">
-                                <a class="hide-for-print" href="{!! URL::route('blog-post',array($post->url)) !!}">
-                                    <div class="see-more"> 
-                                        <span lang="th">see more ...</span>
-                                        <span lang="en">see more ...</span>
-                                        <span lang="jp">see more ...</span>
-                                        <span lang="ch">see more ...</span>
-                                    </div>
-                                </a>
-                           </div>
-                    </div>
-            @endforeach
+                @endforeach
             </div>
         </section>
     </div>
