@@ -15,95 +15,19 @@ class WebController extends Controller {
     public function home() {
         $banners = BannerOrbit::orderBy('sequence', 'ASC')->get();
         $events = [];
-        $janEvent = Attractions::where("opening_hours","LIKE","%jan%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
-        $febEvent = Attractions::where("opening_hours","LIKE","%feb%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
-        $marEvent = Attractions::where("opening_hours","LIKE","%march%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
-        $aprEvent = Attractions::where("opening_hours","LIKE","%april%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
-        $mayEvent = Attractions::where("opening_hours","LIKE","%may%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
-        $junEvent = Attractions::where("opening_hours","LIKE","%june%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
-        $julEvent = Attractions::where("opening_hours","LIKE","%jul%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
-        $augEvent = Attractions::where("opening_hours","LIKE","%aug%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
-        $sepEvent = Attractions::where("opening_hours","LIKE","%sep%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
-        $octEvent = Attractions::where("opening_hours","LIKE","%oct%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
-        $novEvent = Attractions::where("opening_hours","LIKE","%novem%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
-        $decEvent = Attractions::where("opening_hours","LIKE","%dec%")->where("is_event",1)->orderBy('updated_at', 'desc')->first();
-     
-        if(!$janEvent){      
-            $janEvent = new Attractions;
+        $months = ['january', 'febuary', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+        foreach ($months as $month) {
+            $event = Attractions::where("opening_hours","LIKE", '%'.$month.'%')->where("is_event",1)->orderBy('updated_at', 'desc')->first();
+            if(!$event)
+                $event = new Attractions;
+            $event->month = $month;
+            array_push($events, $event);
         }
-        $janEvent->month = "january";
-        array_push($events, $janEvent);
 
-        if(!$febEvent){    
-            $febEvent = new Attractions;
-        }
-        $febEvent->month = "febuary";
-        array_push($events, $febEvent);
-
-        if(!$marEvent){
-            $marEvent = new Attractions;
-        }
-        $marEvent->month = "march";
-        array_push($events, $marEvent);
-
-        if(!$aprEvent){
-            $aprEvent = new Attractions;
-        }
-        $aprEvent->month = "april";
-        array_push($events, $aprEvent);
-
-        if(!$mayEvent){
-            $mayEvent = new Attractions;
-        }
-        $mayEvent->month = "may";
-        array_push($events, $mayEvent);
-
-        if(!$junEvent){
-            $junEvent = new Attractions;
-        }
-        $junEvent->month = "june";
-        array_push($events, $junEvent);
-        
-        if(!$julEvent){
-            $julEvent = new Attractions;
-        }
-        $julEvent->month = "july";
-        array_push($events, $julEvent);
-        
-        if(!$augEvent){
-            $augEvent = new Attractions;
-        }
-        $augEvent->month = "august";
-        array_push($events, $augEvent);
-        
-        if(!$sepEvent){
-            $sepEvent = new Attractions;
-        }
-        $sepEvent->month = "september";
-        array_push($events, $sepEvent);
-        
-        if(!$octEvent){
-            $octEvent = new Attractions;
-        }
-        $octEvent->month = "october";
-        array_push($events, $octEvent);
-        
-        if(!$novEvent){
-            $novEvent = new Attractions;
-        }
-        $novEvent->month = "november";
-        array_push($events, $novEvent);
-        
-        if(!$decEvent){
-            $decEvent = new Attractions;
-        }
-        $decEvent->month = "december";
-        array_push($events, $decEvent);
-
-         $posts = EventPost::where("status", "=", "published")->
-                  orderBy('is_featured', 'DESC')->
-                  orderBy('created_at', 'DESC')->
-                  paginate(2);
+        $posts = EventPost::where("status", "=", "published")->
+                orderBy('is_featured', 'DESC')->
+                orderBy('created_at', 'DESC')->
+                paginate(2);
 
         return view('web/home',array(
                     "banners" => $banners,
