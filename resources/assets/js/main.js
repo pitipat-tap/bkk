@@ -1,11 +1,11 @@
-//$(window).load(function(){
-//
-//});
+$(window).load(function(){
+ $('body').addClass('loaded');
+});
 $(document).ready(function() {
 
-  setTimeout(function(){
-    $('body').addClass('loaded');
-  },5000);
+  // setTimeout(function(){
+  //   $('body').addClass('loaded');
+  // },5000);
 
   if(localStorage.getItem('language') == null){
     localStorage.setItem('language',"th");
