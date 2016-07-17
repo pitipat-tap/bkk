@@ -19,15 +19,9 @@
 @include("web.top-menu")
 
 <section>
-	<div class="banner-containers show-for-large">
-		{!! HTML::image("uploads/normal/banner/transportation_large.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
-	</div>
-	<div class="banner-containers show-for-medium-only">
-		{!! HTML::image("uploads/normal/banner/transportation_medium.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
-	</div>
-	<div class="banner-containers show-for-small-only">
-		{!! HTML::image("uploads/normal/banner/transportation_small.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
-	</div>
+	<div class="banner-containers">
+        <img data-interchange="[uploads/normal/banner/transportation_small.jpg, small], [uploads/normal/banner/transportation_medium.jpg, medium], [uploads/normal/banner/transportation_large.jpg, large]">
+    </div>
 </section>
 
 <div class="body-section">
