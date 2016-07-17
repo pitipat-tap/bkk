@@ -5,7 +5,7 @@ $(document).ready(function() {
 
   setTimeout(function(){
     $('body').addClass('loaded');
-  },10000);
+  },5000);
 
   if(localStorage.getItem('language') == null){
     localStorage.setItem('language',"th");

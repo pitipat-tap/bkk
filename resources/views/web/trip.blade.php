@@ -49,15 +49,9 @@
 @include("web.top-menu")
 
 <section>
-	<div class="banner-containers show-for-large">
-		{!! HTML::image("uploads/normal/banner/trip_large.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
-	</div>
-	<div class="banner-containers show-for-medium-only">
-		{!! HTML::image("uploads/normal/banner/trip_medium.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
-	</div>
-	<div class="banner-containers show-for-small-only">
-		{!! HTML::image("uploads/normal/banner/trip_small.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
-	</div>
+	<div class="banner-containers">
+        <img data-interchange="[uploads/normal/banner/trip_small.jpg, small], [uploads/normal/banner/trip_medium.jpg, medium], [uploads/normal/banner/trip_large.jpg, large]">
+    </div>
 </section>
 
 <div class="body-section">
