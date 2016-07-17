@@ -19,15 +19,9 @@
 @include("web.top-menu")
 
 <section>
-	<div class="banner-containers show-for-large">
-		{!! HTML::image("uploads/normal/banner/attraction_large.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
-	</div>
-	<div class="banner-containers show-for-medium-only">
-		{!! HTML::image("uploads/normal/banner/attraction_medium.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
-	</div>
-	<div class="banner-containers show-for-small-only">
-		{!! HTML::image("uploads/normal/banner/attraction_small.jpg","bkk-logo",array("class"=>"banner-picture", "id"=>"banner-img")) !!}
-	</div>
+	<div class="banner-containers">
+        <img data-interchange="[uploads/normal/banner/attraction_small.jpg, small], [uploads/normal/banner/attraction_medium.jpg, medium], [uploads/normal/banner/attraction_large.jpg, large]">
+    </div>
 </section>
 
 <div class="body-section">
@@ -39,11 +33,8 @@
     </div>
 	<div id="category-container-1" class="category-container">
         <a href="{!! URL::route('attractionSelect',array('arts_and_culture')) !!}">
-			<div class="category-picture show-for-large">
-				{!! HTML::image("uploads/normal/attraction_category/art_large.jpg","bkk-logo",array("class"=>"")) !!}
-			</div>
-			<div class="category-picture hide-for-large">
-				{!! HTML::image("uploads/normal/attraction_category/art_medium.jpg","bkk-logo",array("class"=>"")) !!}
+        	<div class="category-picture">
+			    <img data-interchange="[uploads/normal/attraction_category/art_medium.jpg, small], [uploads/normal/attraction_category/art_large.jpg, large]">
 			</div>
 			<div class="category-description">
 				<h3 lang="th">ARTS AND CULTURE</h3>
@@ -69,11 +60,8 @@
 	<div>
 		<div id="category-container-2" class="category-container">
             <a href="{!! URL::route('attractionSelect',array('food_and_drink')) !!}">
-				<div class="category-picture show-for-large">
-					{!! HTML::image("uploads/normal/attraction_category/food_large.jpg","bkk-logo",array("class"=>"")) !!}
-				</div>
-				<div class="category-picture hide-for-large">
-					{!! HTML::image("uploads/normal/attraction_category/food_medium.jpg","bkk-logo",array("class"=>"")) !!}
+            	<div class="category-picture">
+				    <img data-interchange="[uploads/normal/attraction_category/food_medium.jpg, small], [uploads/normal/attraction_category/food_large.jpg, large]">
 				</div>
 				<div class="category-description">
 					<h3 lang="th">FOOD AND DRINK</h3>
@@ -86,11 +74,8 @@
 		<div id="category-container-3" class="category-container">
 			<a href="attraction-select/parks_and_gardens">
         <a href="{!! URL::route('attractionSelect',array('parks_and_gardens')) !!}">
-				<div class="category-picture show-for-large">
-					{!! HTML::image("uploads/normal/attraction_category/park_large.jpg","bkk-logo",array("class"=>"")) !!}
-				</div>
-				<div class="category-picture hide-for-large">
-					{!! HTML::image("uploads/normal/attraction_category/park_medium.jpg","bkk-logo",array("class"=>"")) !!}
+        		<div class="category-picture">
+				    <img data-interchange="[uploads/normal/attraction_category/park_medium.jpg, small], [uploads/normal/attraction_category/park_large.jpg, large]">
 				</div>
 				<div class="category-description">
 					<h3 lang="th">PARKS AND GARDENS</h3>
@@ -103,11 +88,8 @@
 	</div>
 	<div id="category-container-4" class="category-container">
             <a href="{!! URL::route('attractionSelect',array('events')) !!}">
-			<div class="category-picture show-for-large">
-				{!! HTML::image("uploads/normal/attraction_category/event_large.jpg","bkk-logo",array("class"=>"")) !!}
-			</div>
-			<div class="category-picture hide-for-large">
-				{!! HTML::image("uploads/normal/attraction_category/event_medium.jpg","bkk-logo",array("class"=>"")) !!}
+        	<div class="category-picture">
+			    <img data-interchange="[uploads/normal/attraction_category/event_medium.jpg, small], [uploads/normal/attraction_category/event_large.jpg, large]">
 			</div>
 			<div class="category-description">
                 <h3 lang="th">Events</h3>
@@ -133,11 +115,8 @@
 	</div>
 	<div id="category-container-5" class="category-container">
             <a href="{!! URL::route('attractionSelect',array('shopping')) !!}">
-			<div class="category-picture show-for-large">
-				{!! HTML::image("uploads/normal/attraction_category/shopping_large.jpg","bkk-logo",array("class"=>"")) !!}
-			</div>
-			<div class="category-picture hide-for-large">
-				{!! HTML::image("uploads/normal/attraction_category/shopping_medium.jpg","bkk-logo",array("class"=>"")) !!}
+            <div class="category-picture">
+			    <img data-interchange="[uploads/normal/attraction_category/shopping_medium.jpg, small], [uploads/normal/attraction_category/shopping_large.jpg, large]">
 			</div>
 			<div class="category-description">
 				<h3 lang="th">Shopping</h3>
