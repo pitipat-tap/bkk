@@ -223,21 +223,15 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                             <h1> ___ </h1>
                         </div>
                     </div>
-                    <div class="large-8 columns show-for-large">
-                        {!! HTML::image("uploads/normal/home/transportation_large.jpg","",array("class"=>"")) !!}
-                    </div>
-                    <div class="small-12 columns hide-for-large">
-                        {!! HTML::image("uploads/normal/home/transportation_medium.jpg","",array("class"=>"")) !!}
+                    <div class="small-12 large-8 columns">
+                        <img data-interchange="[uploads/normal/home/transportation_medium.jpg, small], [uploads/normal/home/transportation_large.jpg, large]">
                     </div>
                 </a>
             </div>
             <div class="row">
                 <a href="{!! URL::route('attractionCategory') !!}">
-                    <div class="large-8 columns show-for-large">
-                        {!! HTML::image("uploads/normal/home/attraction_large.jpg","",array("class"=>"")) !!}
-                    </div>
-                    <div class="small-12 columns hide-for-large">
-                        {!! HTML::image("uploads/normal/home/attraction_medium.jpg","",array("class"=>"")) !!}
+                    <div class="small-12 large-8 columns">
+                        <img data-interchange="[uploads/normal/home/attraction_medium.jpg, small], [uploads/normal/home/attraction_large.jpg, large]">
                     </div>
                     <div class=" large-4 columns">
                         <div class="tag-highlight">
@@ -264,11 +258,8 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                             <h1> ___ </h1>
                         </div>
                     </div>
-                    <div class="large-8 columns show-for-large">
-                        {!! HTML::image("uploads/normal/home/accommodation_large.jpg","",array("class"=>"")) !!}
-                    </div>
-                    <div class="small-12 columns hide-for-large">
-                        {!! HTML::image("uploads/normal/home/accommodation_medium.jpg","",array("class"=>"")) !!}
+                    <div class="small-12 large-8 columns">
+                        <img data-interchange="[uploads/normal/home/accommodation_medium.jpg, small], [uploads/normal/home/accommodation_large.jpg, large]">
                     </div>
                 </a>
             </div>
