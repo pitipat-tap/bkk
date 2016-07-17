@@ -1,8 +1,9 @@
-$(window).load(function(){
-
-      $('body').addClass('loaded');
-});
+//$(window).load(function(){
+//
+//});
 $(document).ready(function() {
+
+  $('body').addClass('loaded');
 
   if(localStorage.getItem('language') == null){
     localStorage.setItem('language',"th");
