@@ -37,23 +37,22 @@ gulp.task('minify-js', function () {
     gulp.src('resources/assets/js/**/*.js')
         .pipe(uglify())
         .pipe(gulp.dest('./public/js/'))
-        .pipe(notify({ message: 'Minify-js complete: <%= file.relative %>'}));
+        .pipe(notify({ message: 'Minify-js complete', onLast: true}));
 });
 gulp.task('minify-modernizr', function() {
     gulp.src('public/js/modernizr/modernizr.js')
         .pipe(uglify())
-        .pipe(gulp.dest('./public/js/modernizr'))
-        .pipe(notify({ message: 'Minify-js complete: <%= file.relative %>'}));
+        .pipe(gulp.dest('./public/js/modernizr'));
 });
 
 // css
-gulp.task('minify-css', ['compile'], function () {
+gulp.task('minify-css', function () {
     gulp.src('resources/assets/sass/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer('last 2 version'))
         .pipe(cssnano())
         .pipe(gulp.dest('./public/css/'))
-        .pipe(notify({ message: 'Compile scss task complete: <%= file.relative %>'}));
+        .pipe(notify({ message: 'Compile scss task complete', onLast: true}));
 });
 
 gulp.task('compile', function () {

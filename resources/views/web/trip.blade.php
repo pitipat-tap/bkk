@@ -50,7 +50,7 @@
 
 <section>
 	<div class="banner-containers">
-        <img data-interchange="[uploads/normal/banner/trip_small.jpg, small], [uploads/normal/banner/trip_medium.jpg, medium], [uploads/normal/banner/trip_large.jpg, large]">
+        <img class="banner-picture" data-interchange="[uploads/normal/banner/trip_small.jpg, small], [uploads/normal/banner/trip_medium.jpg, medium], [uploads/normal/banner/trip_large.jpg, large]">
     </div>
 </section>
 

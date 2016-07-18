@@ -11,11 +11,14 @@
     max-height: 640px;
     overflow: hidden;
     position: relative;
-    @include breakpoint (xxlarge up){
-        height: 640px;
-    }
     @include breakpoint (medium up){
         height: 425px;
+    }
+    @include breakpoint (xxlarge up){
+        height: 500px;
+    }
+    @include breakpoint (1800px){
+        height: 600px;
     }
 
     img {

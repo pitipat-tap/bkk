@@ -20,7 +20,7 @@
 
 <section>
 	<div class="banner-containers">
-        <img data-interchange="[uploads/normal/banner/transportation_small.jpg, small], [uploads/normal/banner/transportation_medium.jpg, medium], [uploads/normal/banner/transportation_large.jpg, large]">
+        <img class="banner-picture" data-interchange="[uploads/normal/banner/transportation_small.jpg, small], [uploads/normal/banner/transportation_medium.jpg, medium], [uploads/normal/banner/transportation_large.jpg, large]">
     </div>
 </section>
 
