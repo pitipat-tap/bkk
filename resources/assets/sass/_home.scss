@@ -454,8 +454,8 @@
     z-index: 2;
 }
 
-#news {
-    background-color: #d4f0e2;
+#home-news {
+    background-color: $secondary-color;
 
     .news-item-container {
         padding:30px;

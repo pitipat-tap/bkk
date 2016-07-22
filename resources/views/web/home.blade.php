@@ -401,7 +401,7 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                 </div>
             </div>
         </section>
-        <section id="news" class="mg-b-2">
+        <section id="home-news" class="mg-b-2">
             <div class="row">
                 <div class="news">
                     <h2 lang="th"> ข่าว </h2>
