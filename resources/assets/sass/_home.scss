@@ -31,15 +31,19 @@
         }
     }
 }
+.orbit-container{
+    height: auto;
+    width: auto;
+}
 .orbit-slide{
     overflow: hidden;
     position: relative;
 
     @include breakpoint(small only) {
-        height: 85vh;
+        height: 133vw;
     }
     @include breakpoint(medium only) {
-        height: 65vh;
+        height: 75vw;
     }
     @include breakpoint(large) {
         height: auto;
@@ -47,7 +51,7 @@
 
     .orbit-image{
         @include breakpoint(small only) {
-            height: 85vh;
+            height: 133vw;
             width: auto;
             max-width: none;
             overflow-x: hidden;
@@ -59,7 +63,7 @@
             margin: auto;
         }
         @include breakpoint(medium only) {
-            height: 65vh;
+            height: 75vw;
             width: auto;
             max-width: none;
             overflow-x: hidden;
@@ -354,10 +358,10 @@
         text-align:center;
 
         @include breakpoint(small) {
-            height:10em;
+            height:8em;
         }
         @include breakpoint(medium) {
-            height:20em;
+            height:16em;
         }
         @include breakpoint(large) {
             height:300px;

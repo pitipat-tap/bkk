@@ -12,7 +12,6 @@
                 @endif
                         <a>
                             <img class="orbit-image" data-interchange="[{!! $banner->mobile_image_url !!}, small], [{!! $banner->tablet_image_url !!}, medium], [{!! $banner->desktop_image_url !!}, large]">
-                            <!-- {!! Html::image($banner->desktop_image_url, 'alt', array("class"=>"orbit-image")) !!} -->
                             <figcaption class="orbit-caption">{!! $banner->caption !!}</figcaption>
                         </a>
                     </li>
