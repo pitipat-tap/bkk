@@ -413,7 +413,88 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                 </div>
             </div>
             <div class="news-item-container">
-                @foreach ($posts as $post)
+                    <div class="row news-item">
+                        <div class="columns large-12 small-12">
+                            <div class="news-thumbnail">
+                                {!! HTML::image("images/news/new01.jpg","",array("class"=>"")) !!}
+                            </div>
+                        </div>
+                        <div class="columns large-6 small-12 mg-b-1">
+                            {!! HTML::image("images/news/new02.jpg","",array("class"=>"")) !!}
+                        </div>
+                        <div class="columns large-6 small-12">
+                            <div class="news-content"align="center">
+                                <h3 lang="th"> ไต้หวันยกเว้นวีซ่าให้นักท่องเที่ยวไทยและบรูไน มีผล 1 สิงหาคม 2559 </h3>
+                                <h3 lang="en"> Taiwan grant Thai citizen visa-free access starting on Aug, 1st 2016.</h3>
+                                <h3 lang="jp"> Taiwan grant Thai citizen visa-free access starting on Aug, 1st 2016.</h3>
+                                <h3 lang="ch"> Taiwan grant Thai citizen visa-free access starting on Aug, 1st 2016.</h3>
+                                <hr>
+                                
+                                <p  lang="th" style="max-height:none;">
+                                    เมื่อ วันที่ 15 กรกฎาคม 2559 รัฐบาลไต้หวัน เห็นชอบการยกเว้นวีซ่าให้กับนักท่องเที่ยวไทยและบรูไน 
+                                มีผลตั้งแต่วันที่ 1 สิงหาคมนี้ โดยจะมีการทดลองใช้ 1 ปี
+                                <br>
+                                <br>
+                                    ทั้งนี้ การเห็นชอบดังกล่าว มีเบื้องหลังจากนายศุภฤกษ์ ศูรางกูร นายกสมาคมไทยบริการท่องเที่ยว
+                                นำคณะผู้ประกอบการธุรกิจท่องเที่ยวไทย ไปประชุมเชื่อมความสัมพันธ์กับสมาคมการท่องเที่ยวไต้หวัน
+                                และผู้ประกอบการธุรกิจท่องเที่ยวไต้หวัน เมื่อวันที่ 6-11 กรกฎาคมที่ผ่านมา พร้อมขอให้ไต้หวันผ่อนปรนวีซ่าแก่คนไทย
+                                  ขณะที่ในปีที่่ผ่านมา คนไทยไปเที่ยวไต้หวันกว่า 1.3 แสนคน เพิ่มขึ้นถึงร้อยละ 38 หลังจากมีการผ่อนคลายวีซ่าบางส่วน
+                                ซึ่งทางไต้หวันพอใจมาก โดยจุดสำคัญที่กระแสเที่ยวไต้หวันจุดติด เพราะมีธรรมชาติที่สมบูรณ์งดงาม มีศิลปวัฒนธรรม
+                                และมีการเดินทางที่ไม่ไกลมากนัก และการมาประชุมครั้งนี้
+                                 ไต้หวันรับปากจะหามาตรการผ่อนคลายหรือยกเลิกวีซ่าให้กับคนไทยเพื่อส่งเสริม ธุรกิจการท่องเที่ยวระหว่าง 2 ประเทศ
+                                </p>
+                                <p  lang="en" style="max-height:none;">
+                                    Today, July 15 2016, Taiwan Government agree to grant free visa to Thailand and Brunei citizens according to a measure approved by the Cabinet.
+                                    <br>
+                                    <br>
+                                    The measure, which will allow Thai and Brunei national visa-exempt stays of up to 30 days, will be implemented on a trial basis for a period of one year.
+                                    <br>
+                                    <br>
+                                    In the last year, Taiwan have nearly 130,000 visitors each year, increasing around 38% after the restriction reduction for visa.
+                                    <br>
+                                    <br>
+                                    Those additional visitors are expected to inject an extra NT$13 billion (US$407 million) into the domestic economy, according to the Ministry of Transportation and Communications.
+                                    <br>
+                                    <br>
+                                    Taiwan has appealing scenery, and comfortable transportation which can attract more visitors to visit their country.
+                                </p>
+                                <p  lang="jp" style="max-height:none;">
+                                    Today, July 15 2016, Taiwan Government agree to grant free visa to Thailand and Brunei citizens according to a measure approved by the Cabinet.
+                                    <br>
+                                    <br>
+                                    The measure, which will allow Thai and Brunei national visa-exempt stays of up to 30 days, will be implemented on a trial basis for a period of one year.
+                                    <br>
+                                    <br>
+                                    In the last year, Taiwan have nearly 130,000 visitors each year, increasing around 38% after the restriction reduction for visa.
+                                    <br>
+                                    <br>
+                                    Those additional visitors are expected to inject an extra NT$13 billion (US$407 million) into the domestic economy, according to the Ministry of Transportation and Communications.
+                                    <br>
+                                    <br>
+                                    Taiwan has appealing scenery, and comfortable transportation which can attract more visitors to visit their country.
+                                </p>
+                                <p  lang="ch" style="max-height:none;">
+                                    Today, July 15 2016, Taiwan Government agree to grant free visa to Thailand and Brunei citizens according to a measure approved by the Cabinet.
+                                    <br>
+                                    <br>
+                                    The measure, which will allow Thai and Brunei national visa-exempt stays of up to 30 days, will be implemented on a trial basis for a period of one year.
+                                    <br>
+                                    <br>
+                                    In the last year, Taiwan have nearly 130,000 visitors each year, increasing around 38% after the restriction reduction for visa.
+                                    <br>
+                                    <br>
+                                    Those additional visitors are expected to inject an extra NT$13 billion (US$407 million) into the domestic economy, according to the Ministry of Transportation and Communications.
+                                    <br>
+                                    <br>
+                                    Taiwan has appealing scenery, and comfortable transportation which can attract more visitors to visit their country.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="columns large-6 small-12">
+                            {!! HTML::image("images/news/new03.jpg","",array("class"=>"")) !!}
+                        </div>
+                    </div>
+                <!--@foreach ($posts as $post)
                     <div class="row news-item">
                         <div class="columns large-6 small-12">
                             <div class="news-thumbnail">
@@ -438,7 +519,7 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                             </div>
                         </div>
                     </div>
-                @endforeach
+                @endforeach-->
             </div>
         </section>
     </div>
