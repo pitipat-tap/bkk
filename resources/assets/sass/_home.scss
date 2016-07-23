@@ -38,6 +38,7 @@
 .orbit-slide{
     overflow: hidden;
     position: relative;
+    max-height: none !important;
 
     @include breakpoint(small only) {
         height: 133vw;
