@@ -79,42 +79,51 @@ Edit Blog Post |
         </div>
 		
 		<div class="row full-width">
-            <div class="small-12 medium-9 columns">
-            	<div class="ui-block mg-b medium-half-mg-r">
-	                <div class="row">
-			    		<div class="small-12 medium-6 columns">
-			    			{!! Form::label("title", "Title") !!}
-	               			{!! Form::text("title", null) !!}
+		    <div class="small-12 medium-6 large-4 columns">
+		    	<div class="ui-block mg-b medium-half-mg-r">
+		    		<div class="row">
+		    			<h6>Thai</h6>
+			    		<div class="small-12 large-6 columns">
+			    			{!! Form::label("title_thai", "Title") !!}
+							{!! Form::text("title_thai", null) !!}
 			    		</div>
-			    		<div class="small-12 medium-6 columns">
-			    			{!! Form::label("url", "URL") !!}
-	               			{!! Form::text("url", null, array("placeholder" => 'only letters (a-z), numbers, and "-", "_"')) !!}
-			    		</div>
+			    		
 			    	</div>
-			    	
-			    	{!! Form::label("description", "Description") !!}
-	                {!! Form::textarea("description", null, array("rows" => "4")) !!}
-			    	
-	                {!! Form::label("content", "Content") !!}
-	                {!! Form::textarea("content", null, array("class" => "tinymce", "rows" => "30")) !!}
-	                <br />
-	                
-	                <p class="text-date">Created : {!! date("M n, Y g:i A", strtotime($post->created_at)) !!}</p>
-	                @if ($post->updated_at != $post->created_at)
-						<p class="text-date">Last edited : {!! date("M n, Y g:i A", strtotime($post->updated_at)) !!}</p>
-					@endif
-					
-					<p class="text-date">{!! $post->hits !!} views</p>
-                </div>
-            </div>
-            
-            <div class="small-12 medium-3 columns">
+			        {!! Form::label("description_thai", "Description") !!}
+					{!! Form::textarea("description_thai", null, array("rows" => "7")) !!}
+		    	</div>
+		    </div>
+			<div class="small-12 medium-6 large-4 columns">
 				<div class="ui-block mg-b medium-half-mg-l">
-                	{!! Form::label("tags", "Tags") !!}
-                	{!! Form::text("tags", $tags_str, array("placeholder" => 'Ex. "tag1 tag2 tag3"')) !!}
+					<div class="row">
+						<h6>English</h6>
+						<div class="small-12 large-6 columns" >
+							{!! Form::label("title_english", "Title") !!}
+							{!! Form::text("title_english", null) !!}
+						</div>
+						<div class="small-12 columns">
+							{!! Form::label("description_english", "Description") !!}
+							{!! Form::textarea("description_english", null, array("rows" => "7")) !!}
+						</div>
+					</div>
+				</div>
+			</div>
+		    
+		    <div class="small-12 large-4 columns">
+		    	<div class="ui-block mg-b medium-half-mg-l">
+	    			{!! Form::label("url", "URL") !!}
+           			{!! Form::text("url", null, array("placeholder" => 'only letters (a-z), numbers, and "-", "_"')) !!}
+	    		</div>
+                <div class="ui-block mg-b medium-half-mg-l">
+                    {!! Form::label("tags", "Tags") !!}
+                	{!! Form::text("tags", null, array("placeholder" => 'Ex. "tag1 tag2 tag3"')) !!}
                 </div>
-            </div>
-        </div>
+                <div class="ui-block mg-b medium-half-mg-l">
+	    			{!! Form::label("remark", "remark") !!}
+           			{!! Form::text("remark", null, array("placeholder" => 'remark')) !!}
+	    		</div>
+		    </div>
+		</div>
 
         <div class="row full-width">
 			@for($i = 1; $i <= 5; $i++)

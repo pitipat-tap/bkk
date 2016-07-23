@@ -45,11 +45,11 @@
                 {!! HTML::image($post->image_url_1,"$post->title",array("class"=>"attraction-select-img")) !!}
             </div>
             <div class="columns medium-7 small-12">
-                <h4> {!! $post->title !!} </h4>
+                <h4 lang="th"> {!! $post->title_thai !!} </h4>
+                <h4 lang="en"> {!! $post->title_english !!} </h4>
                 <div class="description-container">
-                    <p>
-                        {!! $post->description !!}
-                    </p>
+                    <p lang="th">{!! $post->description_thai !!}</p>
+                    <p lang="en">{!! $post->description_english !!}</p>
                 </div>
                 <a href="{!! URL::route('blog-post',array($post->url)) !!}">
                     <button class="green-btn mg-t-1">

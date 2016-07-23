@@ -42,10 +42,12 @@ $(document).ready(function(){
         <div class="news-border mg-b-2 pd-b-2">
             <div class="row mg-t-1">
                 <div class="columns medium-12 small-12 pd-l-0 pd-r-0">
-                    <h3 > {!! $post->title !!} </h3>
+                    <h3 lang="th"> {!! $post->title_thai !!} </h3>
+                    <h3 lang="en"> {!! $post->title_english !!} </h3>
                     <hr>
                     <div class="columns medium-8 small-12 pd-l-0">
-                        {!! $post->content !!}
+                        <p lang="th">{!! $post->description_thai !!}<p>
+                        <p lang="en">{!! $post->description_english !!}<p>
                     </div>
                     <div class="columns medium-4 small-12">
                         <div class="news-img-container row small-up-2">

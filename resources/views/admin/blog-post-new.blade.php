@@ -90,7 +90,7 @@ Add New Blog Post |
 			    		
 			    	</div>
 			        {!! Form::label("description_thai", "Description") !!}
-					{!! Form::textarea("description_thai", null, array("rows" => "4")) !!}
+					{!! Form::textarea("description_thai", null, array("rows" => "7")) !!}
 		    	</div>
 		    </div>
 			<div class="small-12 medium-6 large-4 columns">
@@ -103,7 +103,7 @@ Add New Blog Post |
 						</div>
 						<div class="small-12 columns">
 							{!! Form::label("description_english", "Description") !!}
-							{!! Form::textarea("description_english", null, array("rows" => "4")) !!}
+							{!! Form::textarea("description_english", null, array("rows" => "7")) !!}
 						</div>
 					</div>
 				</div>

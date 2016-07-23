@@ -422,12 +422,12 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                         </div>
                         <div class="columns large-6 small-12">
                             <div class="news-content">
-                                <h3> {!! $post->title !!} </h3>
+                                <h3 lang="th"> {!! $post->title_thai !!} </h3>
+                                <h3 lang="en"> {!! $post->title_english !!} </h3>
                                 <hr>
                                 
-                                <p >
-                                    {!! $post->description !!}
-                                </p>
+                                <p lang="th">{!! $post->description_thai !!}</p>
+                                <p lang="en">{!! $post->description_english !!}</p>
                                 <div class="">
                                     <a class="hide-for-print" href="{!! URL::route('blog-post',array($post->url)) !!}">
                                         <div class="see-more"> 
