@@ -38,9 +38,15 @@
         
         @yield("specific_css")
         
-        {!! HTML::script("js/public-all.js") !!}
-        {!! HTML::script("js/resource-all.js") !!}
+        {!! HTML::script("js/jquery.min.js") !!}
+        {!! HTML::script("js/modernizr/modernizr.js") !!}
+        {!! HTML::script("js/foundation.min.js") !!}
+        {!! HTML::script("js/angular.min.js") !!}
+        {!! HTML::script("js/isMobile.min.js") !!}
+        {!! HTML::script("js/verge.min.js") !!}
+        {!! HTML::script("js/main.js") !!}
        
+
         @yield("specific_js_head")
 
         <script>

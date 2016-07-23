@@ -31,15 +31,20 @@
         }
     }
 }
+.orbit-container{
+    height: auto;
+    width: auto;
+}
 .orbit-slide{
     overflow: hidden;
     position: relative;
+    max-height: none !important;
 
     @include breakpoint(small only) {
-        height: 85vh;
+        height: 133vw;
     }
     @include breakpoint(medium only) {
-        height: 65vh;
+        height: 75vw;
     }
     @include breakpoint(large) {
         height: auto;
@@ -47,7 +52,7 @@
 
     .orbit-image{
         @include breakpoint(small only) {
-            height: 85vh;
+            height: 133vw;
             width: auto;
             max-width: none;
             overflow-x: hidden;
@@ -59,7 +64,7 @@
             margin: auto;
         }
         @include breakpoint(medium only) {
-            height: 65vh;
+            height: 75vw;
             width: auto;
             max-width: none;
             overflow-x: hidden;
@@ -254,8 +259,11 @@
             @include breakpoint(large) {
                 height: 430px;
             }
-            @include breakpoint(medium down) {
+            @include breakpoint(medium only) {
                 height: 950px;
+            }
+            @include breakpoint(small only) {
+                height: 650px;
             }
 
             .row{
@@ -304,6 +312,27 @@
                 color:white;
                 padding: 5px 10px;
                 text-align:center;
+            }
+            .no-event{
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                padding: 2em;
+
+                @include breakpoint(large) {
+                    padding: 10em 0;
+                }
+                @include breakpoint(medium only) {
+                    padding: 24em 0;
+                }
+                @include breakpoint(small only) {
+                    padding: 16em 0;
+                }
+
+                p{
+                    font-size: 3em;
+                    margin: auto;
+                }
             }
             a {
                 display: block;
@@ -354,10 +383,10 @@
         text-align:center;
 
         @include breakpoint(small) {
-            height:10em;
+            height:8em;
         }
         @include breakpoint(medium) {
-            height:20em;
+            height:16em;
         }
         @include breakpoint(large) {
             height:300px;
@@ -454,8 +483,8 @@
     z-index: 2;
 }
 
-#news {
-    background-color: #d4f0e2;
+#home-news {
+    background-color: $secondary-color;
 
     .news-item-container {
         padding:30px;

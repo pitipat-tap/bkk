@@ -9,7 +9,7 @@
 
 
 @section("specific_js_head")
-
+{!! Html::script("js/gallery.js") !!}
 @stop
 
 

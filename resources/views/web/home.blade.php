@@ -6,7 +6,9 @@
 
 
 @section("specific_js_head")
-
+{!! Html::script("js/verge.min.js") !!}
+{!! Html::script("js/sly.min.js") !!}
+{!! Html::script("js/home.js") !!}
 @stop
 
 
@@ -37,12 +39,12 @@
                           <div id="area-4"></div>
                           <div id="area-5"></div>
                           <div id="area-6"></div>
-                          {!! HTML::image("images/maps/map-0.png","",array("style"=>"z-index:2")) !!}
-                          {!! HTML::image("images/maps/map-01.png","",array("id"=>"zone-1","class"=>"zone opa-1")) !!}
-                          {!! HTML::image("images/maps/map-02.png","",array("id"=>"zone-2","class"=>"zone")) !!}
-                          {!! HTML::image("images/maps/map-03.png","",array("id"=>"zone-3","class"=>"zone")) !!}
-                          {!! HTML::image("images/maps/map-04.png","",array("id"=>"zone-4","class"=>"zone")) !!}
-                          {!! HTML::image("images/maps/map-05.png","",array("id"=>"zone-5","class"=>"zone")) !!}
+                          {!! HTML::image("images/maps/map-0.jpg","",array("style"=>"z-index:2")) !!}
+                          {!! HTML::image("images/maps/map-01.jpg","",array("id"=>"zone-1","class"=>"zone opa-1")) !!}
+                          {!! HTML::image("images/maps/map-02.jpg","",array("id"=>"zone-2","class"=>"zone")) !!}
+                          {!! HTML::image("images/maps/map-03.jpg","",array("id"=>"zone-3","class"=>"zone")) !!}
+                          {!! HTML::image("images/maps/map-04.jpg","",array("id"=>"zone-4","class"=>"zone")) !!}
+                          {!! HTML::image("images/maps/map-05.jpg","",array("id"=>"zone-5","class"=>"zone")) !!}
                       </div>
                 </div>
                 <div class="map-content large-4 columns">
@@ -223,21 +225,15 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                             <h1> ___ </h1>
                         </div>
                     </div>
-                    <div class="large-8 columns show-for-large">
-                        {!! HTML::image("uploads/normal/home/transportation_large.jpg","",array("class"=>"")) !!}
-                    </div>
-                    <div class="small-12 columns hide-for-large">
-                        {!! HTML::image("uploads/normal/home/transportation_medium.jpg","",array("class"=>"")) !!}
+                    <div class="small-12 large-8 columns">
+                        <img data-interchange="[uploads/normal/home/transportation_medium.jpg, small], [uploads/normal/home/transportation_large.jpg, large]">
                     </div>
                 </a>
             </div>
             <div class="row">
                 <a href="{!! URL::route('attractionCategory') !!}">
-                    <div class="large-8 columns show-for-large">
-                        {!! HTML::image("uploads/normal/home/attraction_large.jpg","",array("class"=>"")) !!}
-                    </div>
-                    <div class="small-12 columns hide-for-large">
-                        {!! HTML::image("uploads/normal/home/attraction_medium.jpg","",array("class"=>"")) !!}
+                    <div class="small-12 large-8 columns">
+                        <img data-interchange="[uploads/normal/home/attraction_medium.jpg, small], [uploads/normal/home/attraction_large.jpg, large]">
                     </div>
                     <div class=" large-4 columns">
                         <div class="tag-highlight">
@@ -264,11 +260,8 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                             <h1> ___ </h1>
                         </div>
                     </div>
-                    <div class="large-8 columns show-for-large">
-                        {!! HTML::image("uploads/normal/home/accommodation_large.jpg","",array("class"=>"")) !!}
-                    </div>
-                    <div class="small-12 columns hide-for-large">
-                        {!! HTML::image("uploads/normal/home/accommodation_medium.jpg","",array("class"=>"")) !!}
+                    <div class="small-12 large-8 columns">
+                        <img data-interchange="[uploads/normal/home/accommodation_medium.jpg, small], [uploads/normal/home/accommodation_large.jpg, large]">
                     </div>
                 </a>
             </div>
@@ -401,14 +394,16 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                     </div>
                     @else 
                     <div id="{!! $event->month !!}" class="event-item-list row">
-                        No Event
+                        <div class="no-event">
+                            <p>No Event</p>
+                        </div>
                     </div>
                     @endif
                     @endforeach
                 </div>
             </div>
         </section>
-        <section id="news" class="mg-b-2">
+        <section id="home-news" class="mg-b-2">
             <div class="row">
                 <div class="news">
                     <h2 lang="th"> ข่าว </h2>

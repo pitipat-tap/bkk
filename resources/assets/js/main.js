@@ -1,9 +1,11 @@
-//$(window).load(function(){
-//
-//});
+$(window).load(function(){
+ $('body').addClass('loaded');
+});
 $(document).ready(function() {
 
-  $('body').addClass('loaded');
+  // setTimeout(function(){
+  //   $('body').addClass('loaded');
+  // },5000);
 
   if(localStorage.getItem('language') == null){
     localStorage.setItem('language',"th");
@@ -34,24 +36,25 @@ $(document).ready(function() {
 
     // partner page
     var path = window.location.href;
-    var loc = path.substring(path.lastIndexOf('/')+1);
 
-    if(loc=="partners") {
+    if(path.indexOf('partners') > -1) {
         document.getElementById("partners").style.display = "none";
-    } else if(loc=="accommodation" || loc=="accommodation2") {
+    } else if(path.indexOf('accommodation') > -1) {
         $('#accommodation').addClass('active');
-    } else if(loc=="attraction" || loc=="attraction-category") {
+    } else if(path.indexOf('attraction') > -1) {
         $('#attraction').addClass('active');
-    } else if(loc=="campaign") {
+    } else if(path.indexOf('campaign') > -1) {
         $('#campaign').addClass('active');
-    } else if(loc=="gallery") {
+    } else if(path.indexOf('gallery') > -1) {
         $('#gallery').addClass('active');
-    } else if(loc=="trips" || loc=="trip") {
+    } else if(path.indexOf('trip') > -1) {
         $('#trips').addClass('active');
-    } else if(loc=="transportation") {
+    } else if(path.indexOf('transportation') > -1) {
         $('#transportation').addClass('active');
+    } else if(path.indexOf('news') > -1) {
+        $('#news').addClass('active');
     } else {
-        
+
     }
 
 
