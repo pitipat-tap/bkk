@@ -394,7 +394,9 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                     </div>
                     @else 
                     <div id="{!! $event->month !!}" class="event-item-list row">
-                        No Event
+                        <div class="no-event">
+                            <p>No Event</p>
+                        </div>
                     </div>
                     @endif
                     @endforeach
