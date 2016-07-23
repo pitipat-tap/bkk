@@ -102,41 +102,69 @@ Add New Blog Post |
 		    
 		    <div class="small-12 medium-3 columns">
                 <div class="ui-block mg-b medium-half-mg-l">
-                	<p class="f-label">Featured Image</p>
-
-					<?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=feature-image-url"; ?>
-					<a class="fm-open" href="<?php echo $p_link; ?>">
-	                    {!! Html::image("/images/admin/icon-placeholder.svg", 
-	                        "Featured Image", 
-	                        array(
-	                            "id" => "feature-image",
-	                            "class" => "post-image"
-	                            )
-	                        )
-	                    !!}
-                    </a>
-                    
-                    {!! Form::text("feature_image_url", 
-                        null, 
-                        array(
-                            "id" => "feature-image-url",
-                            "class" => "image-url far-away",
-                            "autocomplete" => "off",
-                            "readonly" => "readonly"
-                            ) 
-                        ) 
-                    !!}
-                        
-                    <p><a class="fm-open" href="<?php echo $p_link; ?>">Select Image</a></p>
-                    
-                    <p class="text-date">Tips : Use image size > 600 x 315 pixels for Facebook link post with large preview image.</p>
-                </div>
-                	
-                <div class="ui-block mg-b medium-half-mg-l">
                     {!! Form::label("tags", "Tags") !!}
                 	{!! Form::text("tags", null, array("placeholder" => 'Ex. "tag1 tag2 tag3"')) !!}
                 </div>
 		    </div>
+		</div>
+
+		<div class="row full-width">
+			@for($i = 1; $i <= 5; $i++)
+				@if($i != 5)
+				<div class="small-12 large-4 columns">
+				@else
+				<div class="small-12 large-4 columns end">
+				@endif
+					<div class="ui-block mg-b medium-half-mg-l">
+						<p class="f-label">Image {!! $i !!}</p>
+						<?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=screenshots-URL".$i; ?>
+						<a class="fm-open" href="<?php echo $p_link; ?>">
+							@if( $post["image_url_".$i] != null && $post["image_url_".$i] != '')
+			                    {!! Html::image($post["image_url_".$i], 
+			                        "Image-$i", 
+			                        array(
+			                            "id" => "screenshots".$i ,
+			                            "class" => "post-image"
+			                            )
+			                        )
+			                    !!}
+			                @else 
+								{!! Html::image("/images/admin/icon-placeholder.svg", 
+									"Image-$i", 
+										array(
+											"id" => "screenshots".$i ,
+											"class" => "post-image"
+										)
+									)
+								!!}
+							@endif
+						</a>
+						{!! Form::text("image_url_".$i, 
+							null, 
+							array(
+									"id" => "screenshots-URL".$i,
+									"class" => "image-url far-away",
+									"autocomplete" => "off",
+									"readonly" => "readonly"
+								)
+							)
+						!!}
+						<br><br>
+						<p>
+							<button class="select-image-open" type="button" href="<?php echo $p_link; ?>">
+								Select Image
+							</button>
+							<button class="remove-image" type="button" onclick="removeImage('{!! $i !!}')" >
+								Remove Image
+							</button>
+						</p>
+					</div>
+				</div>
+				@if( $i%3 == 0)
+					</div>
+					<div class="row">
+				@endif
+			@endfor
 		</div>
 		
 		<div class="small-button-group show-for-small-only">

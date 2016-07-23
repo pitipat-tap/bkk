@@ -83,10 +83,14 @@ class AdminEventController extends Controller {
 			$post->author()->associate(Auth::user());
 			$post->title = trim(Request::input("title"));
 			$post->url = trim(Request::input("url"));
-			$post->feature_image_url = trim(Request::input("feature_image_url"));
+			$post->image_url_1 = trim(Request::input("image_url_1"));
 			$post->description = trim(Request::input("description"));
 			$post->content = Request::input("content");
 			$post->status = Request::input("status");
+			$post->image_url_2 = Request::input("image_url_2");
+			$post->image_url_3 = Request::input("image_url_3");
+			$post->image_url_4 = Request::input("image_url_4");
+			$post->image_url_5 = Request::input("image_url_5");
 			
 			if ($post->save()) {
 				$tags = Request::input("tags");
@@ -108,11 +112,11 @@ class AdminEventController extends Controller {
 				
 				return Redirect::route("admin-blog-posts")->with("success", "New post was created");
 			} else {
-				return Redirect::back()->with('error', 'Cannot save data')->withInput(Request::except("feature_image_url"));
+				return Redirect::back()->with('error', 'Cannot save data')->withInput(Request::except("image_url_1"));
 			}
 		}
 		else {
-			return Redirect::back()->with('error', 'Errors')->withErrors($validator)->withInput(Request::except("feature_image_url"));
+			return Redirect::back()->with('error', 'Errors')->withErrors($validator)->withInput(Request::except("image_url_1"));
 		}
 	}
 
@@ -158,10 +162,14 @@ class AdminEventController extends Controller {
 		if ($validator->passes()) {
 	        $post->title = trim(Request::input("title"));
 			$post->url = trim(Request::input("url"));
-	        $post->feature_image_url = trim(Request::input("feature_image_url"));
+	        $post->image_url_1 = trim(Request::input("image_url_1"));
 	        $post->description = trim(Request::input("description"));
 	        $post->content = Request::input("content");
 			$post->status = Request::input("status");
+			$post->image_url_2 = Request::input("image_url_2");
+			$post->image_url_3 = Request::input("image_url_3");
+			$post->image_url_4 = Request::input("image_url_4");
+			$post->image_url_5 = Request::input("image_url_5");
 			
 	        if ($post->save()) {
 	        	$tags = Request::input("tags");
@@ -183,11 +191,11 @@ class AdminEventController extends Controller {
 				
 	            return Redirect::route("admin-blog-posts")->with("success", "Updated post was saved");
 	        } else {
-	            return Redirect::back()->with('error', 'Cannot save data')->withInput(Request::except("feature_image_url"));;
+	            return Redirect::back()->with('error', 'Cannot save data')->withInput(Request::except("image_url_1"));;
 	        }
 		}
 		else {
-            return Redirect::back()->with('error', 'Errors')->withErrors($validator)->withInput(Request::except("feature_image_url"));;
+            return Redirect::back()->with('error', 'Errors')->withErrors($validator)->withInput(Request::except("image_url_1"));;
         }
 	}
 

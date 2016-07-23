@@ -4,5 +4,24 @@
     }
     .news-border {
         padding:1em;
+        border: 1px $tertiary-color solid;
+    }
+    .news-tag-img{
+    	@include breakpoint(medium up){
+            margin: 1em 0;
+        }
+    }
+    .news-img-container{
+        @include breakpoint(small only){
+            margin-bottom:1em !important;
+        }
+        .column {
+            @include breakpoint(small only){
+                padding:0 !important;
+            }
+        }
+    }
+    .news-img-frame {
+        cursor:pointer;
     }
 }

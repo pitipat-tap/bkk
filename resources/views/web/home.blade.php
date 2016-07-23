@@ -417,7 +417,7 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                     <div class="row news-item">
                         <div class="columns large-6 small-12">
                             <div class="news-thumbnail">
-                                {!! HTML::image($post->feature_image_url,"",array("class"=>"")) !!}
+                                {!! HTML::image($post->image_url_1,"",array("class"=>"")) !!}
                             </div>
                         </div>
                         <div class="columns large-6 small-12">

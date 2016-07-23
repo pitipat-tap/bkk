@@ -14,13 +14,13 @@ class EventPost extends Model {
 			"url" => "alpha_dash|required|unique:event_posts,url".($id ? ",".$id : ""),
 			"content" => "required",
 			"status" => "in:draft,published",
-			"feature_image_url" => "required",
+			"image_url_1" => "required",
 			"categories" => "array"
 		);
 	}
 
 	public static $custom_messages = array(
-		"feature_image_url.required" => "The featured image is required."
+		"image_url_1.required" => "The featured image is required."
 	);
 
 	public function author()

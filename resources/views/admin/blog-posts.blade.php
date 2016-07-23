@@ -165,7 +165,7 @@ use Illuminate\Support\Facades\Input;
 		@foreach ($posts as $post)
 			<li>
 				<div class="post-item ui-block ui-card no-pd">
-					<p class="post-feature-image">{!! Html::image($post->feature_image_url) !!}</p>
+					<p class="post-feature-image">{!! Html::image($post->image_url_1) !!}</p>
 					<div class="post-details">
 						<h5>
 							{!! $post->title !!}

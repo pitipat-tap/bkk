@@ -26,10 +26,12 @@ $(document).ready(function() {
 		type: "iframe",
 		autoSize: false,
 		afterClose: function() {
-			url = $(':text[name="feature_image_url"]').val();
-			if (url!='') {
-				$('#feature-image').attr('src', url);
-			}
+			for(i=1; i<=5; i++){
+				url = $(':text[name="image_url_'+ i +'"]').val();
+				if (url!='') {
+					$('#screenshots'+i).attr('src', url);
+				}
+			}	
 		}
 	});
 	
@@ -47,6 +49,17 @@ $(document).ready(function() {
 		form.submit();
 	});
 });
+
+function removeImage(id){
+	var currentHostName = "";
+	if(window.location.origin.indexOf("local") > 0) {
+	      currentHostName = window.location.origin + '/bkk/public';
+	} else {
+	      currentHostName = window.location.origin ;
+	}
+	document.getElementById('screenshots-URL'+id).value = "";
+	document.getElementById('screenshots'+id).src = currentHostName+"/images/admin/icon-placeholder.svg";
+}
 
 
 

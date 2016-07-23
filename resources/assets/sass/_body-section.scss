@@ -5,7 +5,12 @@
     color: gray;
     text-align: left;
     font-size: 1rem;
-    min-height: 80vh;
+    @include breakpoint(medium down){
+        min-height: 80vh;
+    }
+    @include breakpoint(large){
+        min-height: 60vh;
+    }
 
     li{
     	display: block;

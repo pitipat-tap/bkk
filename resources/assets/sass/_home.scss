@@ -507,9 +507,15 @@
         }
     }
     .news-thumbnail {
-        margin: 30px;
+        
         max-height: 440px;
         overflow: hidden;
+        @include breakpoint(medium){
+            margin: 30px;
+        }
+        @include breakpoint(small only){
+            margin: 5px;
+        }
     }
     .news-content{
         padding:30px 0;

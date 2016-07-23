@@ -42,7 +42,7 @@
 @foreach ($posts as $post)
         <div class="row mg-t-1">
             <div class="attraction-select-img-container columns medium-5 small-12 pd-l-0">
-                {!! HTML::image($post->feature_image_url,"$post->title",array("class"=>"attraction-select-img")) !!}
+                {!! HTML::image($post->image_url_1,"$post->title",array("class"=>"attraction-select-img")) !!}
             </div>
             <div class="columns medium-7 small-12">
                 <h4> {!! $post->title !!} </h4>
