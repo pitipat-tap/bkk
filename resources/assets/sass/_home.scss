@@ -527,4 +527,23 @@
             overflow: hidden;
         }
     }
+    .see-more{
+        background-color: green;
+        color:white;
+        padding: 5px 10px;
+        text-align:center;
+    }
+    a {
+        display: block;
+
+        @include breakpoint(small) {
+            width: 100%;
+            line-height: 2em;
+            font-size: 1.5em;
+        }
+        @include breakpoint(large) {
+            width: 30%;
+            font-size: inherit;
+        }
+    }
 }
