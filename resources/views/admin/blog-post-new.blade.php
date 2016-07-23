@@ -119,25 +119,14 @@ Add New Blog Post |
 						<p class="f-label">Image {!! $i !!}</p>
 						<?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=screenshots-URL".$i; ?>
 						<a class="fm-open" href="<?php echo $p_link; ?>">
-							@if( $post["image_url_".$i] != null && $post["image_url_".$i] != '')
-			                    {!! Html::image($post["image_url_".$i], 
-			                        "Image-$i", 
-			                        array(
-			                            "id" => "screenshots".$i ,
-			                            "class" => "post-image"
-			                            )
-			                        )
-			                    !!}
-			                @else 
-								{!! Html::image("/images/admin/icon-placeholder.svg", 
-									"Image-$i", 
-										array(
-											"id" => "screenshots".$i ,
-											"class" => "post-image"
-										)
+							{!! Html::image("/images/admin/icon-placeholder.svg", 
+								"Image-$i", 
+									array(
+										"id" => "screenshots".$i ,
+										"class" => "post-image"
 									)
-								!!}
-							@endif
+								)
+							!!}
 						</a>
 						{!! Form::text("image_url_".$i, 
 							null, 
