@@ -79,32 +79,49 @@ Add New Blog Post |
         </div>
 		
 		<div class="row full-width">
-		    <div class="small-12 medium-9 columns">
+		    <div class="small-12 medium-6 large-4 columns">
 		    	<div class="ui-block mg-b medium-half-mg-r">
 		    		<div class="row">
+		    			<h6>Thai</h6>
 			    		<div class="small-12 large-6 columns">
-			    			{!! Form::label("title", "Title") !!}
-	               			{!! Form::text("title", null) !!}
+			    			{!! Form::label("title_thai", "Title") !!}
+							{!! Form::text("title_thai", null) !!}
 			    		</div>
-			    		<div class="small-12 large-6 columns">
-			    			{!! Form::label("url", "URL") !!}
-	               			{!! Form::text("url", null, array("placeholder" => 'only letters (a-z), numbers, and "-", "_"')) !!}
-			    		</div>
+			    		
 			    	</div>
-			        
-			        {!! Form::label("description", "Description") !!}
-	                {!! Form::textarea("description", null, array("rows" => "4")) !!}
-			        
-	                {!! Form::label("content", "Content") !!}
-	                {!! Form::textarea("content", null, array("class" => "tinymce", "rows" => "30")) !!}
+			        {!! Form::label("description_thai", "Description") !!}
+					{!! Form::textarea("description_thai", null, array("rows" => "4")) !!}
 		    	</div>
 		    </div>
+			<div class="small-12 medium-6 large-4 columns">
+				<div class="ui-block mg-b medium-half-mg-l">
+					<div class="row">
+						<h6>English</h6>
+						<div class="small-12 large-6 columns" >
+							{!! Form::label("title_english", "Title") !!}
+							{!! Form::text("title_english", null) !!}
+						</div>
+						<div class="small-12 columns">
+							{!! Form::label("description_english", "Description") !!}
+							{!! Form::textarea("description_english", null, array("rows" => "4")) !!}
+						</div>
+					</div>
+				</div>
+			</div>
 		    
-		    <div class="small-12 medium-3 columns">
+		    <div class="small-12 large-4 columns">
+		    	<div class="ui-block mg-b medium-half-mg-l">
+	    			{!! Form::label("url", "URL") !!}
+           			{!! Form::text("url", null, array("placeholder" => 'only letters (a-z), numbers, and "-", "_"')) !!}
+	    		</div>
                 <div class="ui-block mg-b medium-half-mg-l">
                     {!! Form::label("tags", "Tags") !!}
                 	{!! Form::text("tags", null, array("placeholder" => 'Ex. "tag1 tag2 tag3"')) !!}
                 </div>
+                <div class="ui-block mg-b medium-half-mg-l">
+	    			{!! Form::label("remark", "remark") !!}
+           			{!! Form::text("remark", null, array("placeholder" => 'remark')) !!}
+	    		</div>
 		    </div>
 		</div>
 

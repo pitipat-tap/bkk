@@ -81,16 +81,18 @@ class AdminEventController extends Controller {
 		if ($validator->passes()) {
 			$post = new EventPost;
 			$post->author()->associate(Auth::user());
-			$post->title = trim(Request::input("title"));
+			$post->title_thai = trim(Request::input("title_thai"));
+			$post->title_english = trim(Request::input("title_english"));
 			$post->url = trim(Request::input("url"));
 			$post->image_url_1 = trim(Request::input("image_url_1"));
-			$post->description = trim(Request::input("description"));
-			$post->content = Request::input("content");
+			$post->description_thai = trim(Request::input("description_thai"));
+			$post->description_english = trim(Request::input("description_english"));
 			$post->status = Request::input("status");
 			$post->image_url_2 = Request::input("image_url_2");
 			$post->image_url_3 = Request::input("image_url_3");
 			$post->image_url_4 = Request::input("image_url_4");
 			$post->image_url_5 = Request::input("image_url_5");
+			$post->remark = Request::input("remark");
 			
 			if ($post->save()) {
 				$tags = Request::input("tags");
@@ -160,16 +162,20 @@ class AdminEventController extends Controller {
 		$validator = Validator::make(Request::all(), EventPost::save_rules($id), EventPost::$custom_messages);
 		
 		if ($validator->passes()) {
-	        $post->title = trim(Request::input("title"));
+	        $post = new EventPost;
+			$post->author()->associate(Auth::user());
+			$post->title_thai = trim(Request::input("title_thai"));
+			$post->title_english = trim(Request::input("title_english"));
 			$post->url = trim(Request::input("url"));
-	        $post->image_url_1 = trim(Request::input("image_url_1"));
-	        $post->description = trim(Request::input("description"));
-	        $post->content = Request::input("content");
+			$post->image_url_1 = trim(Request::input("image_url_1"));
+			$post->description_thai = trim(Request::input("description_thai"));
+			$post->description_english = trim(Request::input("description_english"));
 			$post->status = Request::input("status");
 			$post->image_url_2 = Request::input("image_url_2");
 			$post->image_url_3 = Request::input("image_url_3");
 			$post->image_url_4 = Request::input("image_url_4");
 			$post->image_url_5 = Request::input("image_url_5");
+			$post->remark = Request::input("remark");
 			
 	        if ($post->save()) {
 	        	$tags = Request::input("tags");

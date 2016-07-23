@@ -10,9 +10,11 @@ class EventPost extends Model {
 
 	public static function save_rules($id = null) {
 		return array(
-			"title" => "required",
+			"title_thai" => "required",
+			"title_english" => "required",
 			"url" => "alpha_dash|required|unique:event_posts,url".($id ? ",".$id : ""),
-			"content" => "required",
+			"description_thai" => "required",
+			"description_english" => "required",
 			"status" => "in:draft,published",
 			"image_url_1" => "required",
 			"categories" => "array"

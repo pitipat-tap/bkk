@@ -9,9 +9,11 @@ class Post extends Model {
 	public static function save_rules($id = null) {
 		return array(
 			"status" => "in:draft,published",
-			"title" => "required",
+			"title_thai" => "required",
+			"title_english" => "required",
 			"url" => "alpha_dash|required|unique:work_post,url".($id ? ",".$id : ""),
-			"description" => "required",
+			"description_thai" => "required",
+			"description_english" => "required",
 			"image_url_1" => "required"
 		);
 	}
