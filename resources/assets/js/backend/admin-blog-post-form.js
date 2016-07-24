@@ -20,7 +20,12 @@ tinymce.init({
 });
 
 $(document).ready(function() {
-	$('.fm-open').fancybox({
+	$('.filemanager-open').fancybox({
+		helpers: {
+		    overlay: {
+				locked: false
+			}
+		},
 		width: 900,
 		height: 600,
 		type: "iframe",

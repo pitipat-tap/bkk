@@ -68,9 +68,9 @@
 
 
     function getLinkPath() {
-        $lpath = "/bkk/public";
+        //$lpath = "/bkk/public";
         // Real server
-        //$lpath = "";
+        $lpath = "";
         
         return $lpath;
     }

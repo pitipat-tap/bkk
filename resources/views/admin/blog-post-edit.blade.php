@@ -168,7 +168,7 @@ Edit Blog Post |
 						!!}
 						<br><br>
 						<p>
-							<button class="fm-open" type="button" href="<?php echo $p_link; ?>">
+							<button class="filemanager-open" type="button" href="<?php echo $p_link; ?>">
 								Select Image
 							</button>
 							<button class="remove-image" type="button" onclick="removeImage('{!! $i !!}')" >

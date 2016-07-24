@@ -135,7 +135,7 @@ Add New Blog Post |
 					<div class="ui-block mg-b medium-half-mg-l">
 						<p class="f-label">Image {!! $i !!}</p>
 						<?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=screenshots-URL".$i; ?>
-						<a class="fm-open" href="<?php echo $p_link; ?>">
+						<a class="filemanager-open" href="<?php echo $p_link; ?>">
 							{!! Html::image("/images/admin/icon-placeholder.svg", 
 								"Image-$i", 
 									array(
@@ -157,7 +157,7 @@ Add New Blog Post |
 						!!}
 						<br><br>
 						<p>
-							<button class="select-image-open" type="button" href="<?php echo $p_link; ?>">
+							<button class="filemanager-open" type="button" href="<?php echo $p_link; ?>">
 								Select Image
 							</button>
 							<button class="remove-image" type="button" onclick="removeImage('{!! $i !!}')" >
@@ -168,7 +168,7 @@ Add New Blog Post |
 				</div>
 				@if( $i%3 == 0)
 					</div>
-					<div class="row">
+					<div class="row full-width">
 				@endif
 			@endfor
 		</div>
