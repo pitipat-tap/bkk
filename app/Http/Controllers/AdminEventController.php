@@ -162,7 +162,7 @@ class AdminEventController extends Controller {
 		$validator = Validator::make(Request::all(), EventPost::save_rules($id), EventPost::$custom_messages);
 		
 		if ($validator->passes()) {
-	        $post = new EventPost;
+	        $post = EventPost::find($id);
 			$post->author()->associate(Auth::user());
 			$post->title_thai = trim(Request::input("title_thai"));
 			$post->title_english = trim(Request::input("title_english"));
