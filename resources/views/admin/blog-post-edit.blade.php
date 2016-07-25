@@ -135,7 +135,7 @@ Edit Blog Post |
 					<div class="ui-block mg-b medium-half-mg-l">
 						<p class="f-label">Image {!! $i !!}</p>
 						<?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=screenshots-URL".$i; ?>
-						<a class="fm-open" href="<?php echo $p_link; ?>">
+						<a class="filemanager-open" href="<?php echo $p_link; ?>">
 							@if( $post["image_url_".$i] != null && $post["image_url_".$i] != '')
 			                    {!! Html::image($post["image_url_".$i], 
 			                        "Image-$i", 
