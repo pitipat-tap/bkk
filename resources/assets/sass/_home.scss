@@ -313,6 +313,10 @@
                 span {
                     display: inline-block;
                 }
+                h3 {
+                    max-height: 1.5em;
+                    overflow: hidden;
+                }
                 p{
                     max-height: 100px;
                     display: inline-block;
