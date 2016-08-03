@@ -278,10 +278,10 @@
                     max-height: 365px;
                 }
                 @include breakpoint(medium only) {
-                    max-height: 500px;
+                    max-height: 530px;
                 }
                 @include breakpoint(small only) {
-                    max-height: 220px;
+                    max-height: 250px;
                 }
             }
             .event-item-list-select {
@@ -314,7 +314,7 @@
                     display: inline-block;
                 }
                 p{
-                    max-height: 130px;
+                    max-height: 100px;
                     display: inline-block;
                     overflow: hidden;
                 }
