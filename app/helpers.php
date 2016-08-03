@@ -68,9 +68,10 @@
 
 
     function getLinkPath() {
-        //$lpath = "/bkk/public";
-        // Real server
-        $lpath = "";
+        $lpath = '';
+        if($_SERVER['HTTP_HOST'] == 'localhost'){
+            $lpath = '/bkk/public';
+        }
         
         return $lpath;
     }
