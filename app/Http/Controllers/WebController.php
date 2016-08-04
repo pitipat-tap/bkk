@@ -15,7 +15,7 @@ class WebController extends Controller {
     public function home() {
         $banners = BannerOrbit::orderBy('sequence', 'ASC')->get();
         $events = [];
-        $months = ['january', 'febuary', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+        $months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
         foreach ($months as $month) {
             $event = Attractions::where("opening_hours","LIKE", '%'.$month.'%')->where("is_event",1)->orderBy('updated_at', 'desc')->first();
             if(!$event)
