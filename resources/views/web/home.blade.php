@@ -285,10 +285,10 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                             <li lang="jp" data-month="january" class="month">January</li>
                             <li lang="ch" data-month="january" class="month">January</li>
 
-                            <li lang="th" data-month="febuary" class="month">February</li>
-                            <li lang="en" data-month="febuary" class="month">February</li>
-                            <li lang="jp" data-month="febuary" class="month">February</li>
-                            <li lang="ch" data-month="febuary" class="month">February</li>
+                            <li lang="th" data-month="february" class="month">February</li>
+                            <li lang="en" data-month="february" class="month">February</li>
+                            <li lang="jp" data-month="february" class="month">February</li>
+                            <li lang="ch" data-month="february" class="month">February</li>
 
                             <li lang="th" data-month="march" class="month">March</li>
                             <li lang="en" data-month="march" class="month">March</li>
