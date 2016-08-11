@@ -8,7 +8,7 @@
 <meta property="og:url" content="http://www.bangkoktourist.com/attraction/{!! $attraction->id!!}" />
 <meta property="og:type" content="games.achieves" />
 <meta property="og:title" content="Bangkok Smiles : {!! $attraction->title_english !!}" />
-<meta property="og:description" content="{!! $attraction->description_english !!}" />
+<meta property="og:description" content="{!! $attraction->description_thai !!}" />
 <meta property="og:image" content="{!! $attraction->image_url_1 !!}" />
 <meta property="og:site_name" content="bangkoktourist" />
 <meta property="og:locale" content="th_TH" />
