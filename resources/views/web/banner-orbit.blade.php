@@ -10,7 +10,7 @@
                 @else
                     <li class="orbit-slide">
                 @endif
-                        <a>
+                        <a href="{!! $banner->link_url !!}">
                             <img class="orbit-image" data-interchange="[{!! $banner->mobile_image_url !!}, small], [{!! $banner->tablet_image_url !!}, medium], [{!! $banner->desktop_image_url !!}, large]">
                             <figcaption class="orbit-caption">{!! $banner->caption !!}</figcaption>
                         </a>
