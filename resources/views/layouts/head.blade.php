@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Bangkok Smiles @yield("specific_title")</title>
 
+        @yield("specific_meta") 
         
     
         <!-- Favicon -->
