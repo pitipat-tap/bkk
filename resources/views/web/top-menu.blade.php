@@ -93,6 +93,11 @@
                   </li>
             </ul>
         </li>
+        <li class="hide-for-print">
+            <a href="{!! URL::route('search') !!}">
+		<i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+        </li>
       </ul>
     </div>
   </div>
