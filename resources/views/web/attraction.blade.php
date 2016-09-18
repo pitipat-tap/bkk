@@ -8,6 +8,7 @@
 <meta property="og:url" content="http://www.bangkoktourist.com/attraction/{!! $attraction->id!!}" >
 <meta property="og:title" content="Bangkok Smiles : {!! $attraction->title_english !!}" >
 <meta property="og:description" content="{!! $attraction->description_thai !!}" >
+<!--<meta property="og:image" content="http://www.bangkoktourist.com/images/logo/bkk-logo.png" >-->
 <meta property="og:image" content="{!! $attraction->image_url_1 !!}" >
 <meta property="og:image:type" content="image/jpeg" >
 <meta property="og:image:width" content="400" >
@@ -180,10 +181,9 @@ $(document).ready(function(){
                                 @endif
                                 <tr>
                                     <td colspan="2" align="center">
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="box_count">
-                                        </div>
+					<div class="fb-share-button float-left" data-href="" data-layout="button" data-size="large" data-mobile-iframe="true">
+						<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=%2F&amp;src=sdkpreparse">Share</a>
+					</div>
                                     </td>
                                 </tr>
                             </tbody>
