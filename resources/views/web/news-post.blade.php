@@ -46,8 +46,8 @@ $(document).ready(function(){
                     <h3 lang="en"> {!! $post->title_english !!} </h3>
                     <hr>
                     <div class="columns medium-8 small-12 pd-l-0">
-                        <p lang="th">{!! $post->description_thai !!}<p>
-                        <p lang="en">{!! $post->description_english !!}<p>
+                        <div lang="th">{!! $post->description_thai !!}</div>
+                        <div lang="en">{!! $post->description_english !!}</div>
                     </div>
                     <div class="columns medium-4 small-12">
                         <div class="news-img-container row small-up-2">

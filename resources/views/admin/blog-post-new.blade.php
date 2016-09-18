@@ -79,7 +79,7 @@ Add New Blog Post |
         </div>
 		
 		<div class="row full-width">
-		    <div class="small-12 medium-6 large-4 columns">
+		    <div class="small-12 medium-12 large-8 columns">
 		    	<div class="ui-block mg-b medium-half-mg-r">
 		    		<div class="row">
 		    			<h6>Thai</h6>
@@ -90,10 +90,8 @@ Add New Blog Post |
 			    		
 			    	</div>
 			        {!! Form::label("description_thai", "Description") !!}
-					{!! Form::textarea("description_thai", null, array("rows" => "7")) !!}
+					{!! Form::textarea("description_thai", null, array("class" => "tinymce", "rows" => "7")) !!}
 		    	</div>
-		    </div>
-			<div class="small-12 medium-6 large-4 columns">
 				<div class="ui-block mg-b medium-half-mg-l">
 					<div class="row">
 						<h6>English</h6>
@@ -103,7 +101,7 @@ Add New Blog Post |
 						</div>
 						<div class="small-12 columns">
 							{!! Form::label("description_english", "Description") !!}
-							{!! Form::textarea("description_english", null, array("rows" => "7")) !!}
+							{!! Form::textarea("description_english", null, array("class" => "tinymce", "rows" => "7")) !!}
 						</div>
 					</div>
 				</div>
