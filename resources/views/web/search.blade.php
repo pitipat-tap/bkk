@@ -73,6 +73,16 @@ $(document).ready(function() {
                     @endforeach
                 </tbody>
             </table>
+            <style>
+                .copyright a {
+                        display:inline-block;
+                }
+            </style>
+            <div class="copyright">
+                <p>
+                    DataTables designed and created by <a href="https://sprymedia.co.uk/" target="_blank">SpryMedia Ltd</a> © 2007-2016. <a href="https://datatables.net/license/mit" target="_blank">MIT licensed</a>.
+                </p>
+            </div>
         </div>
     </div>
 </div>
