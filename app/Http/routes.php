@@ -27,6 +27,8 @@ Route::get('/galleryLoadMore',array("as" => "galleryLoadMore" ,"uses" => "WebCon
 
 Route::get('/aboutus',array("as" => "aboutus" ,"uses" => "WebController@aboutus"));
 
+Route::get('/search',array("as" => "search" ,"uses" => "WebController@search"));
+
 Route::get('/faq', array("as" => "faq" ,"uses" => "WebController@faq"));
 
 Route::get('/useful-info', array("as" => "useful-info", "uses" => "WebController@usefulInfo"));

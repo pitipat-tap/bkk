@@ -35,6 +35,13 @@ class WebController extends Controller {
                     "posts" => $posts,
                 ));
     }
+
+    public function search(){
+        $allItem = Attractions::get();
+        ($allItem);
+        return view('web.search',array("allItem"=>$allItem));
+    }
+
     public function news(){
         $posts = EventPost::orderBy('created_at', 'DESC')->
                  paginate(10);
