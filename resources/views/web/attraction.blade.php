@@ -178,6 +178,14 @@ $(document).ready(function(){
                                         <td>{!! $attraction->remark !!}</td>
                                     </tr>
                                 @endif
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <div class="fb-share-button" 
+                                            data-href="http://www.your-domain.com/your-page.html" 
+                                            data-layout="box_count">
+                                        </div>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
