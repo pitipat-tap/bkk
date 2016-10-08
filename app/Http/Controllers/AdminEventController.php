@@ -95,22 +95,22 @@ class AdminEventController extends Controller {
 			$post->remark = Request::input("remark");
 			
 			if ($post->save()) {
-				$tags = Request::input("tags");
-				$tags_id = array();
-				if (trim($tags) != "") {
-					$tags = preg_replace('/\s+/', ' ', trim($tags));
-					$tags_array = explode(" ", $tags);
-					foreach ($tags_array as $tag_name) {
-						$tag = EventTag::where("name", "=", trim($tag_name))->first();
-						if ($tag == null) {
-							$tag = new EventTag;
-							$tag->name = trim($tag_name);
-							$tag->save();
-						}
-						array_push($tags_id, $tag->id);
-					}
-					$post->tags()->sync($tags_id);
-				}
+				// $tags = Request::input("tags");
+				// $tags_id = array();
+				// if (trim($tags) != "") {
+				// 	$tags = preg_replace('/\s+/', ' ', trim($tags));
+				// 	$tags_array = explode(" ", $tags);
+				// 	foreach ($tags_array as $tag_name) {
+				// 		$tag = EventTag::where("name", "=", trim($tag_name))->first();
+				// 		if ($tag == null) {
+				// 			$tag = new EventTag;
+				// 			$tag->name = trim($tag_name);
+				// 			$tag->save();
+				// 		}
+				// 		array_push($tags_id, $tag->id);
+				// 	}
+				// 	$post->tags()->sync($tags_id);
+				// }
 				
 				return Redirect::route("admin-blog-posts")->with("success", "New post was created");
 			} else {
@@ -178,22 +178,22 @@ class AdminEventController extends Controller {
 			$post->remark = Request::input("remark");
 			
 	        if ($post->save()) {
-	        	$tags = Request::input("tags");
-	        	$tags_id = array();
-				if (trim($tags) != "") {
-					$tags = preg_replace('/\s+/', ' ', trim($tags));
-					$tags_array = explode(" ", $tags);
-					foreach ($tags_array as $tag_name) {
-						$tag = EventTag::where("name", "=", trim($tag_name))->first();
-						if ($tag == null) {
-							$tag = new EventTag;
-							$tag->name = trim($tag_name);
-							$tag->save();
-						}
-						array_push($tags_id, $tag->id);
-					}
-					$post->tags()->sync($tags_id);
-				}
+				// $tags = Request::input("tags");
+				// $tags_id = array();
+				// if (trim($tags) != "") {
+				// 	$tags = preg_replace('/\s+/', ' ', trim($tags));
+				// 	$tags_array = explode(" ", $tags);
+				// 	foreach ($tags_array as $tag_name) {
+				// 		$tag = EventTag::where("name", "=", trim($tag_name))->first();
+				// 		if ($tag == null) {
+				// 			$tag = new EventTag;
+				// 			$tag->name = trim($tag_name);
+				// 			$tag->save();
+				// 		}
+				// 		array_push($tags_id, $tag->id);
+				// 	}
+				// 	$post->tags()->sync($tags_id);
+				// }
 				
 	            return Redirect::route("admin-blog-posts")->with("success", "Updated post was saved");
 	        } else {

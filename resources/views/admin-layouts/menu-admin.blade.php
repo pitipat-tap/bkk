@@ -26,21 +26,21 @@
     	</li>
     	<li>
             <a href="{!! URL::route('admin-blog-posts') !!}" class="{!! isAdminNavLinkActive($link, 'blogposts') !!}">
-        		<span class="icon fa fa-pencil-square-o"></span> Blog 
+        		<span class="icon fa fa-pencil-square-o"></span> News 
         		<span class="toggle-sub-menu icon-float fa {!! isAdminIconSubLinkActive($link, 'blogposts') !!}"></span>
     		</a>
     		<ul class="sub-menu {!! isAdminGroupSubLinkToggled($has_sublink, $link, 'blogposts') !!}">
-<!--    			<li>
+<!--     			<li>
     				<a  href="{!! URL::route('admin-blog-posts') !!}" class="{!! isAdminNavSubLinkActive($has_sublink, $sublink, 'blogposts') !!}">
                         Blog posts
                     </a>
-    			</li>-->
+    			</li>
     			
     			<li>
 		        	<a  href="{!! URL::route('admin-blog-tags') !!}" class="{!! isAdminNavSubLinkActive($has_sublink, $sublink, 'blogtags') !!}">
                         Blog tags
                     </a>
-    			</li>
+    			</li> -->
     		</ul>
     	</li>
     	<li>

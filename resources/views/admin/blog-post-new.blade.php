@@ -2,7 +2,7 @@
 
 
 @section("title")
-Add New Blog Post | 
+Add New News | 
 @stop
 
 
@@ -44,7 +44,7 @@ Add New Blog Post |
 
 <div id="admin-blogposts" class="container">
 	{!! Form::open(array("route" => "admin-blog-post-create", "method" => "post", "class" => "post-form")) !!}
-		<h3 class="title">{!! Html::linkRoute("admin-blog-posts", "Blog Posts") !!} <span class="fa fa-angle-right"></span> Add</h3>
+		<h3 class="title">{!! Html::linkRoute("admin-blog-posts", "News") !!} <span class="fa fa-angle-right"></span> Add</h3>
 		<br />
 		
 		@include("admin.alert-box")
@@ -83,19 +83,20 @@ Add New Blog Post |
 		    	<div class="ui-block mg-b medium-half-mg-r">
 		    		<div class="row">
 		    			<h6>Thai</h6>
-			    		<div class="small-12 large-6 columns">
+			    		<div class="small-12 columns">
 			    			{!! Form::label("title_thai", "Title") !!}
 							{!! Form::text("title_thai", null) !!}
 			    		</div>
-			    		
+			    		<div class="small-12 columns">
+					        {!! Form::label("description_thai", "Description") !!}
+							{!! Form::textarea("description_thai", null, array("class" => "tinymce", "rows" => "7")) !!}
+			    		</div>
 			    	</div>
-			        {!! Form::label("description_thai", "Description") !!}
-					{!! Form::textarea("description_thai", null, array("class" => "tinymce", "rows" => "7")) !!}
 		    	</div>
-				<div class="ui-block mg-b medium-half-mg-l">
+		    	<div class="ui-block mg-b medium-half-mg-r">
 					<div class="row">
 						<h6>English</h6>
-						<div class="small-12 large-6 columns" >
+						<div class="small-12 columns" >
 							{!! Form::label("title_english", "Title") !!}
 							{!! Form::text("title_english", null) !!}
 						</div>
@@ -112,10 +113,10 @@ Add New Blog Post |
 	    			{!! Form::label("url", "URL") !!}
            			{!! Form::text("url", null, array("placeholder" => 'only letters (a-z), numbers, and "-", "_"')) !!}
 	    		</div>
-                <div class="ui-block mg-b medium-half-mg-l">
+                <!-- <div class="ui-block mg-b medium-half-mg-l">
                     {!! Form::label("tags", "Tags") !!}
                 	{!! Form::text("tags", null, array("placeholder" => 'Ex. "tag1 tag2 tag3"')) !!}
-                </div>
+                </div> -->
                 <div class="ui-block mg-b medium-half-mg-l">
 	    			{!! Form::label("remark", "remark") !!}
            			{!! Form::text("remark", null, array("placeholder" => 'remark')) !!}

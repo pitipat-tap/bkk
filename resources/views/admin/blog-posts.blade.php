@@ -70,7 +70,7 @@ use Illuminate\Support\Facades\Input;
 </div>
 
 <div id="admin-blogposts" class="container">
-	<h3 class="title">Blog Posts</h3>
+	<h3 class="title">News</h3>
 	<br />
 	
 	@include("admin.alert-box")
@@ -195,15 +195,6 @@ use Illuminate\Support\Facades\Input;
 							{!! Html::linkRoute("admin-blog-posts", $post->author->username, 
 							array("author" => $post->author->username)) !!}
 						</p>
-						
-						@if ($post->tags()->count() > 0)
-							<p class="show-for-large-up">
-								Tags : 
-								@foreach ($post->tags as $tag)
-									{!! Html::linkRoute("admin-blog-posts", $tag->name, array("tag" => $tag->name)) !!} 
-								@endforeach
-							</p>
-						@endif
 						
 						<p class="text-date show-for-large-up">Created : {!! date("M n, Y g:i A", strtotime($post->created_at)) !!}</p>
 						@if ($post->updated_at != $post->created_at)
