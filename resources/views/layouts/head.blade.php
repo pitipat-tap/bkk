@@ -80,7 +80,8 @@
         </script>
         <a data-open="dad" style="display:none" id="dad-open">Click me for a modal</a>
         <div class="large reveal" id="dad" data-reveal>
-          {!! HTML::image("images/dad_1920x1080.jpg","",array("id"=>"","class"=>"")) !!}
+          {!! HTML::image("images/dad_1920x1080.jpg","",array("id"=>"","class"=>"show-for-landscape")) !!}
+          {!! HTML::image("images/dad_600x800.jpg","",array("id"=>"","class"=>"show-for-portrait")) !!}
             <button class="close-button" data-close aria-label="Close modal" type="button">
               <span aria-hidden="true">&times;</span>
             </button>
