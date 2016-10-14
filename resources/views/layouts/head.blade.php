@@ -75,7 +75,10 @@
 
         <script>
             $(document).ready(function(){
-                $("#dad-open").trigger( "click" );
+		if(sessionStorage.getItem('dad') != '1'){
+			$("#dad-open").trigger( "click" );
+			sessionStorage.setItem('dad', '1');
+		}
             });
         </script>
         <a data-open="dad" style="display:none" id="dad-open">Click me for a modal</a>
