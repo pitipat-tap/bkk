@@ -61,7 +61,7 @@
 
         </script>
     </head>
-    <body id="body" class="th" draggable="false">  
+    <body id="body" class="th" draggable="false"style="-webkit-filter: grayscale(100%);filter: grayscale(100%);">  
 
         <div id="fb-root"></div>
         <script>(function(d, s, id) {
@@ -73,6 +73,18 @@
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
 
+        <script>
+            $(document).ready(function(){
+                $("#dad-open").trigger( "click" );
+            });
+        </script>
+        <a data-open="dad" style="display:none" id="dad-open">Click me for a modal</a>
+        <div class="large reveal" id="dad" data-reveal>
+          {!! HTML::image("images/dad_1920x1080.jpg","",array("id"=>"","class"=>"")) !!}
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
         @yield("body")
 
         <div id="loader-wrapper">
