@@ -426,8 +426,8 @@ and by the Crown Property Bureau. The land owners have plans to develop the land
                                 <h3 lang="en"> {!! $post->title_english !!} </h3>
                                 <hr>
                                 
-                                <div lang="th">{!! $post->description_thai !!}</div>
-                                <div lang="en">{!! $post->description_english !!}</div>
+                                <div class="news-content-height" lang="th">{!! $post->description_thai !!}</div>
+                                <div class="news-content-height" lang="en">{!! $post->description_english !!}</div>
                                 <div class="mg-t-1">
                                     <a class="hide-for-print" href="{!! URL::route('blog-post',array($post->url)) !!}">
                                         <div class="see-more"> 
