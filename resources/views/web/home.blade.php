@@ -16,7 +16,6 @@
     <meta property="og:title" content="Bangkok Smiles" >
     <meta property="og:description" content="We are Tourism Division; Culture Sports and Tourism Department; Bangkok Metropolitan Administration; and Royal Thai Government." >
     <meta property="og:image" content="http://www.bangkoktourist.com/images/logo/bkk-logo.png" >
-    <!--<meta property="og:image" content="{!! $attraction->image_url_1 !!}" >-->
     <meta property="og:image:type" content="image/jpeg" >
     <meta property="og:image:width" content="400" >
     <meta property="og:image:height" content="300" >

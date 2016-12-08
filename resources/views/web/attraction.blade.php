@@ -129,7 +129,7 @@ $(document).ready(function(){
                         {!! $attraction->description_china !!}
                     </p>
                     <div align="center">
-                        <iframe src="{!! $attraction->map_url !!}" align=center" frameborder="0" class="iframe-size show-for-medium" style="border:0" allowfullscreen></iframe>
+                        <iframe src="{!! $attraction->map_url !!}" align=center frameborder="0" class="iframe-size show-for-medium" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="columns medium-4 small-12 pd-l-0">
