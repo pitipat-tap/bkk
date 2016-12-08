@@ -36,7 +36,7 @@
                         <button data-slide="{!! ($banner->sequence-1) !!}"><span class="show-for-sr">Second slide details.</span></button>
                     @endif
                 @endforeach
-                <button data-slide="{!! ($banner->sequence-1) !!}"><span class="show-for-sr"></span></button>
+                <button data-slide="{!! ($banner->sequence) !!}"><span class="show-for-sr"></span></button>
                 </nav>
             </div>
         </div>
