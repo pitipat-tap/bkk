@@ -48,8 +48,8 @@
                 <h4 lang="th"> {!! $post->title_thai !!} </h4>
                 <h4 lang="en"> {!! $post->title_english !!} </h4>
                 <div class="description-container">
-                    <p lang="th">{!! $post->description_thai !!}</p>
-                    <p lang="en">{!! $post->description_english !!}</p>
+                    <div lang="th">{!! $post->description_thai !!}</div>
+                    <div lang="en">{!! $post->description_english !!}</div>
                 </div>
                 <a href="{!! URL::route('blog-post',array($post->url)) !!}">
                     <button class="green-btn mg-t-1">
