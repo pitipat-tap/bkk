@@ -17,15 +17,13 @@
                     </li>
             @endforeach
                     <li class="orbit-slide">
-                        <a href="http://bangkoktourist.com/uploads/normal/AW-EN_lower%20Mekong.pdf">
+                        <a lang="en" href="http://bangkoktourist.com/uploads/normal/AW-EN_lower%20Mekong.pdf">
                             <img class="orbit-image" data-interchange="[uploads/normal/orbit/AW-EN_lower-Mekong-mobile.jpg, small], [uploads/normal/orbit/AW-EN_lower-Mekong-tablet.jpg, medium], [uploads/normal/orbit/AW-EN_lower-Mekong.jpg, large]">
                             <figcaption class="orbit-caption">Mahkong</figcaption>
                         </a>
-                    </li>
-                    <li class="orbit-slide">
-                        <a href="http://bangkoktourist.com/uploads/normal/AW-TH_lower%20Mekong.pdf">
+                        <a lang="th" href="http://bangkoktourist.com/uploads/normal/AW-TH_lower%20Mekong.pdf">
                             <img class="orbit-image" data-interchange="[uploads/normal/orbit/AW-TH_lower-Mekong-mobile.jpg, small], [uploads/normal/orbit/AW-TH_lower-Mekong-tablet.jpg, medium], [uploads/normal/orbit/AW-TH_lower_Mekong.jpg, large]">
-                            <figcaption class="orbit-caption">แม่โขง</figcaption>
+                            <figcaption class="orbit-caption">ลุ่มแม่น้ำโขง</figcaption>
                         </a>
                     </li>
             </ul>
@@ -37,9 +35,8 @@
                     @else
                         <button data-slide="{!! ($banner->sequence-1) !!}"><span class="show-for-sr">Second slide details.</span></button>
                     @endif
-                        <button data-slide="{!! ($banner->sequence) !!}"><span class="show-for-sr"></span></button>
-                        <button data-slide="{!! ($banner->sequence+1) !!}"><span class="show-for-sr"></span></button>
                 @endforeach
+                <button data-slide="{!! ($banner->sequence-1) !!}"><span class="show-for-sr"></span></button>
                 </nav>
             </div>
         </div>
