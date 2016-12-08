@@ -90,7 +90,7 @@
                         <h4 id="des-h-2" lang="en"> Temple of the Emerald Buddha</h4>
                         <h4 id="des-h-3" lang="jp"> Temple of the Emerald Buddha</h4>
                         <h4 id="des-h-4" lang="ch"> Temple of the Emerald Buddha</h4>
-                        {!! HTML::image("uploads/normal/Attractions/02_Wat_Pra_Kaew/02_Temple of the Emerald Buddha_1.jpg","",array("id"=>"des-img")) !!}
+                        {!! HTML::image("uploads/normal/Attractions/02_Wat_Pra_Kaew/TempleoftheEmeraldBuddha1.jpg","",array("id"=>"des-img")) !!}
                         <p id="des-c-1" lang="th">
                             เป็นวัดที่ประดิษฐานพระแก้วมรกต ภายในมีอาณาบริเวณกว้างขวาง ประกอบด้วย 3 ส่วน คือส่วนแรกเป็นวัดพระแก้วมรกต ระเบียงที่ลดหลั่นกันลงไป และส่วนของหมู่ตึกทางทิศเหนือ และระเบียงด้านหน้าของประสาทพระเทพบิดร
 วัดพระศรีรัตนศาสดารามตั้งอยู่ในเขตพระราชฐานชั้นนอกทางทิศตะวันออกของพระบรมมหาราชวัง ภายในไม่มีพระภิกษุสงฆ์อยู่จำพรรษา รัชกาลที่ 1 โปรดเกล้าฯ ให้สร้างขึ้นพร้อมกับพระบรมมหาราชวังและกรุงรัตนโกสินทร์ซึ่งเป็นการสร้างวัดในพระราชวังตามอย่างวัดพระศรีสรรเพชญ์ของกรุงศรีอยุธยา
