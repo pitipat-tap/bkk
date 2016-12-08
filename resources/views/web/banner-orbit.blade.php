@@ -37,6 +37,8 @@
                     @else
                         <button data-slide="{!! ($banner->sequence-1) !!}"><span class="show-for-sr">Second slide details.</span></button>
                     @endif
+                        <button data-slide="{!! ($banner->sequence) !!}"><span class="show-for-sr"></span></button>
+                        <button data-slide="{!! ($banner->sequence+1) !!}"><span class="show-for-sr"></span></button>
                 @endforeach
                 </nav>
             </div>
