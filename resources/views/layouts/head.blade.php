@@ -61,7 +61,7 @@
 
         </script>
     </head>
-    <body id="body" class="th" draggable="false"style="-webkit-filter: grayscale(100%);filter: grayscale(100%);">  
+    <body id="body" class="th" draggable="false">  
 
         <div id="fb-root"></div>
         <script>(function(d, s, id) {
