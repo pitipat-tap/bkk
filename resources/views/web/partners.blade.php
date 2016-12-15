@@ -54,7 +54,7 @@
 	        </li>
 	        <li>
 	            <div>
-	            	<a href="http://lowermekong.org" target="_blank"><img class="thumbnail-container" src="images/logo/footer/lmi.png" alt=""></a>
+	            	<a data-open="lmct" target="_blank"><img class="thumbnail-container" src="images/logo/footer/lmtc.png" alt=""></a>
 	            </div>
 	            <div><h5>lower makong</h5></div>
 	        </li>
@@ -78,6 +78,42 @@
 	        </li>
 	    </ul>
 	</div>
+	<!-- modal -->
+    <div class="reveal lmct" id="lmct" data-reveal data-animation-in="slide-in-down" data-animation-out="slide-out-up">
+        <h4 align="center">Lower Mekong</h4>
+        <hr>
+        <div class="row">
+            <div class="small-6 columns">
+                <p lang="th" align="center"><a href="http://www.phnom-penh.co/" target="_blank">พนมเปญ</a></p>
+                <p lang="en" align="center"><a href="http://www.phnom-penh.co/" target="_blank">Phnom Penh</a></p>
+                <p lang="jp" align="center"><a href="http://www.phnom-penh.co/" target="_blank">Phnom Penh</a></p>
+                <p lang="ch" align="center"><a href="http://www.phnom-penh.co/" target="_blank">Phnom Penh</a></p>
+            </div>
+            <div class="small-6 columns">
+                <p lang="th" align="center"><a href="http://www.tourismlaos.org/show.php?Cont_ID=20" target="_blank">เวียงจันทน์</a></p>
+                <p lang="en" align="center"><a href="http://www.tourismlaos.org/show.php?Cont_ID=20" target="_blank">Vientiane</a></p>
+                <p lang="jp" align="center"><a href="http://www.tourismlaos.org/show.php?Cont_ID=20" target="_blank">Vientiane</a></p>
+                <p lang="ch" align="center"><a href="http://www.tourismlaos.org/show.php?Cont_ID=20" target="_blank">Vientiane</a></p>
+                
+            </div>
+            <div class="small-6 columns">
+                <p lang="th" align="center"><a href="http://www.eng.hochiminhcity.gov.vn/visitors/Lists/Posts/AllPosts.aspx?CategoryId=14" target="_blank">โฮจิมินห์</a></p>
+                <p lang="en" align="center"><a href="http://www.eng.hochiminhcity.gov.vn/visitors/Lists/Posts/AllPosts.aspx?CategoryId=14" target="_blank">Ho Chi Minh</a></p>
+                <p lang="jp" align="center"><a href="http://www.eng.hochiminhcity.gov.vn/visitors/Lists/Posts/AllPosts.aspx?CategoryId=14" target="_blank">Ho Chi Minh</a></p>
+                <p lang="ch" align="center"><a href="http://www.eng.hochiminhcity.gov.vn/visitors/Lists/Posts/AllPosts.aspx?CategoryId=14" target="_blank">Ho Chi Minh</a></p>
+            </div>
+            <div class="small-6 columns">
+                <p lang="th" align="center"><a href="http://www.ycdc.gov.mm/content.php?yangon=Attraction" target="_blank">ย่างกุ้ง</a></p>
+                <p lang="en" align="center"><a href="http://www.ycdc.gov.mm/content.php?yangon=Attraction" target="_blank">Yangon</a></p>
+                <p lang="jp" align="center"><a href="http://www.ycdc.gov.mm/content.php?yangon=Attraction" target="_blank">Yangon</a></p>
+                <p lang="ch" align="center"><a href="http://www.ycdc.gov.mm/content.php?yangon=Attraction" target="_blank">Yangon</a></p>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+    <!-- end modal -->
 </div>
 @include("web.footer")
 @stop
