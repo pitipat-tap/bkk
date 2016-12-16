@@ -80,7 +80,7 @@
 	</div>
 	<!-- modal -->
     <div class="reveal lmct" id="lmct" data-reveal data-animation-in="slide-in-down" data-animation-out="slide-out-up">
-        <h4 align="center">Lower Mekong</h4>
+        <h4 align="center">Lower Mekong Tourism Cities</h4>
         <hr>
         <div class="row">
             <div class="small-6 columns">
@@ -98,9 +98,9 @@
             </div>
             <div class="small-6 columns">
                 <p lang="th" align="center"><a href="http://www.eng.hochiminhcity.gov.vn/visitors/Lists/Posts/AllPosts.aspx?CategoryId=14" target="_blank">โฮจิมินห์</a></p>
-                <p lang="en" align="center"><a href="http://www.eng.hochiminhcity.gov.vn/visitors/Lists/Posts/AllPosts.aspx?CategoryId=14" target="_blank">Ho Chi Minh</a></p>
-                <p lang="jp" align="center"><a href="http://www.eng.hochiminhcity.gov.vn/visitors/Lists/Posts/AllPosts.aspx?CategoryId=14" target="_blank">Ho Chi Minh</a></p>
-                <p lang="ch" align="center"><a href="http://www.eng.hochiminhcity.gov.vn/visitors/Lists/Posts/AllPosts.aspx?CategoryId=14" target="_blank">Ho Chi Minh</a></p>
+                <p lang="en" align="center"><a href="http://www.eng.hochiminhcity.gov.vn/visitors/Lists/Posts/AllPosts.aspx?CategoryId=14" target="_blank">Ho Chi Minh City</a></p>
+                <p lang="jp" align="center"><a href="http://www.eng.hochiminhcity.gov.vn/visitors/Lists/Posts/AllPosts.aspx?CategoryId=14" target="_blank">Ho Chi Minh City</a></p>
+                <p lang="ch" align="center"><a href="http://www.eng.hochiminhcity.gov.vn/visitors/Lists/Posts/AllPosts.aspx?CategoryId=14" target="_blank">Ho Chi Minh City</a></p>
             </div>
             <div class="small-6 columns">
                 <p lang="th" align="center"><a href="http://www.ycdc.gov.mm/content.php?yangon=Attraction" target="_blank">ย่างกุ้ง</a></p>
