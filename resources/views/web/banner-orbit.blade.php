@@ -19,7 +19,7 @@
                     <li class="orbit-slide">
                         <a lang="en" href="http://bangkoktourist.com/uploads/normal/AW-EN_lower%20Mekong.pdf">
                             <img class="orbit-image" data-interchange="[uploads/normal/orbit/AW-EN_lower-Mekong-mobile.jpg, small], [uploads/normal/orbit/AW-EN_lower-Mekong-tablet.jpg, medium], [uploads/normal/orbit/AW-EN_lower-Mekong.jpg, large]">
-                            <figcaption class="orbit-caption">Mahkong</figcaption>
+                            <figcaption class="orbit-caption">Lower Makong</figcaption>
                         </a>
                         <a lang="th" href="http://bangkoktourist.com/uploads/normal/AW-TH_lower%20Mekong.pdf">
                             <img class="orbit-image" data-interchange="[uploads/normal/orbit/AW-TH_lower-Mekong-mobile.jpg, small], [uploads/normal/orbit/AW-TH_lower-Mekong-tablet.jpg, medium], [uploads/normal/orbit/AW-TH_lower_Mekong.jpg, large]">
