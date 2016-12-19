@@ -56,7 +56,7 @@
 	            <div>
 	            	<a data-open="lmct" target="_blank"><img class="thumbnail-container" src="images/logo/footer/lmtc.png" alt=""></a>
 	            </div>
-	            <div><h5>lower makong</h5></div>
+	            <div><h5>lower mekong</h5></div>
 	        </li>
 	        <li>
 	            <div>
