@@ -242,11 +242,8 @@ use Illuminate\Support\Facades\Input;
 		@endforeach
 	</ul>
 	
-	@if ($posts->total() > $posts->perPage())
-		<div class="pagination-container">
-			{!! str_replace('/?', '?', $posts->appends(Request::except("page"))->render(new FoundationPresenter($posts))) !!}
-		</div>
-	@endif
+	<div class="pagination"> {!! $posts->links() !!} </div>
+	
 </div>
 
 @stop
