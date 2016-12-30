@@ -61,11 +61,8 @@
 
         </script>
     </head>
-<<<<<<< HEAD
-    <body id="body" class="th" draggable="false"style="">  
-=======
+
     <body id="body" class="th" draggable="false">  
->>>>>>> d9ba5b68307f952a15c3ef463652cc502a3efddb
 
         <div id="fb-root"></div>
         <script>(function(d, s, id) {
