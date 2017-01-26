@@ -32,7 +32,7 @@ File manager |
 	<br />
     
     <div class="ui-block">
-    	<?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=1&field_id=profile-image-url"; ?>
+    	<?php $p_link = "http://".$_SERVER['SERVER_NAME'].$lpath."/filemanager/dialog.php?type=2&field_id=profile-image-url"; ?>
 		<iframe width="1024" height="600" frameborder="0" src="{{ $p_link }}" style="width: 100%"></iframe>
 	</div>
 </div>
