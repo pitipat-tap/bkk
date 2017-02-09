@@ -155,7 +155,7 @@
                 </a>
             </div>
             <div class="small-4 column">
-                <a href="http://203.155.220.167/" target="_blank">
+                <a href="http://map.bangkoktourist.com" target="_blank">
                     {!! HTML::image("uploads/normal/footer/gis.png","",array("class"=>"")) !!}
                 </a>
             </div>
