@@ -129,7 +129,7 @@
                 </div>
                 <div class="column">
                     <p>
-                        <a href="http://203.155.220.167/" target="_blank">
+                        <a href="http://map.bangkoktourist.com" target="_blank">
                             {!! HTML::image("images/logo/gis-banner.png","",array("width"=>"133","height"=>"130")) !!}
                         </a>
                     </p>
