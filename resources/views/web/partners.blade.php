@@ -59,6 +59,12 @@
 	            <div><h5>lower mekong</h5></div>
 	        </li>
 	        <li>
+	        	<div>
+	            	<a href="http://www.showdc.co.th/" target="_blank"><img class="thumbnail-container" src="images/logo/footer/showdc.png" alt=""></a>
+	            </div>
+                <div><h5>showdc</h5></div>
+            </li>
+	        <li>
 	            <div>
 	            	<a href="http://www.bangkok.go.th/" target="_blank"><img class="thumbnail-container" src="images/logo/footer/bangkok-metro.png" alt=""></a>
 	            </div>

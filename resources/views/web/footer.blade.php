@@ -47,6 +47,11 @@
                                     {!! Html::image("images/logo/footer/lmtc.png","",array("class"=>"partner-thumbnail")) !!}
                                 </a>
                             </li>
+                            <li>
+                                <a href="http://www.showdc.co.th/" target="_blank">
+                                    {!! Html::image("images/logo/footer/showdc.png","",array("class"=>"partner-thumbnail")) !!}
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     <li class="orbit-slide">
