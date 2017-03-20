@@ -22,7 +22,7 @@
 <div class="body-section mg-b-2 mg-t-1">
 	<div class="small-12 small-centered">
 	    <ul class="partners">
-	    	<li>
+	    	<!-- <li>
 	            <div>
 	            	<a href="http://www.agoda.com/" target="_blank"><img class="thumbnail-container" src="images/logo/agoda-logo.png" alt=""></a>
 	            </div>
@@ -33,7 +33,7 @@
 	            	<a href="https://www.tripadvisor.com/" target="_blank"><img class="thumbnail-container" src="images/logo/trip-logo.png" alt=""></a>
 	            </div>
 	            <div><h5>trip advisor</h5></div>
-	        </li>
+	        </li> -->
 	        <li>
 	        	<div>
 	            	<a href="http://vrtweb.rd.go.th/" target="_blank"><img class="thumbnail-container" src="images/logo/footer/vat.png" alt=""></a>
@@ -58,12 +58,12 @@
 	            </div>
 	            <div><h5>lower mekong</h5></div>
 	        </li>
-	        <li>
+	        <!-- <li>
 	        	<div>
 	            	<a href="http://www.showdc.co.th/" target="_blank"><img class="thumbnail-container" src="images/logo/footer/showdc.png" alt=""></a>
 	            </div>
                 <div><h5>showdc</h5></div>
-            </li>
+            </li> -->
 	        <li>
 	            <div>
 	            	<a href="http://www.bangkok.go.th/" target="_blank"><img class="thumbnail-container" src="images/logo/footer/bangkok-metro.png" alt=""></a>

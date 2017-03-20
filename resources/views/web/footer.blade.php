@@ -5,22 +5,22 @@
             <div class="row">
                 <div class="small-1 large-1 column empty">
                 </div>
-                <div class="small-5 large-4 column">
+                <!-- <div class="small-5 large-4 column">
                     <a href="http://www.agoda.com/" target="_blank">
                         {!! Html::image("images/logo/agoda-logo.png","",array("class"=>"main-banner")) !!}
                     </a>
-                </div>
+                </div> -->
                 <div class="show-for-large large-2 column empty">
                 </div>
-                <div class="small-5 large-4 column main-banner-container">
+                <!-- <div class="small-5 large-4 column main-banner-container">
                     <a href="https://www.tripadvisor.com/" target="_blank">
                         {!! Html::image("images/logo/trip-logo.png","",array("class"=>"main-banner")) !!}
                     </a>
-                </div>
+                </div> -->
                 <div class="small-1 large-1 column empty">
                 </div>
             </div>
-            <hr>
+            <!-- <hr> -->
             <div class="orbit" data-orbit>
                 <ul class="orbit-container">
                     <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
@@ -47,11 +47,11 @@
                                     {!! Html::image("images/logo/footer/lmtc.png","",array("class"=>"partner-thumbnail")) !!}
                                 </a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="http://www.showdc.co.th/" target="_blank">
                                     {!! Html::image("images/logo/footer/showdc.png","",array("class"=>"partner-thumbnail")) !!}
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </li>
                     <li class="orbit-slide">
